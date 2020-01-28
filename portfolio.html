@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="L'Atelier Logiciel Sandré produit des logiciels de qualité, du bas-niveau à l'UI. Nous proposons également des formations et du coaching." />
+    <meta name="keywords" content="développement web csharp logiciel programme programmation code coaching formation agile" />
+    <meta name="author" content="Enzo Sandré" />
+
+    <title>Atelier logiciel Sandré - Artisanat du développement</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="icon" type="image/png" href="resources/images/logo.png">
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="resources/images/logo.png" width="50" />
+        </a>
+
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarContent" 
+            aria-controls="navbarContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav">
+                <li><a href="index.html">L'atelier de développement</a></li>
+                <li><a href="presentation.html">Nos activités</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://blog.enzosandre.fr/">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="portfolio" class="container">
+        <h1>Portfolio</h1>
+        <p>
+            Certains clients ne souhaitent pas apparaître sur cette page. Nous communiquons les réalisations qui les concernent uniquement en privé. <a href="contact.html">Contactez-nous</a> pour cela.
+        </p>
+        <p>
+            L'Atelier fonctionne pour l'instant sur le travail de son seul fondateur, Enzo Sandré. Son parcours est publié sur <a href="https://www.linkedin.com/in/enzosandre/">LinkedIn</a>. Lorsque l'Atelier aura achevé ses premières missions, cette page sera plus étoffée.
+        </p>
+
+        <article>
+            <h2>La maintenance logicielle en pratique</h2>
+            <span class="badge badge-dark">Formation</span>
+            <span class="badge badge-dark">Maintenance</span>
+            <p>
+                Ce cours est actuellement donné à l'EPSI Bordeaux, devant un public de 4ème année (Master 1) spécialisés dans le développement. Durée : 40h.
+            </p>
+            <p>
+                Il vise à enseigner aux futurs développeurs les concepts empiriques de la maintenance logicielle : odeurs et maladies du code, antipatterns, coincidences, etc. Ce cours est composé de 3/4 de pratique, à travers des exercices inspirés des <a href="https://fr.wikipedia.org/wiki/Kata_(programmation)">katas</a>. La théorie sert uniquement de fil rouge. Les étudiants sont confrontés aux pires pratiques du développement logiciel, afin d'apprendre à y faire face. Code abscons, absence de tests, de documentation, voire de spécifications, architecture imposée, bugs vicieux : tout est fait pour apprendre par l'échec la maintenance logicielle, partie souvent délaissée et palliative de notre métier.
+            </p>
+            <p>
+                Les étudiants apprennent à nettoyer ou isoler les parties problématiques du code, en tenant compte des réalités de l'entreprise : délais serrés, concepteurs absents, donneurs d'ordre indécis, etc. Ils apprennent à remettre un code douloureux sur les rails par les tests et le refactoring. La pédagogie envers les managers est abordée, afin de défendre la qualité logicielle contre les (faux) arguments fréquents en faveur du <i>statu quo</i>.
+            </p>
+        </article>
+
+        <article>
+            <h2>Spotlights</h2>
+            <span class="badge badge-dark">Développement</span>
+            <p>
+                Plus qu'un projet, <a href="https://spotlights.fr">Spotlights</a> fut le creuset de l'Atelier Logiciel. Il s'agit d'une plateforme d'information participative et décentralisée, visant à remettre les journalistes à leur juste place. Les utilisateurs signalent les informations locales dignes d'intérêt par suffrage, afin d'attirer un journaliste-vérificateur, assuré d'avance des vues que son article occasionnerait. Cette double vérification, journalistique et démocratique, garantit un puissant filtre anti fake-news.
+            </p>
+            <p>
+                Aujourd'hui en sommeil faute de financement, le projet Spotlights a été développé par notre atelier. N'ayant aucune idée des technologies qui allaient faire fonctionner l'infrastructure de ce projet, l'architecture hexagonale a été adoptée. Le code métier est totalement découplé du monde extérieur, testé et abouti. Si le projet devait repartir, des connecteurs permettant de relier l'existant à une blockchain, une base de données et un serveur web suffiraient à le faire vivre. Qu'il sorte dans 6 mois ou dans 5 ans, le code n'aura pas vieilli car nous l'avons rendu très peu adhérent à une technologie spécifique.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-12">
+                    <img src="resources/images/logo.png" width="50" />
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <p>82, chemin des Combes<br/>31140 Launaguet</p>
+                </div>
+
+                <div class="col-md-offset-1 col-md-4 col-sm-12">
+                    <p><a href="mailto:atelier@enzosandre.fr">atelier@enzosandre.fr</a></p>
+                    <p>+33 (0)5 62 79 69 61</p>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyright">
+                        <p>© 2020 Atelier logiciel Sandré.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

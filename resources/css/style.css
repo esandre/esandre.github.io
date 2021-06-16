@@ -198,3 +198,17 @@ footer img {
 footer div p {
     text-align: center;
 }
+
+/*---------------------------------------
+   Aside section
+-----------------------------------------*/
+
+aside {
+    border-top: 1px solid #f0f0f0;
+    padding: 30px 0;
+    font-size: 0.8em;
+}
+
+aside a {
+    color: #555;
+}

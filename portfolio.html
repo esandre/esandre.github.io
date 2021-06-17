@@ -46,25 +46,92 @@
     <section id="portfolio" class="container">
         <h1>Portfolio</h1>
 
-        <p style="color: #CD3838; text-align: center;">Cette page est en cours de réécriture.</p>
+        <p>Cette page regroupe les projets que nous sommes fiers d'avoir réalisé. Tous ne sont pas indiqués, seulement une sélection parfaitement subjective, narrée avec une objectivité largement perfectible.</p>
+        <p>Nous avons choisi <a href="#oxacontrole">OxaControle</a> notre plus vieux projet encore maintenu et installé, préexistant même à l'Atelier, le <a href="#albus">Pont SEPA-Chargebee</a> réalisé pour SNAL/Albus, dernier projet de pur développement en date et l'aventure <a href="#spotlights">Spotlights</a>, la startup à laquelle nous avions participé, afin de représenter notre savoir-faire.</p>
+        <p>Cette liste va évoluer, elle est notre vitrine et sera mise à jour lorsque nous aurons achevé de nouveaux projets.</p>
 
-        <p>Cette page regroupe les projets que nous sommes fiers d'avoir réalisé. Tous ne sont pas indiqués, seulement une sélection parfaitement subjective, narrés avec une objectivité largement perfectible.</p>
         <article>
             <h2 id="oxacontrole"><b>OxaControle</b> Notre plus ancien projet encore développé.</h2>
+
+            <h3>Les origines</h3>
+
+            <p>
+                L'histoire commence en 2013, en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
+            </p>
+
+            <div class="row">
+                <p class="col-md-2 col-xs-12 col-sm-4">
+                    <img src="resources/images/projects_partners.jpg" class="rounded img-fluid" />
+                </p>
+                <p class="col-md-10 col-xs-12 col-sm-8 gx-5">
+                    L'équipe de Projects Partners était réduite, votre serviteur comme développeur en alternance et M. Balu, à la direction. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
+                </p>
+            </div>
+
+            <div class="row">
+                <p class="col-xs-12 col-sm-9">
+                    La plateforme Raspberry Pi a été sélectionnée pour son faible coût et sa puissance suffisante pour diriger une poignée de lecteurs, autant de portes et une flotte de quelques badges. Le principal défi vint de la plateforme .NET, alors absente de Linux. .NET Core n'arrivera que quelques années plus tard. C'était alors Mono qui remplissait le rôle, avec un transpilage en Java très gourmand en ressources.<br/>
+                    Le Raspberry est incapable de produire des signaux RS485 sans convertisseur adapté. Le tâtonnement a été long pour aboutir à une solution à base de convertisseurs TTL to RS485, branchés de manière exotique afin d'utiliser le bus en full-duplex. Ces deux éléments sont encore utilisés aujourd'hui sur le projet, garants de son faible coût.
+                </p>
+                <p class="col-xs-12 col-sm-3 gx-5">
+                    <img src="resources/images/RS_485.jpg" class="rounded img-fluid"/>
+                </p>
+            </div>
+
+            <p>
+                Le projet a été déployé sur plusieurs petits sites. Il y fonctionne depuis plusieurs années sans nécessiter d'autres interventions que celles d'un électricien pour remplacer certaines pièces d'usure. Je n'ai été amené à intervenir qu'une seule fois sur ces sites depuis leur installation.
+            </p>
+
+            <h3>La reprise par l'Atelier</h3>
+
+            <p>
+                En 2019, Laurent Frapier nous contacte afin de proposer à l'Atelier la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à nous : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé bien avant d'avoir acquis l'expérience et les connaissances nécessaires pour produire la qualité dont nous sommes capables aujourd'hui.<br/>
+                Pour résumer, nous devions passer à une échelle inédite un code d'étudiant fortement endetté.<br/>
+                En partie par défi et en partie par orgueil, nous avons accepté.
+            </p>
+            <p>
+                Une année d'études et de remaniement du code ont été nécessaires afin de retrouver une qualité suffisante pour avancer sereinement. Refactoring, refonte de certaines parties, introduction de tests, changement de technologie, nouvelle architecture matérielle. Presque tout à évolué pour fiabiliser le projet. Covid aidant, notre premier bureau s'est transformé en laboratoire d'électronique improvisé.
+            </p>
+            <div class="row" style="margin-right: 5px;">
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_1.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_2.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_3.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_4.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="gx-5"></p>
+            </div>
+
+            <h3>Aujourd'hui</h3>
+
+            <p>
+                Une fois la solution au point vint le temps de l'installation sur site, terminée à l'heure où j'écris ces lignes. Le défi est achevé, désormais OxaControle peut s'adapter à toutes les tailles de bâtiment grâce à son architecture évolutive.<br/>
+                Le projet, désormais repris doit maintenant être consolidé et assaini, afin de s'attaquer à d'autres sites. Il reste trop d'étapes manuelles lors de l'installation et de la maintenance et le poids du code legacy, bien que fortement réduit par des tests adaptés, reste fort dans le projet.<br/>
+                Désormais installé sur un site d'envergure, OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 8 ans après.
+            </p>
         </article>
 
         <article>
             <h2 id="albus"><b>Pont SEPA-Chargebee</b> Notre logiciel le plus qualitatif à ce jour.</h2>
 
             <p>
-                L'intérêt de ce projet, somme toute assez routinier, est d'être une démonstration achevée des bonnes pratiques que nous prêchons. Le besoin ne présente aucune difficulté particulière : il s'agit d'un pont très classique entre un logiciel de facturation (Chargebee) et le format d'échange interbancaire SEPA. Le pont fonctionne dans les deux sens : émission des ordres de débit et lecture des rejets.
+                L'intérêt de ce projet, somme toute assez routinier, est d'être une démonstration achevée des bonnes pratiques que nous prêchons. Le besoin ne présente aucune difficulté particulière&nbsp;: il s'agit d'un pont très classique entre un logiciel de facturation (Chargebee) et le format d'échange interbancaire SEPA. Le pont fonctionne dans les deux sens&nbsp: émission des ordres de débit et lecture des rejets.
+            </p>
+            <p>
+                Quelques détails sont inconnus au début du projet, certaines dépendances obligatoires sont intestables ou peu sûres, des <b>couches anticorruption</b> ont du être mises en place afin de rendre l'intestable plus prédictible et le peu sûr facilement remplaçable. Les détails d'implémentation dépendent du métier et non l'inverse (<b><abbr title="Dependency Injection">DI</abbr></b>) et chaque composant, en plus d'être testé individuellement (<b>tests fonctionnels</b>), est mis en mouvement dans un tout plus grand (<b>tests système</b>), avant d'être relié au monde extérieur pour les tests les plus aboutis (<b>tests d'intégration</b>).
             </p>
             <div class="row">
-                <p class=" col-md-6 col-xs-12 col-sm-12 gx-5">
+                <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
                     <img src="resources/images/PontSEPAChargebee.png" class="img-fluid rounded" />
                 </p>
                 <p class=" col-md-6 col-xs-12 col-sm-12 gx-5">
-                    Le projet est réalisé en C# avec une architecture hexagonale, tout juste maîtrisée par l'Atelier. Cette architecture offre une grande surface d'accroche à d'autres bonnes pratiques, comme <abbr title="Test Driven Design">TDD</abbr>, <abbr title="Domain Driven Design">DDD</abbr>, l'utilisation d'un framework d'<abbr title="Inversion of Control">IoC</abbr> ou l'usage de tests de recette pour les démonstrations. La conjonction de ces techniques représente le sommet de la qualité dont l'Atelier est capable à ce jour. Cela ne signifie pas que ces pratiques seront utilisées sur vos projets, chacune ayant un cadre d'usage précis, mais il s'agit aujourd'hui de notre état de l'art.
+                    Le projet est réalisé en C# avec une <b>architecture hexagonale</b>, tout juste maîtrisée par l'Atelier. Cette architecture offre une grande surface d'accroche à d'autres bonnes pratiques, comme <b><abbr title="Test Driven Design">TDD</abbr></b>, <b><abbr title="Domain Driven Design">DDD</abbr></b>, l'utilisation d'un framework d'<b><abbr title="Inversion of Control">IoC</abbr></b> ou l'usage de tests de recette pour les démonstrations. La conjonction de ces techniques représente le sommet de la qualité dont l'Atelier est capable à ce jour. Cela ne signifie pas que ces pratiques seront utilisées sur vos projets, chacune ayant un cadre d'usage précis, mais il s'agit aujourd'hui de notre état de l'art.
                 </p>
             </div>
             <p>
@@ -74,6 +141,25 @@
 
         <article>
             <h2 id="spotlights"><b>Spotlights</b> Et si l'Atelier participait à une startup ?</h2>
+
+            <div class="row">
+                <p class="col-md-1 col-xs-4 col-sm-2">
+                    <img src="resources/images/Spotlights.png" class="img-fluid rounded" />
+                </p>
+                <p class=" col-md-11 col-xs-8 col-sm-10 gx-5">
+                    Spotlights est un média participatif décentalisé. Pour en savoir plus sur le projet (qui est en sommeil faute d'investisseurs), <a href="https://spotlights.fr/decouvrir.html">le site</a> est toujours en ligne.
+                </p>
+            </div>
+            <p>
+                C'est autour d'une bande d'amis qu'a démarré le projet Spotlights en Mai 2018. De fil en aiguille, l'Atelier a été associé au projet et chargé d'en superviser le développement. Le projet était à la pointe des technologies du moment : blockchain, smart-maps, .NET Core. Le code était envisagé comme un <b>squelette</b> (ou <b>tracer bullet</b> en anglais), à savoir un code prévu pour avancer dans un environnement fonctionnel changeant ou incertain, permettant de lever itérativement les voiles de brouillard.
+            </p>
+            <p>
+                Le projet n'a pas trouvé son financement, le développement n'est pas arrivé à son terme, mais la méthode de développement utilisée a permis d'obtenir un code assez indépendant du monde extérieur, vieillissant très peu. La logique métier est découplée de l'infrastructure grâce à la <b>Clean Architecture</b>. Ainsi le projet peut rester en sommeil sans s'abîmer et ressortir un beau jour si des investisseurs se présentent.<br/>
+                Les principes du Clean Code, de <b><abbr title="Domain Driven Design">DDD</abbr></b> et <b><abbr title="Test Driven Design">TDD</abbr></b> garantissent qu'un développeur reprennant le code pourra facilement se l'approprier, sans avoir besoin d'effectuer une obscure et coûteuse rétro-ingénierie.
+            </p>
+            <p>
+                Si Spotlights reprenait demain, l'Atelier serait bien évidemment de la partie.
+            </p>
         </article>
     </section>
 

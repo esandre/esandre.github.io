@@ -66,10 +66,11 @@
             <ol start=5>
                 <li><a href="#langages-travail">Avec quels langages travaillez-vous ?</a></li>
                 <li><a href="#frontend">Êtes-vous compétent en Front-End ?</a></li>
+                <li><a href="#tests">Comment testez-vous ?</a></li>
             </ol>
 
             <span>Sur la gestion de projet</span>
-            <ol start=7>
+            <ol start=8>
                 <li><a href="#regie">Qu'entendez-vous par "Pas de régie" ?</a></li>
                 <li><a href="#teletravail">Travaillez-vous sur site ou à distance ?</a></li>
                 <li><a href="#cycle-v">Je travaille en cycle en V, peut-on s'entendre ?</a></li>
@@ -77,14 +78,14 @@
             </ol>
 
             <span>Sur la formation</span>
-            <ol start=11>
+            <ol start=12>
                 <li><a href="#pedagogie">Quelle est votre pédagogie ?</a></li>
                 <li><a href="#lieu-formation">Où enseignez-vous ?</a>
                 <li><a href="#annexes-pedagogie">Quelles prestations proposez-vous aux établissements de formation ?</a></li>
             </ol>
 
             <span>Informations pratiques</span>
-            <ol start=14>
+            <ol start=15>
                 <li><a href="#tjm">Quel est votre TJM ?</a></li>
                 <li><a href="resources/CV%20Enzo%20Sandré.pdf">Avez-vous un CV ?</a>
                 <li><a href="#english">Do you speak english ?</a></li>
@@ -171,6 +172,40 @@
             <h3 id="frontend">Êtes-vous compétent en Front-End ?</h3>
             <p>
                 Ce site pourrait servir de réponse. Il est fonctionnel et sobre, peut-être trop sobre d'ailleurs. Nous pouvons élaborer des interfaces simples, mais nos talents en UI/UX s'arrêtent là. Nous pouvons cependant collaborer avec un intégrateur ou un développeur spécialisé dans les interfaces graphiques si vos besoins dépassent nos compétences.
+            </p>
+        </article>
+
+        <article>
+            <h3 id="tests">Comment testez-vous ?</h3>
+
+            <h4>Sur les projets neufs</h4>
+            <p>
+                Pour tous les projets neufs, nous pratiquons <abbr title="Test Driven Design">TDD</abbr>, qui n'est pas un élément négociable (sauf <a href="#dette-technique">rares cas</a>). Plus précisément, nous pratiquons Outside-In Diamond TDD, qui offre une plus grande souplesse que la traditionnelle pyramide de tests, que nous considérons comme trop rigide.
+            </p>
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-12 gx-5">
+                    <img src="resources/images/test_diamond.jpg" class="rounded img-fluid" />
+                </div>
+                <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
+                    Notre pain quotidien, c'est le test d'acceptation ou test fonctionnel. Il détaille les clauses du contrat que nous avons passé ensemble en de multiples affirmations que nous relirons périodiquement avec vous afin de nous assurer d'avoir bien cerné votre besoin.<br/>
+                    Les tests contractuels ou d'intégration, décrivent le comportement que nous avons fixé ensemble au début d'une itération. Nous leurs donnons une valeur juridique, ces tests valident la conformité des travaux à votre demande initiale.<br/>
+                    Les tests de plus haut niveau (smoke tests, end-to-end tests) viennent démontrer le bon fonctionnement de la solution en interaction avec le monde extérieur. Ils nous servent également en démonstration, lorsque nous livrons une itération.<br/>
+                    Nous ne sommes pas contre l'utilisation de tests plus fins, comme les tests unitaires. Nous pensons qu'en grand nombre ils rigidifient le code en dissuadent le refactoring, pratique fondamentale chez nous. Aussi, nous ne les utilisons que sur des parties critiques du code, où la manière de procéder importe autant que le résultat obtenu (performances, algorithme précis, cryptographie, etc.).
+                </p>
+            </div>
+
+            <h4>Sur les projets legacy</h4>
+            <p>
+                Nous adoptons la définition de Michael Feathers. Le <i>Code Legacy</i> est tout code non-testé qui nous est confié. Dans les cas où nous acceptons de reprendre un tel code, il est exclu, sauf si votre budget est colossal, de l'assainir complètement d'un coup. Le code ajouté ou modifié sera testé comme du code neuf. Le code préexistant sera sécurisé à l'aide de tests plus grossiers (smoke test) selon vos besoins, le niveau de confiance que vous souhaitez et votre budget.
+            </p>
+            <p>
+                Une fois repris et étayé, votre code devra être progressivement assaini. Un budget mensuel devra être établi à ce titre, il ne servira qu'à réduire l'endettement de votre application, donc à faciliter les développements futurs. Un bon budget de maintenance représente une charge non-négligeable sans pour autant gréver votre rentabilité. Il n'est pas de l'argent investi à perte, mais bien la garantie que le logiciel dans lequel vous avez investi tant d'efforts ne décède pas un beau matin, trop endetté pour pouvoir évoluer au rythme de vos besoins.
+            </p>
+
+            <h4>En cas de défaut</h4>
+            <p>
+                Nous garantissons qu'<b>aucun bug ne reviendra</b> après sa résolution. Pour cela nous utilisons les tests de défaut. Pour chaque bug constaté, un test est écrit afin de le reproduire. Puis le code est modifié afin de faire passer ce test. Ainsi le bug corrigé ne peut pas revenir sous cette forme sans que nous en soyons informés.
             </p>
         </article>
 

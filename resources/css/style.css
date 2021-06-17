@@ -217,10 +217,6 @@ aside a {
    Portfolio section
 -----------------------------------------*/
 
-#portfolio h2 {
-    font-size: 1.7em;
-}
-
 #portfolio h2 b::after {
     content: " - ";
     font-weight: lighter;

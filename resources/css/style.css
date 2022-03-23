@@ -209,6 +209,10 @@ aside {
     font-size: 0.8em;
 }
 
+article aside {
+    padding-top:  0;
+}
+
 aside a {
     color: #555;
 }
@@ -220,4 +224,29 @@ aside a {
 #portfolio h2 b::after {
     content: " - ";
     font-weight: lighter;
+}
+
+summary {
+    cursor: text;
+}
+
+summary::marker{
+    display: none;
+}
+
+details:not(.nodetails) summary::after {
+    font-size: 2.5 rem;
+    content: " ► L'histoire complète";
+    color: #8C2323;
+    cursor: pointer;
+}
+
+details:not(.nodetails)[open] summary:not(.nodetails):after {
+    font-size: 2.5 rem;
+    content: " ▼ Voir moins";
+    color: #555;
+}
+
+details>summary {
+    list-style: none;
 }

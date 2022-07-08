@@ -1,0 +1,30 @@
+h1 {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+nav li a {
+    color: #333;
+}
+
+nav li > a:hover,
+nav li > a:focus {
+    color: #8C2323;
+    background-color: transparent;
+}
+
+nav li a:hover,
+nav li.active > a {
+    color: #CD3838;
+}
+
+nav li.active > a,
+nav li.active > a:hover,
+nav li.active > a:focus {
+    color: #8C2323;
+    background-color: transparent;
+}
+
+footer {
+    border-top: 1px solid #f0f0f0;
+}

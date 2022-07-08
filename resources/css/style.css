@@ -18,8 +18,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3.29em;
-    margin-bottom: 0;
-    padding-bottom: 30px;
     text-align: center;
     letter-spacing: -0.06em;
 }
@@ -59,6 +57,10 @@ blockquote::before {
 
 p + p, ul + p, ol + p, blockquote {
     text-indent: 1em;
+}
+
+article>p + p {
+    text-indent: 0;
 }
 
 section {
@@ -124,30 +126,16 @@ nav {
 }
 
 nav li a {
-    color: #333;
+    transition: all 0.4s ease-in-out;
     font-size: 16px;
     letter-spacing: 1px;
-    transition: all 0.4s ease-in-out;
     padding-right: 22px;
     padding-left: 22px;
-}
-
-nav li > a:hover,
-nav li > a:focus {
-    color: #8C2323;
-    background-color: transparent;
-}
-
-nav li a:hover,
-nav li.active > a {
-    color: #CD3838;
 }
 
 nav li.active > a,
 nav li.active > a:hover,
 nav li.active > a:focus {
-    color: #8C2323;
-    background-color: transparent;
     cursor: default;
 }
 
@@ -184,9 +172,8 @@ dt img::after {
 -----------------------------------------*/
 
 footer {
-    border-top: 1px solid #f0f0f0;
-    padding: 30px 0;
     font-size: 0.8em;
+    padding: 30px 0;
 }
 
 footer a {

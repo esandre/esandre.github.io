@@ -1,0 +1,38 @@
+h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+nav, footer {
+	background-color: #d13536;
+}
+
+nav li a, footer a, footer p {
+    color: #fdf6f7;
+}
+
+nav li > a:hover,
+nav li > a:focus,
+nav li a:hover,
+nav li.active > a {
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-brand {
+	padding: 15px;
+}
+
+.navbar-brand img, footer img {
+	filter: brightness(1000%);
+}
+
+.meta {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 60px;
+}

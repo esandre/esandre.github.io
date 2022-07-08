@@ -19,6 +19,10 @@ pages:
   #  title: "Blog"
   #  url: blog.html
 
+  #- veille:
+  #  title: "Veille académique"
+  #  url: veille.html
+
   - artisan:
     title: "L'Artisan"
     url: artisan.html

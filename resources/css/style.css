@@ -33,6 +33,14 @@ h3 {
     letter-spacing: -0.03em;
 }
 
+img, figure {
+    margin: 10px;
+}
+
+figure>img{
+    margin: 0;
+}
+
 p, li, dt, dd, img, blockquote {
     color: #333;
     font-size: 1.2em;

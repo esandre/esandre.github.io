@@ -36,3 +36,7 @@ nav li.active > a {
 footer {
     margin-top: 60px;
 }
+
+.post p:first-child {
+	font-weight: 500;
+}

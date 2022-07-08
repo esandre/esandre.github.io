@@ -1,344 +1,326 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="L'Atelier Logiciel Sandré produit des logiciels de qualité, du bas-niveau à l'UI. Nous proposons également des formations et du coaching." />
-    <meta name="keywords" content="développement web csharp logiciel programme programmation code coaching formation agile" />
-    <meta name="author" content="Enzo Sandré" />
+---
+title: Portfolio
+layout: default
+---
 
-    <title>Atelier logiciel Sandré - Artisanat du développement</title>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a href="index.html" class="navbar-brand">
+        <img src="resources/images/logo.png" width="50" />
+    </a>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet" />
+    <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarContent" 
+        aria-controls="navbarContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <link rel="stylesheet" href="resources/css/style.css" />
-    <link rel="icon" type="image/png" href="resources/images/logo.png">
-</head>
-<body class="container-md">
-    <div class="bandeau">👶 FERMETURE : L'Atelier est fermé jusqu'au 29 août en raison d'un congé paternité. 👶</div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="index.html" class="navbar-brand">
-            <img src="resources/images/logo.png" width="50" />
-        </a>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav">
+            <li><a href="index.html">L'atelier</a></li>
+            <li><a href="presentation.html">Nos activités</a></li>
+            <li class="active"><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://blog.enzosandre.fr/">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarContent" 
-            aria-controls="navbarContent" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<section id="portfolio" class="container">
+    <h1>Portfolio</h1>
 
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav">
-                <li><a href="index.html">L'atelier</a></li>
-                <li><a href="presentation.html">Nos activités</a></li>
-                <li class="active"><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://blog.enzosandre.fr/">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <p>Cette page regroupe les projets que nous sommes fiers d'avoir réalisé. Tous sont indiqués, mais si vous êtes pressé, nous vous proposons une sélection parfaitement subjective.</p>
 
-    <section id="portfolio" class="container">
-        <h1>Portfolio</h1>
+    <p>Pour illustrer notre activité, nous avons choisi <a href="#oxacontrole">OxaControle</a> notre plus vieux projet encore maintenu et installé, préexistant même à l'Atelier, le <a href="#albus">Pont SEPA-Chargebee</a> réalisé pour SNAL/Albus et le refactoring stratégique du <a href="#meritis">projet SIRH de Méritis</a>, afin de représenter notre savoir-faire.</p>
+    <p>Cette liste va évoluer, elle est notre vitrine et sera mise à jour lorsque nous aurons achevé de nouveaux projets.</p>
 
-        <p>Cette page regroupe les projets que nous sommes fiers d'avoir réalisé. Tous sont indiqués, mais si vous êtes pressé, nous vous proposons une sélection parfaitement subjective.</p>
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="ifp"><b>IFP</b> Un accompagnement sur la durée.</h2>
+                <span>Institut de formation politique - Janvier 2020 - <b>Présent</b> - Paris</span>
+                <aside>PHP · Laravel · Linux · MySQL · Recueil du besoin · Refactoring · Squelette</aside>
+                <p>
+                    Reprise d’une application PHP/Laravel obsolète et délaissée depuis plusieurs années, de gestion de campagnes de dons pour des associations. Duplication du projet, assainissement du code et correction à chaud de bugs bloquants. Stratégies de contournement des problèmes les plus coûteux à résoudre.
+                </p>
+                <p><b>Actuellement :</b> Recueil du besoin, conseil et étude sur la transition d’un CRM obsolète vers une solution plus récente. Développement de connecteurs entre applications.</p>
+            </summary>
+        </details>
+    </article>
 
-        <p>Pour illustrer notre activité, nous avons choisi <a href="#oxacontrole">OxaControle</a> notre plus vieux projet encore maintenu et installé, préexistant même à l'Atelier, le <a href="#albus">Pont SEPA-Chargebee</a> réalisé pour SNAL/Albus et le refactoring stratégique du <a href="#meritis">projet SIRH de Méritis</a>, afin de représenter notre savoir-faire.</p>
-        <p>Cette liste va évoluer, elle est notre vitrine et sera mise à jour lorsque nous aurons achevé de nouveaux projets.</p>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="ifp"><b>IFP</b> Un accompagnement sur la durée.</h2>
-                    <span>Institut de formation politique - Janvier 2020 - <b>Présent</b> - Paris</span>
-                    <aside>PHP · Laravel · Linux · MySQL · Recueil du besoin · Refactoring · Squelette</aside>
-                    <p>
-                        Reprise d’une application PHP/Laravel obsolète et délaissée depuis plusieurs années, de gestion de campagnes de dons pour des associations. Duplication du projet, assainissement du code et correction à chaud de bugs bloquants. Stratégies de contournement des problèmes les plus coûteux à résoudre.
-                    </p>
-                    <p><b>Actuellement :</b> Recueil du besoin, conseil et étude sur la transition d’un CRM obsolète vers une solution plus récente. Développement de connecteurs entre applications.</p>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details>
-                <summary>
-                    <h2 id="oxacontrole"><b>OxaControle</b> Notre plus ancien projet encore développé.</h2>
-                    <span>Laurent Frapier Entreprises - Décembre 2018 - <b>Présent</b> - Nouvelle Aquitaine</span>
-                    <aside>WAGO · Raspberry Pi · RS485 · Deister deBus · ModBus · .NET5 · Linux · C# · WPF · DevOps</aside>
-
-                    <p>
-                        Reprise d’un projet de contrôle d’accès datant de 2013, réalisé avec Projects Partners en alternance. Maintenance des sites installés précédemment. Installation de nouveaux chantiers.<br/>
-                        Changement d’échelle (x10), problématiques de sécurité, de performance, de maintenabilité, de qualité du code. Refonte applicative complète après auto-audit, notamment de l’UI WPF. Ajout de tests (unitaires, fonctionnels, d’intrusion, de performances, etc.). Refactoring et application des bonnes pratiques. Conversion à .NET 6.                    
-                    </p>
-                    <p><b>Actuellement :</b> En production sur 5 sites allant du petit bureau au grand centre aquatique. Étude de nouveaux chantiers.</p>
-                </summary>
-            
-                <h3>Les origines</h3>
+    <article>
+        <details>
+            <summary>
+                <h2 id="oxacontrole"><b>OxaControle</b> Notre plus ancien projet encore développé.</h2>
+                <span>Laurent Frapier Entreprises - Décembre 2018 - <b>Présent</b> - Nouvelle Aquitaine</span>
+                <aside>WAGO · Raspberry Pi · RS485 · Deister deBus · ModBus · .NET5 · Linux · C# · WPF · DevOps</aside>
 
                 <p>
-                    L'histoire commence en 2013, en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
+                    Reprise d’un projet de contrôle d’accès datant de 2013, réalisé avec Projects Partners en alternance. Maintenance des sites installés précédemment. Installation de nouveaux chantiers.<br/>
+                    Changement d’échelle (x10), problématiques de sécurité, de performance, de maintenabilité, de qualité du code. Refonte applicative complète après auto-audit, notamment de l’UI WPF. Ajout de tests (unitaires, fonctionnels, d’intrusion, de performances, etc.). Refactoring et application des bonnes pratiques. Conversion à .NET 6.                    
                 </p>
+                <p><b>Actuellement :</b> En production sur 5 sites allant du petit bureau au grand centre aquatique. Étude de nouveaux chantiers.</p>
+            </summary>
+        
+            <h3>Les origines</h3>
 
-                <div class="row">
-                    <p class="col-md-2 col-xs-12 col-sm-4">
-                        <img src="resources/images/projects_partners.jpg" class="rounded img-fluid" />
-                    </p>
-                    <p class="col-md-10 col-xs-12 col-sm-8 gx-5">
-                        L'équipe de Projects Partners était réduite, votre serviteur comme développeur en alternance et M. Balu, à la direction. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
-                    </p>
-                </div>
+            <p>
+                L'histoire commence en 2013, en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
+            </p>
 
-                <div class="row">
-                    <p class="col-xs-12 col-sm-9">
-                        La plateforme Raspberry Pi a été sélectionnée pour son faible coût et sa puissance suffisante pour diriger une poignée de lecteurs, autant de portes et une flotte de quelques badges. Le principal défi vint de la plateforme .NET, alors absente de Linux. .NET Core n'arrivera que quelques années plus tard. C'était alors Mono qui remplissait le rôle, avec un transpilage en Java très gourmand en ressources.<br/>
-                        Le Raspberry est incapable de produire des signaux RS485 sans convertisseur adapté. Le tâtonnement a été long pour aboutir à une solution à base de convertisseurs TTL to RS485, branchés de manière exotique afin d'utiliser le bus en full-duplex. Ces deux éléments sont encore utilisés aujourd'hui sur le projet, garants de son faible coût.
-                    </p>
-                    <p class="col-xs-12 col-sm-3 gx-5">
-                        <img src="resources/images/RS_485.jpg" class="rounded img-fluid"/>
-                    </p>
-                </div>
-
-                <p>
-                    Le projet a été déployé sur plusieurs petits sites. Il y fonctionne depuis plusieurs années sans nécessiter d'autres interventions que celles d'un électricien pour remplacer certaines pièces d'usure. Je n'ai été amené à intervenir qu'une seule fois sur ces sites depuis leur installation.
-                </p>
-
-                <h3>La reprise par l'Atelier</h3>
-
-                <p>
-                    En 2019, Laurent Frapier nous contacte afin de proposer à l'Atelier la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à nous : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé bien avant d'avoir acquis l'expérience et les connaissances nécessaires pour produire la qualité dont nous sommes capables aujourd'hui.<br/>
-                    Pour résumer, nous devions passer à une échelle inédite un code d'étudiant fortement endetté.<br/>
-                    En partie par défi et en partie par orgueil, nous avons accepté.
-                </p>
-                <p>
-                    Une année d'études et de remaniement du code ont été nécessaires afin de retrouver une qualité suffisante pour avancer sereinement. Refactoring, refonte de certaines parties, introduction de tests, changement de technologie, nouvelle architecture matérielle. Presque tout à évolué pour fiabiliser le projet. Covid aidant, notre premier bureau s'est transformé en laboratoire d'électronique improvisé.
-                </p>
-                <div class="row" style="margin-right: 5px;">
-                    <p class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="resources/images/Lab_1.jpg" class="rounded img-fluid"/>
-                    </p>
-                    <p class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="resources/images/Lab_2.jpg" class="rounded img-fluid"/>
-                    </p>
-                    <p class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="resources/images/Lab_3.jpg" class="rounded img-fluid"/>
-                    </p>
-                    <p class="col-xs-12 col-sm-6 col-md-3">
-                        <img src="resources/images/Lab_4.jpg" class="rounded img-fluid"/>
-                    </p>
-                    <p class="gx-5"></p>
-                </div>
-
-                <h3>Aujourd'hui</h3>
-
-                <p>
-                    Une fois la solution au point vint le temps de l'installation sur site, terminée à l'heure où j'écris ces lignes. Le défi est achevé, désormais OxaControle peut s'adapter à toutes les tailles de bâtiment grâce à son architecture évolutive.<br/>
-                    Le projet, désormais repris doit maintenant être consolidé et assaini, afin de s'attaquer à d'autres sites. Il reste trop d'étapes manuelles lors de l'installation et de la maintenance et le poids du code legacy, bien que fortement réduit par des tests adaptés, reste fort dans le projet.<br/>
-                    Désormais installé sur un site d'envergure (80 lecteurs, 200+ badges), OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 8 ans après.
-                </p>
-            </details>
-        </article>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="epsi"><b>EPSI</b> Formateur sur les routes.</h2>
-                    <span>EPSI Bordeaux, Nantes, Arras, Montpellier, Toulouse - Janvier 2020 - <b>Présent</b> - France entière</span>
-                    <aside>Formation initiale · Pédagogie pratique · Artisanat · Science · Katas · Ateliers · Jury · Accompagnement mémoires</aside>
-                    <p>
-                        Formation d’étudiants niveau Bac+3/4 en vue du titre Niveau 7 « Expert en informatique et systèmes d’information » en présentiel majoritaire. Entre 10h et 80h par module.
-                    </p>
-                    <ul>
-                        <li>Maintenance applicative (Gestion de la dette technique, Refactoring, Anticorruption Layers)</li>
-                        <li>Tracking&Ticketing (Kanban, ITIL)</li>
-                        <li>Intégration continue (Teamcity, git, DIY CI)</li>
-                        <li>Architectures matérielles et logicielles (Architecture, Design (anti)-Patterns)</li>
-                        <li>Tests (fondamenteux, approfondissement, industrialisation)</li>
-                        <li>Cahier des charges et expression du besoin (méthode classique, ATDD, BDD, hybrides)</li>
-                        <li>Agilité et Lois du Développement (Extreme Programming, Textes fondamentaux de notre métier)</li>
-                        <li>Web&API (HTTP, REST, APIs)</li>
-                    </ul>
-                    <p>
-                        Pédagogie orientée pratique (4/5 du temps en atelier). Coding dojos, cas réels, exercices. Positionnement exploratoire : pratiques validées par la science, mais pas toujours répandues en entreprise.<br/>
-                        Suivi technique pour la rédaction des mémoires de fin d’études. Participation aux jurys.
-                    </p>
-                    <p><b>Actuellement :</b> Suivi de mémoires, corrections et planification de l'année prochaine.</p>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="sparks"><b>Formation continue Clean Code</b> Un public différent des étudiants</h2>
-                    <span>Sparks Formation - Juin 2022 - Lyon</span>
-                    <aside>Clean Code· Refactoring · Tests · Formation continue · Pédagogie pratique · Python</aside>
-                    <p>
-                        Module de 3 jours destiné à des ingénieurs de formation. J'ai appris Python en amont afin d'être au plus près des stagiaires. La formation devait être initialement en C++, non-maîtrisé par tous.
-                    </p>
-                    <p>
-                        La formation, loin d'être un package normatif rigide, est une initiation à la philosophie derrière Clean Code : nous n'écrivons pas des programmes pour des machines, mais bien pour les humains qui vont devoir les relire et les maintenir. Elle est donc plutôt agnostique en matière de langages.
-                    </p>
-                    <p>
-                        Selon les besoins des stagiaires, des capsules sont mises en place afin de corriger les mauvaises pratiques, toujours par la pratique et l'explication des principes cognitifs sous-jacents. Faire du bon code est avant tout une affaire de psychologie appliquée.
-                    </p>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="ynov"><b>YNOV Nantes</b> Cours de développement avancé.</h2>
-                    <span>YNOV - Mars 2022 - Nantes</span>
-                    <aside>Économie du logiciel · Refactoring · Multithreading · BDD · Formation initiale · Pédagogie pratique · Katas</aside>
-                    <p>
-                        Module de 80h destiné à des M1&M2 en développement. Ont été abordés à l'aide de 6 exercices :
-                    </p>
-                    <ul>
-                        <li>L'économie du logiciel : Comment les projets vivent et meurent, produisent et stagnent, en fonction de la manière dont la qualité est gérée.</li>
-                        <li>Le recueil du besoin piloté par les tests. Méthode validée par la recherche et la pratique.</li>
-                        <li>Le multitasking en C#, en théorie et en pratique.</li>
-                    </ul>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="meritis"><b>Méritis SIRH</b> Remettre un projet sur les rails.</h2>
-                    <span>Méritis/Club freelance - Septembre 2021 - Mars 2022 - Paris</span>
-                    <aside>ASP.Net Core · .NET 6 · C# · Azure · API · Refactoring · Defect Testing · Test-Last · TDD · CI · Architecture</aside>
-                    <p>
-                        Audit, développement et refactoring stratégique d’une API de gestion des données RH sous ASP.NET Core. Mise en place de pratiques de développement et d’outillage CI. Réduction de la dette en parallèle d’échéances de livraison. <br/>
-                        Mission moyenne durée pour remettre le projet sur les rails.<br/>
-                        Mission suivie d'une prestation de développement d'un outil de gestion des logs en TDD.
-                    </p>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details>
-                <summary>
-                    <h2 id="albus"><b>Pont SEPA-Chargebee</b> L'externalisation réussie de vos développements.</h2>
-                    <span>SNAL/CBC Consult - Janvier 2021 - Mai 2021 - Région de Mulhouse</span>
-                    <aside>.NET5 · Castle Windsor (IoC) · TDD · Architecture hexagonale · Couches anticorruption · API</aside>
-                    <p>
-                        Développement au forfait d’un automate de traitement des débits et rejets entre le logiciel de facturation Chargebee et le format XML SEPA DirectDebit.
-                    </p>
-                </summary>
-
-                <p>
-                    L'intérêt de ce projet, somme toute assez routinier, est d'être une démonstration achevée des bonnes pratiques que nous prêchons. Le besoin ne présente aucune difficulté particulière&nbsp;: il s'agit d'un pont très classique entre un logiciel de facturation (Chargebee) et le format d'échange interbancaire SEPA. Le pont fonctionne dans les deux sens&nbsp: émission des ordres de débit et lecture des rejets.
-                </p>
-                <p>
-                    Quelques détails sont inconnus au début du projet, certaines dépendances obligatoires sont intestables ou peu sûres, des <b>couches anticorruption</b> ont du être mises en place afin de rendre l'intestable plus prédictible et le peu sûr facilement remplaçable. Les détails d'implémentation dépendent du métier et non l'inverse (<b><abbr title="Dependency Injection">DI</abbr></b>) et chaque composant, en plus d'être testé individuellement (<b>tests fonctionnels</b>), est mis en mouvement dans un tout plus grand (<b>tests système</b>), avant d'être relié au monde extérieur pour les tests les plus aboutis (<b>tests d'intégration</b>).
-                </p>
-                <div class="row">
-                    <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
-                        <img src="resources/images/PontSEPAChargebee.png" class="img-fluid rounded" />
-                    </p>
-                    <p class=" col-md-6 col-xs-12 col-sm-12 gx-5">
-                        Le projet est réalisé en C# avec une <b>architecture hexagonale</b>, tout juste maîtrisée par l'Atelier. Cette architecture offre une grande surface d'accroche à d'autres bonnes pratiques, comme <b><abbr title="Test Driven Design">TDD</abbr></b>, <b><abbr title="Domain Driven Design">DDD</abbr></b>, l'utilisation d'un framework d'<b><abbr title="Inversion of Control">IoC</abbr></b> ou l'usage de tests de recette pour les démonstrations. La conjonction de ces techniques représente le sommet de la qualité dont l'Atelier est capable à ce jour. Cela ne signifie pas que ces pratiques seront utilisées sur vos projets, chacune ayant un cadre d'usage précis, mais il s'agit aujourd'hui de notre état de l'art.
-                    </p>
-                </div>
-                <p>
-                    Nous nous attendons à ce que ce projet soit détrôné par un autre, nos connaissances progressant sans cesse.
-                </p>
-            </details>
-        </article>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="atlantic"><b>Groupe Atlantic</b> Développement d'une API domotique.</h2>
-                    <span>Groupe Atlantic/Younup - Août 2020 - La Roche sur Yon</span>
-                    <aside>ASP.NET · C# · .NET · IoT · N-Tiers · Test-Last · SQL Server</aside>
-                    <p>
-                        Développement C#/.NET en contexte industriel et domotique au sein d'une équipe de 12 (développeurs et testeurs).
-                    </p>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details class="nodetails">
-                <summary>
-                    <h2 id="albus-audit"><b>Albus</b> Auditer les performances d'une API.</h2>
-                    <span>SNAL/CBC Consult - Juillet 2020 - Région de Mulhouse</span>
-                    <aside>ASP.NET · SQL Server · Entity Framework · reSharper · dotTrace · SSMS · SQL Server Profiler</aside>
-                    <p>
-                        Audit des performances d’une application. Approche orientée code : profilage, tests unitaires puis réalisation de POC présentant les améliorations possibles de l’existant.
-                    </p>
-                </summary>
-            </details>
-        </article>
-
-        <article>
-            <details>
-                <summary>
-                    <h2 id="spotlights"><b>Spotlights</b> Et si l'Atelier participait à une startup ?</h2>
-                    <span>Spotlights SAS - Mai 2018 - Novembre 2019 - Paris</span>
-                    <aside>CI/CD · .NET · C# · Blockchain · Event Sourcing · Geodata</aside>
-                    <p>
-                        Spotlights est un journal innovant, participatif et géolocalisé qui s’adapte à l’usage du lecteur. Son fonctionnement est transparent et décentralisé grâce à l’usage de la blockchain.<br/>
-                        J’ai réalisé l’intégralité du code en binôme avec un développeur junior. C#/ .NET fullstack. Blockchain et Event Sourcing sur toute la partie Data. CI/CD handmade (scripts Bash).
-                    </p>
-                </summary>
-
-                <div class="row">
-                    <p class="col-md-1 col-xs-4 col-sm-2">
-                        <img src="resources/images/Spotlights.png" class="img-fluid rounded" />
-                    </p>
-                    <p class=" col-md-11 col-xs-8 col-sm-10 gx-5">
-                        Spotlights est un média participatif décentalisé. Pour en savoir plus sur le projet (qui est en sommeil faute d'investisseurs), <a href="https://spotlights.fr/decouvrir.html">le site</a> est toujours en ligne.
-                    </p>
-                </div>
-                <p>
-                    C'est autour d'une bande d'amis qu'a démarré le projet Spotlights en Mai 2018. De fil en aiguille, l'Atelier a été associé au projet et chargé d'en superviser le développement. Le projet était à la pointe des technologies du moment : blockchain, smart-maps, .NET Core. Le code était envisagé comme un <b>squelette</b> (ou <b>tracer bullet</b> en anglais), à savoir un code prévu pour avancer dans un environnement fonctionnel changeant ou incertain, permettant de lever itérativement les voiles de brouillard.
-                </p>
-                <p>
-                    Le projet n'a pas trouvé son financement, le développement n'est pas arrivé à son terme, mais la méthode de développement utilisée a permis d'obtenir un code assez indépendant du monde extérieur, vieillissant très peu. La logique métier est découplée de l'infrastructure grâce à la <b>Clean Architecture</b>. Ainsi le projet peut rester en sommeil sans s'abîmer et ressortir un beau jour si des investisseurs se présentent.<br/>
-                    Les principes du Clean Code, de <b><abbr title="Domain Driven Design">DDD</abbr></b> et <b><abbr title="Test Driven Design">TDD</abbr></b> garantissent qu'un développeur reprennant le code pourra facilement se l'approprier, sans avoir besoin d'effectuer une obscure et coûteuse rétro-ingénierie.
-                </p>
-                <p>
-                    Si Spotlights reprenait demain, l'Atelier serait bien évidemment de la partie.
-                </p>
-            </details>
-        </article>
-    </section>
-
-    <footer>
-        <div class="container">
             <div class="row">
+                <p class="col-md-2 col-xs-12 col-sm-4">
+                    <img src="resources/images/projects_partners.jpg" class="rounded img-fluid" />
+                </p>
+                <p class="col-md-10 col-xs-12 col-sm-8 gx-5">
+                    L'équipe de Projects Partners était réduite, votre serviteur comme développeur en alternance et M. Balu, à la direction. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
+                </p>
+            </div>
 
-                <div class="col-md-3 col-sm-12">
-                    <img src="resources/images/logo.png" width="50" />
-                </div>
+            <div class="row">
+                <p class="col-xs-12 col-sm-9">
+                    La plateforme Raspberry Pi a été sélectionnée pour son faible coût et sa puissance suffisante pour diriger une poignée de lecteurs, autant de portes et une flotte de quelques badges. Le principal défi vint de la plateforme .NET, alors absente de Linux. .NET Core n'arrivera que quelques années plus tard. C'était alors Mono qui remplissait le rôle, avec un transpilage en Java très gourmand en ressources.<br/>
+                    Le Raspberry est incapable de produire des signaux RS485 sans convertisseur adapté. Le tâtonnement a été long pour aboutir à une solution à base de convertisseurs TTL to RS485, branchés de manière exotique afin d'utiliser le bus en full-duplex. Ces deux éléments sont encore utilisés aujourd'hui sur le projet, garants de son faible coût.
+                </p>
+                <p class="col-xs-12 col-sm-3 gx-5">
+                    <img src="resources/images/RS_485.jpg" class="rounded img-fluid"/>
+                </p>
+            </div>
 
-                <div class="col-md-4 col-sm-12">
-                    <p>4, rue de la rivière<br/>Le Chaillot<br/>17160 Sonnac</p>
-                </div>
+            <p>
+                Le projet a été déployé sur plusieurs petits sites. Il y fonctionne depuis plusieurs années sans nécessiter d'autres interventions que celles d'un électricien pour remplacer certaines pièces d'usure. Je n'ai été amené à intervenir qu'une seule fois sur ces sites depuis leur installation.
+            </p>
 
-                <div class="col-md-offset-1 col-md-4 col-sm-12">
-                    <p><a href="mailto:atelier@enzosandre.fr">atelier@enzosandre.fr</a></p>
-                    <div class="footer-copyright">
-                        <p>© 2022 Atelier logiciel Sandré.</p>
-                    </div>
+            <h3>La reprise par l'Atelier</h3>
+
+            <p>
+                En 2019, Laurent Frapier nous contacte afin de proposer à l'Atelier la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à nous : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé bien avant d'avoir acquis l'expérience et les connaissances nécessaires pour produire la qualité dont nous sommes capables aujourd'hui.<br/>
+                Pour résumer, nous devions passer à une échelle inédite un code d'étudiant fortement endetté.<br/>
+                En partie par défi et en partie par orgueil, nous avons accepté.
+            </p>
+            <p>
+                Une année d'études et de remaniement du code ont été nécessaires afin de retrouver une qualité suffisante pour avancer sereinement. Refactoring, refonte de certaines parties, introduction de tests, changement de technologie, nouvelle architecture matérielle. Presque tout à évolué pour fiabiliser le projet. Covid aidant, notre premier bureau s'est transformé en laboratoire d'électronique improvisé.
+            </p>
+            <div class="row" style="margin-right: 5px;">
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_1.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_2.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_3.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="resources/images/Lab_4.jpg" class="rounded img-fluid"/>
+                </p>
+                <p class="gx-5"></p>
+            </div>
+
+            <h3>Aujourd'hui</h3>
+
+            <p>
+                Une fois la solution au point vint le temps de l'installation sur site, terminée à l'heure où j'écris ces lignes. Le défi est achevé, désormais OxaControle peut s'adapter à toutes les tailles de bâtiment grâce à son architecture évolutive.<br/>
+                Le projet, désormais repris doit maintenant être consolidé et assaini, afin de s'attaquer à d'autres sites. Il reste trop d'étapes manuelles lors de l'installation et de la maintenance et le poids du code legacy, bien que fortement réduit par des tests adaptés, reste fort dans le projet.<br/>
+                Désormais installé sur un site d'envergure (80 lecteurs, 200+ badges), OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 8 ans après.
+            </p>
+        </details>
+    </article>
+
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="epsi"><b>EPSI</b> Formateur sur les routes.</h2>
+                <span>EPSI Bordeaux, Nantes, Arras, Montpellier, Toulouse - Janvier 2020 - <b>Présent</b> - France entière</span>
+                <aside>Formation initiale · Pédagogie pratique · Artisanat · Science · Katas · Ateliers · Jury · Accompagnement mémoires</aside>
+                <p>
+                    Formation d’étudiants niveau Bac+3/4 en vue du titre Niveau 7 « Expert en informatique et systèmes d’information » en présentiel majoritaire. Entre 10h et 80h par module.
+                </p>
+                <ul>
+                    <li>Maintenance applicative (Gestion de la dette technique, Refactoring, Anticorruption Layers)</li>
+                    <li>Tracking&Ticketing (Kanban, ITIL)</li>
+                    <li>Intégration continue (Teamcity, git, DIY CI)</li>
+                    <li>Architectures matérielles et logicielles (Architecture, Design (anti)-Patterns)</li>
+                    <li>Tests (fondamenteux, approfondissement, industrialisation)</li>
+                    <li>Cahier des charges et expression du besoin (méthode classique, ATDD, BDD, hybrides)</li>
+                    <li>Agilité et Lois du Développement (Extreme Programming, Textes fondamentaux de notre métier)</li>
+                    <li>Web&API (HTTP, REST, APIs)</li>
+                </ul>
+                <p>
+                    Pédagogie orientée pratique (4/5 du temps en atelier). Coding dojos, cas réels, exercices. Positionnement exploratoire : pratiques validées par la science, mais pas toujours répandues en entreprise.<br/>
+                    Suivi technique pour la rédaction des mémoires de fin d’études. Participation aux jurys.
+                </p>
+                <p><b>Actuellement :</b> Suivi de mémoires, corrections et planification de l'année prochaine.</p>
+            </summary>
+        </details>
+    </article>
+
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="sparks"><b>Formation continue Clean Code</b> Un public différent des étudiants</h2>
+                <span>Sparks Formation - Juin 2022 - Lyon</span>
+                <aside>Clean Code· Refactoring · Tests · Formation continue · Pédagogie pratique · Python</aside>
+                <p>
+                    Module de 3 jours destiné à des ingénieurs de formation. J'ai appris Python en amont afin d'être au plus près des stagiaires. La formation devait être initialement en C++, non-maîtrisé par tous.
+                </p>
+                <p>
+                    La formation, loin d'être un package normatif rigide, est une initiation à la philosophie derrière Clean Code : nous n'écrivons pas des programmes pour des machines, mais bien pour les humains qui vont devoir les relire et les maintenir. Elle est donc plutôt agnostique en matière de langages.
+                </p>
+                <p>
+                    Selon les besoins des stagiaires, des capsules sont mises en place afin de corriger les mauvaises pratiques, toujours par la pratique et l'explication des principes cognitifs sous-jacents. Faire du bon code est avant tout une affaire de psychologie appliquée.
+                </p>
+            </summary>
+        </details>
+    </article>
+
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="ynov"><b>YNOV Nantes</b> Cours de développement avancé.</h2>
+                <span>YNOV - Mars 2022 - Nantes</span>
+                <aside>Économie du logiciel · Refactoring · Multithreading · BDD · Formation initiale · Pédagogie pratique · Katas</aside>
+                <p>
+                    Module de 80h destiné à des M1&M2 en développement. Ont été abordés à l'aide de 6 exercices :
+                </p>
+                <ul>
+                    <li>L'économie du logiciel : Comment les projets vivent et meurent, produisent et stagnent, en fonction de la manière dont la qualité est gérée.</li>
+                    <li>Le recueil du besoin piloté par les tests. Méthode validée par la recherche et la pratique.</li>
+                    <li>Le multitasking en C#, en théorie et en pratique.</li>
+                </ul>
+            </summary>
+        </details>
+    </article>
+
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="meritis"><b>Méritis SIRH</b> Remettre un projet sur les rails.</h2>
+                <span>Méritis/Club freelance - Septembre 2021 - Mars 2022 - Paris</span>
+                <aside>ASP.Net Core · .NET 6 · C# · Azure · API · Refactoring · Defect Testing · Test-Last · TDD · CI · Architecture</aside>
+                <p>
+                    Audit, développement et refactoring stratégique d’une API de gestion des données RH sous ASP.NET Core. Mise en place de pratiques de développement et d’outillage CI. Réduction de la dette en parallèle d’échéances de livraison. <br/>
+                    Mission moyenne durée pour remettre le projet sur les rails.<br/>
+                    Mission suivie d'une prestation de développement d'un outil de gestion des logs en TDD.
+                </p>
+            </summary>
+        </details>
+    </article>
+
+    <article>
+        <details>
+            <summary>
+                <h2 id="albus"><b>Pont SEPA-Chargebee</b> L'externalisation réussie de vos développements.</h2>
+                <span>SNAL/CBC Consult - Janvier 2021 - Mai 2021 - Région de Mulhouse</span>
+                <aside>.NET5 · Castle Windsor (IoC) · TDD · Architecture hexagonale · Couches anticorruption · API</aside>
+                <p>
+                    Développement au forfait d’un automate de traitement des débits et rejets entre le logiciel de facturation Chargebee et le format XML SEPA DirectDebit.
+                </p>
+            </summary>
+
+            <p>
+                L'intérêt de ce projet, somme toute assez routinier, est d'être une démonstration achevée des bonnes pratiques que nous prêchons. Le besoin ne présente aucune difficulté particulière&nbsp;: il s'agit d'un pont très classique entre un logiciel de facturation (Chargebee) et le format d'échange interbancaire SEPA. Le pont fonctionne dans les deux sens&nbsp: émission des ordres de débit et lecture des rejets.
+            </p>
+            <p>
+                Quelques détails sont inconnus au début du projet, certaines dépendances obligatoires sont intestables ou peu sûres, des <b>couches anticorruption</b> ont du être mises en place afin de rendre l'intestable plus prédictible et le peu sûr facilement remplaçable. Les détails d'implémentation dépendent du métier et non l'inverse (<b><abbr title="Dependency Injection">DI</abbr></b>) et chaque composant, en plus d'être testé individuellement (<b>tests fonctionnels</b>), est mis en mouvement dans un tout plus grand (<b>tests système</b>), avant d'être relié au monde extérieur pour les tests les plus aboutis (<b>tests d'intégration</b>).
+            </p>
+            <div class="row">
+                <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
+                    <img src="resources/images/PontSEPAChargebee.png" class="img-fluid rounded" />
+                </p>
+                <p class=" col-md-6 col-xs-12 col-sm-12 gx-5">
+                    Le projet est réalisé en C# avec une <b>architecture hexagonale</b>, tout juste maîtrisée par l'Atelier. Cette architecture offre une grande surface d'accroche à d'autres bonnes pratiques, comme <b><abbr title="Test Driven Design">TDD</abbr></b>, <b><abbr title="Domain Driven Design">DDD</abbr></b>, l'utilisation d'un framework d'<b><abbr title="Inversion of Control">IoC</abbr></b> ou l'usage de tests de recette pour les démonstrations. La conjonction de ces techniques représente le sommet de la qualité dont l'Atelier est capable à ce jour. Cela ne signifie pas que ces pratiques seront utilisées sur vos projets, chacune ayant un cadre d'usage précis, mais il s'agit aujourd'hui de notre état de l'art.
+                </p>
+            </div>
+            <p>
+                Nous nous attendons à ce que ce projet soit détrôné par un autre, nos connaissances progressant sans cesse.
+            </p>
+        </details>
+    </article>
+
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="atlantic"><b>Groupe Atlantic</b> Développement d'une API domotique.</h2>
+                <span>Groupe Atlantic/Younup - Août 2020 - La Roche sur Yon</span>
+                <aside>ASP.NET · C# · .NET · IoT · N-Tiers · Test-Last · SQL Server</aside>
+                <p>
+                    Développement C#/.NET en contexte industriel et domotique au sein d'une équipe de 12 (développeurs et testeurs).
+                </p>
+            </summary>
+        </details>
+    </article>
+
+    <article>
+        <details class="nodetails">
+            <summary>
+                <h2 id="albus-audit"><b>Albus</b> Auditer les performances d'une API.</h2>
+                <span>SNAL/CBC Consult - Juillet 2020 - Région de Mulhouse</span>
+                <aside>ASP.NET · SQL Server · Entity Framework · reSharper · dotTrace · SSMS · SQL Server Profiler</aside>
+                <p>
+                    Audit des performances d’une application. Approche orientée code : profilage, tests unitaires puis réalisation de POC présentant les améliorations possibles de l’existant.
+                </p>
+            </summary>
+        </details>
+    </article>
+
+    <article>
+        <details>
+            <summary>
+                <h2 id="spotlights"><b>Spotlights</b> Et si l'Atelier participait à une startup ?</h2>
+                <span>Spotlights SAS - Mai 2018 - Novembre 2019 - Paris</span>
+                <aside>CI/CD · .NET · C# · Blockchain · Event Sourcing · Geodata</aside>
+                <p>
+                    Spotlights est un journal innovant, participatif et géolocalisé qui s’adapte à l’usage du lecteur. Son fonctionnement est transparent et décentralisé grâce à l’usage de la blockchain.<br/>
+                    J’ai réalisé l’intégralité du code en binôme avec un développeur junior. C#/ .NET fullstack. Blockchain et Event Sourcing sur toute la partie Data. CI/CD handmade (scripts Bash).
+                </p>
+            </summary>
+
+            <div class="row">
+                <p class="col-md-1 col-xs-4 col-sm-2">
+                    <img src="resources/images/Spotlights.png" class="img-fluid rounded" />
+                </p>
+                <p class=" col-md-11 col-xs-8 col-sm-10 gx-5">
+                    Spotlights est un média participatif décentalisé. Pour en savoir plus sur le projet (qui est en sommeil faute d'investisseurs), <a href="https://spotlights.fr/decouvrir.html">le site</a> est toujours en ligne.
+                </p>
+            </div>
+            <p>
+                C'est autour d'une bande d'amis qu'a démarré le projet Spotlights en Mai 2018. De fil en aiguille, l'Atelier a été associé au projet et chargé d'en superviser le développement. Le projet était à la pointe des technologies du moment : blockchain, smart-maps, .NET Core. Le code était envisagé comme un <b>squelette</b> (ou <b>tracer bullet</b> en anglais), à savoir un code prévu pour avancer dans un environnement fonctionnel changeant ou incertain, permettant de lever itérativement les voiles de brouillard.
+            </p>
+            <p>
+                Le projet n'a pas trouvé son financement, le développement n'est pas arrivé à son terme, mais la méthode de développement utilisée a permis d'obtenir un code assez indépendant du monde extérieur, vieillissant très peu. La logique métier est découplée de l'infrastructure grâce à la <b>Clean Architecture</b>. Ainsi le projet peut rester en sommeil sans s'abîmer et ressortir un beau jour si des investisseurs se présentent.<br/>
+                Les principes du Clean Code, de <b><abbr title="Domain Driven Design">DDD</abbr></b> et <b><abbr title="Test Driven Design">TDD</abbr></b> garantissent qu'un développeur reprennant le code pourra facilement se l'approprier, sans avoir besoin d'effectuer une obscure et coûteuse rétro-ingénierie.
+            </p>
+            <p>
+                Si Spotlights reprenait demain, l'Atelier serait bien évidemment de la partie.
+            </p>
+        </details>
+    </article>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-12">
+                <img src="resources/images/logo.png" width="50" />
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <p>4, rue de la rivière<br/>Le Chaillot<br/>17160 Sonnac</p>
+            </div>
+
+            <div class="col-md-offset-1 col-md-4 col-sm-12">
+                <p><a href="mailto:atelier@enzosandre.fr">atelier@enzosandre.fr</a></p>
+                <div class="footer-copyright">
+                    <p>© 2022 Atelier logiciel Sandré.</p>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</body>
-</html>
+    </div>
+</footer>

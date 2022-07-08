@@ -1,0 +1,25 @@
+pages:
+
+  - index:
+    title: "L'Atelier"
+    url: index.html
+
+  - presentation:
+    title: "Nos activités"
+    url: presentation.html
+
+  - portfolio:
+    title: "Portfolio"
+    url: portfolio.html
+
+  - faq:
+    title: "FAQ"
+    url: faq.html
+
+  - blog:
+    title: "Blog"
+    url: https://blog.enzosandre.fr/
+
+  - contact:
+    title: "Contact"
+    url: contact.html

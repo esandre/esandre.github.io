@@ -1,5 +1,4 @@
 pages:
-
   - index:
     title: "L'Atelier"
     url: index.html
@@ -16,9 +15,13 @@ pages:
     title: "FAQ"
     url: faq.html
 
-  - blog:
-    title: "Blog"
-    url: https://blog.enzosandre.fr/
+  #- blog:
+  #  title: "Blog"
+  #  url: blog.html
+
+  - artisan:
+    title: "L'Artisan"
+    url: artisan.html
 
   - contact:
     title: "Contact"

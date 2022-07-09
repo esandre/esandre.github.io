@@ -7,7 +7,7 @@ nav, footer {
 	background-color: #d13536;
 }
 
-nav li a, footer a, footer p {
+nav li a, footer a, footer p, .nav-link {
     color: #fdf6f7;
 }
 

@@ -252,3 +252,20 @@ details:not(.nodetails)[open] summary:not(.nodetails):after {
 details>summary {
     list-style: none;
 }
+
+
+/*---------------------------------------
+   Search
+-----------------------------------------*/
+
+#results-container li.category-actualites::before {
+    content: '📰 ';
+}
+
+#results-container li.category-blog::before {
+    content: '✒️ ';
+}
+
+#results-container li.category-veille::before {
+    content: '🔬 ';
+}

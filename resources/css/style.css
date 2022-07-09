@@ -197,6 +197,11 @@ footer img {
     display: block;
 }
 
+footer img.rss {
+    width: 24px;
+    display: inline-block;
+}
+
 footer div p {
     text-align: center;
 }

@@ -274,3 +274,7 @@ details>summary {
 .category-veille::before {
     content: '🔬 ';
 }
+
+.category-portfolio::before {
+    content: '💻 ';
+}

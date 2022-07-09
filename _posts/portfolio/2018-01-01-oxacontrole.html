@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "OxaControle : Notre plus ancien projet encore développé"
+category: portfolio
+completed: False
+---
+
+<details>
+    <summary>
+        <h2 id="oxacontrole"><b>OxaControle</b> Notre plus ancien projet encore développé.</h2>
+        <span>Laurent Frapier Entreprises - Décembre 2018 - <b>Présent</b> - Nouvelle Aquitaine</span>
+        <aside>WAGO · Raspberry Pi · RS485 · Deister deBus · ModBus · .NET5 · Linux · C# · WPF · DevOps</aside>
+
+        <p>
+            Reprise d’un projet de contrôle d’accès datant de 2013, réalisé avec Projects Partners en alternance. Maintenance des sites installés précédemment. Installation de nouveaux chantiers.<br/>
+            Changement d’échelle (x10), problématiques de sécurité, de performance, de maintenabilité, de qualité du code. Refonte applicative complète après auto-audit, notamment de l’UI WPF. Ajout de tests (unitaires, fonctionnels, d’intrusion, de performances, etc.). Refactoring et application des bonnes pratiques. Conversion à .NET 6.                    
+        </p>
+        <p><b>Actuellement :</b> En production sur 5 sites allant du petit bureau au grand centre aquatique. Étude de nouveaux chantiers.</p>
+    </summary>
+
+    <h3>Les origines</h3>
+
+    <p>
+        L'histoire commence en 2013, en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
+    </p>
+
+    <div class="row">
+        <p class="col-md-2 col-xs-12 col-sm-4">
+            <img src="resources/images/projects_partners.jpg" class="rounded img-fluid" />
+        </p>
+        <p class="col-md-10 col-xs-12 col-sm-8 gx-5">
+            L'équipe de Projects Partners était réduite, votre serviteur comme développeur en alternance et M. Balu, à la direction. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
+        </p>
+    </div>
+
+    <div class="row">
+        <p class="col-xs-12 col-sm-9">
+            La plateforme Raspberry Pi a été sélectionnée pour son faible coût et sa puissance suffisante pour diriger une poignée de lecteurs, autant de portes et une flotte de quelques badges. Le principal défi vint de la plateforme .NET, alors absente de Linux. .NET Core n'arrivera que quelques années plus tard. C'était alors Mono qui remplissait le rôle, avec un transpilage en Java très gourmand en ressources.<br/>
+            Le Raspberry est incapable de produire des signaux RS485 sans convertisseur adapté. Le tâtonnement a été long pour aboutir à une solution à base de convertisseurs TTL to RS485, branchés de manière exotique afin d'utiliser le bus en full-duplex. Ces deux éléments sont encore utilisés aujourd'hui sur le projet, garants de son faible coût.
+        </p>
+        <p class="col-xs-12 col-sm-3 gx-5">
+            <img src="resources/images/RS_485.jpg" class="rounded img-fluid"/>
+        </p>
+    </div>
+
+    <p>
+        Le projet a été déployé sur plusieurs petits sites. Il y fonctionne depuis plusieurs années sans nécessiter d'autres interventions que celles d'un électricien pour remplacer certaines pièces d'usure. Je n'ai été amené à intervenir qu'une seule fois sur ces sites depuis leur installation.
+    </p>
+
+    <h3>La reprise par l'Atelier</h3>
+
+    <p>
+        En 2019, Laurent Frapier nous contacte afin de proposer à l'Atelier la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à nous : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé bien avant d'avoir acquis l'expérience et les connaissances nécessaires pour produire la qualité dont nous sommes capables aujourd'hui.<br/>
+        Pour résumer, nous devions passer à une échelle inédite un code d'étudiant fortement endetté.<br/>
+        En partie par défi et en partie par orgueil, nous avons accepté.
+    </p>
+    <p>
+        Une année d'études et de remaniement du code ont été nécessaires afin de retrouver une qualité suffisante pour avancer sereinement. Refactoring, refonte de certaines parties, introduction de tests, changement de technologie, nouvelle architecture matérielle. Presque tout à évolué pour fiabiliser le projet. Covid aidant, notre premier bureau s'est transformé en laboratoire d'électronique improvisé.
+    </p>
+    <div class="row" style="margin-right: 5px;">
+        <p class="col-xs-12 col-sm-6 col-md-3">
+            <img src="resources/images/Lab_1.jpg" class="rounded img-fluid"/>
+        </p>
+        <p class="col-xs-12 col-sm-6 col-md-3">
+            <img src="resources/images/Lab_2.jpg" class="rounded img-fluid"/>
+        </p>
+        <p class="col-xs-12 col-sm-6 col-md-3">
+            <img src="resources/images/Lab_3.jpg" class="rounded img-fluid"/>
+        </p>
+        <p class="col-xs-12 col-sm-6 col-md-3">
+            <img src="resources/images/Lab_4.jpg" class="rounded img-fluid"/>
+        </p>
+        <p class="gx-5"></p>
+    </div>
+
+    <h3>Aujourd'hui</h3>
+
+    <p>
+        Une fois la solution au point vint le temps de l'installation sur site, terminée à l'heure où j'écris ces lignes. Le défi est achevé, désormais OxaControle peut s'adapter à toutes les tailles de bâtiment grâce à son architecture évolutive.<br/>
+        Le projet, désormais repris doit maintenant être consolidé et assaini, afin de s'attaquer à d'autres sites. Il reste trop d'étapes manuelles lors de l'installation et de la maintenance et le poids du code legacy, bien que fortement réduit par des tests adaptés, reste fort dans le projet.<br/>
+        Désormais installé sur un site d'envergure (80 lecteurs, 200+ badges), OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 8 ans après.
+    </p>
+</details>

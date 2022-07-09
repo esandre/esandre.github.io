@@ -263,14 +263,14 @@ details>summary {
    Search
 -----------------------------------------*/
 
-#results-container li.category-actualites::before {
+.category-actualites::before {
     content: '📰 ';
 }
 
-#results-container li.category-blog::before {
+.category-blog::before {
     content: '✒️ ';
 }
 
-#results-container li.category-veille::before {
+.category-veille::before {
     content: '🔬 ';
 }

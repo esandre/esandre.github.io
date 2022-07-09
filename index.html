@@ -30,7 +30,7 @@ layout: default
         {% for post in site.posts %}
         {% if post.categories contains "actualites" %}
         <article>
-            <h3><a href="{{ post.url }}">{{ post.date | date: "%d/%m/%Y" }} : {{ post.title }}</a></h3>
+            <h3 class="category-actualites"><a href="{{ post.url }}">{{ post.date | date: "%d/%m/%Y" }} : {{ post.title }}</a></h3>
             {{ post.excerpt }}
             <a href="{{ post.url }}">Lire la suite</a>
         </article>

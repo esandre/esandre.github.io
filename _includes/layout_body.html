@@ -6,7 +6,7 @@
             <a href="/index.html" class="navbar-brand">
                 <img src="/resources/images/logo.png" width="50" />
             </a>
-            
+
             <button 
                 class="navbar-toggler" 
                 type="button" 
@@ -63,7 +63,7 @@
             searchInput: document.getElementById('search-input'),
             resultsContainer: document.getElementById('results-container'),
             json: '/search.json',
-            searchResultTemplate: '<li class="category-{category} list-group-item"><a href="{url}">{date} - {title}</a></li>',
+            searchResultTemplate: '{% include search_result_template.html %}',
             noResultsText: '<li class="no-result">Aucun résultat !</li>',
             limit: 20,
             debounceTime: 10

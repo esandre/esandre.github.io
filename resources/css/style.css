@@ -263,6 +263,18 @@ details>summary {
    Search
 -----------------------------------------*/
 
+.category-portfolio .day {
+    display: none;
+}
+
+.day::after, .month::after {
+    content: '/';
+}
+
+.date::after {
+    content: ' - ';
+}
+
 .category-actualites::before {
     content: '📰 ';
 }

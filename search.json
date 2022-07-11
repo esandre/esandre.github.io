@@ -8,7 +8,9 @@
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "date"     : "{{ post.date | date: '%d/%m/%Y' }}",
+      "day"     : "{{ post.date | date: '%d' }}",
+      "month"     : "{{ post.date | date: '%m' }}",
+      "year"     : "{{ post.date | date: '%Y' }}",
       "description" : "{{ post.content | strip_html | strip_newlines | escape | slugify: 'latin' }}"
 
     } {% unless forloop.last %},{% endunless %}

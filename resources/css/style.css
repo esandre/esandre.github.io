@@ -263,7 +263,7 @@ details>summary {
    Search
 -----------------------------------------*/
 
-.category-portfolio .day {
+.category-portfolio .day, .category-faq .date {
     display: none;
 }
 
@@ -289,4 +289,8 @@ details>summary {
 
 .category-portfolio::before {
     content: '💻 ';
+}
+
+.category-faq::before {
+    content: '❓ ';
 }

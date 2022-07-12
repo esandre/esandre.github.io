@@ -28,7 +28,11 @@
                     {% endfor %}
                     {% endfor %}
                     <li class="nav-item">
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleSearch" aria-controls="navbarToggleSearch" aria-expanded="false" aria-label="Toggle search">
+                        <button 
+                            class="btn" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#navbarToggleSearch" 
+                            aria-controls="navbarToggleSearch" aria-expanded="false" 
+                            aria-label="{{site.data.translations.search_placeholder[page.lang]}}">
                             <span style="font-size:1.3em">🔍</span>
                         </button>
                     </li>
@@ -61,7 +65,9 @@
     <form class="container-fluid col-sm-12 collapse" id="navbarToggleSearch">
         <div class="input-group">
             <span class="input-group-text" id="basic-addon1">🔍</span>
-            <input id="search-input" type="text" class="form-control" placeholder="Recherche" />
+            <input 
+                id="search-input" type="text" class="form-control" 
+                placeholder="{{site.data.translations.search_placeholder[page.lang]}}" />
         </div>
     </form>
 
@@ -85,9 +91,9 @@
         SimpleJekyllSearch({
             searchInput: document.getElementById('search-input'),
             resultsContainer: document.getElementById('results-container'),
-            json: '/search.json',
+            json: '/search_{{ page.lang }}.json',
             searchResultTemplate: '{% include search_result_template.html %}',
-            noResultsText: '<li class="no-result">Aucun résultat !</li>',
+            noResultsText: '<li class="no-result list-group-item">{{ site.data.translations.search_no_result[page.lang] }}</li>',
             limit: 20,
             debounceTime: 10
         })

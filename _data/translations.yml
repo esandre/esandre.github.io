@@ -13,3 +13,11 @@ rss:
 contact_page:
   french: "Contact"
   english: "Contact us"
+
+search_placeholder:
+  french: "Recherche"
+  english: "Search"
+
+search_no_result:
+  french: "Aucun résultat !"
+  english: "No result !"

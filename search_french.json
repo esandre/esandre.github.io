@@ -2,6 +2,7 @@
 ---
 [
   {% for post in site.posts %}
+  {% if post.lang == 'french' %}
     {
 
       "title"    : "{{ post.title | escape }}",
@@ -14,5 +15,6 @@
       "description" : "{{ post.content | strip_html | strip_newlines | escape | slugify: 'latin' }}"
 
     } {% unless forloop.last %},{% endunless %}
+  {% endif %}
   {% endfor %}
 ]

@@ -1,24 +1,36 @@
 pages:
   - index:
-    title: "L'Atelier"
-    url: index.html
+    title: 
+      french: "L'Atelier"
+      english: "The Workshop"
+    ref: index
 
   - presentation:
-    title: "Nos activités"
-    url: presentation.html
+    title: 
+      french: "Nos activités"
+      english: "Our Activities"
+    ref: presentation
 
   - portfolio:
-    title: "Portfolio"
-    url: portfolio.html
+    title: 
+      french: "Portfolio"
+      english: "Portfolio"
+    ref: portfolio
 
   - faq:
-    title: "FAQ"
-    url: faq.html
+    title: 
+      french: "FAQ"
+      english: "Q&A"
+    ref: faq
 
   - artisan:
-    title: "L'Artisan"
-    url: artisan.html
+    title: 
+      french: "L'Artisan"
+      english: "The Craftman"
+    ref: artisan
 
   - contact:
-    title: "Contact"
-    url: contact.html
+    title: 
+      french: "Contact"
+      english: "Contact Us"
+    ref: contact

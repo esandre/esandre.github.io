@@ -69,11 +69,9 @@
                 id="search-input" type="text" class="form-control" 
                 placeholder="{{site.data.translations.search_placeholder[page.lang]}}" />
         </div>
-    </form>
 
-    <div class="container-fluid col-sm-12">
         <ul id="results-container" class="rounded list-group"></ul>
-    </div>
+    </form>
 
     {% if include.content_wrapper %}
         {% include {{include.content_wrapper}} %}

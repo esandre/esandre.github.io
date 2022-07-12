@@ -1,3 +1,15 @@
 switch_lang:
   french: "🇫🇷"
   english: "🇬🇧"
+
+fontawesome_copyright:
+  french: "Les icones de cette page font parties du jeu d'icones"
+  english: "Icons on this page are part of"
+
+rss:
+  french: "Flux RSS"
+  english: "RSS Feed"
+
+contact_page:
+  french: "Contact"
+  english: "Contact us"

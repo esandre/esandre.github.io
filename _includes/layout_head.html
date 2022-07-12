@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="/resources/css/style.css" />
     <link rel="stylesheet" href="/resources/css/{{ include.style }}" />
+    {% if page.lang == "english" %}
+        <link rel="stylesheet" href="/resources/css/english.css" />
+    {% endif %}
+
     <link rel="icon" type="image/png" href="/resources/images/logo.png">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 

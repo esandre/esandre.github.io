@@ -1,0 +1,9 @@
+#index>h1{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#index h1+p {
+	margin-bottom: 30px;
+	font-style: italic;
+}

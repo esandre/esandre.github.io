@@ -1,9 +1,5 @@
 <body class="container-md">
-    {% if page.lang == "english" %}
-        <div class="bandeau">👶 CLOSED : The Workshop is closed until August 29th due to to a paternity leave. 👶</div>
-    {% else %}
-        <div class="bandeau">👶 FERMETURE : L'Atelier est fermé jusqu'au 29 août en raison d'un congé paternité. 👶</div>
-    {% endif %}
+    {% include layout_bandeau.html %}
     
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid col-sm-12">

@@ -1,5 +1,9 @@
 <body class="container-md">
-    <div class="bandeau">👶 FERMETURE : L'Atelier est fermé jusqu'au 29 août en raison d'un congé paternité. 👶</div>
+    {% if page.lang == "english" %}
+        <div class="bandeau">👶 CLOSED : The Workshop is closed until August 29th due to to a paternity leave. 👶</div>
+    {% else %}
+        <div class="bandeau">👶 FERMETURE : L'Atelier est fermé jusqu'au 29 août en raison d'un congé paternité. 👶</div>
+    {% endif %}
     
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid col-sm-12">
@@ -21,15 +25,36 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
                     {% for menu_item in site.data.menu.pages %}
-                        <li {% if menu_item.url == page.name %} class="nav-item active" {% endif %} >
+                        <li {% if menu_item.url == page.name %} class="nav-item active" {% else %} class="nav-item" {% endif %} >
                             <a class="nav-link" href="/{{ menu_item.url }}">{{ menu_item.title }}</a>
                         </li>
                     {% endfor %}
-                    <li>
+                    <li class="nav-item">
                         <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleSearch" aria-controls="navbarToggleSearch" aria-expanded="false" aria-label="Toggle search">
                             <span style="font-size:1.3em">🔍</span>
                         </button>
                     </li>
+                    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                    {% for translation in posts %}
+                    {% if page.lang != translation.lang %}
+                    <li class="nav-item">
+                        <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
+                            {{ site.data.translations.switch_lang[translation.lang] }}
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                    {% for translation in pages %}
+                    {% if page.lang != translation.lang %}
+                    <li class="nav-item">
+                        <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
+                            {{ site.data.translations.switch_lang[translation.lang] }}
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
                 </ul>
             </div>
         </div>

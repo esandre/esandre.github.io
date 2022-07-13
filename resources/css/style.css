@@ -29,7 +29,7 @@ h2 {
 
 h3 {
     font-size: 1.68em;
-    color: #111;
+    color: #121010;
     letter-spacing: -0.03em;
 }
 
@@ -42,7 +42,7 @@ figure>img{
 }
 
 p, li, dt, dd, img, blockquote {
-    color: #333;
+    color: #363031;
     font-size: 1.2em;
     text-rendering: optimizeLegibility;
     font-weight: 300;
@@ -51,16 +51,21 @@ p, li, dt, dd, img, blockquote {
     font-kerning: none;
 }
 
+b {
+    color: #121010;
+    font-weight: 500;
+}
+
 blockquote::after {
     content: "”";
     font-size: 1.68em;
-    color: #555;
+    color: #5A5051;
 }
 
 blockquote::before {
     content: "“";
     font-size: 1.68em;
-    color: #555;
+    color: #5A5051;
 }
 
 p + p, ul + p, ol + p, blockquote {
@@ -110,9 +115,9 @@ ul, ol {
 }
 
 .sommaire a {
-    color: #333;
+    color: #363031;
     font-weight: 300;
-    text-decoration: underline #333;
+    text-decoration: underline #363031;
 }
 
 .sommaire span {
@@ -121,7 +126,7 @@ ul, ol {
 
 article, .sommaire {
     padding: 10px 25px;
-    background-color: #F1F1F1;
+    background-color: rgba(177, 201, 232, 0.09);
     margin: 15px 0;
 }
 
@@ -185,7 +190,7 @@ footer {
 }
 
 footer a {
-    color: #555;
+    color: #5A5051;
 }
 
 footer .footer-copyright {
@@ -221,7 +226,7 @@ article aside {
 }
 
 aside a {
-    color: #555;
+    color: #5A5051;
 }
 
 /*---------------------------------------
@@ -251,7 +256,7 @@ details:not(.nodetails) summary::after {
 details:not(.nodetails)[open] summary:not(.nodetails):after {
     font-size: 2.5 rem;
     content: " ▼ Voir moins";
-    color: #555;
+    color: #5A5051;
 }
 
 details>summary {

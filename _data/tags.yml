@@ -15,8 +15,8 @@ securite:
 
 jeu-video:
   emoji: "🎮"
-  name: "Jeux vidéo"
-  hint: "Article sur les jeux vidéo."
+  name: "Jeu vidéo"
+  hint: "Article sur le jeu vidéo."
 
 developpement:
   emoji: "⌨️"
@@ -32,3 +32,8 @@ ecologie:
   emoji: "🌱"
   name: "Écologie"
   hint: "Article traitant d'Écologie politique."
+
+corporatisme:
+  emoji: "✊"
+  name: "Corporatisme"
+  hint: "Article traitant de (néo)-corporatisme"

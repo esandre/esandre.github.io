@@ -29,6 +29,12 @@ pages:
       english: "The Craftman"
     ref: artisan
 
+  - blog:
+    title: 
+      french: "Blog"
+      english: "Blog"
+    ref: blog
+
   - contact:
     title: 
       french: "Contact"

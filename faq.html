@@ -17,109 +17,30 @@ ref: faq
 
     <div class="sommaire container-fluid">
         {% assign counter = 1 %}
-        <span>Sur la qualité</span>
-        <ol>
-            {% for post in site.posts %}
-                {% if post.categories contains "faq" and post.tags contains "qualite" %}
-                    {% assign counter = counter | plus : 1 %}
-                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ol>
 
-        <span>Sur les technologies employées</span>
-        <ol start="{{ counter }}">
-            {% for post in site.posts %}
-                {% if post.categories contains "faq" and post.tags contains "technologies" %}
-                    {% assign counter = counter | plus : 1 %}
-                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ol>
-
-        <span>Sur la gestion de projet</span>
-        <ol start="{{ counter }}">
-            {% for post in site.posts %}
-                {% if post.categories contains "faq" and post.tags contains "gestion" %}
-                    {% assign counter = counter | plus : 1 %}
-                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ol>
-
-        <span>Sur la formation</span>
-        <ol start="{{ counter }}">
-            {% for post in site.posts %}
-                {% if post.categories contains "faq" and post.tags contains "formation" %}
-                    {% assign counter = counter | plus : 1 %}
-                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ol>
-
-        <span>Informations pratiques</span>
-        <ol start="{{ counter }}">
-            {% for post in site.posts %}
-                {% if post.categories contains "faq" and post.tags contains "informations" %}
-                    {% assign counter = counter | plus : 1 %}
-                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ol>
+        {% for categorie in site.data.faq %}
+            <span>{{ categorie.title }}</span>
+            <ol start="{{ counter }}">
+                {% for post in site.posts %}
+                    {% if post.categories contains "faq" and post.tags contains categorie.tag %}
+                        {% assign counter = counter | plus : 1 %}
+                        <li><a href="#{{post.ref}}">{{post.title}}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+        {% endfor %}
     </div>
 
-    <h2 id="qualite">Sur la qualité</h2>
+    {% for categorie in site.data.faq %}
+        <h2 id="{{categorie.tag}}">{{ categorie.title }}</h2>
 
-    {% for post in site.posts %}
-        {% if post.categories contains "faq" and post.tags contains "qualite" %}
-        <article>
-            <h3 id="{{post.ref}}">{{post.title}}</h3>
-            {{ post.content }}
-        </article>
-        {% endif %}
-    {% endfor %}
-        
-    <h2 id="technologies">Sur les technologies employées</h2>
-
-    {% for post in site.posts %}
-        {% if post.categories contains "faq" and post.tags contains "technologies" %}
-        <article>
-            <h3 id="{{post.ref}}">{{post.title}}</h3>
-            {{ post.content }}
-        </article>
-        {% endif %}
-    {% endfor %}
-
-    <h2 id="gestion">Sur la gestion de projet</h2>
-
-    {% for post in site.posts %}
-        {% if post.categories contains "faq" and post.tags contains "gestion" %}
-        <article>
-            <h3 id="{{post.ref}}">{{post.title}}</h3>
-            {{ post.content }}
-        </article>
-        {% endif %}
-    {% endfor %}
-
-    <h2 id="formation">Sur la formation</h2>
-
-    {% for post in site.posts %}
-        {% if post.categories contains "faq" and post.tags contains "formation" %}
-        <article>
-            <h3 id="{{post.ref}}">{{post.title}}</h3>
-            {{ post.content }}
-        </article>
-        {% endif %}
-    {% endfor %}
-
-    <h2 id="informations">Informations pratiques</h2>
-
-    {% for post in site.posts %}
-        {% if post.categories contains "faq" and post.tags contains "informations" %}
-        <article>
-            <h3 id="{{post.ref}}">{{post.title}}</h3>
-            {{ post.content }}
-        </article>
-        {% endif %}
+        {% for post in site.posts %}
+            {% if post.categories contains "faq" and post.tags contains categorie.tag %}
+            <article>
+                <h3 id="{{post.ref}}">{{post.title}}</h3>
+                {{ post.content }}
+            </article>
+            {% endif %}
+        {% endfor %}
     {% endfor %}
 </section>

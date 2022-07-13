@@ -1,0 +1,19 @@
+- qualite:
+  tag: "qualite"
+  title: "Sur la qualité"
+
+- technologies:
+  tag: "technologies"
+  title: "Sur les technologies employées"
+
+- gestion:
+  tag: "gestion"
+  title: "Sur la gestion de projet"
+
+- formation:
+  tag: "formation"
+  title: "Sur la formation"
+
+- informations:
+  tag: "informations"
+  title: "Informations pratiques"

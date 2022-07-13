@@ -1,0 +1,28 @@
+---
+title: Disruptions
+layout: blog
+lang: french
+ref: blog
+---
+
+<section id="blog" class="container">
+    <h1>Disruptions</h1>
+
+    {% for post in site.posts %}
+        {% if post.categories contains "blog" %}
+        <article class="container">
+            <p class="text-center">
+                {% if post.tags contains "old" %}
+                    <abbr title="Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué.">🕸️</abbr>
+                {% endif %}
+                {{ post.date | date: "%d/%m/%Y" }}
+            </p>
+            <h2 class="text-center">{{post.title}}</h2>
+
+            {{ post.excerpt }}
+
+            <a href="{{ post.url }}">Lire la suite</a>
+        </article>
+        {% endif %}
+    {% endfor %}
+</section>

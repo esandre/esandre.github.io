@@ -2,6 +2,12 @@
 <p class="meta"> ✒️ Enzo Sandré	· 📆 {{ page.date | date: "%d/%m/%Y" }} </p>
 
 <article class="post">
+	{% if page.tags contains "old" %}
+	<p class="oldie text-center">
+	🕸️ Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué. 🕸️
+	</p>
+	{% endif %}
+
 	{{content}}
 
 	<p class="text-end">Enzo Sandré</p>

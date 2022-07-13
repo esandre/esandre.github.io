@@ -29,31 +29,42 @@ ref: faq
 
         <span>Sur les technologies employées</span>
         <ol start="{{ counter }}">
-            <li><a href="#langages-travail">Avec quels langages travaillez-vous ?</a></li>
-            <li><a href="#frontend">Êtes-vous compétent en Front-End ?</a></li>
-            <li><a href="#tests">Comment testez-vous ?</a></li>
+            {% for post in site.posts %}
+                {% if post.categories contains "faq" and post.tags contains "technologies" %}
+                    {% assign counter = counter | plus : 1 %}
+                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
+                {% endif %}
+            {% endfor %}
         </ol>
 
         <span>Sur la gestion de projet</span>
-        <ol start=8>
-            <li><a href="#regie">Qu'entendez-vous par "Pas de régie" ?</a></li>
-            <li><a href="#teletravail">Travaillez-vous sur site ou à distance ?</a></li>
-            <li><a href="#cycle-v">Je travaille en cycle en V, peut-on s'entendre ?</a></li>
-            <li><a href="#estimations">J'ai déjà réalisé une estimation de temps, la respecterez-vous ?</a></li>
+        <ol start="{{ counter }}">
+            {% for post in site.posts %}
+                {% if post.categories contains "faq" and post.tags contains "gestion" %}
+                    {% assign counter = counter | plus : 1 %}
+                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
+                {% endif %}
+            {% endfor %}
         </ol>
 
         <span>Sur la formation</span>
-        <ol start=12>
-            <li><a href="#pedagogie">Quelle est votre pédagogie ?</a></li>
-            <li><a href="#lieu-formation">Où enseignez-vous ?</a>
-            <li><a href="#annexes-pedagogie">Quelles prestations proposez-vous aux établissements de formation ?</a></li>
+        <ol start="{{ counter }}">
+            {% for post in site.posts %}
+                {% if post.categories contains "faq" and post.tags contains "formation" %}
+                    {% assign counter = counter | plus : 1 %}
+                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
+                {% endif %}
+            {% endfor %}
         </ol>
 
         <span>Informations pratiques</span>
-        <ol start=15>
-            <li><a href="#tjm">Quel est votre TJM ?</a></li>
-            <li><a href="resources/CV%20Enzo%20Sandré.pdf">Avez-vous un CV ?</a>
-            <li><a href="#english">Do you speak english ?</a></li>
+        <ol start="{{ counter }}">
+            {% for post in site.posts %}
+                {% if post.categories contains "faq" and post.tags contains "informations" %}
+                    {% assign counter = counter | plus : 1 %}
+                    <li><a href="#{{post.ref}}">{{post.title}}</a></li>
+                {% endif %}
+            {% endfor %}
         </ol>
     </div>
 
@@ -68,182 +79,47 @@ ref: faq
         {% endif %}
     {% endfor %}
         
-    <h2>Sur les technologies employées</h2>
+    <h2 id="technologies">Sur les technologies employées</h2>
 
-    <article>
-        <h3 id="langages-travail">Avec quels langages travaillez-vous ?</h3>
-        <p>
-            Réponse courte : tout est possible, mais .NET est notre plateforme de prédilection.<br/>
-            Réponse longue : nous préférons les langages orientés objet de haut niveau. Java, C#, C++ ou PHP nous sont familiers. Nous n'avons pas souhaité inclure cette liste dans notre présentation générale pour ne pas focaliser nos clients sur ce point. Les langages sont nos outils, nous utilisons le plus adapté pour chaque problème. Si nous devons nous mettre à niveau sur un langage, les délais avant livraison s'allongeront de manière transparente, il n'y aura pas de coût caché de formation à votre charge.
-        </p>
-    </article>
-    
-    <article>
-        <h3 id="frontend">Êtes-vous compétent en Front-End ?</h3>
-        <p>
-            Ce site pourrait servir de réponse. Il est fonctionnel et sobre, peut-être trop sobre d'ailleurs. Nous pouvons élaborer des interfaces simples, mais nos talents en UI/UX s'arrêtent là. Nous pouvons cependant collaborer avec un intégrateur ou un développeur spécialisé dans les interfaces graphiques si vos besoins dépassent nos compétences.
-        </p>
-    </article>
+    {% for post in site.posts %}
+        {% if post.categories contains "faq" and post.tags contains "technologies" %}
+        <article>
+            <h3 id="{{post.ref}}">{{post.title}}</h3>
+            {{ post.content }}
+        </article>
+        {% endif %}
+    {% endfor %}
 
-    <article>
-        <h3 id="tests">Comment testez-vous ?</h3>
+    <h2 id="gestion">Sur la gestion de projet</h2>
 
-        <h4>Sur les projets neufs</h4>
-        <p>
-            Pour tous les projets neufs, nous pratiquons <abbr title="Test Driven Design">TDD</abbr>, qui n'est pas un élément négociable (sauf <a href="#dette-technique">rares cas</a>). Plus précisément, nous pratiquons Outside-In Diamond TDD, qui offre une plus grande souplesse que la traditionnelle pyramide de tests, que nous considérons comme trop rigide.
-        </p>
+    {% for post in site.posts %}
+        {% if post.categories contains "faq" and post.tags contains "gestion" %}
+        <article>
+            <h3 id="{{post.ref}}">{{post.title}}</h3>
+            {{ post.content }}
+        </article>
+        {% endif %}
+    {% endfor %}
 
-        <div class="row">
-            <div class="col-md-6 col-xs-12 col-sm-12 gx-5">
-                <img src="resources/images/test_diamond.jpg" class="rounded img-fluid" />
-            </div>
-            <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
-                Notre pain quotidien, c'est le test d'acceptation ou test fonctionnel. Il détaille les clauses du contrat que nous avons passé ensemble en de multiples affirmations que nous relirons périodiquement avec vous afin de nous assurer d'avoir bien cerné votre besoin.<br/>
-                Les tests contractuels ou d'intégration, décrivent le comportement que nous avons fixé ensemble au début d'une itération. Nous leurs donnons une valeur juridique, ces tests valident la conformité des travaux à votre demande initiale.<br/>
-                Les tests de plus haut niveau (smoke tests, end-to-end tests) viennent démontrer le bon fonctionnement de la solution en interaction avec le monde extérieur. Ils nous servent également en démonstration, lorsque nous livrons une itération.<br/>
-                Nous ne sommes pas contre l'utilisation de tests plus fins, comme les tests unitaires. Nous pensons qu'en grand nombre ils rigidifient le code en dissuadent le refactoring, pratique fondamentale chez nous. Aussi, nous ne les utilisons que sur des parties critiques du code, où la manière de procéder importe autant que le résultat obtenu (performances, algorithme précis, cryptographie, etc.).
-            </p>
-        </div>
+    <h2 id="formation">Sur la formation</h2>
 
-        <h4>Sur les projets legacy</h4>
-        <p>
-            Nous adoptons la définition de Michael Feathers. Le <i>Code Legacy</i> est tout code non-testé qui nous est confié. Dans les cas où nous acceptons de reprendre un tel code, il est exclu, sauf si votre budget est colossal, de l'assainir complètement d'un coup. Le code ajouté ou modifié sera testé comme du code neuf. Le code préexistant sera sécurisé à l'aide de tests plus grossiers (smoke test) selon vos besoins, le niveau de confiance que vous souhaitez et votre budget.
-        </p>
-        <p>
-            Une fois repris et étayé, votre code devra être progressivement assaini. Un budget mensuel devra être établi à ce titre, il ne servira qu'à réduire l'endettement de votre application, donc à faciliter les développements futurs. Un bon budget de maintenance représente une charge non-négligeable sans pour autant gréver votre rentabilité. Il n'est pas de l'argent investi à perte, mais bien la garantie que le logiciel dans lequel vous avez investi tant d'efforts ne décède pas un beau matin, trop endetté pour pouvoir évoluer au rythme de vos besoins.
-        </p>
+    {% for post in site.posts %}
+        {% if post.categories contains "faq" and post.tags contains "formation" %}
+        <article>
+            <h3 id="{{post.ref}}">{{post.title}}</h3>
+            {{ post.content }}
+        </article>
+        {% endif %}
+    {% endfor %}
 
-        <h4>En cas de défaut</h4>
-        <p>
-            Nous garantissons qu'<b>aucun bug ne reviendra</b> après sa résolution. Pour cela nous utilisons les tests de défaut. Pour chaque bug constaté, un test est écrit afin de le reproduire. Puis le code est modifié afin de faire passer ce test. Ainsi le bug corrigé ne peut pas revenir sous cette forme sans que nous en soyons informés.
-        </p>
-    </article>
+    <h2 id="informations">Informations pratiques</h2>
 
-    <h2>Sur la gestion de projet</h2>
-
-    <article>
-        <h3 id="regie">Qu'entendez-vous par "Pas de régie" ?</h3>
-        <p>
-            Les raisons en sont expliquées sur le blog. <a href="https://blog.enzosandre.fr/2020/09/01/jarrete-le-teletravail/">https://blog.enzosandre.fr/2020/09/01/jarrete-le-teletravail/</a>
-        </p>
-        <p>
-            Pour l'expliquer autrement, <b>plus une mission s'étale dans le temps, plus nous exigerons d'autonomie</b>. Les missions courtes (1 mois ou moins) en présentiel sont possibles, mais au-delà, le présentiel devra se raréfier.<br/>
-            Comprenez également que nous ne sommes pas des prestataires. L'indépendance n'est pas qu'une affaire de lieu de travail, mais également une autonomie en matière d'horaires et de calendrier. Sauf impératif (réunion, formation, livraison, etc.), nous ne rendons de compte à personne concernant notre agenda, seule la date de livraison que nous avons négociée et les jalons nous sont opposables.<br/>
-            Nous servons en règle générale plusieurs clients à la fois : un seul client en développement (l'activité est prenante), mais une multitude en conseil, formation, maintenance et autres activités. Nous ne pouvons pas nous permettre d'être bloqués à 100% plus de quelques semaines.
-        </p>
-    </article>
-
-    <article>
-        <h3 id="teletravail">Travaillez-vous sur site ou à distance ?</h3>
-        <p>
-            <b>TLDR;</b>
-            Pour les missions d'audit, toujours sur site. Pour les formations, les parties magistrales peuvent être à distance, pas les TP/exercices/Katas. Pour le développement, de préférence à l'Atelier, sauf si le projet le requiert.
-        </p>
-        <p>
-            L'Atelier est d'abord le lieu où l'artisan travaille. Nous passons la majorité de notre temps à façonner nos logiciels dans un environnement que nous avons adapté à l'exercice de notre art. Nous y maîtrisons notre temps et les technologies de l'information nous permettent de communiquer avec l'extérieur de manière asynchrone, afin d'éviter les interruptions. Nous avons construit à domicile les conditions optimales à l'exercice de notre art. Nous tenons à travailler au maximum dans le calme de notre atelier afin de livrer le meilleur de nous-mêmes.
-        </p>
-        <p>
-            Toutefois, lorsque le projet le requiert, nous effectuons le déplacement dans vos locaux, sur le chantier ou dans tout autre lieu où notre présence serait nécessaire. L'échange humain direct, chargé d'implicite et de non-verbal, charrie une densité d'information qu'aucune technologie ne peut retranscrire. Notre vision de l'audit est intégrale : ne lire que le code c'est passer à côté du contexte qui l'a produit. Cela revient souvent à reproduire indéfiniment les mêmes erreurs. Tous nos audits se font en partie là où travaillent vos équipes. Il en est de même pour nos formations.
-        </p>
-        <p>
-            En dehors des cas sus-mentionnés, il peut nous arriver d'accepter des missions "sur site", de courte ou moyenne durée. Nous tenons à ce qu'elles restent l'exception. L'environnement de bureau ne nous a jamais paru propice à l'exercice de notre métier, qui nécessite d'alterner des phases sociales avec de longs silences studieux.
-        </p>
-    </article>
-
-    <article>
-        <h3 id="cycle-v">Je travaille en cycle en V, peut-on s'entendre ?</h3>
-        <p>
-            Dans notre courte carrière, nous n'avons jamais vu de projet figé dès l'origine qui n'ait pas bougé à la fin. Pendant le développement de votre application, la vie continue, votre métier évolue et pire : le développement de votre logiciel va nous amener inévitablement à vous poser des questions auxquelles vous n'aviez pas pensé. Il est presque sûr que ces questions vont amener une nouvelle vision de vos besoins. Pour ne rien arranger, il nous arrive également d'être force de proposition.
-        </p>
-        <p>
-            Nous sommes cependant conscients que la culture du cycle en V est fortement ancrée dans certaines entreprises et que le management y tient. Nous pouvons nous adapter à condition que l'on nous laisse la possibilité de travailler par itérations de notre côté. Nous vous livrerons régulièrement de la valeur, comme pour tous nos clients. Libre à vous de l'ignorer jusqu'à la fin du cycle global.
-        </p>
-        <p>
-            Cette manière de travailler suppose que nous soyons en contact permanent avec un référent métier capable de nous préciser ce que les spécifications ne disent pas. Nous ne travaillons pas sans tests, ils sont les clauses du contrat que nous passons ensemble. Vos expert devra être en capacité de valider ces tests, mais également de faire remonter aux concepteurs des spécifications les changements qui s'avèrent nécessaires.
-        </p>
-        <p>
-            Nous préférons être honnêtes avec nous clients. Peut-être existe-t-il des développeurs capables de tenir des engagements de qualité sans poser ces conditions. Nous n'en faisons pas partie. Nous savons d'expérience que nous sommes incapables de développer ce que nous pensons être de bons logiciels si ces deux critères ne sont pas remplis.
-        </p>
-    </article>
-    
-    <article>
-        <h3 id="estimations">J'ai déjà réalisé une estimation de temps, la respecterez-vous ?</h3>
-        <p>
-            Tout projet est défini par quatre variables : le temps, les ressources (ou coût), la qualité et le périmètre. Travailler avec un Atelier logiciel comme nous en bloque déjà deux.
-        </p>
-        <ul>
-            <li>
-                Nos ressources sont limitées et même si elles ne l'étaient pas, 9 femmes ne font pas un enfant en un mois.
-            </li>
-            <li>
-                Sauf pour des projets très spécifiques, nous ne transigeons pas sur la <a href="#qualite">qualité</a>, ce serait vous desservir.
-            </li>
-        </ul>
-        <p>
-            Un choix s'offre donc à vous :
-        </p>
-        <ul>
-            <li>
-                Nous livrons à l'échéance que vous avez définie, un logiciel fonctionnel, apportant de la valeur, mais au périmètre incertain.
-            </li>
-            <li>
-                Vous préférez ne pas fixer de délai et attendre que l'ensemble de votre logiciel soit prêt. Nous pouvons fournir un ordre de grandeur, rien de plus.
-            </li>
-        </ul>
-        <p>
-            L'arbitrage entre l'envergure et les délais vous appartient complètement. Nous nous engageons à être parfaitement transparents sur les deux autres variables, à travers une tarification horaire ou journalière. Nous aidons nos clients à faire le choix le plus sécurisant pour eux.
-        </p>
-    </article>
-
-    <h2>Sur la formation</h2>
-
-    <article>
-        <h3 id="pedagogie">Quelle est votre pédagogie ?</h3>
-        <p>
-            Notre pédagogie est totalement orientée vers la pratique, à travers la répétition de katas et la réalisation de projets en situation professionnelle ou semi-professionnelle.<br/>
-            En plus de croire fermement que la pratique encadrée par un maître est la seule école du développeur, nous avons été traumatisés par ces diaporamas de 1200 slides, subis encore aujourd'hui par trop d'étudiants. Nous ne voulons pas être ce genre de formateur.<br/>
-            Nous ne rejetons pas la forme magistrale pour autant, mais celle-ci vient plutôt introduire une matière, préciser des notions ou encore enseigner des connaissances théoriques nécessaires à l'exercice suivant.
-        </p>
-        <p>
-            Pour nous, un bon enseignement est constitué de 20% de théorie, 80% de pratique.
-        </p>
-    </article>
-
-    <article>
-        <h3 id="lieu-formation">Où enseignez-vous ?</h3>
-        <p>
-            Partout en France, tant que l'établissement défraie. Habituellement, je me rends sur le lieu de mes cours pour des durées d'une semaine à un mois.<br/>
-            J'ai déjà enseigné à Arras, Nantes et Bordeaux ainsi.<br/>
-            Nous demandons simplement aux reponsables pédagogiques de regrouper au maximum les cours.
-        </p>
-    </article>
-
-    <article>
-        <h3 id="annexes-pedagogie">Quelles prestations proposez-vous aux établissements de formation ?</h3>
-        <p>
-            En plus des cours, les établissements avec lesquels nous travaillons nous sollicitent pour des prestations annexes, comme les jurys ou les suivis de mémoires professionnels. Nous ne sommes pas fermés à l'idée de travailler avec des établissements dans lesquels nous n'enseignons pas, à condition que le sujet traité corresponde à notre coeur de métier. Les apprenants bénéficient de notre veille scientifique le temps de leur mémoire.
-        </p>
-    </article>
-
-    <h2>Informations pratiques</h2>
-
-    <article>
-        <h3 id="tjm">Quel est votre TJM ?</h3>
-        <p>
-            <b>TLDR;</b>
-            Demandez-nous un devis.
-        </p>
-
-        <p>
-            Le tarif des prestations dépend de leur nature, de leur complexité, de l'endettement technique du projet, du lieu d'exécution (nous majorons les prestations sur site afin d'être au maximum dans l'environnement pleinement productif qu'est notre Atelier) ou de la durée de la prestation. Par conséquent, il nous est impossible de donner un chiffre. Cependant les devis sont gratuits, <a href="contact.html">contactez-nous</a>.
-        </p>
-    </article>
-
-    <article>
-        <h3 id="english">Do you speak english ?</h3>
-        <p>
-            We can work in english as developers. We cannot teach nor audit yet as it requires extended understanding of implicit meanings.
-            We plan to spend some months in an anglo-saxon country to improve our english.
-        </p>
-    </article>
+    {% for post in site.posts %}
+        {% if post.categories contains "faq" and post.tags contains "informations" %}
+        <article>
+            <h3 id="{{post.ref}}">{{post.title}}</h3>
+            {{ post.content }}
+        </article>
+        {% endif %}
+    {% endfor %}
 </section>

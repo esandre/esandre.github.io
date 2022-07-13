@@ -12,10 +12,12 @@ ref: blog
         {% if post.categories contains "blog" %}
         <article class="container">
             <p class="text-center">
-                {% if post.tags contains "old" %}
-                    <abbr title="Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué.">🕸️</abbr>
-                {% endif %}
                 {{ post.date | date: "%d/%m/%Y" }}
+                <br/>
+                {% for tag in post.tags %}
+                    <abbr title="{{site.data.tags[tag].hint}}">{{site.data.tags[tag].emoji}} {{site.data.tags[tag].name}}</abbr>
+                    {% unless forloop.last %}·{% endunless %}
+                {% endfor %}
             </p>
             <h2 class="text-center">{{post.title}}</h2>
 

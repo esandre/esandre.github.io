@@ -1,5 +1,10 @@
 <h1>{{ page.title }}</h1>
-<p class="meta"> ✒️ Enzo Sandré	· 📆 {{ page.date | date: "%d/%m/%Y" }} </p>
+<p class="meta"> 
+	✒️ Enzo Sandré	· 📆 {{ page.date | date: "%d/%m/%Y" }} 
+	{% for tag in page.tags %}
+        · <abbr title="{{site.data.tags[tag].hint}}">{{site.data.tags[tag].emoji}} {{site.data.tags[tag].name}}</abbr>
+    {% endfor %}
+</p>
 
 <article class="post">
 	{% if page.tags contains "old" %}

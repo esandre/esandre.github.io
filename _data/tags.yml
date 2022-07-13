@@ -1,0 +1,34 @@
+old:
+  emoji: "🕸️"
+  name: "Ancien article"
+  hint: "Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué."
+
+af2000:
+  emoji: "🗞️"
+  name: "Publié dans l'AF2000"
+  hint: "Article écrit pour le journal l'AF2000, aujourd'hui disparu."
+
+securite:
+  emoji: "🔒"
+  name: "Cybersécurité"
+  hint: "Article traitant de cybersécurité."
+
+jeu-video:
+  emoji: "🎮"
+  name: "Jeux vidéo"
+  hint: "Article sur les jeux vidéo."
+
+developpement:
+  emoji: "⌨️"
+  name: "Développement"
+  hint: "Article traitant du développement de logiciels."
+
+ie:
+  emoji: "🦉"
+  name: "Intelligence Économique"
+  hint: "Article traitant d'Intelligence Économique."
+
+ecologie:
+  emoji: "🌱"
+  name: "Écologie"
+  hint: "Article traitant d'Écologie politique."

@@ -8,6 +8,11 @@ af2000:
   name: "Publié dans l'AF2000"
   hint: "Article écrit pour le journal l'AF2000, aujourd'hui disparu."
 
+lbc:
+  emoji: "🗞️"
+  name: "Publié dans Le Bien Commun"
+  hint: "Article écrit pour le journal Le Bien Commun."
+
 securite:
   emoji: "🔒"
   name: "Cybersécurité"

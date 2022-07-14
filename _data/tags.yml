@@ -47,3 +47,8 @@ technocritique:
   emoji: "💣"
   name: "Technocritique"
   hint: "Article traitant du courant philosophique technocritique"
+
+histoire-informatique:
+  emoji: "💾"
+  name: "Histoire de l'informatique"
+  hint: "Article traitant d'histoire de l'informatique"

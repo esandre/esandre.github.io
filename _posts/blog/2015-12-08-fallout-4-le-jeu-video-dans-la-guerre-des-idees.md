@@ -2,7 +2,7 @@
 title: "Fallout 4 : Le jeu vidéo dans la guerre des idées"
 layout: post
 category: 'blog'
-tags: old af2000 jeu-video
+tags: af2000 jeu-video
 lang: french
 ref: fallout-4-le-jeu-video-dans-la-guerre-des-idees
 ---

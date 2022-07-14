@@ -2,7 +2,7 @@
 title: "OS Souverain : une annonce irréaliste"
 layout: post
 category: 'blog'
-tags: old af2000
+tags: af2000 securite
 lang: french
 ref: os-souverain-une-annonce-irrealiste
 ---

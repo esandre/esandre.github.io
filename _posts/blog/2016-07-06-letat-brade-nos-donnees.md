@@ -2,7 +2,7 @@
 title: "L'État brade nos données"
 layout: post
 category: 'blog'
-tags: old af2000 securite
+tags: af2000 securite
 lang: french
 ref: letat-brade-nos-donnees
 ---

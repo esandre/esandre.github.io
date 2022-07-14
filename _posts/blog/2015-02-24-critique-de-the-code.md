@@ -2,7 +2,7 @@
 title: 'Critique de The Code'
 layout: post
 category: 'blog'
-tags: old af2000
+tags: af2000
 lang: french
 ref: critique-de-the-code
 ---

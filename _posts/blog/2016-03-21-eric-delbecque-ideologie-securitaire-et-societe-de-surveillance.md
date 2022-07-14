@@ -2,7 +2,7 @@
 title: "Éric Delbecque : Idéologie sécuritaire et société de surveillance"
 layout: post
 category: 'blog'
-tags: old ie portail-ie
+tags: ie portail-ie
 lang: french
 ref: eric-delbecque-ideologie-securitaire-et-societe-de-surveillance
 ---

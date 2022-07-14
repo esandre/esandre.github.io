@@ -2,7 +2,7 @@
 title: "Qu'est-ce que l'uberisation ?"
 layout: post
 category: 'blog'
-tags: old corporatisme ie portail-ie
+tags: corporatisme ie portail-ie
 lang: french
 ref: quest-ce-que-luberisation
 ---

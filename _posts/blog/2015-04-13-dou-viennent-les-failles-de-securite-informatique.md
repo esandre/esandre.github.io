@@ -2,7 +2,7 @@
 title: "D'où viennent les failles de sécurité informatique ?"
 layout: post
 category: 'blog'
-tags: old af2000 securite
+tags: af2000 securite technocritique
 lang: french
 ref: dou-viennent-les-failles-de-securite-informatique
 ---

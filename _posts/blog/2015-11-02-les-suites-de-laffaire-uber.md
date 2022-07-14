@@ -2,7 +2,7 @@
 title: "Les suites de l'affaire Uber"
 layout: post
 category: 'blog'
-tags: old ie portail-ie
+tags: ie portail-ie
 lang: french
 ref: les-suites-de-laffaire-uber
 ---
@@ -11,7 +11,7 @@ ref: les-suites-de-laffaire-uber
 
 La défaite d’Uber suite à l’interdiction d’UberPOP n’a été que relative. L’entreprise est revenue en force en Europe et compte bien étendre son modèle apparemment décentralisé à tout ce que l’on peut transporter en voiture. Face à cela, les acteurs existants sur les marchés traditionnels sont mal préparés. Les outils classiques de veille concurrentielle et de défense d’intérêts économiques ne suffisent plus. L’État, qui s’est lancé dans la bataille, ressemble de plus en plus au puissant éléphant, incapable de stopper la souris, trop rapide pour lui.
 
-# Uber, pieuvre logistique urbaine
+## Uber, pieuvre logistique urbaine
 
 La stratégie d’Uber est claire : absorber tout flux urbain d’hommes ou de marchandises pouvant être transporté par des voitures. Ils se voient eux-mêmes comme un **réseau logistique urbain**. À leur activité traditionnelle de transport de personnes, viennent s’ajouter le transport de repas avec [UberEATS](http://ubereats.com) et transport de colis avec [UbeRUSH](https://rush.uber.com/), les médicaments avec [UberHEALTH](http://newsroom.uber.com/boston/2014/10/bringing-house-calls-back-with-uberhealth/) voire même … les chatons avec l’éphémère [UberKITTENS](https://newsroom.uber.com/austin/2014/10/uberkittens-is-back/).
 
@@ -19,7 +19,7 @@ En l’absence de réaction rapide, les métiers de livreur et de coursier risqu
 
 Même les régies de transport urbain, comme la RATP par exemple, ne sont pas à l’abri de bouleversements. Uber compte bien remplacer les bus par des « [Smart Routes ](http://techcrunch.com/2015/08/24/uber-smart-routes/)», fragmentation d’un bus en des dizaines de véhicules de tourisme circulant sur une ligne précise. En changeant simplement une organisation existante (les VTC Uber), un nouveau marché s’ouvre à l’ambitieuse entreprise, sans qu’ils ne soient pour autant présent sur le même marché que la RATP.
 
-# Uber s’en va en guerre … économique
+## Uber s’en va en guerre … économique
 
 Uber s’est donné les moyens de ses ambitions par le rachat d’une grande partie de [Bing Carto](http://www.zdnet.fr/actualites/uber-rachete-des-outils-de-cartographie-bing-a-microsoft-39821660.htm), le service de cartographie de Microsoft. Uber fut un temps candidat à l’acquisition de [Nokia Here](http://www.cnet.com/news/sorry-uber-but-here-is-no-longer-there-for-you/), également entreprise de cartographie. Les brevets et le savoir-faire de ces entreprises sont précieux à Uber qui souhaite optimiser au maximum chaque trajet. Ces rachats s’inscrivent dans une guerre à l’innovation qui fait rage entre Uber et Amazon. En effet, le géant de la logistique cherche lui-aussi à conquérir le marché de la livraison de paquets par véhicules légers. UberRUSH et Amazon Flex se situent exactement sur le même marché, avec néanmoins des axes d’innovation différents. Tandis qu’Uber mise sur les voitures sans chauffeur, Amazon innove avec des [drones-coursiers](http://www.amazon.com/b?node=8037720011).
 
@@ -35,7 +35,7 @@ Enfin, le plus intéressant, Google. Le conglomérat pourrait bien avoir joué l
 
 Ces frictions entre Uber et ses concurrents actuels ou potentiels ne s’arrêtent pas aux portes des Etats-Unis et de l’Europe. Uber annonce déjà avoir 30% de [parts de marché](http://www.lesechos.fr/industrie-services/tourisme-transport/021420711172-uber-revendique-30-de-part-de-marche-en-chine-1167781.php) en Chine, où Lyft a conclu un partenariat avec [Didi Kuaidi](http://www.nytimes.com/2015/09/17/technology/lyft-announces-deal-with-didi-kuadi-the-chinese-ride-hailing-company.html?_r=0), un opérateur local. Uber est également présent en Amérique du Sud, en Russie, en Inde, en Afrique du Sud et dans [de nombreux autres pays](https://www.uber.com/cities/).
 
-# La France bouge ?
+## La France bouge ?
 
 Revenons en France où « l’affaire Uber » a fait grand bruit. Une résistance s’est spontanément organisée, désespérée au début avec les blocus effectués par les taxis. Une [chronologie](http://observatoire-taxi-vtc.com/revue-de-presse/) des faits a déjà été réalisée par l’Observatoire Taxi/VTC de l’Ecole de Guerre Economique, nous passons directement à l’analyse.
 
@@ -65,7 +65,7 @@ Néanmoins, les VTC ont la volonté de s’organiser de manière efficace. Il es
 
 Une inconnue reste : Comment évolue le marché des taxis clandestins ? Avec une législation de plus en plus restrictive, des boers de plus en plus débordés et un marché de plus en plus juteux, nous pensons légitime de nous poser la question. On estimait en 2013 le nombre de [taxis clandestins](http://www.prefecturedepolice.interieur.gouv.fr/content/download/5643/27160/file/pprama296.pdf) parisiens à 300, le chiffre 2014, qui sera prochainement publié par la Préfecture de Police de Paris pourrait être intéressant.
 
-# L’Intelligence économique à la rescousse
+## L’Intelligence économique à la rescousse
 
 Le numérique a redistribué les cartes dans une profession ancienne. L’innovation technologique a rapidement permis à des sociétés ambitieuses de casser les vielles règles au profit de nouveaux modèles qui se disent décentralisés.
 

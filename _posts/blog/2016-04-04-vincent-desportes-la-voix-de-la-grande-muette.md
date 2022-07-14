@@ -2,7 +2,7 @@
 title: "Vincent Desportes : La voix de la Grande Muette"
 layout: post
 category: 'blog'
-tags: old portail-ie
+tags: portail-ie
 lang: french
 ref: vincent-desportes-la-voix-de-la-grande-muette
 ---

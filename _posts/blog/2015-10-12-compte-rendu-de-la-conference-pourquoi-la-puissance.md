@@ -2,7 +2,7 @@
 title: 'Compte-rendu de la conférence : Pourquoi la puissance ?'
 layout: post
 category: 'blog'
-tags: old af2000 ie
+tags: af2000 ie
 lang: french
 ref: compte-rendu-de-la-conference-pourquoi-la-puissance
 ---

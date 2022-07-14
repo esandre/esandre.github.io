@@ -2,7 +2,7 @@
 title: "Rue Steve Jobs : Les précurseurs français d'Internet oubliés"
 layout: post
 category: 'blog'
-tags: old af2000 histoire-informatique ie
+tags: af2000 histoire-informatique ie
 lang: french
 ref: rue-steve-jobs-les-precurseurs-francais-dinternet-oublies
 ---

@@ -2,7 +2,7 @@
 title: 'Faille ou porte dérobée : une confusion bien commode'
 layout: post
 category: 'blog'
-tags: old af2000 securite ie
+tags: af2000 securite ie
 lang: french
 ref: faille-ou-porte-derobee-une-confusion-bien-commode
 ---

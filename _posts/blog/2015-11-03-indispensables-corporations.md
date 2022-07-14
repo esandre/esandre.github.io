@@ -2,7 +2,7 @@
 title: "Indispensables corporations"
 layout: post
 category: 'blog'
-tags: old corporatisme
+tags: corporatisme
 lang: french
 ref: indispensables-corporations
 ---
@@ -16,7 +16,7 @@ Avant la crise, personne n’a voulu voir le problème, pendant la crise, person
 L’intérêt de la branche est l’intérêt commun des acteurs physiques de cette branche, sur le long terme. Ils ne sont pas défendus et ce manque est une des faiblesses de notre économie. Désunis, les français sont à la merci de l’étranger, l’affaire Uber le montre. La défense économique d’une branche requiert d’abord l’union interne.  
 L’union interne requiert de rassembler autour d’une tables toutes les personnes physiques d’une branche : ce que l’on nommait jadis une corporation.
 
-Il ne s’agit pas de ressusciter les institutions aujourd’hui dépassées du XVIII<sup>ème</sup> siècle. Il s’agit d’en reprendre l’essence afin de créer des corps intermédiaires adaptés au XXI<sup>ème</sup> siècle. Aucun autre type de corps ne peut défendre le métier aussi bien que la corporation. Aucun autre type de corps n’est légitime pour juger les professionnels peu consciencieux. Aucun autre type de corps n’est compétent pour règlementer le métier.
+Il ne s’agit pas de ressusciter les institutions aujourd’hui dépassées du XVIIIème siècle. Il s’agit d’en reprendre l’essence afin de créer des corps intermédiaires adaptés au XXIème siècle. Aucun autre type de corps ne peut défendre le métier aussi bien que la corporation. Aucun autre type de corps n’est légitime pour juger les professionnels peu consciencieux. Aucun autre type de corps n’est compétent pour règlementer le métier.
 
 L’état est bien trop éloigné des considérations des métiers pour être légitime à les gouverner. Il ne doit pas se disperser s’il veut exceller dans le régalien, qui n’est pas contingent. Or l’état français fait tout l’inverse : il s’immisce pour des raisons électoralistes dans les affaires courantes des branches professionnelles au détriment du régalien. La loi devient une rustine sur un pneu déjà trop chargé.  
 Les entreprises n’ont en aucun cas l’intérêt de la branche pour boussole. Leur but est le profit, qui parfois passe par des licenciements ou par une guerre avec la concurrence nuisible au métier. La règlementation du lobbying fait entendre la voix du plus riche, au détriment de la majorité silencieuse.  

@@ -2,7 +2,7 @@
 title: 'Cybersécurité : promouvoir la création française'
 layout: post
 category: 'blog'
-tags: old af2000 securite
+tags: af2000 securite
 lang: french
 ref: cybersecurite-promouvoir-la-creation-francaise
 ---

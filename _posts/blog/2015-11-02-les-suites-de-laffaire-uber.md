@@ -2,7 +2,7 @@
 title: "Les suites de l'affaire Uber"
 layout: post
 category: 'blog'
-tags: old ie
+tags: old ie portail-ie
 lang: french
 ref: les-suites-de-laffaire-uber
 ---

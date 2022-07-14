@@ -37,3 +37,13 @@ corporatisme:
   emoji: "✊"
   name: "Corporatisme"
   hint: "Article traitant de (néo)-corporatisme"
+
+portail-ie:
+  emoji: "🏹"
+  name: "Portail de l'IE"
+  hint: "Article publié sur le Portail de l'IE lors de ma scolarité à l'EGE"
+
+technocritique:
+  emoji: "💣"
+  name: "Technocritique"
+  hint: "Article traitant du courant philosophique technocritique"

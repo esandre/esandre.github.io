@@ -124,3 +124,13 @@ methods:
   emoji: "🧮"
   name: "Méthodes de développement"
   hint: "Source traitant de méthodes de développement et d'organisation de l'équipe"
+
+quality:
+  emoji: "👌"
+  name: "Qualité logicielle"
+  hint: "Source traitant de qualité logicielle en général"
+
+epistemology:
+  emoji: "🥼"
+  name: "Épistémologie"
+  hint: "Source traitant d'épistémologie ou de méthodologie'"

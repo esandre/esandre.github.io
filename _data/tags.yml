@@ -74,3 +74,28 @@ thesis:
   emoji: "🎓"
   name: "Thèse"
   hint: "Post résumant ou vulgarisant un travail de thèse"
+
+psychology:
+  emoji: "🧠"
+  name: "Psychologie"
+  hint: "Source traitant de psychologie ou de cognition"
+
+testing:
+  emoji: "🧪"
+  name: "Tests"
+  hint: "Source traitant de des tests logiciels"
+
+management:
+  emoji: "🧑‍💼"
+  name: "Management"
+  hint: "Source traitant de management des développeurs"
+
+patterns:
+  emoji: "🧩"
+  name: "Design (Anti-)Patterns"
+  hint: "Source traitant des Design Patterns et Antipatterns"
+
+architecture:
+  emoji: "📐"
+  name: "Architecture"
+  hint: "Source traitant d'architecture logicielle"

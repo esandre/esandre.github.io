@@ -18,8 +18,8 @@ ref: veille
 
     {% for post in site.posts %}
         {% if post.categories contains "veille" %}
-        <article class="container col-md-6">
-            <h2 class="text-center">{{post.title}} <a class="fs-4" href="{{ post.url }}">🔗</a></h2>
+        <article class="container">
+            <h2 class="text-center">{{post.title}}&nbsp;<a class="fs-4" href="{{ post.url }}">🔗</a></h2>
             <p class="text-center">
                 {% for tag in post.tags %}
                     <abbr title="{{site.data.tags[tag].hint}}">{{site.data.tags[tag].emoji}} {{site.data.tags[tag].name}}</abbr>
@@ -27,7 +27,13 @@ ref: veille
                 {% endfor %}
             </p>
 
-            {{ post.content }}
+            {% if post.long_post == true %}
+                {{ post.excerpt }}
+
+                <a href="{{ post.url }}">Lire la suite</a>
+            {% else %}
+                {{ post.content }}
+            {% endif %}
         </article>
         {% endif %}
     {% endfor %}

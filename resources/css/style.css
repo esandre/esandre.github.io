@@ -268,7 +268,7 @@ details>summary {
    Search
 -----------------------------------------*/
 
-.category-portfolio .day, .category-faq .date {
+.category-portfolio .day, .category-faq .date, .category-veille .date {
     display: none;
 }
 

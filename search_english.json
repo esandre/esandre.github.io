@@ -1,8 +1,8 @@
 ---
 ---
 [
-  {% for post in site.posts %}
-  {% if post.lang == 'english' %}
+  {% assign posts = site.posts | where: "lang", "english" %}
+  {% for post in posts %}
     {
 
       "title"    : "{{ post.title | escape }}",
@@ -14,7 +14,7 @@
       "year"     : "{{ post.date | date: '%Y' }}",
       "description" : "{{ post.content | strip_html | strip_newlines | escape | slugify: 'latin' }}"
 
-    } {% unless forloop.last %},{% endunless %}
-  {% endif %}
+    }
+  {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

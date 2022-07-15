@@ -35,6 +35,12 @@ pages:
       english: "Blog"
     ref: blog
 
+  - veille:
+    title: 
+      french: "Veille Académique"
+      english: "Academical Watch"
+    ref: veille
+
   - contact:
     title: 
       french: "Contact"

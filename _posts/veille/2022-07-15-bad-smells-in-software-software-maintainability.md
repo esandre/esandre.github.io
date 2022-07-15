@@ -2,7 +2,7 @@
 title: "Bad Smells in Software – Software Maintainability"
 layout: post
 category: 'veille'
-tags: laws
+tags: laws thesis
 lang: french
 ref: bad-smells-in-software-software-maintainability
 ---

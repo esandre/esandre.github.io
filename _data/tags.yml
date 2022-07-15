@@ -62,3 +62,15 @@ artisanat:
   emoji: "🏺"
   name: "Artisanat"
   hint: "Article participant à ma réflexion sur le phénomène artisanal"
+
+# Tags de la veille
+
+laws:
+  emoji: "📜"
+  name: "Lois du développement"
+  hint: "Source évoquant une loi du développement de logiciels."
+
+thesis:
+  emoji: "🎓"
+  name: "Thèse"
+  hint: "Post résumant ou vulgarisant un travail de thèse"

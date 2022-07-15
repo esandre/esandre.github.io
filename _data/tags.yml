@@ -99,3 +99,13 @@ architecture:
   emoji: "📐"
   name: "Architecture"
   hint: "Source traitant d'architecture logicielle"
+
+smells:
+  emoji: "🦨"
+  name: "Code Smells"
+  hint: "Source traitant d'odeurs du code"
+
+refactoring:
+  emoji: "♻️"
+  name: "Refactoring"
+  hint: "Source traitant du processus de refactoring"

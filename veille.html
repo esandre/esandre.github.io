@@ -16,13 +16,18 @@ ref: veille
         Comme le blog, la veille est en cours de migration. Il faudra du temps pour que tout soit importé ici.
     </p>
 
+    {% assign tags = "" %}
+
+    {% capture posts %}
     {% for post in site.posts %}
         {% if post.categories contains "veille" %}
-        <article class="container">
+        <article class="container filtered" data-category="{{post.tags | join: ' '}}">
             <h2 class="text-center">{{post.title}}&nbsp;<a class="fs-4" href="{{ post.url }}">🔗</a></h2>
             <p class="text-center">
                 {% for tag in post.tags %}
-                    <abbr title="{{site.data.tags[tag].hint}}">{{site.data.tags[tag].emoji}} {{site.data.tags[tag].name}}</abbr>
+                    {% assign tags = tags | append: ", " | append: tag  %}
+                    {% assign tag_data = site.data.tags | where: "tag", tag | first %}
+                    <abbr title="{{tag_data.hint}}">{{tag_data.emoji}} {{tag_data.name}}</abbr>
                     {% unless forloop.last %}·{% endunless %}
                 {% endfor %}
             </p>
@@ -37,4 +42,27 @@ ref: veille
         </article>
         {% endif %}
     {% endfor %}
+    {% endcapture %}
+
+    {% assign used_tags = tags | split: ", " | uniq %}
+    <div class="form-checks tags_select">
+        {% for used_tag in used_tags %}
+            {% if used_tag == "" %}
+                <input type="radio" name="tags" id="reset" class="form-check-input" value="All" />
+                <label class="form-check-label fw-bold" for="reset">
+                    ❌ Tous les posts
+                </label>
+            {% else %}
+                {% assign data = site.data.tags | where: "tag", used_tag | first %}
+                <input type="radio" name="tags" id="{{used_tag}}" class="form-check-input" value="{{used_tag}}"/>
+                <label class="form-check-label" for="{{used_tag}}">
+                    <abbr title="{{data.hint}}">{{data.emoji}} {{data.name}}</abbr>
+                </label>
+            {% endif %}
+        {% endfor %}
+    </form>
+
+    <div class="posts">
+        {{posts}}
+    </div>
 </section>

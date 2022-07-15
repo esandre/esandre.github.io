@@ -1,146 +1,181 @@
-old:
+- old:
+  tag: "old"
   emoji: "🕸️"
   name: "Ancien article"
   hint: "Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué."
 
-af2000:
+- af2000:
+  tag: "af2000"
   emoji: "🗞️"
   name: "Publié dans l'AF2000"
   hint: "Article écrit pour le journal l'AF2000, aujourd'hui disparu."
 
-lbc:
+- lbc:
+  tag: "lbc"
   emoji: "🗞️"
   name: "Publié dans Le Bien Commun"
   hint: "Article écrit pour le journal Le Bien Commun."
 
-securite:
+- securite:
+  tag: "securite"
   emoji: "🔒"
   name: "Cybersécurité"
   hint: "Article traitant de cybersécurité."
 
-jeu-video:
+- jeu-video:
+  tag: "jeu-video"
   emoji: "🎮"
   name: "Jeu vidéo"
   hint: "Article sur le jeu vidéo."
 
-developpement:
+- developpement:
+  tag: "developpement"
   emoji: "⌨️"
   name: "Développement"
   hint: "Article traitant du développement de logiciels."
 
-ie:
+- ie:
+  tag: "ie"
   emoji: "🦉"
   name: "Intelligence Économique"
   hint: "Article traitant d'Intelligence Économique et des problématiques de puissance."
 
-ecologie:
+- ecologie:
+  tag: "ecologie"
   emoji: "🌱"
   name: "Écologie"
   hint: "Article traitant d'Écologie politique."
 
-corporatisme:
+- corporatisme:
+  tag: "corporatisme"
   emoji: "✊"
   name: "Corporatisme"
   hint: "Article traitant de (néo)-corporatisme"
 
-portail-ie:
+- portail-ie:
+  tag: "portail-ie"
   emoji: "🏹"
   name: "Portail de l'IE"
   hint: "Article publié sur le Portail de l'IE lors de ma scolarité à l'EGE"
 
-technocritique:
+- technocritique:
+  tag: "technocritique"
   emoji: "⚙️"
   name: "Technocritique"
   hint: "Article traitant du courant philosophique technocritique"
 
-histoire-informatique:
+- histoire-informatique:
+  tag: "histoire-informatique"
   emoji: "💾"
   name: "Histoire de l'informatique"
   hint: "Article traitant d'histoire de l'informatique"
 
-artisanat:
+- artisanat:
+  tag: "artisanat"
   emoji: "🏺"
   name: "Artisanat"
   hint: "Article participant à ma réflexion sur le phénomène artisanal"
 
 # Tags de la veille
 
-laws:
+- laws:
+  tag: "laws"
   emoji: "📜"
   name: "Lois du développement"
   hint: "Source évoquant une loi du développement de logiciels."
 
-thesis:
+- thesis:
+  tag: "thesis"
   emoji: "🎓"
   name: "Thèse"
   hint: "Post résumant ou vulgarisant un travail de thèse"
 
-psychology:
+- psychology:
+  tag: "psychology"
   emoji: "🧠"
   name: "Psychologie"
   hint: "Source traitant de psychologie ou de cognition"
 
-testing:
+- testing:
+  tag: "testing"
   emoji: "🧪"
   name: "Tests"
   hint: "Source traitant de des tests logiciels"
 
-management:
+- management:
+  tag: "management"
   emoji: "🧑‍💼"
   name: "Management"
   hint: "Source traitant de management des développeurs"
 
-patterns:
+- patterns:
+  tag: "patterns"
   emoji: "🧩"
   name: "Design (Anti-)Patterns"
   hint: "Source traitant des Design Patterns et Antipatterns"
 
-architecture:
+- architecture:
+  tag: "architecture"
   emoji: "📐"
   name: "Architecture"
   hint: "Source traitant d'architecture logicielle"
 
-smells:
+- smells:
+  tag: "smells"
   emoji: "🦨"
   name: "Code Smells"
   hint: "Source traitant d'odeurs du code"
 
-refactoring:
+- refactoring:
+  tag: "refactoring"
   emoji: "♻️"
   name: "Refactoring"
   hint: "Source traitant du processus de refactoring"
 
-langages:
+- langages:
+  tag: "langages"
   emoji: "🔣"
   name: "Science des Langages"
   hint: "Source traitant de la science des langages de programmation"
 
-pair-programming:
+- pair-programming:
+  tag: "pair-programming"
   emoji: "🤝"
   name: "Pair Programming"
   hint: "Source traitant du Pair/Mob Programming"
 
-methods:
+- methods:
+  tag: "methods"
   emoji: "🧮"
   name: "Méthodes de développement"
   hint: "Source traitant de méthodes de développement et d'organisation de l'équipe"
 
-quality:
+- quality:
+  tag: "quality"
   emoji: "👌"
   name: "Qualité logicielle"
   hint: "Source traitant de qualité logicielle en général"
 
-epistemology:
+- epistemology:
+  tag: "epistemology"
   emoji: "🥼"
   name: "Épistémologie"
   hint: "Source traitant d'épistémologie ou de méthodologie'"
 
-low-no-code:
+- low-no-code:
+  tag: "low-no-code"
   emoji: "🦥"
   name: "Low/No Code"
   hint: "Source traitant de low code ou de no-code'"
 
-codesmithing:
+- codesmithing:
+  tag: "codesmithing"
   emoji: "#️⃣"
   name: "Façonnage de code"
   hint: "Source traitant de propreté du code ou de design"
+
+- failures:
+  tag: "failures"
+  emoji: "💩"
+  name: "Cas d'échecs"
+  hint: "Source étudiant les échecs logiciels"

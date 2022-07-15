@@ -1,3 +1,6 @@
+---
+---
+
 h1 {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -51,4 +54,36 @@ footer {
 
 #blog img:not(.float-start), #blog img:not(.float-end) {
     float: left;
+}
+
+.tags_select input {
+    display: none;
+}
+
+.tags_select input:not(:checked):not(#reset) + label {
+    filter: grayscale(100%);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.tags_select input:not(#reset) + label {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#reset, #reset + label {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+[value="All"]:checked ~ .posts [data-category] {
+    display: block;
+}
+
+{% for tag in site.data.tags %}
+    [value='{{ tag.tag }}']:checked ~ .posts .filtered:not([data-category~="{{ tag.tag }}"])
+    {% unless forloop.last %},{% endunless %}
+{% endfor %}
+{
+  display: none;
 }

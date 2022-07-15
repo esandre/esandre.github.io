@@ -2,7 +2,7 @@
 title: "Vers la fin (de la neutralité) d’Internet ?"
 layout: post
 category: 'blog'
-tags: af2000 technocritique histoire-internet
+tags: af2000 technocritique histoire-informatique
 lang: french
 ref: vers-la-fin-de-la-neutralite-dinternet
 ---

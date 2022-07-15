@@ -1,0 +1,50 @@
+---
+title: "Créer une culture de la qualité logicielle"
+layout: post
+category: 'blog'
+tags: developpement artisanat corporatisme
+lang: french
+ref: creer-une-culture-de-la-qualite-logicielle
+excerpt: "<p>De mauvais incitatifs créent un jeu où le joueur a intérêt à produire du code médiocre. Avec le temps, le jeu évacue les fortes têtes et ne restent que les joueurs produisant un code médiocre. Est-ce fichu ? Non, à condition d'adopter une démarche stratégique.</p>"
+---
+
+<p>Parlons indicateurs, performance et surtout <a href="https://fr.wikipedia.org/wiki/Incitation_%C3%A9conomique">incentives</a>. J'ai encore vu cette stupidité sur une offre de mission en Devops :</p>
+<img src="https://blog.enzosandre.fr/wp-content/uploads/2020/06/image-1.png" class="img-fluid"/>
+
+<p>Imaginons que je sois un joueur sans scrupules, dans un jeu que l'on appelle "développement". Ces règles du jeu m'encouragent à produire rapidement le code le plus ignoble possible, afin de trouver un maximum de bugs en phase de recette. Je serais ainsi félicité par mon manager et gratifié d'un joli bonus. Mon code sera couvert par des tests de régression, garantissant a minima que l'existant tombe en marche, mais mon intérêt est que chaque nouvelle fonctionnalité soit la plus sale et buguée possible. Ces règles du jeu encouragent les pompiers pyromanes.</p>
+
+<p>Suis-je dans la caricature ? Bien entendu. De tels développeurs sont rares en sortie d'école. Mais ils peuvent le devenir, c'est là toute la magie des incitatifs (incentives en Anglais). Je voulais introduire mon propos en abordant le développement de logiciels sous l'angle de la <a href="https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux">théorie des jeux</a>. </p>
+
+<h2>Psychologie du groupe</h2>
+
+<p>Un manager décide de recruter toute une équipe de juniors, en contractualisant leurs objectifs. Au départ, personne ne prête attention à ces indicateurs, ils ne génèrent ni récompense, ni sanction. Chacun fera du mieux qu'il peut, ou pas selon les jours. L'objectif ne deviendra visible qu'après quelques fiches de paie, comparées à la machine à café. Les joueurs prennent petit à petit connaissance des règles.</p>
+
+<p>Prenons deux développeurs de cette équipe. Alice pratique le <a href="https://fr.wikipedia.org/wiki/Test_driven_development">TDD</a> et ne pousse jamais un code qui ne soit pas dûment testé. Bob modifie le code, vérifie que les tests préexistants passent, mais n'en rédigera de nouveaux qu'en cas de bug. En effet, si un bug recensé réapparaît, c'est une régression, donc un malus sur salaire. Bob est malin.</p>
+
+<p>Arrive le passage en recette. Le code d'Alice ne pose que peu de problèmes. Celui de Bob, non testé, va générer de nombreux bugs. Subjectivement, le manager verra une Alice sereine, faisant ses heures normalement, sans stress. A contrario il observera que Bob ne compte pas ses heures pour débugger le projet, qu'il se défonce, râle et s'épuise pour tenir les délais. Plus objectivement, dans la feuille Excel du manager, Bob aura corrigé plus de bugs qu'Alice.</p>
+
+<p>Bob est prudent, il sait qu'une régression signifie une retenue sur salaire. Il veille donc à tester ses corrections de bugs, en pratiquant un <a href="https://www.softwaretestinghelp.com/defect-based-testing-technique/">Defect Testing</a> zélé. Tout l'y incite et c'est une bonne chose, mais n'aurait-il pas mieux valu que ces bugs n'aient jamais existé ?</p>
+
+<p>En fin de mois, Bob aura un meilleur bonus qu'Alice. Pire : Bob aura une meilleure image auprès des managers : plus présent, plus impliqué, plus solidaire qu'Alice ! Chez Alice, la frustration monte lentement. Après plusieurs mois, Alice sera excédée. Elle sera engagée sur la pente du ressentiment et mènera les actions suivantes :</p>
+
+<ol><li><strong>Tirer Bob vers le haut.</strong> Supposons Alice bienveillante. Elle va expliquer à Bob l'intérêt d'écrire un code de qualité. Or, même s'il est de bonne volonté, Bob n'a pas intérêt à changer. Ne plus générer de bugs, c'est baisser sa rémunération et perdre les faveurs du management ! Alice va donc commencer à ...</li><li><strong>Haïr le management. </strong>Alice garde de bons liens avec Bob, voire essaye de s'en faire un allié. Elle tente de plaider sa cause auprès de la direction, mais la différence subjective d'image ne jouera pas en sa faveur. Elle passera pour la mauvaise élève qui tente de déplacer les poteaux de but, voire pour la collègue pétrie de jalousie. Bob n'a aucun intérêt à aller au delà de l'empathie passive. Alice finira par lui reprocher et en viendra à ...</li><li><strong>Haïr Bob personnellement.</strong> Il ne mérite pas cet argent, il doit payer autrement. Bob ayant les faveurs de la direction, il est difficile de le dénigrer directement. Si elle n'a pas déjà démissionné, Alice baissera ses standards de qualité, afin de que Bob ne bénéficie plus de SON travail. Il veut travailler dans une soue ? Grand bien lui en fasse.</li></ol>
+
+<p>Pour les besoin de la narration supposons qu'Alice n'ait pas démissionné. Elle est devenue un Bob. Son comportement s'est d'abord ajusté par jalousie, pour emmerder Bob. Au fil des mois, sa rémunération augmentant avec l'approbation du management, Alice finira par oublier sa situation initiale. Elle est devenue une meilleure joueuse, considérant les règles en place.</p>
+
+<p>5 ans plus tard, les référents techniques, les managers et les Lead Dev peuvent êtres des Alice ou des Bob, cela importe peu, de différents au départ ils sont devenus totalement interchangeables. Les objectifs peuvent même avoir disparu entre temps, la culture d'entreprise a intégré des pratiques qu'il sera très difficile de changer.</p>
+
+<p>Dans le management des équipes comme dans la mise en orbite de satellites, un petit changement de trajectoire, indolore au départ, peut avoir des conséquences catastrophiques à l'arrivée. </p>
+
+<h2>Que faire ? Essai stratégique.</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenin_book_1902.jpg" alt="Que faire ? (Lénine) — Wikipédia" class="img-fluid col-md-4 float-end"/>
+
+<p>J'ai vécu ce qu'a subi Alice, mais je suis parti avant que ma haine du jeu ne se change en haine des joueurs. J'ai pris du recul et élaboré une réponse stratégique à ce problème.</p>
+
+<p>Cette situation est une variante du <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_du_singe">Théorème du Singe</a>, que l'on retrouve autant en entreprise qu'en politique ou dans les schémas d'usage des technologies. En faisant preuve d'empirisme organisateur, j'ai trouvé à ce jour trois issues pour quiconque refuse de finir comme Alice :</p>
+
+<ul><li><strong>La contre-culture.</strong> C'est la voie majoritaire actuellement, avec le mouvement de l'artisanat du logiciel (<a href="https://manifesto.softwarecraftsmanship.org/">software craftmanship</a>). Devenir indépendant, travailler avec des clients "qui ont compris" (slogan de l'entreprise <a href="https://medium.com/arpinum">Arpinum</a>), se fréquenter entre artisans comme sur <a href="https://okiwi.org/">Okiwi</a>. L'idée est de créer un marché du code de qualité, cohabitant à côté du marché du code de masse.</li><li><strong>L'entrisme dans le management.</strong> En France <a href="https://www.persee.fr/doc/hes_0752-5702_1992_num_11_3_1638">depuis Vichy</a>, c'est le management qui amorce les changements, la base doit se contenter de suivre. Dans cette voie, le développeur accepte de jouer le jeu, pour mieux injecter son venin chez les grands comptes. Il entre par la porte de la formation, du conseil, du coaching, des RH, bref des fonctions transverses. L'objectif de cette stratégie est de changer les pratiques "par le haut" chez les grands comptes, en espérant les faire basculer et entraîner par mimétisme l'ensemble du marché.</li><li><strong>Le rapport de forces. </strong>Dans ce scénario, Alice tient bon. Elle refuse de céder à la haine de Bob, cède au management sur l'accessoire, mais ne transige pas sur ce qui est fondamental : la qualité. Pour cela il faut une grande détermination et une bonne connaissance du Code du Travail. Le but est d'occuper, de durer, de convertir et de peser. C'est le modèle syndical. S'accrocher, tenir et finir par montrer que l'on a raison, à l'usure.</li></ul>
+
+<p>Je n'affirme pas la supériorité d'une stratégie par rapport à un autre. Je pense même que seul un mélange des trois permettra le basculement vers une culture de la qualité dans le logiciel. Mon propos est d'ouvrir des portes. Trop d'articles se contentent de constater les dégâts de la sous-qualité logicielle, en expliquent les causes et les remèdes sur un plan purement opérationnel et technique. Mon propos est de nature stratégique : Comment faire pour en finir avec les <a href="https://www.usine-digitale.fr/editorial/les-logiciels-de-paie-cauchemar-de-l-etat.N313157">Louvois, les Chorus ou les ONP.</a></p>
+
+<p>Cet article est le premier d'une tétralogie. Dans les mois qui viennent, je vais détailler chacune de ces pistes, mettant en évidence les avantages et les défauts de chacune. Plus important à mon sens, je souhaite relier chacune de ces stratégies avec des types de personnalités, afin d'orienter au mieux ceux qui veulent que les choses changent dans notre profession.</p>

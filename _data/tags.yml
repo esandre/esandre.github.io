@@ -109,3 +109,13 @@ refactoring:
   emoji: "♻️"
   name: "Refactoring"
   hint: "Source traitant du processus de refactoring"
+
+langages:
+  emoji: "🔣"
+  name: "Science des Langages"
+  hint: "Source traitant de la science des langages de programmation"
+
+pair-programming:
+  emoji: "🤝"
+  name: "Pair Programming"
+  hint: "Source traitant du Pair/Mob Programming"

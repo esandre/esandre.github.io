@@ -134,3 +134,13 @@ epistemology:
   emoji: "🥼"
   name: "Épistémologie"
   hint: "Source traitant d'épistémologie ou de méthodologie'"
+
+low-no-code:
+  emoji: "🦥"
+  name: "Low/No Code"
+  hint: "Source traitant de low code ou de no-code'"
+
+codesmithing:
+  emoji: "#️⃣"
+  name: "Façonnage de code"
+  hint: "Source traitant de propreté du code ou de design"

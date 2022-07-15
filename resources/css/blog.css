@@ -49,6 +49,6 @@ footer {
     max-width: 20%;
 }
 
-#blog img:not(.float-start), img:not(.float-end) {
+#blog img:not(.float-start), #blog img:not(.float-end) {
     float: left;
 }

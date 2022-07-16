@@ -179,3 +179,15 @@
   emoji: "💩"
   name: "Cas d'échecs"
   hint: "Source étudiant les échecs logiciels"
+
+- naming:
+  tag: "naming"
+  emoji: "🗣️"
+  name: "Nommage"
+  hint: "Source traitant de nommage"
+
+- pedagogie:
+  tag: "pedagogie"
+  emoji: "🧑‍🏫"
+  name: "Pédagogie"
+  hint: "Source traitant de pédagogie ou d'enseignement de l'informatique"

@@ -1,0 +1,17 @@
+{% if post %}
+    {% assign target = post %}
+{% else %}
+    {% assign target = page %}
+{% endif %}
+
+{% if target.doi or target.dois %}
+{% assign dois = target.dois | append: " " | append: target.doi | split: " "  %}
+<hr />
+<span class="dois text-nowrap">
+    DOIs:
+    {% for doi in dois %}
+        <a href="https://doi.org/{{doi}}">{{ doi }}</a>
+        {% unless forloop.last %} · {% endunless %}
+    {% endfor %}
+</span>
+{% endif %}

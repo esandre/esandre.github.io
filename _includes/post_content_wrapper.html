@@ -17,4 +17,8 @@
 	{{content}}
 
 	<p class="text-end">Enzo Sandré</p>
+
+	{% if page.categories contains "veille" %}
+		{% include post_dois.html %}
+	{% endif %}
 </article>

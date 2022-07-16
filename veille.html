@@ -35,6 +35,8 @@ ref: veille
             {% else %}
                 {{ post.content }}
             {% endif %}
+
+            {% include post_dois.html %}
         </article>
         {% endif %}
     {% endfor %}

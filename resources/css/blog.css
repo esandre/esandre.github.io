@@ -76,6 +76,15 @@ footer {
     font-size: 1.2em;
 }
 
+.dois {
+    display: inline;
+}
+
+.dois ~ ul li, .dois ~ ul {
+    list-style: none;
+    white-space: nowrap;
+}
+
 [value="All"]:checked ~ .posts [data-category] {
     display: block;
 }
@@ -85,5 +94,5 @@ footer {
     {% unless forloop.last %},{% endunless %}
 {% endfor %}
 {
-  display: none;
+    display: none;
 }

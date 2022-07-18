@@ -3,7 +3,7 @@
 	✒️ Enzo Sandré	· 📆 {{ page.date | date: "%d/%m/%Y" }} 
 	{% for tag in page.tags %}
 		{% assign tag_data = site.data.tags | where: "tag", tag | first %}
-        · <abbr title="{{tag_data.hint}}">{{tag_data.emoji}} {{tag_data.name}}</abbr>
+        · <abbr title="{{tag_data.hint[page.lang]}}">{{tag_data.emoji}} {{tag_data.name[page.lang]}}</abbr>
     {% endfor %}
 </p>
 

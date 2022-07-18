@@ -1,193 +1,321 @@
 - old:
   tag: "old"
   emoji: "🕸️"
-  name: "Ancien article"
-  hint: "Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué."
-
+  name:
+    french: "Ancien article"
+    english: "Old post"
+  hint:
+    french: "Cet article est ancien. Je ne renie rien de ce que j'ai pu écrire, néanmoins, mon point de vue sur certains sujets a évolué."
+    english: "This post is old. Though I don't deny anything I wrote, my veiwpoint on certain topics have evolved."
+    
 - af2000:
   tag: "af2000"
   emoji: "🗞️"
-  name: "Publié dans l'AF2000"
-  hint: "Article écrit pour le journal l'AF2000, aujourd'hui disparu."
+  name: 
+    french: "Publié dans l'AF2000"
+    english: "Published in AF2000"
+  hint: 
+    french: "Article écrit pour le journal l'AF2000, aujourd'hui disparu."
+    english: "Post published in the newspaper AF2000, disappeared today."
 
 - lbc:
   tag: "lbc"
   emoji: "🗞️"
-  name: "Publié dans Le Bien Commun"
-  hint: "Article écrit pour le journal Le Bien Commun."
+  name: 
+    french: "Publié dans Le Bien Commun"
+    english: "Published in Le Bien Commun"
+  hint: 
+    french: "Article écrit pour le journal Le Bien Commun."
+    english: "Post published in the newspaper Le Bien Commun."
 
 - securite:
   tag: "securite"
   emoji: "🔒"
-  name: "Cybersécurité"
-  hint: "Article traitant de cybersécurité."
+  name: 
+    french: "Cybersécurité"
+    english: ""
+  hint: 
+    french: "Article traitant de cybersécurité."
+    english: ""
 
 - jeu-video:
   tag: "jeu-video"
   emoji: "🎮"
-  name: "Jeu vidéo"
-  hint: "Article sur le jeu vidéo."
+  name: 
+    french: "Jeu vidéo"
+    english: ""
+  hint: 
+    french: "Article sur le jeu vidéo."
+    english: ""
 
 - developpement:
   tag: "developpement"
   emoji: "⌨️"
-  name: "Développement"
-  hint: "Article traitant du développement de logiciels."
+  name: 
+    french: "Développement"
+    english: "Development"
+  hint: 
+    french: "Article traitant du développement de logiciels."
+    english: "Post about software development."
 
 - ie:
   tag: "ie"
   emoji: "🦉"
-  name: "Intelligence Économique"
-  hint: "Article traitant d'Intelligence Économique et des problématiques de puissance."
+  name: 
+    french: "Intelligence Économique"
+    english: ""
+  hint: 
+    french: "Article traitant d'Intelligence Économique et des problématiques de puissance."
+    english: ""
 
 - ecologie:
   tag: "ecologie"
   emoji: "🌱"
-  name: "Écologie"
-  hint: "Article traitant d'Écologie politique."
+  name: 
+    french: "Écologie"
+    english: ""
+  hint: 
+    french: "Article traitant d'Écologie politique."
+    english: ""
 
 - corporatisme:
   tag: "corporatisme"
   emoji: "✊"
-  name: "Corporatisme"
-  hint: "Article traitant de (néo)-corporatisme"
+  name: 
+    french: "Corporatisme"
+    english: ""
+  hint: 
+    french: "Article traitant de (néo)-corporatisme"
+    english: ""
 
 - portail-ie:
   tag: "portail-ie"
   emoji: "🏹"
-  name: "Portail de l'IE"
-  hint: "Article publié sur le Portail de l'IE lors de ma scolarité à l'EGE"
+  name: 
+    french: "Portail de l'IE"
+    english: ""
+  hint: 
+    french: "Article publié sur le Portail de l'IE lors de ma scolarité à l'EGE"
+    english: ""
 
 - technocritique:
   tag: "technocritique"
   emoji: "⚙️"
-  name: "Technocritique"
-  hint: "Article traitant du courant philosophique technocritique"
+  name: 
+    french: "Technocritique"
+    english: ""
+  hint: 
+    french: "Article traitant du courant philosophique technocritique"
+    english: ""
 
 - histoire-informatique:
   tag: "histoire-informatique"
   emoji: "💾"
-  name: "Histoire de l'informatique"
-  hint: "Article traitant d'histoire de l'informatique"
+  name: 
+    french: "Histoire de l'informatique"
+    english: ""
+  hint: 
+    french: "Article traitant d'histoire de l'informatique"
+    english: ""
 
 - artisanat:
   tag: "artisanat"
   emoji: "🏺"
-  name: "Artisanat"
-  hint: "Article participant à ma réflexion sur le phénomène artisanal"
+  name: 
+    french: "Artisanat"
+    english: "Craftmanship"
+  hint: 
+    french: "Article participant à ma réflexion sur le phénomène artisanal"
+    english: "Post taking part in my personal thought on the craft phenomenon"
 
 # Tags de la veille
 
 - laws:
   tag: "laws"
   emoji: "📜"
-  name: "Lois du développement"
-  hint: "Source évoquant une loi du développement de logiciels."
+  name: 
+    french: "Lois du développement"
+    english: ""
+  hint: 
+    french: "Source évoquant une loi du développement de logiciels."
+    english: ""
 
 - thesis:
   tag: "thesis"
   emoji: "🎓"
-  name: "Thèse"
-  hint: "Post résumant ou vulgarisant un travail de thèse"
+  name: 
+    french: "Thèse"
+    english: ""
+  hint: 
+    french: "Post résumant ou vulgarisant un travail de thèse."
+    english: ""
 
 - psychology:
   tag: "psychology"
   emoji: "🧠"
-  name: "Psychologie"
-  hint: "Source traitant de psychologie ou de cognition"
+  name: 
+    french: "Psychologie"
+    english: "Psychology"
+  hint: 
+    french: "Source traitant de psychologie ou de cognition"
+    english: ""
 
 - testing:
   tag: "testing"
   emoji: "🧪"
-  name: "Tests"
-  hint: "Source traitant de des tests logiciels"
+  name: 
+    french: "Tests"
+    english: ""
+  hint: 
+    french: "Source traitant de des tests logiciels"
+    english: ""
 
 - management:
   tag: "management"
   emoji: "🧑‍💼"
-  name: "Management"
-  hint: "Source traitant de management des développeurs"
+  name: 
+    french: "Management"
+    english: ""
+  hint: 
+    french: "Source traitant de management des développeurs"
+    english: ""
 
 - patterns:
   tag: "patterns"
   emoji: "🧩"
-  name: "Design (Anti-)Patterns"
-  hint: "Source traitant des Design Patterns et Antipatterns"
+  name: 
+    french: "Design (Anti-)Patterns"
+    english: ""
+  hint: 
+    french: "Source traitant des Design Patterns et Antipatterns"
+    english: ""
 
 - architecture:
   tag: "architecture"
   emoji: "📐"
-  name: "Architecture"
-  hint: "Source traitant d'architecture logicielle"
+  name: 
+    french: "Architecture"
+    english: ""
+  hint: 
+    french: "Source traitant d'architecture logicielle"
+    english: ""
 
 - smells:
   tag: "smells"
   emoji: "🦨"
-  name: "Code Smells"
-  hint: "Source traitant d'odeurs du code"
+  name: 
+    french: "Code Smells"
+    english: ""
+  hint: 
+    french: "Source traitant d'odeurs du code"
+    english: ""
 
 - refactoring:
   tag: "refactoring"
   emoji: "♻️"
-  name: "Refactoring"
-  hint: "Source traitant du processus de refactoring"
+  name: 
+    french: "Refactoring"
+    english: ""
+  hint: 
+    french: "Source traitant du processus de refactoring"
+    english: ""
 
 - langages:
   tag: "langages"
   emoji: "🔣"
-  name: "Science des Langages"
-  hint: "Source traitant de la science des langages de programmation"
+  name:
+    french: "Science des Langages"
+    english: ""
+  hint: 
+    french: "Source traitant de la science des langages de programmation"
+    english: ""
 
 - pair-programming:
   tag: "pair-programming"
   emoji: "🤝"
-  name: "Pair Programming"
-  hint: "Source traitant du Pair/Mob Programming"
+  name:
+    french: "Pair Programming"
+    english: ""
+  hint: 
+    french: "Source traitant du Pair/Mob Programming"
+    english: ""
 
 - methods:
   tag: "methods"
   emoji: "🧮"
-  name: "Méthodes de développement"
-  hint: "Source traitant de méthodes de développement et d'organisation de l'équipe"
+  name: 
+    french: "Méthodes de développement"
+    english: ""
+  hint: 
+    french: "Source traitant de méthodes de développement et d'organisation de l'équipe"
+    english: ""
 
 - quality:
   tag: "quality"
   emoji: "👌"
-  name: "Qualité logicielle"
-  hint: "Source traitant de qualité logicielle en général"
+  name: 
+    french: "Qualité logicielle"
+    english: ""
+  hint: 
+    french: "Source traitant de qualité logicielle en général"
+    english: ""
 
 - epistemology:
   tag: "epistemology"
   emoji: "🥼"
-  name: "Épistémologie"
-  hint: "Source traitant d'épistémologie ou de méthodologie'"
+  name: 
+    french: "Épistémologie"
+    english: ""
+  hint: 
+    french: "Source traitant d'épistémologie ou de méthodologie'"
+    english: ""
 
 - low-no-code:
   tag: "low-no-code"
   emoji: "🦥"
-  name: "Low/No Code"
-  hint: "Source traitant de low code ou de no-code'"
+  name: 
+    french: "Low/No Code"
+    english: ""
+  hint: 
+    french: "Source traitant de low code ou de no-code'"
+    english: ""
 
 - codesmithing:
   tag: "codesmithing"
   emoji: "#️⃣"
-  name: "Façonnage de code"
-  hint: "Source traitant de propreté du code ou de design"
+  name: 
+    french: "Façonnage de code"
+    english: ""
+  hint: 
+    french: "Source traitant de propreté du code ou de design"
+    english: ""
 
 - failures:
   tag: "failures"
   emoji: "💩"
-  name: "Cas d'échecs"
-  hint: "Source étudiant les échecs logiciels"
+  name: 
+    french: "Cas d'échecs"
+    english: ""
+  hint: 
+    french: "Source étudiant les échecs logiciels"
+    english: ""
 
 - naming:
   tag: "naming"
   emoji: "🗣️"
-  name: "Nommage"
-  hint: "Source traitant de nommage"
+  name: 
+    french: "Nommage"
+    english: ""
+  hint: 
+    french: "Source traitant de nommage"
+    english: ""
 
 - pedagogie:
   tag: "pedagogie"
   emoji: "🧑‍🏫"
-  name: "Pédagogie"
-  hint: "Source traitant de pédagogie ou d'enseignement de l'informatique"
+  name: 
+    french: "Pédagogie"
+    english: ""
+  hint: 
+    french: "Source traitant de pédagogie ou d'enseignement de l'informatique"
+    english: ""

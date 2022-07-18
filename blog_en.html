@@ -1,7 +1,7 @@
 ---
 title: Disruptions
 layout: blog
-lang: french
+lang: english
 ref: blog
 ---
 
@@ -9,17 +9,14 @@ ref: blog
     <h1>Disruptions</h1>
 
     <p>
-        Mon blog est en cours de migration ici-même. Je commence par les articles les plus anciens. Vous retrouverez les plus récents à l'adresse : <a href="https://blog.enzosandre.fr/">https://blog.enzosandre.fr/</a>. La migration est semi-manuelle, j'essaie d'avancer un peu chaque jour.
-    </p>
-    <p>
-        Merci de votre patience.
+        I have few posts in English, as I mainly write in <a href="/blog.html">French</a>. These translations are a test : if you a are numerous to read it, I will publish more often.
     </p>
 
     {% assign tags = "" %}
 
     {% capture posts %}
     {% for post in site.posts %}
-        {% if post.categories contains "blog" and post.lang == "french" %}
+        {% if post.categories contains "blog" and post.lang == "english" %}
         <article class="container filtered" data-category="{{post.tags | join: ' '}}">
             <p class="text-center">
                 {{ post.date | date: "%d/%m/%Y" }}
@@ -35,7 +32,7 @@ ref: blog
 
             {{ post.excerpt }}
 
-            <a href="{{ post.url }}">Lire la suite</a>
+            <a href="{{ post.url }}">Read more</a>
         </article>
         {% endif %}
     {% endfor %}
@@ -47,7 +44,7 @@ ref: blog
             {% if used_tag == "" %}
                 <input type="radio" name="tags" id="reset" class="form-check-input" value="All" />
                 <label class="form-check-label fw-bold" for="reset">
-                    ❌ Tous les posts
+                    ❌ All posts
                 </label>
             {% else %}
                 {% assign data = site.data.tags | where: "tag", used_tag | first %}

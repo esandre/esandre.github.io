@@ -39,18 +39,16 @@
                         </button>
                     </li>
 
-                    {% if post %}
-                        {% assign posts=site.posts | where:"ref", page.ref %}
-                        {% for translation in posts %}
-                            {% if page.lang != translation.lang %}
-                            <li class="nav-item">
-                                <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
-                                    {{ translations_data.switch_lang[translation.lang] }}
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% endfor %}
+                    {% assign posts=site.posts | where:"ref", page.ref %}
+                    {% for translation in posts %}
+                        {% if page.lang != translation.lang %}
+                        <li class="nav-item">
+                            <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
+                                {{ translations_data.switch_lang[translation.lang] }}
+                            </a>
+                        </li>
                     {% endif %}
+                    {% endfor %}
 
                     {% assign with_same_ref=site.pages | where:"ref", page.ref %}
                     {% for translation in with_same_ref %}

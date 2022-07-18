@@ -16,6 +16,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            {% assign translations_data = site.data.translations %}
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
                     {% for menu_item in site.data.menu.pages %}
@@ -32,7 +33,7 @@
                             class="btn" type="button" 
                             data-bs-toggle="collapse" data-bs-target="#navbarToggleSearch" 
                             aria-controls="navbarToggleSearch" aria-expanded="false" 
-                            aria-label="{{site.data.translations.search_placeholder[page.lang]}}">
+                            aria-label="{{translations_data.search_placeholder[page.lang]}}">
                             <span style="font-size:1.3em">🔍</span>
                         </button>
                     </li>
@@ -41,7 +42,7 @@
                     {% if page.lang != translation.lang %}
                     <li class="nav-item">
                         <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
-                            {{ site.data.translations.switch_lang[translation.lang] }}
+                            {{ translations_data.switch_lang[translation.lang] }}
                         </a>
                     </li>
                     {% endif %}
@@ -52,7 +53,7 @@
                     {% if page.lang != translation.lang %}
                     <li class="nav-item">
                         <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
-                            {{ site.data.translations.switch_lang[translation.lang] }}
+                            {{ translations_data.switch_lang[translation.lang] }}
                         </a>
                     </li>
                     {% endif %}
@@ -67,7 +68,7 @@
             <span class="input-group-text" id="basic-addon1">🔍</span>
             <input 
                 id="search-input" type="text" class="form-control" 
-                placeholder="{{site.data.translations.search_placeholder[page.lang]}}" />
+                placeholder="{{translations_data.search_placeholder[page.lang]}}" />
         </div>
 
         <ul id="results-container" class="rounded list-group"></ul>
@@ -90,7 +91,7 @@
             resultsContainer: document.getElementById('results-container'),
             json: '/search_{{ page.lang }}.json',
             searchResultTemplate: '{% include search_result_template.html %}',
-            noResultsText: '<li class="no-result list-group-item">{{ site.data.translations.search_no_result[page.lang] }}</li>',
+            noResultsText: '<li class="no-result list-group-item">{{ translations_data.search_no_result[page.lang] }}</li>',
             limit: 20,
             debounceTime: 10
         })

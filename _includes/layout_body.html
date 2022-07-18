@@ -17,16 +17,17 @@
             </button>
 
             {% assign translations_data = site.data.translations %}
+            {% assign with_same_lang = site.pages | where: "lang", page.lang %}
+
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
                     {% for menu_item in site.data.menu.pages %}
-                    {% for candidate_page in site.pages %}
-                    {% if candidate_page.lang == page.lang and candidate_page.ref == menu_item.ref %}
-                        <li {% if menu_item.ref == page.ref %} class="nav-item active" {% else %} class="nav-item" {% endif %} >
-                            <a class="nav-link" href="{{ candidate_page.url }}">{{ menu_item.title[page.lang] }}</a>
-                        </li>
-                    {% endif %}
-                    {% endfor %}
+                        {% assign with_same_lang_and_ref = with_same_lang | where: "ref", menu_item.ref %}
+                        {% for candidate_page in with_same_lang_and_ref %}
+                            <li {% if menu_item.ref == page.ref %} class="nav-item active" {% else %} class="nav-item" {% endif %} >
+                                <a class="nav-link" href="{{ candidate_page.url }}">{{ menu_item.title[page.lang] }}</a>
+                            </li>
+                        {% endfor %}
                     {% endfor %}
                     <li class="nav-item">
                         <button 
@@ -37,19 +38,22 @@
                             <span style="font-size:1.3em">🔍</span>
                         </button>
                     </li>
-                    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-                    {% for translation in posts %}
-                    {% if page.lang != translation.lang %}
-                    <li class="nav-item">
-                        <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
-                            {{ translations_data.switch_lang[translation.lang] }}
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
 
-                    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-                    {% for translation in pages %}
+                    {% if post %}
+                        {% assign posts=site.posts | where:"ref", page.ref %}
+                        {% for translation in posts %}
+                            {% if page.lang != translation.lang %}
+                            <li class="nav-item">
+                                <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">
+                                    {{ translations_data.switch_lang[translation.lang] }}
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    {% assign with_same_ref=site.pages | where:"ref", page.ref %}
+                    {% for translation in with_same_ref %}
                     {% if page.lang != translation.lang %}
                     <li class="nav-item">
                         <a href="{{ translation.url }}" class="nav-link {{ translation.lang }}">

@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="/resources/css/style.css" />
     <link rel="stylesheet" href="/resources/css/{{ include.style }}" />
+
     {% if page.lang == "english" %}
         <link rel="stylesheet" href="/resources/css/english.css" />
     {% endif %}
@@ -33,12 +34,12 @@
     <link rel="icon" type="image/png" href="/resources/images/logo.png">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 
-    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+    {% assign posts=site.posts | where:"ref", page.ref %}
     {% for post in posts %}
         <link rel="alternate" hreflang="{{ site.data.locales[post.lang].hreflang }}" href="{{ post.url }}" />
     {% endfor %}
 
-    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+    {% assign pages=site.pages | where:"ref", page.ref %}
     {% for page in pages %}
         <link rel="alternate" hreflang="{{ site.data.locales[page.lang].hreflang }}" href="{{ page.url }}" />
     {% endfor %}

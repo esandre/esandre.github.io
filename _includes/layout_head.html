@@ -4,7 +4,7 @@
         name="description"
 
         {% if page.excerpt %}
-            content="{{ page.excerpt | strip_html }}"
+            content="{{ page.excerpt | strip_html | escape}}"
         {% else %} 
             content="L'Atelier Logiciel Sandré produit des logiciels de qualité, du bas-niveau à l'UI. Nous proposons également des formations et du coaching." 
         {% endif %}

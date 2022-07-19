@@ -1,0 +1,25 @@
+<div id="html" markdown="0">
+	{% if include.size %}
+		{% assign size = include.size %}
+	{% else %}
+		{% assign size = 12 %}
+	{% endif %}
+
+	{% if include.float %}
+		{% assign float = "float-" | append: include.float %}
+	{% else %}
+		{% assign float = "" %}
+	{% endif %}
+
+	{% if include.caption %}
+		<figure class="figure {{float}} col-md-{{size}}">
+			<img 
+				src="{{include.src}}" 
+				alt="{{include.caption}}" 
+				class="figure-img img-fluid"/>
+			<figcaption class="figure-caption">{{include.caption}}</figcaption>
+		</figure>
+	{% else %}
+		<img src="{{include.src}}" class="img-fluid {{float}} col-md-{{size}}" />
+	{% endif %}
+</div>

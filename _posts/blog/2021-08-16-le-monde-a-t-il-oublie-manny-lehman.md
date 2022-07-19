@@ -1,17 +1,13 @@
 ---
-id: 495
-title: 'Le monde a-t-il oublié Manny Lehman ?'
-date: '2021-08-16T12:56:21+02:00'
-author: 'Enzo Sandré'
-excerpt: 'Émises par Meir "Manny" Lehman, comme une tentative pour donner à la science du logiciel des assises théoriques solides, les 8 lois de Lehman ont été oubliées. Les générations de chercheurs qui les ont étudiées ne les ont pas invalidées, bien au contraire ! Il serait donc temps d''adopter ces lois, selon le vieux principe scientifique qui veut que toute hypothèse réfutable restée solide face aux tentatives de réfutation est temporairement une connaissance fiable.'
+title: "Le monde a-t-il oublié Manny Lehman ?"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=495'
-permalink: /2021/08/16/le-monde-a-t-il-oublie-manny-lehman/
-image: /wp-content/uploads/2021/08/Meir_Manny_Lehman.jpg
-categories:
-    - Travaux
-tags:
-    - Informatique
+category: 'blog'
+lang: french
+tags: histoire-informatique developpement
+ref: le-monde-a-t-il-oublie-manny-lehman
+excerpt: '<p>Émises par Meir "Manny" Lehman, comme une tentative pour donner à la science du logiciel des assises théoriques solides, les 8 lois de Lehman ont été oubliées. Les générations de chercheurs qui les ont étudiées ne les ont pas invalidées, bien au contraire ! Il serait donc temps d''adopter ces lois, selon le vieux principe scientifique qui veut que toute hypothèse réfutable restée solide face aux tentatives de réfutation est temporairement une connaissance fiable.</p>'
+long_post: True
+dois: 10.1016/0164-1212(79)90022-0 10.1109/PROC.1980.11805 10.1145/2543581.2543595
 ---
 
 *EDIT 19/08/2021 : mise à jour du texte de la 3ème loi, trop obscur. Ajout de références.*
@@ -38,7 +34,13 @@ Un logiciel doit être maintenu dans le temps pour durer, par des actions de mai
 
 Cette seconde loi est tout aussi connue des développeurs. Elle est en revanche ignorée ou niée par les managers. De surcroît, les développeurs sont souvent bien incapables de l’expliquer à leurs décideurs, ils ne la connaissent que d’instinct.
 
-<figure class="wp-block-image">![](https://www.commitstrip.com/wp-content/uploads/2021/06/Strip-Refractoring-du-code-650-final.jpg)</figure>Le drame est le lien entre complexité du logiciel et vélocité. Les équipes s’embourbent dans la gestion d’une complexité accidentelle évitable et ne parviennent plus à sortir de features. La pression du management s’accentue et la pire réponse est apportée presque à chaque fois : réduire le rythme du refactoring pour « gagner du temps ». Le schéma est ensuite toujours le même : surendettement, démotivation, turnover, retards, etc.
+{% include 
+helper_image.html 
+src="https://www.commitstrip.com/wp-content/uploads/2021/06/Strip-Refractoring-du-code-650-final.jpg" 
+float="start" 
+size="5" %}
+
+Le drame est le lien entre complexité du logiciel et vélocité. Les équipes s’embourbent dans la gestion d’une complexité accidentelle évitable et ne parviennent plus à sortir de features. La pression du management s’accentue et la pire réponse est apportée presque à chaque fois : réduire le rythme du refactoring pour « gagner du temps ». Le schéma est ensuite toujours le même : surendettement, démotivation, turnover, retards, etc.
 
 ### III – Auto-régulation
 
@@ -56,13 +58,25 @@ Cette loi décrit l’inertie des projets logiciels, inertie d’autant plus gra
 
 La loi a été remaniée par l’auteur en 1998, suite à l’ajout de la huitième loi. L’ancienne version de la troisième loi devient un lemme, qui facilite la compréhension de la nouvelle version.
 
-<figure class="wp-block-image">![Curling Canada | Streifel ajoute une autre victoire à son ...](https://s2.qwant.com/thumbr/700x0/4/b/68b47ee05ef96652d56c72a0453fe5c4810423e6eebc7ba4aaa3b2778747fb/WJ-2017-Women-Day-2-Streifel-slide-left-FI.jpg?u=https%3A%2F%2Fwww.curling.ca%2Fwp-content%2Fblogs.dir%2F58%2Ffiles%2F2017%2F02%2FWJ-2017-Women-Day-2-Streifel-slide-left-FI.jpg&q=0&b=1&p=0&a=0)</figure>Un projet logiciel ressemble à une partie de curling. Le lancer initial détermine la majorité des facteurs qui feront la réussite ou l’échec d’un projet. Les balayeurs ont un rôle important, mais plus minime que le lanceur sur la direction et la longévité du projet. Si le lanceur a projeté la pierre vers les tribunes, aucun effort des balayeurs n’ira la remettre sur le chemin de la cible.
+{% include 
+helper_image.html 
+src="/resources/images/content/streifel_curling.webp" 
+float="start" 
+size="5" %}
+
+Un projet logiciel ressemble à une partie de curling. Le lancer initial détermine la majorité des facteurs qui feront la réussite ou l’échec d’un projet. Les balayeurs ont un rôle important, mais plus minime que le lanceur sur la direction et la longévité du projet. Si le lanceur a projeté la pierre vers les tribunes, aucun effort des balayeurs n’ira la remettre sur le chemin de la cible.
 
 Autrement dit, après le lancer, les balayeurs ne peuvent plus choisir arbitrairement où ira la pierre. Leur rôle se bornera à une influence discrète sur la direction de celle-ci. C’est déjà beaucoup. Quelques centimètres séparent le centre de la cible, la réussite, d’une performance médiocre, le retard.
 
 C’est cela que Lehman exprime par sa loi. Une fois le projet « sur les rails », les aiguillages sont rares. Aucune autorité ne peut décréter que la valeur de tel ou tel indicateur sera arbitrairement doublée ou triplée. Tout au plus l’équipe pourra influer sur certains indicateurs par petits incréments. <span style="text-decoration: underline;">Au prix, huitième loi oblige, d’une réaction inverse de d’autres indicateurs.</span>
 
-<figure class="wp-block-image">![Wrapped normal distribution - Wikiwand](https://s1.qwant.com/thumbr/0x380/9/1/5df832875e692f325db451f4eca861ca217993cf600267b705351c177c7459/WrappedNormalPDF.png?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F69%2FWrappedNormalPDF.png&q=0&b=1&p=0&a=0)</figure>A un instant T, l’ensemble des indicateurs du projet suit toujours une distribution normale. La seule variable à portée de l’équipe et du management est σ. Faut-il laisser le projet suivre son cours, ou tenter de corriger un jeu de variables, au prix d’une réaction symétrique d’autres variables ?
+{% include 
+helper_image.html 
+src="/resources/images/content/normal_distribution.png" 
+float="start" 
+size="5" %}
+
+A un instant T, l’ensemble des indicateurs du projet suit toujours une distribution normale. La seule variable à portée de l’équipe et du management est σ. Faut-il laisser le projet suivre son cours, ou tenter de corriger un jeu de variables, au prix d’une réaction symétrique d’autres variables ?
 
 Je prends un exemple : le management peut décider que le projet ne va pas assez vite et mettre la pression sur les développeurs. La variable « vitesse » va augmenter, au prix d’une baisse d’autres variables comme la qualité ou la vélocité à long terme. La distribution normale des variables reste respectée.
 
@@ -124,7 +138,11 @@ Dès leur sortie dans les années 1970, les lois de Lehman ont provoqué deux ty
 
 Les détracteurs de Lehman ont-ils réfuté les lois ? En 2013, 4 chercheurs ont réalisé une revue systématique à ce propos.
 
-<div class="wp-block-image"><figure class="aligncenter is-resized">![Evidence pyramid](https://h5p.org/sites/default/files/h5p/content/577351/images/image-5d56c8e206200.png)</figure></div>**Le consensus actuel semble valider totalement les lois de Lehman pour les logiciels commerciaux. Cependant, la plupart des lois sont réfutées pour le développement Open-Source, qui semble suivre sa propre logique.**
+<img src="https://h5p.org/sites/default/files/h5p/content/577351/images/image-5d56c8e206200.png" 
+    alt="Evidence Pyramid." 
+    class="figure-img img-fluid col-md-6 float-start"/>
+
+**Le consensus actuel semble valider totalement les lois de Lehman pour les logiciels commerciaux. Cependant, la plupart des lois sont réfutées pour le développement Open-Source, qui semble suivre sa propre logique.**
 
 Les lois de Lehman font partie de ce que la recherche en qualité logicielle a de plus solide à l’heure actuelle pour décrire et bâtir des équipes et process solides. **C’est un fait scientifique solide en l’attente de nouvelles preuves.**
 
@@ -142,18 +160,10 @@ Enzo Sandré
 
 ## Sources
 
-```
-<pre class="wp-block-preformatted">M. M. Lehman. 1996. Laws of Software Evolution Revisited. In <em>Proceedings of the 5th European Workshop on Software Process Technology</em> (<em>EWSPT '96</em>). Springer-Verlag, Berlin, Heidelberg, 108–124.
-```
+M. M. Lehman. 1996. Laws of Software Evolution Revisited. In Proceedings of the 5th European Workshop on Software Process Technology (EWSPT '96). Springer-Verlag, Berlin, Heidelberg, 108–124.
 
-```
-<pre class="wp-block-preformatted">M. M. Lehman, "Programs, life cycles, and laws of software evolution," in Proceedings of the IEEE, vol. 68, no. 9, pp. 1060-1076, Sept. 1980, doi: 10.1109/PROC.1980.11805.
-```
+M. M. Lehman, "Programs, life cycles, and laws of software evolution," in Proceedings of the IEEE, vol. 68, no. 9, pp. 1060-1076, Sept. 1980, doi: 10.1109/PROC.1980.11805.
 
-```
-<pre class="wp-block-preformatted">M.M. Lehman, On understanding laws, evolution, and conservation in the large-program life cycle, Journal of Systems and Software, Volume 1, 1979, Pages 213-221, ISSN 0164-1212, DOI:10.1016/0164-1212(79)90022-0.
-```
+M.M. Lehman, On understanding laws, evolution, and conservation in the large-program life cycle, Journal of Systems and Software, Volume 1, 1979, Pages 213-221, ISSN 0164-1212, DOI:10.1016/0164-1212(79)90022-0.
 
-```
-<pre class="wp-block-preformatted">Israel Herraiz, Daniel Rodriguez, Gregorio Robles, and Jesus M. Gonzalez-Barahona. 2013. The evolution of the laws of software evolution: A discussion based on a systematic literature review. <em>ACM Comput. Surv.</em> 46, 2, Article 28 (November 2013), 28 pages. DOI:https://doi.org/10.1145/2543581.2543595
-```
+Israel Herraiz, Daniel Rodriguez, Gregorio Robles, and Jesus M. Gonzalez-Barahona. 2013. The evolution of the laws of software evolution: A discussion based on a systematic literature review. <em>ACM Comput. Surv.</em> 46, 2, Article 28 (November 2013), 28 pages. DOI:10.1145/2543581.2543595

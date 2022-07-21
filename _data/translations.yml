@@ -21,3 +21,11 @@ search_placeholder:
 search_no_result:
   french: "Aucun résultat !"
   english: "No result !"
+
+read_more:
+  french: "Lire la suite"
+  english: "Read more"
+
+all_posts:
+  french: "Tous les articles"
+  english: "All posts"

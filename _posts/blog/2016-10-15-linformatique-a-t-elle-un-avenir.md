@@ -5,9 +5,10 @@ category: 'blog'
 tags: af2000 technocritique ecologie
 lang: french
 ref: linformatique-a-t-elle-un-avenir
+image: /resources/images/content/bougie.jpg
 ---
 
-[![bougie](http://blog.enzosandre.fr/wp-content/uploads/2016/10/bougie.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2016/10/bougie.jpg) Récemment, le président Barack Obama a accordé un entretien au magazine Wired[\[i\]](#_edn1), sur la robotisation, l’Intelligence Artificielle et la réduction du temps de travail. Le président américain prédit un avenir ou le travail humain sera remplacé progressivement par des machines, et les bénéfices reversés à la société toute entière. Un discours vieux de deux siècles, sans cesse remis au goût du jour[\[ii\]](#_edn2).
+Récemment, le président Barack Obama a accordé un entretien au magazine Wired[\[i\]](#_edn1), sur la robotisation, l’Intelligence Artificielle et la réduction du temps de travail. Le président américain prédit un avenir ou le travail humain sera remplacé progressivement par des machines, et les bénéfices reversés à la société toute entière. Un discours vieux de deux siècles, sans cesse remis au goût du jour[\[ii\]](#_edn2).
 
 De notre point de vue, un futur où le travail est robotisé n’est absolument pas crédible. Nous allons même plus loin, en déclarant que dans la majorité de ses usages actuels, l’informatique n’a aucun avenir. Le monde de demain sera contraint en énergie, soit par manque de ressources, soit afin de ne pas dérégler massivement le climat. La plupart des spécialistes s’accordent à le dire : les énergies fossiles en général et le pétrole en particulier, voient déjà leur production décroître[\[iii\]](#_edn3) et ni les renouvelables, ni la fusion ne viendront nous sauver dans les prochaines décennies[\[iv\]](#_edn4). La récession actuelle est donc là pour durer, balayant sur son passage tout l’accessoire.
 

@@ -5,10 +5,15 @@ category: 'blog'
 tags: af2000 ie
 lang: french
 ref: la-puissance-moderne
+image: /resources/images/content/puissance_moderne-chauvancy.jpg
+excerpt_separator: <!--separator-->
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/07/puissance_moderne.jpg) Recension d’un ouvrage de Raphaël Chauvancy – La Puissance moderne, aux [éditions Apopsix](http://www.apopsix.fr/catalogue/la-puissance-moderne--978-2-35979-127-3.html)
+Recension d’un ouvrage de Raphaël Chauvancy – La Puissance moderne, aux [éditions Apopsix](http://www.apopsix.fr/catalogue/la-puissance-moderne--978-2-35979-127-3.html)
+
 Retournons à une période clé de notre histoire : le règne de Louis XVI. La France est devenue la première puissance mondiale, grâce à une ambitieuse politique de guerre économique. Son armée de terre est la plus puissante d’Europe et les efforts de Vergennes ont porté leurs fruits sur mer : la flotte française pèse suffisamment pour infliger de sérieux revers à la perfide Albion, entamant son commerce sur la route des Indes. On le sait depuis Thucydide : on ne peut vaincre une puissance maritime que par la mer.
+
+<!--separator-->
 
 La diplomatie de la France est une merveilleuse machine à créer l’équilibre. Ayant bien compris qu’une puissance détruite cherche à se venger, la France réussit par de subtils jeux d’alliance à contenir les visées déraisonnables de ses voisins. Le royaume est allié à l’Espagne, par le sang, à la Hollande par anglophobie et à l’Autriche, par ruse.
 

@@ -1,19 +1,14 @@
 ---
-id: 837
-title: 'L&rsquo;artisanat est-il excluant ?'
-date: '2022-05-12T10:46:22+02:00'
-author: 'Enzo Sandré'
-excerpt: 'Parler d''artisanat, de savoir-faire ou pire, de maîtrise, choque certains. Les artisans du logiciel seraient les "gatekeepers de la tech" comme j''ai pu le lire récemment. Ceux qui le pensent ont parfaitement raison, mais prennent l''antipathie et le manque de bienveillance de certains gardiens pour une injustice structurelle ou pire, une discrimination intolérable liée à l''existence de la porte.'
+title: "L'artisanat est-il excluant ?"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=837'
-permalink: /2022/05/12/lartisanat-est-il-excluant/
-image: /wp-content/uploads/2022/05/a0005802342_10.webp
-categories:
-    - Travaux
-tags:
-    - Corporatisme
-    - Informatique
+category: 'blog'
+lang: french
+ref: lartisanat-est-il-excluant
+image: /resources/images/content/melvins_crybaby.webp
+tags: corporatisme artisanat
 ---
+
+Parler d'artisanat, de savoir-faire ou pire, de maîtrise, choque certains. Les artisans du logiciel seraient les « gatekeepers de la tech » comme j'ai pu le lire récemment. Ceux qui le pensent ont parfaitement raison, mais prennent l'antipathie et le manque de bienveillance de certains gardiens pour une injustice structurelle ou pire, une discrimination intolérable liée à l'existence de la porte.
 
 Il est bon qu’il y ait des portes. Pour illustrer mon propos, je vais prendre un exemple qui ne diffère du sujet qu’en degré, non en nature. Imaginez qu’un passager, épris de Saint-Exupéry, décide de pénétrer dans le cockpit d’un avion en plein vol. Un pilote, mièvre ou inconscient, lui laisse alors le manche et prend sa pause. L’équipage et les passagers auront raison de s’insurger, qu’il y ait eu crash ou non ! La **liberté individuelle** de cette personne a gravement supplanté le **bien commun**.
 
@@ -59,5 +54,3 @@ Je m’assume complètement comme « gatekeeper de la tech ». Je ne cache pas m
 Mon propos est de sortir du schéma idiot, partisan et binaire : EXCLUSION = DISCRIMINATION = MAL. De même que toutes les inégalités ne sont pas injustes, toutes les barrières ne sont pas contraires au bien de la société. Dans ce débat que Twitter ramène fréquemment au point Godwin, je souhaitais amener une réflexion plus sérieuse.
 
 Aucune civilisation ne peut subsister en régulant chaque aspect de la vie au millimètre. Aucune société ne peut se former sans règles. Plus nos outils se complexifient, plus la question de la régulation de leur usage se pose. Les corps de métiers sont un des outils dont nous disposons.
-
-Enzo Sandré

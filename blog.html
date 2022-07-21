@@ -33,9 +33,16 @@ ref: blog
             </p>
             <h2 class="text-center">{{post.title}}</h2>
 
-            {{ post.excerpt }}
-
-            <a href="{{ post.url }}">Lire la suite</a>
+            <div class="row">
+                {% if post.image %}
+                    <img src="{{post.image}}" class="col-md-4 thumbnail" >
+                {% endif %}
+                <p class="col">
+                    {{ post.excerpt | strip_html }}
+                    <br/>
+                    <a href="{{ post.url }}">Lire la suite</a>
+                </p>
+            </div>
         </article>
         {% endif %}
     {% endfor %}

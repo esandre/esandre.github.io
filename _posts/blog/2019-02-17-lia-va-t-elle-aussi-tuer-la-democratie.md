@@ -5,11 +5,10 @@ category: 'blog'
 tags: lbc technocritique
 lang: french
 ref: lia-va-t-elle-aussi-tuer-la-democratie
+image: /resources/images/content/laurent-alexandre-ia-democratie.jpg
 ---
 
 Le livre de Laurent Alexandre est semblable au Basilic de Roko, cette expérience de pensée mettant en scène une singularité bienveillante qui torturera tous ceux, même morts, qui n’ont pas aidé à sa venue. Comme le Basilic, l’ouvrage ne vaut pas grand-chose sur le plan logique, cumulant les hommes de paille, les approximations, les études non-sourcées, les prophéties et les arguments d’autorité. Comme le Basilic, l’ouvrage en dit long sur les peurs irrationnelles suscitées par l’IA, principalement au sein de l’élite cognitive, prétendument vaccinée contre l’obscurantisme par la rigueur scientifique. Enfin, comme le Basilic, l’ouvrage trouve son intérêt dans son contenu politique, presque métaphysique, à condition de le lire d’un œil dépassionné, capable d’extraire les avertissements pour notre temps, de la science-fiction omniprésente.
-
-![](http://blog.enzosandre.fr/wp-content/uploads/2019/02/laurent-alexandre-818x1024.jpg)
 
 Le Dr Alexandre maîtrise bien son style habituel : faire peur pour susciter une réaction du public, puis des politiques à travers eux. Cette fois, le maire de Meaux, Jean-François Copé joue le rôle du politicien, plus mesuré, qui sait que la politique est l’art de louvoyer, non celui de renverser la table. Il adoucit l’alarmisme de la première partie, avec une idée derrière la tête : dompter la peur que suscite Laurent Alexandre pour annoncer un sauveur : l’Union Européenne. L’argumentation ne manque pas de contradictions et donne une impression de récupération politicienne. S’il pointe avec justesse le manque d’une vision à long terme incarnée dans un personnage fort et légitime, c’est pour mieux se réfugier chez les Commissaires Européens. La démocratie n’attendra pas l’IA pour mourir.
 

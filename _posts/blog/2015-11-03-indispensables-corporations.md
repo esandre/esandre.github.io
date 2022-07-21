@@ -5,13 +5,15 @@ category: 'blog'
 tags: corporatisme
 lang: french
 ref: indispensables-corporations
+image: /resources/images/content/vers-un-ordre-social-corporatif.jpg
+excerpt_separator: <!--separator-->
 ---
 
 Costume-cravate, honnêteté, politesse : il devient compliqué de reconnaître nos chers taxis parisiens ! Quel dommage qu’il faille une agressive entreprise étrangère pour que la profession se remette en cause. Que de temps perdu, d’argent gâché et de drames pour arriver à un résultat qui n’est somme toute que le simple bien commun.
 
-[![10333777_1608050996120414_1959387858372469535_o](http://blog.enzosandre.fr/wp-content/uploads/2015/11/10333777_1608050996120414_1959387858372469535_o.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2015/11/10333777_1608050996120414_1959387858372469535_o.jpg)
-
 Avant la crise, personne n’a voulu voir le problème, pendant la crise, personne n’a voulu le traiter efficacement, après la crise, personne n’a eu la folle idée de se remettre en question. Ni l’état ventripotent, ni les entreprises mues par le profit, ni les fédérations oligarchiques, ni les syndicats borgnes n’avaient les cartes pour agir. Chacun a ses intérêts propres, s’affrontant par-ci, se recoupant par-là, mais aucune n’a l’intérêt de la branche pour boussole.
+
+<!--separator-->
 
 L’intérêt de la branche est l’intérêt commun des acteurs physiques de cette branche, sur le long terme. Ils ne sont pas défendus et ce manque est une des faiblesses de notre économie. Désunis, les français sont à la merci de l’étranger, l’affaire Uber le montre. La défense économique d’une branche requiert d’abord l’union interne.  
 L’union interne requiert de rassembler autour d’une tables toutes les personnes physiques d’une branche : ce que l’on nommait jadis une corporation.

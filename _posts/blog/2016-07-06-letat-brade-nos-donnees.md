@@ -5,9 +5,10 @@ category: 'blog'
 tags: af2000 securite
 lang: french
 ref: letat-brade-nos-donnees
+image: /resources/images/content/dollar-tunnel.jpg
 ---
 
-[![main](http://blog.enzosandre.fr/wp-content/uploads/2016/07/main.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2016/07/main.jpg) « La France porte une tradition de transparence démocratique et de partage des informations détenues par la puissance publique. » Ne riez pas, il s’agit des premiers mots de la très sérieuse déclaration du gouvernement sur l’ouverture des données publiques. Notre pays va d’ailleurs prendre la tête du Partenariat pour un Gouvernement Ouvert (PGO) en octobre prochain. L’ouverture et la transparence comme remède au complexe démocratique de la république ? Tout un programme.
+« La France porte une tradition de transparence démocratique et de partage des informations détenues par la puissance publique. » Ne riez pas, il s’agit des premiers mots de la très sérieuse déclaration du gouvernement sur l’ouverture des données publiques. Notre pays va d’ailleurs prendre la tête du Partenariat pour un Gouvernement Ouvert (PGO) en octobre prochain. L’ouverture et la transparence comme remède au complexe démocratique de la république ? Tout un programme.
 
 L’ouverture des données publiques est constamment demandée tant à gauche qu’à droite. Les premiers soutiennent que l’accès aux données publiques est un enjeu démocratique, inscrit dans les Droits de l’Homme, les seconds veulent dynamiser l’économie en injectant les données publiques dans un marché déjà fort lucratif. Les plus radicaux des deux camps vont même jusqu’à exiger la fin du secret d’état, qui mettrait gravement en danger les capacités stratégiques de celui-ci.
 

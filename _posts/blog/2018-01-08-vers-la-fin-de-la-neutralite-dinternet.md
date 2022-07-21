@@ -5,11 +5,10 @@ category: 'blog'
 tags: af2000 technocritique histoire-informatique
 lang: french
 ref: vers-la-fin-de-la-neutralite-dinternet
+image: /resources/images/content/United_States_Federal_Communications_Commission.png
 ---
 
 Le 14 décembre 2017, la FCC[\[i\]](#_edn1) a officiellement mis fin à la neutralité du net. Hurlements du côté des « défenseurs des libertés » pro-neutralité, cris de joie du côté des « défenseurs des libertés » anti-neutralité. Cette décision n’est pourtant qu’un symptôme : la toile craque sous le poids des géants du web.
-
-![](http://blog.enzosandre.fr/wp-content/uploads/2018/01/1200px-Seal_of_the_United_States_Federal_Communications_Commission.svg_-1024x1024.png)
 
 ## Le postier libre dans le monde libre
 

@@ -5,6 +5,7 @@ category: 'blog'
 tags: old af2000 securite
 lang: french
 ref: loi-renseignement-gare-a-la-surinfection
+image: /resources/images/content/legalisersurveillance.gif
 ---
 
 Doit être votée le 5 mai prochain par l’Assemblée nationale la loi dite « Renseignement ».  
@@ -12,8 +13,6 @@ Cette loi est décrite par le gouvernement comme une modernisation des moyens de
 
 Cette loi ne prévoit aucune possibilité de recours en cas d’abus. Elle prévoit une vague commission de contrôle au rôle uniquement consultatif.  
 Les réactions ne se sont pas faites attendre : la loi a cristallisé les oppositions, l’opinion sentant instinctivement le danger. Cette fois-ci, le vieil argument « si vous n’avez rien à cacher vous n’avez rien à craindre » n’a pas suffi à faire taire la société civile, ainsi que les quelques courageux du monde judiciaire qui ont élevé la voix. Le monde politique, exceptés le PS et une partie de l’UMP, ont été unanimes à condamner ce projet de loi.
-
-[![legalisersurveillance](http://blog.enzosandre.fr/wp-content/uploads/2015/05/legalisersurveillance.gif)](http://blog.enzosandre.fr/wp-content/uploads/2015/05/legalisersurveillance.gif)
 
 Comme d’ordinaire lorsque l’on touche à Internet, la « communauté web », nébuleuse de blogueurs, d’informaticiens et d’utilisateurs, s’est indignée. Ils ont, comme à leur habitude, dénoncé, avec beaucoup de créativité et de brio, cette loi liberticide et le danger qu’elle représente. Hélas ils n’ont pas été chercher plus loin les causes de cette loi, préférant dénoncer « un manque de démocratie ».
 

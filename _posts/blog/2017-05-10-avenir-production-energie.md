@@ -5,9 +5,10 @@ category: 'blog'
 tags: af2000 ecologie technocritique ie
 lang: french
 ref: principe-de-precaution-boulet-economique
+image: /resources/images/content/centrale.jpg
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/05/dsc_0201.jpg) L’homme connaît l’existence du charbon et du pétrole depuis le néolithique. Il faut attendre l’âge industriel pour qu’il devienne une ressource énergétique nécessaire à l’industrie. Historiquement, le charbon a sauvé les forêts françaises d’un abattage méthodique, pour nourrir le Moloch industriel. Plus tard sont apparus le pétrole et le gaz, qui n’ont jamais diminué la part du charbon dans le mix énergétique mondial. Le nucléaire vint s’additionner.
+L’homme connaît l’existence du charbon et du pétrole depuis le néolithique. Il faut attendre l’âge industriel pour qu’il devienne une ressource énergétique nécessaire à l’industrie. Historiquement, le charbon a sauvé les forêts françaises d’un abattage méthodique, pour nourrir le Moloch industriel. Plus tard sont apparus le pétrole et le gaz, qui n’ont jamais diminué la part du charbon dans le mix énergétique mondial. Le nucléaire vint s’additionner.
 
 ## Introduction
 
@@ -19,7 +20,9 @@ A l’âge des machines, celui qui produit l’énergie détient le pouvoir. Une
 
 ## Entretien avec Jean-Pierre Petit 
 
-**![](http://blog.enzosandre.fr/wp-content/uploads/2017/05/jean-pierre-petit-300x300.png)Ancien directeur de recherche du CNRS, M. Petit est un chercheur laissant derrière lui une fructueuse carrière dans l’astrophysique et la physique des plasmas. Très critique à l’égard de l’énergie nucléaire, M. Petit fut l’un des premiers à avertir de la gabegie que représente ITER.**
+{% include helper_image.html src="/resources/images/content/jean-pierre-petit.png" float="start" size=3 %}
+
+**Ancien directeur de recherche du CNRS, M. Petit est un chercheur laissant derrière lui une fructueuse carrière dans l’astrophysique et la physique des plasmas. Très critique à l’égard de l’énergie nucléaire, M. Petit fut l’un des premiers à avertir de la gabegie que représente ITER.**
 
 **Jean-Pierre Petit est également un vulgarisateur. Il est l’auteur de la série de bandes dessinées [Anselme Lanturlu](http://www.savoir-sans-frontieres.com/). Depuis quelques années, M. Petit diffuse des vidéos sur Internet, toujours dans le but d’expliquer la physique au plus grand nombre. Nous avons souhaité l’interroger sur sa vision du rapport entre l’homme et l’énergie.**
 
@@ -58,7 +61,7 @@ Ancien directeur de recherche au CNRS**
 
 ## Richard Bulan : Crise de l'énergie ou énergie de la crise ?
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/05/peak-oil.png)
+{% include helper_image.html src="/resources/images/content/peak-oil.png" float="start" size=7 %}
 
 Depuis le premier choc pétrolier, les discours alarmistes se répercutent sur les montagnes de la bien-pensance et de la vue court-termiste comme un écho dans une vallée trop encaissée.
 
@@ -80,7 +83,7 @@ Le passage à des techniques non pétrolière ou gazière va juste déplacer le 
 
 ## Théophile Ducran-Lapoigne : La décentralisation énergétique, un projet au bénéfice du localisme ?
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/05/5221-les-moulins-de-kinderdijk-ont-ete-1500x0-1-1024x586.jpg)
+{% include helper_image.html src="/resources/images/content/moulins-de-kinderdijk.jpg" float="start" size=7 %}
 
 ### Le point de départ : la nécessité de réforme du système français
 
@@ -145,7 +148,9 @@ Reste à voir par quels biais politiques la décentralisation énergétique sera
 
 ## Conclusion : Quel avenir pour la production d'énergie ?
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/05/FO3_loading_goatslide01-1024x576.jpg)L’après-pétrole approche et il est temps de penser à son remplacement. Ecologistes et industriels doivent cesser leur autisme et entamer un vrai débat sur le mix énergétique de demain. Analyse d’un débat d’infirmes qui n’en finit plus.
+{% include helper_image.html src="/resources/images/content/fallout-goat.jpg" float="start" size=5 %}
+
+L’après-pétrole approche et il est temps de penser à son remplacement. Ecologistes et industriels doivent cesser leur autisme et entamer un vrai débat sur le mix énergétique de demain. Analyse d’un débat d’infirmes qui n’en finit plus.
 
 ### Fission nucléaire : Rickover and over
 

@@ -5,11 +5,10 @@ category: 'blog'
 tags: af2000 jeu-video
 lang: french
 ref: fallout-4-le-jeu-video-dans-la-guerre-des-idees
+image: /resources/images/content/fallout-4-wastes.jpg
 ---
 
 Sorti le 10 novembre, Fallout 4 marque un tournant dans l’histoire d’une série déjà mythique. Bethesda vient de prouver sa capacité à proposer un jeu qui ne se résume pas à une quête linéaire aboutissant sur un happy end à l’américaine. Fallout 3 en avait déçu plus d’un, Fallout : New Vegas avait un peu rattrapé le tir, Bethesda n’avait pas le droit à l’erreur sur ce nouvel opus.
-
-[![gug_9Mg2QPdH.878x0.Z-Z96KYq](http://blog.enzosandre.fr/wp-content/uploads/2015/12/gug_9Mg2QPdH.878x0.Z-Z96KYq.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2015/12/gug_9Mg2QPdH.878x0.Z-Z96KYq.jpg)
 
 Pour ceux qui ne connaissent pas la série, Fallout met en scène l’immersion d’un personnage sans talents particuliers dans un monde annihilé par une guerre nucléaire. L’humanité a survécu en se réfugiant dans des abris le temps de la catastrophe. Des groupes humains se battent sur les ruines des Etats-Unis, les sinistres « Terres Désolées », certains pour le pouvoir et l’argent, d’autres pour des buts plus nobles. Dans ce quatrième opus, le joueur incarne un personnage qui fut cryogénisé avec sa famille le jour où les bombes tombèrent.
 

@@ -5,11 +5,15 @@ category: 'blog'
 tags: af2000 histoire-informatique
 lang: french
 ref: joyeux-anniversaire-linux
+image: /resources/images/content/Linus_Torvalds.jpg
+excerpt_separator: <!--separator-->
 ---
 
 Linux fait figure d’exception dans le monde de l’ingénierie logicielle. Il est le seul projet libre de cette ampleur à fonctionner depuis 25 ans. Linus Torvalds, son créateur, le dirige encore aujourd’hui d’une main ferme, à la manière d’un véritable monarque.
 
-[![Linus_Torvalds](http://blog.enzosandre.fr/wp-content/uploads/2016/08/Linus_Torvalds.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2016/08/Linus_Torvalds.jpg)Comme tout logiciel libre, Linux peut être utilisé, modifié, dupliqué et diffusé sans aucune contrainte. Sa spécificité vient de la propriété de la marque Linux par Linus Torvalds. N’importe qui peut installer Linux, le modifier et diffuser ses modifications, mais seul Linus Torvalds décide des modifications qui seront incluses dans le logiciel désigné par le nom de Linux. Chacun est en revanche libre de publier des modifications refusées sous un autre nom. Pourtant, la popularité de Linux empêche bien souvent les mécontents de s’éloigner de la branche principale. Cela garantit une certaine stabilité au projet Linux.
+Comme tout logiciel libre, Linux peut être utilisé, modifié, dupliqué et diffusé sans aucune contrainte. Sa spécificité vient de la propriété de la marque Linux par Linus Torvalds. N’importe qui peut installer Linux, le modifier et diffuser ses modifications, mais seul Linus Torvalds décide des modifications qui seront incluses dans le logiciel désigné par le nom de Linux. Chacun est en revanche libre de publier des modifications refusées sous un autre nom. Pourtant, la popularité de Linux empêche bien souvent les mécontents de s’éloigner de la branche principale. Cela garantit une certaine stabilité au projet Linux.
+
+<!--separator-->
 
 Dès les premières années du projet, des centaines de développeurs sont venus contribuer librement au projet Linux. Cette communauté produisait trop de modifications pour que Linus puisse seul les analyser et les incorporer à Linux. Il a donc décidé la création d’un système de lieutenants, un pour chaque grande partie du système (son, processeur, mémoire …). Chaque lieutenant est responsable devant lui de la qualité du code qu’il valide. Tout développeur qui souhaite contribuer au projet Linux doit envoyer ses modifications à un lieutenant, qui validera ses modifications et les regroupera avec d’autres, afin de les présenter à Linus. En cas de conflit entre deux lieutenants, Linus tranche, avec un langage souvent très fleuri. Ce système dure encore aujourd’hui, alors que des milliers de développeurs contribuent au plus gros projet libre du monde.
 

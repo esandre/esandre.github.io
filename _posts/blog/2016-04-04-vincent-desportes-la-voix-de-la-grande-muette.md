@@ -5,17 +5,19 @@ category: 'blog'
 tags: portail-ie
 lang: french
 ref: vincent-desportes-la-voix-de-la-grande-muette
+image: /resources/images/content/desportes.jpg
+excerpt_separator: <!--separator-->
 ---
 
 Je me suis rendu, en tant qu’ambassadeur du Portail de l’IE, à la conférence du Général Vincent Desportes autour de son livre La dernière bataille de France.
-
-[![desportes](http://blog.enzosandre.fr/wp-content/uploads/2016/04/desportes.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2016/04/desportes.jpg)
 
 **Le général débute sa conférence par un effrayant portrait de l’armée française, parent pauvre de la république. Meurtrie par des politiques incapables de se projeter dans le long-terme, affaiblie par un budget anémique et démantelée par l’absurdité bureaucratique, notre outil de défense est bien malade.**
 
 **Le général poursuit son propos en tentant d’expliquer les raisons de ce déclin de l’armée. Pour lui, elles sont multiples : la bureaucratie et ses conséquences ont fondu sur les militaires : technologisme, rigidité, absurdité et réformite. La dissuasion nucléaire a servi de prétexte pour faire fondre les budgets conventionnels. Le pacifisme et l’antimilitarisme, déjà hors d’âge pendant la guerre froide, continuent d’être présents dans les plus hautes sphères de la république, à gauche comme à droite. Enfin, les français vivent dans l’illusion que l’Oncle Sam reviendra nous sauver, à moins qu’une chimérique défense européenne n’émerge après 60 ans de coma.**
 
 **Le général Desportes termine sa conférence en exhortant les français à se réveiller. Ils doivent exiger leur protection, qui leur est due par l’état. Le régalien n’aura jamais été aussi ignoré qu’aujourd’hui. L’armée est l’assurance de la nation, ça n’est pas le jour où un problème survient qu’il faut s’en soucier. Sans l’armée Japonaise, Fukushima aurait été bien pire. Sans épée, les valeurs sont de vains mots. Si nos valeurs reculent y compris chez nous, une des causes est l’affaiblissement du militaire.**
+
+<!--separator-->
 
 Avec un budget de 1.51% du PIB, notre armée n’aura bientôt plus la capacité pourtant cruciale de se projeter en opérations extérieures. L’armée manque d’hommes et d’argent, les exigences politiques n’arrangent rien : plus notre armée se projette en <acronym title="Opérations extérieures">OPEX</acronym>, plus elle s’appauvrit, ce temps et cet argent est pris sur la maintenance et l’entraînement. L’opération Sentinelle, véritable gâchis d’argent public (d’autres peuvent parfaitement remplir cette mission, un soldat coûte trop cher pour faire le guet dans la rue), empire la situation. La somme rendue aux armées après Charlie ne change rien : c’est un adoucissement du coup de rabot qui ne rattrapera pas 25 ans de disette budgétaire.
 

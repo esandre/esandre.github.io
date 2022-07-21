@@ -2,15 +2,14 @@
 title: "Google au secours des obèses de l'Internet"
 layout: post
 category: 'blog'
-tags: old af2000 developpement histoire-internet ecologie
+tags: old af2000 developpement histoire-informatique ecologie
 lang: french
 ref: google-au-secours-des-obeses-de-linternet
+image: /resources/images/content/fatcat.jpg
 ---
 
-[QUIC](http://www.silicon.fr/google-veut-encore-accelerer-internet-avec-quic-114354.html), [SPDY ](http://www.silicon.fr/google-abandonne-le-protocole-spdy-au-profit-du-http2-107974.html)et maintenant [BBR](http://www.silicon.fr/google-accelerer-internet-protocole-bbr-181167.html). Les initiatives de Google sont louables, mais vaines.
+[QUIC](http://www.silicon.fr/google-veut-encore-accelerer-internet-avec-quic-114354.html), [SPDY](http://www.silicon.fr/google-abandonne-le-protocole-spdy-au-profit-du-http2-107974.html) et maintenant [BBR](http://www.silicon.fr/google-accelerer-internet-protocole-bbr-181167.html). Les initiatives de Google sont louables, mais vaines.
 Pour prendre une image : C’est comme agrandir les portes pour laisser passer les obèses. Quand ils auront encore grossi ils ne passeront plus. De plus l’agrandissement des portes n’apporte rien aux gens bien-portants et peut même en inciter certains à se laisser aller puisqu’il est aussi facile de vivre obèse que sain.
-
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/08/2010-02-18-fatcat.jpg)
 
 La seule solution pérenne capable de sauver la neutralité du net et Internet en général, c’est de dégraisser.  
 Non, une page web de 1Mo n’est pas normale. En comparaison, les œuvres complètes de Shakespeare pèsent 100 fois moins !  

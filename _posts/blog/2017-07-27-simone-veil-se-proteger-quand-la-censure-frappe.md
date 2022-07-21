@@ -5,11 +5,10 @@ category: 'blog'
 tags: af2000 securite
 lang: french
 ref: simone-veil-se-proteger-quand-la-censure-frappe
+image: /resources/images/content/simone-veil.jpg
 ---
 
 Le 30 juin 2017, jour de la mort de Simone Veil, un visuel aux airs d’hommage est diffusé sur les réseaux sociaux. Il indique un site simoneveil.com, dénonçant très subtilement l’avortement de masse comme un abus non désiré par la défunte. Le groupe anti-avortement Les Survivants avait préparé son coup bien à l’avance puisque le nom de domaine a été réservé le 7 septembre 2016.
-
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/07/simone.png.jpg)
 
 ## Un cadre légal bafoué
 

@@ -7,6 +7,10 @@
     {% endfor %}
 </p>
 
+{% if page.image %}
+	<img src="{{page.image}}" class="mx-auto d-block" />
+{% endif %}
+
 <article class="post container">
 	{% if page.tags contains "old" %}
 	<p class="oldie text-center">

@@ -16,7 +16,7 @@ ref: a-controlled-experiment-in-maintenance-comparing-design-patterns-to-simpler
 
 👉 Ne pas les déifier
 
-♻️ Je recommande pour ma part de développer les deux « quick&amp;dirty », sous forme de prototype jetable, afin de dissiper les doutes sur la meilleure solution.
+♻️ Je recommande pour ma part de développer les deux options « quick&amp;dirty », sous forme de prototype jetable, afin de dissiper les doutes sur la meilleure solution.
 
 🔰 Chose notable, l’étude a été réalisée sur des professionnels confirmés, non sur des étudiants.
 

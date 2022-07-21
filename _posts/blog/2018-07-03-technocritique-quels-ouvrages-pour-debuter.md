@@ -5,9 +5,9 @@ category: 'blog'
 tags: technocritique
 lang: french
 ref: technocritique-quels-ouvrages-pour-debuter
+image: /resources/images/content/bibliotheque.jpg
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2018/07/XVMc0167212-19a9-11e5-8467-f08c778c772f-805x453.jpg)
 Cela fait trois mois que l’on me demande une liste d’ouvrages technocritiques, ou du moins expliquant le phénomène technicien de manière abordable. Pour me faire excuser, cette liste prend la forme d’un article. Ce sera sans doute incomplet, aussi je me réserve le droit d’éditer cet article au fil de mes lectures.
 
 Quel impact les techniques ont sur nos vies, notre civilisation et notre avenir ? En préambule, avant d’aborder des ouvrages plus conséquents et plus nuancés je conseillerai de lire le manifeste de **Théodore Kaczynski, La Société Industrielle et son avenir**. Le style agressif et très clair permet une entrée en matière en même temps qu’une claque initiale. Le **bluff technologique de Jacques Ellul** et **Une société sans école d’Ivan Illich** permettront de nuancer l’impact initial du manifeste de l’Unabomber sans entrer cependant dans les ouvrages les plus denses de ces deux auteurs. Enfin, **Georges Bernanos** et son essai, **La France contre les robots** vient clore cette initiation. Ces quelques ouvrages fondamentaux devraient vous permettre de faire un tour général de la question.

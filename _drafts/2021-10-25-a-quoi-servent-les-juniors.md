@@ -1,19 +1,14 @@
 ---
-id: 536
-title: 'A quoi servent les juniors ?'
-date: '2021-10-25T14:38:00+02:00'
-author: 'Enzo Sandré'
-excerpt: 'Notre profession gâche le potentiel de ses juniors. Vendus comme des ressources clé en main en sortie d''école, ils sont une main d’œuvre peu onéreuse et très malléable pour les employeurs, ESN en tête. A travers le mythe tenace du mois/homme, on exige d''eux la même productivité qu''un senior sur les mêmes tâches. Ce n''est ni rendre service aux juniors, ni rendre service à l''entreprise. A quoi servent donc les juniors ? Ce papier aux airs de plaidoirie en faveur de mes (anciens) étudiants tente d''y répondre.'
+title: "A quoi servent les juniors ?"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=536'
-permalink: /2021/10/25/a-quoi-servent-les-juniors/
-image: /wp-content/uploads/2021/10/overwhelmed_apprentice__s315__cn60_lnen.jpg
-categories:
-    - Travaux
-tags:
-    - Corporatisme
-    - Informatique
+category: 'blog'
+lang: french
+ref: a-quoi-servent-les-juniors
+tags: developpement corporatisme artisanat
+image: /resources/images/content/overwhelmed_apprentice.jpg
 ---
+
+Notre profession gâche le potentiel de ses juniors. Vendus comme des ressources clé en main en sortie d'école, ils sont une main d’œuvre peu onéreuse et très malléable pour les employeurs, ESN en tête. A travers le mythe tenace du mois/homme, on exige d'eux la même productivité qu'un senior sur les mêmes tâches. Ce n'est ni rendre service aux juniors, ni rendre service à l'entreprise. A quoi servent donc les juniors ? Ce papier aux airs de plaidoirie en faveur de mes (anciens) étudiants tente d'y répondre.
 
 Cet article est la suite de [mon propos stratégique paru en juin 2020](https://blog.enzosandre.fr/2020/06/01/creer-une-culture-de-la-qualite-logicielle/). Il peut cependant être lu indépendamment.
 
@@ -54,5 +49,3 @@ Créer une culture de la qualité logicielle sera long. J’ai promis une suite 
 Ce n’est pas parce qu’un objectif requiert la mise en branle d’un édifice stratégique à long terme qu’il est impossible d’agir sur le court-terme. Les juniors sont un formidable levier. Il faudra environ 5 ans pour qu’un junior formé et motivé transmette à son tour. C’est court, donc contagieux, la crise du Covid montre le potentiel de tels phénomènes.
 
 *Cet article possède une suite[, traitant des maîtres](https://blog.enzosandre.fr/2022/03/10/a-quoi-servent-les-maitres-es-metiers/).*
-
-Enzo Sandré

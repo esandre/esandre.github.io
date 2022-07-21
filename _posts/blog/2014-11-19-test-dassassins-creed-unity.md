@@ -5,13 +5,15 @@ category: 'blog'
 tags: old af2000 jeu-video
 lang: french
 ref: test-dassassins-creed-unity
+image: /resources/images/content/ac_unity.jpg
+excerpt_separator: <!--separator-->
 ---
 
 Moins manichéen que ses prédécesseurs, techniquement réussi mais historiquement passable, le dernier jeu de la série Assassin’s Creed se révèle bien plus intéressant qu’attendu.
 
 Les augures étaient bonnes : ce cher Mélenchon ressorti de son placard pour critiquer un jeu; il ne pouvait pas être si mauvais que ça.Je ne m’attarderais pas sur les bugs, ne les ayant pas expérimentés sur ma machine, ni sur l’optimisation, très variable selon le hardware de chacun.
 
-[![ACR_announce_unity_163122](http://blog.enzosandre.fr/wp-content/uploads/2014/11/ACR_announce_unity_163122.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2014/11/ACR_announce_unity_163122.jpg)
+<!--separator-->
 
 **Une oeuvre vidéoludique**
 

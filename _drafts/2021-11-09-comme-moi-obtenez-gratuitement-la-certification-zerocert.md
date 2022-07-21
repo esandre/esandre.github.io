@@ -1,20 +1,14 @@
 ---
-id: 547
-title: 'Comme moi, obtenez GRATUITEMENT la certification ZeroCert™'
-date: '2021-11-09T12:08:25+01:00'
-author: 'Enzo Sandré'
-excerpt: 'Après des mois d''effort et d’opiniâtreté, notre Atelier est certifié ZeroCert™. C''est une véritable étape dans notre développement et nous tenons à auto-congratuler notre coach et notre organisme de certification à cette occasion. Cela faisait des mois que nous préparions ce titre, après y avoir longuement réfléchi, fait des matrices SWOT, des diagrammes en tous genres et même programmé un système d''aide à la décision sur le modèle de Rube-Goldberg.'
+title: "Comme moi, obtenez GRATUITEMENT la certification ZeroCert™"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=547'
-permalink: /2021/11/09/comme-moi-obtenez-gratuitement-la-certification-zerocert/
-image: /wp-content/uploads/2021/11/3263b853-c3bc-4160-9d6e-f33c56b1fe71.png
-categories:
-    - 'Vie de freelance'
-tags:
-    - Corporatisme
-    - Economie
-    - Informatique
+category: 'blog'
+lang: french
+ref: comme-moi-obtenez-gratuitement-la-certification-zerocert
+tags: corporatisme artisanat developpement
+image: /resources/images/content/zerocert.png
 ---
+
+Après des mois d'effort et d’opiniâtreté, notre Atelier est certifié ZeroCert™. C'est une véritable étape dans notre développement et nous tenons à auto-congratuler notre coach et notre organisme de certification à cette occasion. Cela faisait des mois que nous préparions ce titre, après y avoir longuement réfléchi, fait des matrices SWOT, des diagrammes en tous genres et même programmé un système d'aide à la décision sur le modèle de Rube-Goldberg.
 
 ZeroCert™ est l’assurance pour nos clients qu’il n’y aura rien entre nous et leur besoin. Pas de certification à rentabiliser, pas d’attrape-nigaud A.G.I.L.E, pas technologies trop mal documentées pour être mise en œuvre sans certification cache-misère. Nada. Que des choses reprenables, simples et faciles à apprendre. Oserais-je dire bêtes ?
 
@@ -47,5 +41,3 @@ C’est le dévoiement des certifications qui provoque chez moi de tels états c
 <figure class="wp-block-image">![Here's why investors are starting to put uranium in the ...](https://s1.qwant.com/thumbr/0x380/8/6/f630f58448820f325d91c3e9051162e13a8c19a6260d0ee4ffacb6dbe52e72/Homer-Simpson-nuclear-plant.jpg?u=https%3A%2F%2Fstockhead.com.au%2Fwp-content%2Fuploads%2F2018%2F07%2FHomer-Simpson-nuclear-plant.jpg&q=0&b=1&p=0&a=0)</figure>Il en est de même pour les certifications dans le domaine de l’IT, au sens large. Tout est question de **balance entre les bénéfices des certifications**, qui permettent de s’assurer qu’une personne compétente est aux manettes **et les inconvénients, que nous venons de voir**. L’absence de titre pour le développeur du site de e-commerce d’une boutique de gâteaux n’est sans doute pas un problème. Pour l’administrateur d’une infrastructure d’authentification bancaire, c’est sans doute nécessaire qu’il y ait contrôle (et obligation de formation continue).
 
 Dans notre histoire, nous avons tendance à alterner des phases de surrèglementation, l’Ancien Régime crépusculaire étant un exemple, et des phases de surlibéralisation, à l’image du début du XIXème. Je suis bien trop réaliste pour espérer changer la nature cyclique du phénomène. Tout juste, j’espère en diminuer l’amplitude au sein de notre profession. Cet article n’a pas d’autre prétention.
-
-Enzo Sandré

@@ -5,12 +5,16 @@ category: 'blog'
 tags: ie securite
 lang: french
 ref: delit-dinitie-le-pdg-dintel-a-vendu-ses-parts-le-29-novembre
+image: /resources/images/content/krzanich.jpg
+excerpt_separator: <!--separator-->
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2018/01/krzanich.jpg)Tempête mondiale dans le monde numérique : Intel, géant mondial des microprocesseurs vient d’annoncer la découverte et la correction d’une faille présente depuis plus de 10 ans dans ses produits. 5 à 30% de réduction des performances sont annoncés après application du correctif.
+Tempête mondiale dans le monde numérique : Intel, géant mondial des microprocesseurs vient d’annoncer la découverte et la correction d’une faille présente depuis plus de 10 ans dans ses produits. 5 à 30% de réduction des performances sont annoncés après application du correctif.
 Cette affaire est sans doute connue depuis des mois chez Intel, à en juger par l’étrange transaction réalisée le 29 novembre par son PDG, Brian Krzanich. Le dirigeant a vendu l’intégralité de ses *Stock-Options*, ne gardant que le strict minimum. Coïncidence ou délit d’initié ? La presse française n’a pas encore évoqué l’affaire.
 
 Pour plus de détails, nous vous proposons un article du site [The Motley Fool](https://www.fool.com/), traduit par nos soins.
+
+<!--separator-->
 
 ## **Le PDG d’Intel vient de vendre beaucoup d’actions**
 

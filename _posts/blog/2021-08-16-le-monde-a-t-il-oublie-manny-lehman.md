@@ -5,10 +5,12 @@ category: 'blog'
 lang: french
 tags: histoire-informatique developpement
 ref: le-monde-a-t-il-oublie-manny-lehman
-excerpt: '<p>Émises par Meir "Manny" Lehman, comme une tentative pour donner à la science du logiciel des assises théoriques solides, les 8 lois de Lehman ont été oubliées. Les générations de chercheurs qui les ont étudiées ne les ont pas invalidées, bien au contraire ! Il serait donc temps d''adopter ces lois, selon le vieux principe scientifique qui veut que toute hypothèse réfutable restée solide face aux tentatives de réfutation est temporairement une connaissance fiable.</p>'
 long_post: True
 dois: 10.1016/0164-1212(79)90022-0 10.1109/PROC.1980.11805 10.1145/2543581.2543595
+image: /resources/images/content/Meir_Manny_Lehman.jpg
 ---
+
+Émises par Meir « Manny » Lehman, comme une tentative pour donner à la science du logiciel des assises théoriques solides, les 8 lois de Lehman ont été oubliées. Les générations de chercheurs qui les ont étudiées ne les ont pas invalidées, bien au contraire ! Il serait donc temps d'adopter ces lois, selon le vieux principe scientifique qui veut que toute hypothèse réfutable restée solide face aux tentatives de réfutation est temporairement une connaissance fiable.
 
 *EDIT 19/08/2021 : mise à jour du texte de la 3ème loi, trop obscur. Ajout de références.*
 
@@ -155,8 +157,6 @@ Bien que tombées dans l’oubli, les lois de Lehman méritent de devenir une pa
 Je les enseigne à mes étudiants et j’invite tout développeur à les apprendre et à les comprendre. La recherche en qualité logicielle n’a pas atteint le niveau de rigueur de la recherche médicale (les méta-études sur ce champ de recherche se comptent sur les doigts de la main), cela ne signifie pas pour autant qu’elle ne démontre rien. L’appropriation des résultats de la recherche par les développeurs est un cercle vertueux. Plus nous exigerons des connaissances fiables pour guider notre profession, plus nous pousserons les chercheurs à les produire. N’hésitez d’ailleurs pas à remercier par un simple mail les chercheurs des études que vous lisez, d’expérience ils sont très heureux de voir des praticiens lire et appliquer leurs travaux.
 
 Je compte continuer ce travail sur les lois et les règles de notre art, je le pense salutaire si vous voulons apprendre et sortir de l’enfance de notre profession.
-
-Enzo Sandré
 
 ## Sources
 

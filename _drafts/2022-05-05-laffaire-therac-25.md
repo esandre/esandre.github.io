@@ -1,18 +1,14 @@
 ---
-id: 908
-title: 'L&rsquo;affaire Therac-25'
-date: '2022-05-05T12:08:07+02:00'
-author: 'Enzo Sandré'
-excerpt: 'Entre juin 1985 et janvier 1987, 6 personnes sont mortes irradiées à cause d''un logiciel médical défectueux. C''est l''affaire Therac-25, en tout cas telle qu''elle est résumée sur Internet. Les développeurs ont-ils du sang sur les mains ? C''est un peu court, nous allons le voir.'
+title: "L'affaire Therac-25"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=908'
-permalink: /2022/05/05/laffaire-therac-25/
-image: /wp-content/uploads/2022/05/1-gR63wwit_byL27THqpxojg.jpeg
-categories:
-    - Travaux
+category: 'blog'
+lang: french
+ref: laffaire-therac-25
+tags: histoire-informatique developpement failures
+image: /resources/images/content/therac-25.jpg
 ---
 
-**Cet article est la compilation d’une série de posts LinkedIn, un nouveau format actuellement à l’essai.**
+Entre juin 1985 et janvier 1987, 6 personnes sont mortes irradiées à cause d'un logiciel médical défectueux. Cest l'affaire Therac-25, en tout cas telle qu'elle est résumée sur Internet. Les développeurs ont-ils du sang sur les mains ? C'est un peu court, nous allons le voir.
 
 ☢️ Dans les années 70, un premier appareil de radiothérapie, le Therac-20 fut conçu par la Compagnie Générale Radiographique (CGR) française et l’Atomic Energy Commission Limited (AECL) canadienne. Il fut un succès : aucun accident et d’excellents résultats thérapeutiques. Malgré cela, CGR et AECL se séparèrent, la conception du Therac-25, successeur du Therac-20 fut donc exclusivement canadienne.
 

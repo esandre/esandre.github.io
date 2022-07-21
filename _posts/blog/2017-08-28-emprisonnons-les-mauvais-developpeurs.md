@@ -5,16 +5,15 @@ category: 'blog'
 tags: corporatisme
 lang: french
 ref: emprisonnons-les-mauvais-developpeurs
+image: /resources/images/content/James-Liang.jpg
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/08/4x4.jpg) Dans toute profession, on peut voir le travailleur de deux manières. Soit on le considère comme un ouvrier, simple paire de bras reliée au cerveau de son chef. Soit on le considère comme un artisan, humain constitué d’un encéphale fonctionnel relié à une paire de bras.
+Dans toute profession, on peut voir le travailleur de deux manières. Soit on le considère comme un ouvrier, simple paire de bras reliée au cerveau de son chef. Soit on le considère comme un artisan, humain constitué d’un encéphale fonctionnel relié à une paire de bras.
 Ce débat peut paraître lointain, mais quand on pose cette question à propos d’une profession qui dirige le monde, elle prend une gravité certaine. La condamnation vendredi 25 août du développeur James Liang, à 40 mois de prison et 200 000€ d’amende pour son rôle dans l’affaire Volkswagen le montre.
 
 **Soit on considère le développeur comme un exécutant, donc irresponsable de ce que son donneur d’ordre lui demande.**
 
 **Soit on le considère comme un artisan, responsable de ses actes et des effets des monstres qu’il créé.**
-
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/08/James-Liang-e1503943568299-275x300.jpg)
 
 Préférez-vous confier votre pacemaker, votre voiture autonome et votre centrale nucléaire à des professionnels du développement ou à des esclaves du capital ? Les premiers obéissent à des règles de l’art ainsi qu’à une éthique. Les seconds obéissent aveuglément à leur chef, qui n’y connaît rien et ne jure que par la rentabilité.
 

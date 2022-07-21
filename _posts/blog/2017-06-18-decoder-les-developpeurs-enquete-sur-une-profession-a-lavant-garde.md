@@ -5,9 +5,10 @@ category: 'blog'
 tags: af2000 corporatisme developpement
 lang: french
 ref: decoder-les-developpeurs-enquete-sur-une-profession-a-lavant-garde
+image: /resources/images/content/arpinum.jpg
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/06/illu-02-1024x681.jpg) Celui qui raisonne comme au XXème siècle ne peut pas comprendre les développeurs. Ils sont les enfants terribles de la post-modernité, dans toutes ses contradictions : symboles du progrès technologique guidés par une conscience artisanale ; cols blancs à la mentalité ouvrière bien trempée ; libertaires contractualistes rêvant de communautés de métier ; geeks technophiles sévèrement critiques de la machine.
+Celui qui raisonne comme au XXème siècle ne peut pas comprendre les développeurs. Ils sont les enfants terribles de la post-modernité, dans toutes ses contradictions : symboles du progrès technologique guidés par une conscience artisanale ; cols blancs à la mentalité ouvrière bien trempée ; libertaires contractualistes rêvant de communautés de métier ; geeks technophiles sévèrement critiques de la machine.
 Cette profession si particulière (que j’exerce moi-même avec beaucoup de fierté) annonce-t-elle un nouvel âge du travailleur qualifié ? Elle pourrait, comme le dit l’auteur « dessiner les contours d’organisations différentes, qui valorisent l’autonomie, la collaboration et l’énergie créative » et estomper le brouillard du taylorisme. Pour comprendre comment, il est incontournable de se pencher sur les caractéristiques du métier de développeur.
 
 ## Le col ciel : un artisan de l’information
@@ -28,9 +29,11 @@ L’auteur dresse un portrait particulièrement élogieux des développeurs. Je 
 
 L’auteur a pris le parti de décrire une avant-garde artisanale de la profession, appelée sans nul doute à grandir et à s’organiser dans les prochaines années. Les déboires de monstres logiciels comme Louvois (logiciel de paiement des soldes de l’armée française) donnent des arguments de choc aux développeurs. Les sessions d’entraînement de type « coding dojo », le désormais célèbre Agile Tour et l’Ordre des Développeurs naissant sont autant de projets extrêmement stimulants, annonciateurs d’un nouvel âge du travailleur qualifié.
 
+{% include helper_image.html src="/resources/images/content/decoder-les-developpeurs.jpg" float="start" size=2 %}
+
 ## Références
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/06/170515-decode-les-developpeurs.jpg)**Décoder les développeurs – Un livre sur une profession à l’avant-garde**
+**Décoder les développeurs – Un livre sur une profession à l’avant-garde**
 
 Benjamin Tainturier – Préface d’Emmanuelle Duez – The Boson Project – Enquête sur une profession à l’avant-garde 138 pages – 19 € – G 56739
 

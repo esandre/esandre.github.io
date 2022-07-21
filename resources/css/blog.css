@@ -40,20 +40,12 @@ footer {
     margin-top: 60px;
 }
 
-.post p:first-child {
+.excerpt {
 	font-weight: 500;
 }
 
 .oldie {
     background-color: yellow;
-}
-
-#blog img {
-    max-width: 20%;
-}
-
-#blog img:not(.float-start), #blog img:not(.float-end) {
-    float: left;
 }
 
 .tags_select input {
@@ -83,6 +75,10 @@ footer {
 .dois ~ ul li, .dois ~ ul {
     list-style: none;
     white-space: nowrap;
+}
+
+.thumbnail {
+    height: 100%;
 }
 
 [value="All"]:checked ~ .posts [data-category] {

@@ -5,9 +5,10 @@ category: 'blog'
 tags: lbc ie
 lang: french
 ref: plan-ia-2021-regions-coordinateurs-innovation
+image: /resources/images/content/IA2021.jpeg
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2019/01/IA2021.jpeg) 7,6 milliards de dollars. C’est la somme investie par la Chine dans le secteur de l’Intelligence Artificielle (IA) en 2017, contre 5.8 milliards pour les États-Unis. Face à ces deux géants, la France qui pourtant ambitionne de devenir « leader de l’IA » et se sait en retard, n’investira que 1,5 milliards … sur 5 ans. Pire : au lieu de cibler, elle éparpille les crédits entre l’ensemble des collectivités qui ambitionnent d’être « capitale de l’IA ». Le diaphane ex-ministre du Numérique, Mounir Mahjoubi, ne semble pas pressé de trancher. Il est politiquement plus facile d’éparpiller les financements pour contenter tout le monde et surtout de s’assurer que personne ne soit jaloux de cet échec partagé.
+7,6 milliards de dollars. C’est la somme investie par la Chine dans le secteur de l’Intelligence Artificielle (IA) en 2017, contre 5.8 milliards pour les États-Unis. Face à ces deux géants, la France qui pourtant ambitionne de devenir « leader de l’IA » et se sait en retard, n’investira que 1,5 milliards … sur 5 ans. Pire : au lieu de cibler, elle éparpille les crédits entre l’ensemble des collectivités qui ambitionnent d’être « capitale de l’IA ». Le diaphane ex-ministre du Numérique, Mounir Mahjoubi, ne semble pas pressé de trancher. Il est politiquement plus facile d’éparpiller les financements pour contenter tout le monde et surtout de s’assurer que personne ne soit jaloux de cet échec partagé.
 
 Le 15 octobre 2018, la région Île-de-France a sorti un document très synthétique en 15 propositions, appelé « Plan IA 2021[\[1\]](#_ftn1) ». Accompagné d’un communiqué sans doute rédigé par une machine, ce document présente l’ambition de la région : devenir la capitale de l’IA en Europe. Les franciliens ne partent pas les mains vides : le rapport est techniquement bon et adossé à des experts solides. Les problèmes sont d’ordre politique, avec un florilège des tares françaises les plus courantes.
 

@@ -5,11 +5,15 @@ category: 'blog'
 tags: ie portail-ie
 lang: french
 ref: les-suites-de-laffaire-uber
+image: /resources/images/content/uber-kittens.jpg
+excerpt_separator: <!--separator-->
 ---
 
-![](http://www.portail-ie.fr/img/uploads/articles/1446393418.png "Image à retrouver sur : https://newsroom.uber.com/austin/2014/10/uberkittens-is-back/") Avec quelques mois de recul, il nous semble intéressant de revenir sur Uber. Cette société avait provoqué l’ire des taxis français en lançant son service UberPOP, qui remplaçait des VTC professionnels par des chauffeurs particuliers.
+Avec quelques mois de recul, il nous semble intéressant de revenir sur Uber. Cette société avait provoqué l’ire des taxis français en lançant son service UberPOP, qui remplaçait des VTC professionnels par des chauffeurs particuliers.
 
 La défaite d’Uber suite à l’interdiction d’UberPOP n’a été que relative. L’entreprise est revenue en force en Europe et compte bien étendre son modèle apparemment décentralisé à tout ce que l’on peut transporter en voiture. Face à cela, les acteurs existants sur les marchés traditionnels sont mal préparés. Les outils classiques de veille concurrentielle et de défense d’intérêts économiques ne suffisent plus. L’État, qui s’est lancé dans la bataille, ressemble de plus en plus au puissant éléphant, incapable de stopper la souris, trop rapide pour lui.
+
+<!--separator-->
 
 ## Uber, pieuvre logistique urbaine
 

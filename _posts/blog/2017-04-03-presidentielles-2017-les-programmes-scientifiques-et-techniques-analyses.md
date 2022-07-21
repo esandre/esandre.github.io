@@ -5,9 +5,10 @@ category: 'blog'
 tags: af2000 ecologie ie
 lang: french
 ref: presidentielles-2017-les-programmes-scientifiques-et-techniques-analyses
+image: /resources/images/content/sciences_avenir.png
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/04/sciences_avenir.png) Après avoir invité Emmanuel Macron pour discuter écologie, recherche, numérique ou santé, le magazine Sciences et Avenir a envoyé un questionnaire similaire aux autres candidats[\[1\]](#_ftn1). Nous avons lu et synthétisé l’ensemble de leurs réponses. Pour chaque thème nous avons retenu une idée particulièrement intéressante[\[2\]](#_ftn2). Les lecteurs souhaitant lire l’intégralité des entretiens les trouveront sur le site de [Sciences et Avenir](https://www.sciencesetavenir.fr/politique/presidentielle-hamon-melenchon-fillon-le-pen-arthaud-dupont-aignan-et-asselineau-face-a-5-scientifiques_111662).
+Après avoir invité Emmanuel Macron pour discuter écologie, recherche, numérique ou santé, le magazine Sciences et Avenir a envoyé un questionnaire similaire aux autres candidats[\[1\]](#_ftn1). Nous avons lu et synthétisé l’ensemble de leurs réponses. Pour chaque thème nous avons retenu une idée particulièrement intéressante[\[2\]](#_ftn2). Les lecteurs souhaitant lire l’intégralité des entretiens les trouveront sur le site de [Sciences et Avenir](https://www.sciencesetavenir.fr/politique/presidentielle-hamon-melenchon-fillon-le-pen-arthaud-dupont-aignan-et-asselineau-face-a-5-scientifiques_111662).
 
 ## Énergie : Le clivage droite-gauche a survécu.
 

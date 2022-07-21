@@ -1,20 +1,18 @@
 ---
-id: 516
-title: 'Maître-développeur, ma check-list'
-date: '2021-09-09T12:31:38+02:00'
-author: 'Enzo Sandré'
-excerpt: 'Je ne suis pas un maître ès développement, mais j''aspire à le devenir. Hélas, avec la disparition des ordres professionnels et la Loi Le Chapelier, il n''y a plus de maîtres en France. Je me suis donc résigné, sans maître. Cette déclaration peut paraître d''un orgueil fou, mais notre profession est neuve, surtout en France. Les anglo-saxons n''ont pas cette culture corporative propre aux pays latins, rien n''est à attendre d''eux. Faute d''alternative, je me lance, quitte à me planter.es pour faire des maîtres, je me ferai moi-même maître.'
+title: "Maître-développeur, ma check-list"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=516'
-permalink: /2021/09/09/maitre-developpeur-ma-check-list/
-image: /wp-content/uploads/2021/09/wowscrnshot_011814_104301-e1390250564115.jpg
-categories:
-    - 'Non classé'
+category: 'blog'
+lang: french
+ref: maitre-developpeur-ma-check-list
+tags: corporatisme artisanat personnel
+image: "/resources/images/content/wow_skills.jpg"
 ---
+
+Je ne suis pas un maître ès développement, mais j'aspire à le devenir. Hélas, avec la disparition des ordres professionnels et la Loi Le Chapelier, il n'y a plus de maîtres en France. Je me suis donc résigné, sans maître. Cette déclaration peut paraître d'un orgueil fou, mais notre profession est neuve, surtout en France. Les anglo-saxons n'ont pas cette culture corporative propre aux pays latins, rien n'est à attendre d'eux. Faute d'alternative, je me lance, quitte à me planter. Faute de corporations pour faire des maîtres, je me ferai moi-même maître.
 
 Les chambres des métiers proposent bien d’obtenir un [titre de maître-artisan](https://www.artisanat.fr/artisan/valoriser-mon-activite/obtenir-un-titre-de-maitre-artisan), mais à en juger les conditions, ce n’est que l’ombre de ce que furent les maîtres de l’âge d’or de l’artisanat. Il n’y a pas non plus d’[Ordre des Développeurs](https://www.youtube.com/watch?v=BSAGGmUSIiA) et il n’y en aura probablement pas avant longtemps, tant [les tentatives](https://ordre-des-developpeurs.gitbook.io/constitution) restent au point mort depuis plusieurs années. C’est donc contraint que j’entame cette démarche de me fixer moi-même des objectifs avant de pouvoir m’afficher comme maître-développeur la conscience tranquille.
 
-Cette check-list est personnelle, mais j’invite chaque lecteur à l’augmenter ou la critiquer d’un commentaire.
+Cette check-list est personnelle, mais j’invite chaque lecteur à l’augmenter ou la critiquer.
 
 ## La check-list
 
@@ -31,5 +29,3 @@ Cette check-list est personnelle, mais j’invite chaque lecteur à l’augmente
 A ce jour, aucune de ces conditions n’est satisfaite. Les deux premières sont les plus proches, en 2023 précisément. Je publierai mon avancement sur le fil.
 
 J’espère que cette démarche portera ses fruits et amènera à la structuration de notre profession. Nous ne pouvons pas collectivement refaire les mêmes erreurs tous les 30 ans.
-
-Enzo Sandré

@@ -5,15 +5,17 @@ category: 'blog'
 tags: af2000 technocritique
 lang: french
 ref: lire-ou-relire-ivan-illich
+image: /resources/images/content/Ivan_Illich.jpg
+excerpt_separator: <!--separator-->
 ---
 
 Tout système, lorsqu’il dépasse une certaine importance, finit par devenir contre-productif, puis par nuire à la société. C’est l’audacieuse thèse développée par Ivan Illich (1926-2002), prêtre catholique défroqué et l’un des plus lucides critiques de la société industrielle.
 
-[![Ivan_Illich](http://blog.enzosandre.fr/wp-content/uploads/2016/07/Ivan_Illich.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2016/07/Ivan_Illich.jpg) 
-
 Défenseur d’une société de la liberté de faire, contre la société industrielle où l’homme est seulement libre de consommer, Illich est un penseur des libertés. Ses travaux l’ont amené à un constat : chaque producteur de biens ou de services, lorsqu’il a dépassé une certaine taille, finit irrémédiablement par devenir contre-productif.
 
 Illich développe ce constat en analysant dans les années 70 plusieurs institutions de la société industrielle : le système éducatif dans Une société sans école, la médecine moderne dans Némésis médicale ou bien l’infrastructure de transport dans Énergie et équité. Chacun de ces livres est édifiant, brisant bien des mythes que l’homme moderne tend à croire : la médecine moderne apporte plus de maladies iatrogènes qu’elle ne soigne de malades ; l’école délégitime l’apprentissage autodidacte et tue la curiosité naturelle de l’homme ; l’habitude du transport motorisé place les choses à une distance que ne peuvent plus franchir les autres moyens de déplacement.
+
+<!--separator-->
 
 Loin de se cantonner à la critique, Illich n’hésite pas à proposer des outils conceptuels, afin que l’homme reprenne le contrôle sur la machine. La Convivialité, à la fois ouvrage et concept distingue les outils, que l’homme utilise comme bon lui semble, des machines, qui créent des besoins auquel elles-seules peuvent répondre. Un outil convivial est un outil dont l’utilisation ne retire pas de libertés. Plus grille de lecture que praxis, la convivialité n’en est pas moins utile pour critiquer la plupart des institutions modernes sur leur prétendue utilité sociale.
 

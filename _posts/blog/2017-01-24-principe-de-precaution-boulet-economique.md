@@ -5,17 +5,29 @@ category: 'blog'
 tags: af2000 ecologie technocritique ie
 lang: french
 ref: principe-de-precaution-boulet-economique
+image: /resources/images/content/fillon-agriculture.png
+excerpt_separator: <!--separator-->
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/1-1024x394.png)Dans le programme de François Fillon, en [page Agriculture](https://www.fillon2017.fr/participez/agriculture/), on peut lire qu’il souhaite « **Supprimer de notre Constitution un principe de précaution dévoyé et arbitraire. »**. Il invoque la perte de compétitivité causée par ce principe et l’inflation normative qui en résulte.
 
-La présence de cette proposition en page agriculture n’est pas innocente : le principe de précaution a déjà permis de bloquer la progression des OGM, ainsi que de nombreux intrants agricoles suspectés d’être dangereux pour les populations ou les [pollinisateurs](http://www.futura-sciences.com/planete/definitions/developpement-durable-neonicotinoide-14365/). Les partisans d’une agriculture intensive, agrochimistes et FNSEA en tête, réclament depuis des années l’abrogation de ce principe. François Fillon ne fait que la reprendre dans son programme.![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/2-1024x511.jpg)
+
+Dans le programme de François Fillon, en [page Agriculture](https://www.fillon2017.fr/participez/agriculture/), on peut lire qu’il souhaite « **Supprimer de notre Constitution un principe de précaution dévoyé et arbitraire. »**. Il invoque la perte de compétitivité causée par ce principe et l’inflation normative qui en résulte.
+
+La présence de cette proposition en page agriculture n’est pas innocente : le principe de précaution a déjà permis de bloquer la progression des OGM, ainsi que de nombreux intrants agricoles suspectés d’être dangereux pour les populations ou les [pollinisateurs](http://www.futura-sciences.com/planete/definitions/developpement-durable-neonicotinoide-14365/). Les partisans d’une agriculture intensive, agrochimistes et FNSEA en tête, réclament depuis des années l’abrogation de ce principe. François Fillon ne fait que la reprendre dans son programme.
+
+<!--separator-->
+
+{% include helper_image.html src="/resources/images/content/epandage.jpg" float="start" size=5 %}
 
 Le principe de précaution constitutionnalise la primauté de l’environnement sur l’économie. Une partie des libéraux hurle contre cela, oubliant sans doute que sans environnement vivable, il n’y a pas d’hommes, donc pas d’économie[\[1\]](#_ftn1). Les règlementations environnementales sont des politiques de gestion du risque technicien. Aussi imparfaites qu’elles soient, elles réduisent le risque que les générations futures soient sacrifiées sur l’autel du bénéfice immédiat, ou du fameux [automatisme technicien](http://www.technologos.fr/textes/jacques_ellul.php) identifié par Ellul[\[2\]](#_ftn2).
 
 L’actuel principe de précaution est largement perfectible et les critiques de M. Fillon sont en grande partie recevables, bien que souvent hypocrites : Monsieur Fillon n’est-il pas pour l’Union Européenne, qui ne cesse de normaliser, sur ce sujet comme sur d’autres[\[3\]](#_ftn3) ? Même si le candidat Fillon souhaitait sortir de l’UE, il lui resterait à affronter l’inertie du système républicain. Le principe de précaution, dans un état centralisé, ne peut pas donner autre chose qu’un monstre juridique tant les cas particuliers à chaque localité sont nombreux.
 
-Autre conséquence funeste de la démocratie : Sur des sujets aussi clivants que les OGM, le parlementaire se retrouve pris en étau entre le lobbyiste et l’opinion publique. Le scientifique n’est pas non plus dans une position confortable : ses crédits dépendent fortement du pouvoir politique ou du monde de la grande entreprise, pendant que l’université française est contrôlée idéologiquement[![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/3.png)](http://webcache.googleusercontent.com/search?q=cache:ec782p5IonwJ:www.jim.fr/medecin/actualites/pro_societe/e-docs/pourquoi_linformation_scientifique_ne_parvient_elle_pas_toujours_a_convaincre__162489/document_edito.phtml+&cd=1&hl=fr&ct=clnk&gl=fr) par de véritables ayatollahs de la [surprotection](http://webcache.googleusercontent.com/search?q=cache:ec782p5IonwJ:www.jim.fr/medecin/actualites/pro_societe/e-docs/pourquoi_linformation_scientifique_ne_parvient_elle_pas_toujours_a_convaincre__162489/document_edito.phtml+&cd=1&hl=fr&ct=clnk&gl=fr) contre les « ravages de la techno-science ». Les extrêmes sont hélas bien plus médiatiques que les nuances constructives.
+sciences-citoyennes.png
+
+{% include helper_image.html src="/resources/images/content/sciences-citoyennes.png" float="start" size=3 %}
+
+Autre conséquence funeste de la démocratie : Sur des sujets aussi clivants que les OGM, le parlementaire se retrouve pris en étau entre le lobbyiste et l’opinion publique. Le scientifique n’est pas non plus dans une position confortable : ses crédits dépendent fortement du pouvoir politique ou du monde de la grande entreprise, pendant que l’université française est contrôlée idéologiquement par de véritables ayatollahs de la [surprotection](https://www.jim.fr/medecin/actualites/pro_societe/e-docs/pourquoi_linformation_scientifique_ne_parvient_elle_pas_toujours_a_convaincre__162489/document_edito.phtml) contre les « ravages de la techno-science ». Les extrêmes sont hélas bien plus médiatiques que les nuances constructives.
 
 Préserver l’héritage en attendant l’héritier. Le principe de précaution, malgré ses imperfections colle bien à notre objectif. Il est un bon palliatif à l’absence d’un souverain responsable, de par les garde-fous qu’il met à l’*hybris* technicienne et au capital sans fin. Ses défauts majeurs, que nous avons détaillés dans cet article, sont en grande partie issus de notre appartenance à l’UE et à une république incapable de donner du pouvoir aux localités. Rien de neuf sous le soleil.
 

@@ -5,21 +5,25 @@ category: 'blog'
 tags: af2000 ecologie technocritique
 lang: french
 ref: lire-ou-relire-theodore-kaczynski
+image: /resources/images/content/arrestation-kaczynski.jpg
+excerpt_separator: <!--separator-->
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/big_artfichier_287239_4850034_20150524050911.jpg) Théodore Kaczynski, plus connu sous le pseudonyme d’Unabomber, est un penseur néoluddite et un terroriste américain. Il est l’auteur du manifeste *La Société Industrielle et son Avenir*, synthèse de penseurs comme Jacques Ellul ou Georges Bernanos. Il défend la destruction complète de la société industrielle au motif qu’elle asservit inéluctablement l’homme.
+Théodore Kaczynski, plus connu sous le pseudonyme d’Unabomber, est un penseur néoluddite et un terroriste américain. Il est l’auteur du manifeste *La Société Industrielle et son Avenir*, synthèse de penseurs comme Jacques Ellul ou Georges Bernanos. Il défend la destruction complète de la société industrielle au motif qu’elle asservit inéluctablement l’homme.
 
 J’ai souhaité écrire cet article suite à la relecture des œuvres d’Unabomber. Il est l’auteur qui m’a poussé à étudier la technique au travers d’Ellul, Mumford, Illich et d’autres. Je lui dois mon intérêt pour le phénomène technicien et souhaitais le relire, quatre ans et de nombreuses lectures après. Cet article présente les deux faces indissociables de Kaczynski : le penseur et le militant.
 
+<!--separator-->
+
 ## Le militant
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/220px-Unabomber-sketch.png)
+{% include helper_image.html src="/resources/images/content/portrait-robot-unabomber.png" float="start" size=3 %}
 
 Sa carrière de terroriste est entièrement ordonnée à la diffusion de sa pensée. L’analyse de ses actes révèle une intelligence stratégique et une méticulosité hors du commun. Kaczynski commence par envoyer une série de colis piégés assez artisanaux, afin de créer une agitation médiatique. Il prend bien soin de ne laisser aucune trace et se paye même le luxe de semer des fausses pistes. Après cela, il se retire pendant 6 ans, créant une attente immense auprès du grand public. Il aurait employé ce temps à peaufiner son manifeste.
 
 La seconde phase commence en 1993 lorsque le criminel le plus célèbre des Etats-Unis refait surface. Prenant appui sur son immense renommée, il démarre une nouvelle campagne d’envoi de colis piégés, cette fois létaux et accompagnés de lettres. Il demande la publication de son manifeste, en échange de quoi il cessera de tuer. Faute de pistes sérieuses, le FBI recommande d’accéder à son souhait, dans l’espoir que quelqu’un reconnaisse l’auteur du manifeste.
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/ub1.jpg)
+{% include helper_image.html src="/resources/images/content/cabane-kaczynski.jpg" float="end" size=3 %}
 
 Confondu par son frère, Kaczynski est arrêté le 3 avril 1996 dans sa cabane. Il a 54 ans, son manifeste est publié et ses actions terroristes ont donné à ses idées un écho gigantesque. Le dernier tour de force de Kaczynski fut d’être reconnu sain d’esprit lors de son procès, contre l’avis de nombreux psychiatres, tout en évitant l’exécution. Une irresponsabilité pour démence aurait été un accroc majeur dans la diffusion de ses idées.
 
@@ -31,7 +35,7 @@ Nonobstant la question morale, la carrière d’Unabomber est un sans-faute. La 
 
 Dans l’imagerie médiatique, Unabomber est un tueur nihiliste, tentant de justifier ses actes par une pensée incohérente. La lecture de son manifeste révèle au contraire une réflexion certes radicale, mais très profonde, puisant ses racines dans des auteurs français et américains. La pensée de Kaczynski est une vulgarisation de celle de Jacques Ellul, il puise des inspirations dans *La France contre les Robots* de Bernanos et utilise des expressions propres à Lewis Mumford, Sigmund Freud ou bien Aldous Huxley.
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2017/01/theodore-kaczynskis-quotes-7.jpg)
+{% include helper_image.html src="/resources/images/content/theodore-kaczynskis-prison.jpg" float="start" size=4 %}
 
 Kaczynski résume lui-même sa pensée en quatre maximes :
 

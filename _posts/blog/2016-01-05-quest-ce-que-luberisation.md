@@ -5,6 +5,7 @@ category: 'blog'
 tags: corporatisme ie portail-ie
 lang: french
 ref: quest-ce-que-luberisation
+image: /resources/images/content/uberisation-schema.jpg
 ---
 
 On désigne par Uberisation l’attaque frontale des marchés de services par de nouveaux acteurs utilisant à leur avantage les possibilités du numérique. Le mot vient d’[Uber](https://www.uber.com/), nom d’une ambitieuse entreprise américaine, qui a l’ambition de payer des particuliers pour [transporter](http://www.enzosandre.fr/2015/11/02/les-suites-de-laffaire-uber/) tout ce qui peut l’être en milieu urbain. Uber a créé le buzz en affrontant les taxis, profession traditionnelle assurant le transport de personnes. Ces frictions mondiales et bien souvent [violentes](http://www.lemonde.fr/economie/video/2015/06/25/colere-des-taxis-contre-uberpop-des-violences-filmees-par-des-amateurs_4661688_3234.html) ont fait une immense publicité pour l’entreprise.
@@ -36,7 +37,9 @@ L’appareil étatique est ainsi toujours en position de réaction face à une e
     Les corps constitués et les entreprises traditionnelles ne peuvent pas se battre, à cause du flou juridique.
 3. **Lobbying législatif** : Une fois l’affaire arrivée aux chambres, l’entreprise utilise les affrontements entre partis (souvent entre sociaux-démocrates et libéraux) pour ralentir le processus législatif. Les majorités absolues étant rares, le texte de loi doit être consensuel et inoffensif pour passer au vote. L’entreprise se débrouille pour neutraliser les articles les plus dangereux.
 4. **Blocage judiciaire** : Lorsque la loi, même consensuelle et molle, est passée, l’entreprise commence à la contester en utilisant tous les recours administratifs et juridiques possibles. En France, Uber a utilisé les Questions Prioritaires de Constitutionnalité (QPC), les recours au Conseil d’État, etc…  
-    Le but n’est pas de gagner, mais de faire perdurer l’activité controversée le plus longtemps possible. Cette phase peut durer de nombreuses années, le labyrinthe judiciaire de certains pays étant particulièrement vaste.[![uberisation](http://blog.enzosandre.fr/wp-content/uploads/2016/01/uberisation.png)](http://blog.enzosandre.fr/wp-content/uploads/2016/01/uberisation.png)
+    Le but n’est pas de gagner, mais de faire perdurer l’activité controversée le plus longtemps possible. Cette phase peut durer de nombreuses années, le labyrinthe judiciaire de certains pays étant particulièrement vaste.
+
+{% include helper_image.html src="/resources/images/content/uberisation-schema.jpg" float="start" size=3 %}
 
 Chaque nouvelle phase vient s’ajouter aux précédentes et ne les remplace pas. Une fois la loi votée, l’entreprise continue son lobbying, notamment pour faire voter des législations contradictoires, abrogatives ou inapplicables. La guerre médiatique est permanente afin de maintenir la pression sur l’état : hors des projecteurs, de telles entreprises pourraient être balayées par décret ou par simple répression policière.
 

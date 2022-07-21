@@ -5,6 +5,7 @@ category: 'blog'
 tags: old securite
 lang: french
 ref: proteger-ses-donnees-tout-numerique-ou-retour-a-lanalogique
+image: "/resources/images/content/parchemin.jpg"
 ---
 
 Vous souhaitez envoyer une information sécurisée ?  
@@ -12,8 +13,6 @@ Envoyez-là par La Poste, en double enveloppe, la seconde à l’envers dans la 
 L’analogique coûte bien trop cher pour pouvoir le surveiller massivement.  
 Une enveloppe simple protège très mal, il est peu difficile de glisser une caméra dans l’enveloppe en cas de doute (destinataire ou expéditeur fichés par exemple).  
 Pour un maximum de sécurité, n’hésitez pas à accompagner votre courrier d’un vieux brouillon, rendant même la plus puissante lampe inutile pour un déchiffrage par transparence.
-
-[![vintage_wallpaper_retro_desktop_hd_a1746](http://blog.enzosandre.fr/wp-content/uploads/2014/02/vintage_wallpaper_retro_desktop_hd_a1746.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2014/02/vintage_wallpaper_retro_desktop_hd_a1746.jpg)
 
 Soyez old school, c’est tellement minoritaire que ça n’est que peu surveillé.  
 Pour des fichiers, le mieux reste si vous ne savez pas comment crypter solidement, d’envoyer une bête carte SD par la poste (toujours en double enveloppe).

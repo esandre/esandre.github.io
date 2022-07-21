@@ -5,11 +5,10 @@ category: 'blog'
 tags: af2000 ie
 lang: french
 ref: compte-rendu-de-la-conference-pourquoi-la-puissance
+image: /resources/images/content/gérard-chaliand.jpg
 ---
 
 Vendredi 9 octobre dernier, l’École de Guerre Économique et la revue Conflits démarraient un cycle de conférences sur la puissance. Le premier volet avait pour problématique « Pourquoi la Puissance ? ». L’intervenant, Gérard Chaliand est un géo-stratège, spécialiste de la guérilla et du terrorisme. Il nous a livré son analyse des grands conflits géopolitiques actuels, tout en gardant la puissance comme fil rouge. Résumé.
-
-[![Gérard Chaliand](http://blog.enzosandre.fr/wp-content/uploads/2015/10/thumb.php_.jpg)](http://blog.enzosandre.fr/wp-content/uploads/2015/10/thumb.php_.jpg)
 
 Puissance est un mot tabou dans le vocabulaire français. Sous prétexte que certains en ont abusé par le passé, nous serions condamnés, tels des feuilles mortes, à nous laisser emporter par le vent ! Car c’est bien de cela qu’il s’agit. Pendant que la France détruit sa puissance, d’autres font usage de la leur et abusent de notre faiblesse pour faire primer leurs intérêts chez nous. Perdre son rang parmi les puissances n’est pas anodin, un peuple qui refuse d’être puissant est condamné à perdre son influence puis à voir sa population s’appauvrir – en attendant la servitude.
 

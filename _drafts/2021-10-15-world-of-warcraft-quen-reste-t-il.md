@@ -1,18 +1,14 @@
 ---
-id: 525
-title: 'World of Warcraft, qu&rsquo;en reste-t-il ?'
-date: '2021-10-15T22:39:49+02:00'
-author: 'Enzo Sandré'
-excerpt: 'Je suis de la génération Wrath of The Lich King, sorti lors de mes années lycée, en 2008. Je jouais sur serveur privé, un lycéen étant rarement fortuné. J''ai assisté ému à la cinématique de fin qui a marqué toute une génération. Je suis revenu en jeu à l''occasion de Shadowlands, dont le marketing cible clairement les anciens de WoTLK. Il serait osé de dire que le jeu se porte bien, pourtant l’œuvre artistique demeure impressionnante. Étrange paradoxe dont seul Blizzard a le secret et qui constitue un cas d''école de mécénat par crowdfunding, qui dure depuis 16 ans.'
+title: "World of Warcraft, qu'en reste-t-il ?"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=525'
-permalink: /2021/10/15/world-of-warcraft-quen-reste-t-il/
-image: /wp-content/uploads/2021/10/Ulduar_City.webp
-categories:
-    - 'Notes personnelles'
-tags:
-    - 'Jeux videos'
+category: 'blog'
+lang: french
+ref: world-of-warcraft-quen-reste-t-il
+tags: jeu-video
+image: /resources/images/content/Ulduar_City.webp
 ---
+
+Je suis de la génération Wrath of The Lich King, sorti lors de mes années lycée, en 2008. Je jouais sur serveur privé, un lycéen étant rarement fortuné. J'ai assisté ému à la cinématique de fin qui a marqué toute une génération. Je suis revenu en jeu à l'occasion de Shadowlands, dont le marketing cible clairement les anciens de WoTLK. Il serait osé de dire que le jeu se porte bien, pourtant l’œuvre artistique demeure impressionnante. Étrange paradoxe dont seul Blizzard a le secret et qui constitue un cas d'école de mécénat par crowdfunding, qui dure depuis 16 ans.
 
 ## Ma madeleine de Proust
 
@@ -38,5 +34,3 @@ Même lors des pires creux dans le contenu, même lorsque des décisions déplor
 
 <figure class="wp-block-image size-large">![](https://blog.enzosandre.fr/wp-content/uploads/2021/10/96215118_1640094996138710_9089570379516608512_n-1024x379.jpg)<figcaption>Un historien prend le pari d’expliquer l’histoire et ses leçons à travers celle de Warcraft.</figcaption></figure>Pour toutes ces expériences artistiques et sociales, malgré tout, merci   
 <sup>*Non, pas toi.*</sup><s>Activision-</s>Blizzard.
-
-Enzo Sandré

@@ -1,14 +1,11 @@
 ---
-id: 825
-title: "A quoi servent les maîtres ès métiers\_?"
-date: '2022-03-10T08:57:10+01:00'
-author: 'Enzo Sandré'
+title: "A quoi servent les maîtres ès métiers ?"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=825'
-permalink: /2022/03/10/a-quoi-servent-les-maitres-es-metiers/
-image: /wp-content/uploads/2022/03/Capture-decran-2022-03-08-104941.png
-categories:
-    - Travaux
+category: 'blog'
+lang: french
+ref: a-quoi-servent-les-maitres-es-metiers
+tags: corporatisme artisanat
+image: /resources/images/content/endymion-master-magician.png
 ---
 
 La maîtrise n’est pas un gros mot, mais un mécanisme social contre l’effet Dunning-Kruger et ses ravages. Le plus dangereux dans un métier n’est pas le novice, hésitant et humble, mais le débutant, qui ne sait pas encore qu’il ne sait rien, mais sait suffisamment pour croire savoir. Il est sur la montagne de la stupidité et ne doit pas être laissé en autonomie.
@@ -42,5 +39,3 @@ Au plus bas niveau, prenez un débutant et placez-le face à une demande qu’il
 Les mauvais maîtres sont inéluctables, mais sous de bonne institutions, ils représentent et régulent efficacement un métier. Il faut bien entendu apprendre des errements du XVIII<sup>ème</sup> et son népotisme crispé, autant que des failles des ordres contemporains. Si ce travail est correctement réalisé, le « non » d’un maître peut éviter à l’œuvre de périr et le « non » d’une profession organisée autour de ses maîtres peut faire de même pour une branche, voire la puissance d’une nation.
 
 C*et article est la suite de [celui traitant des juniors](https://blog.enzosandre.fr/2021/10/25/a-quoi-servent-les-juniors/).*
-
-Enzo Sandré

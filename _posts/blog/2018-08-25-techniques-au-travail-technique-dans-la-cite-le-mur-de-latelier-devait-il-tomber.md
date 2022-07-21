@@ -5,9 +5,9 @@ category: 'blog'
 tags: technocritique ecologie
 lang: french
 ref: techniques-au-travail-technique-dans-la-cite-le-mur-de-latelier-devait-il-tomber
+image: /resources/images/content/1200-L-paris-premier-sur-les-bouchons-1024x546.jpg
 ---
 
-![](http://blog.enzosandre.fr/wp-content/uploads/2018/08/1200-L-paris-premier-sur-les-bouchons-1024x546.jpg)
 Texte de mon intervention orale du 25 août 2018 au Camp Maxime Real del Sarte à Parigny.
 Un lieu commun syndical voudrait que la séparation domicile/travail soit un acquis social, en permanence attaqué par le capitalisme vorace. C’est aller un peu vite aux conclusions. La thèse que je vais défendre est autre : il s’agit avant tout d’une affaire de Technique, non de politique.
 

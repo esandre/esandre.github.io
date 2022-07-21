@@ -128,6 +128,16 @@
     french: "Article participant à ma réflexion sur le phénomène artisanal"
     english: "Post taking part in my personal thought on the craft phenomenon"
 
+- personnel:
+  tag: "personnel"
+  emoji: "🤳"
+  name: 
+    french: "Personnel"
+    english: ""
+  hint: 
+    french: "Note personnelle"
+    english: ""
+
 # Tags de la veille
 
 - laws:

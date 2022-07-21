@@ -1,16 +1,14 @@
 ---
-id: 504
-title: 'L&rsquo;angoisse du sommeil'
-date: '2021-08-17T14:57:46+02:00'
-author: 'Enzo Sandré'
-excerpt: "Certaines personnes sont génétiquement des couche-tard. J'en fais partie et du lycée à ma démission l'an dernier, j'en ai beaucoup souffert.\nDans ce témoignage, j'explique ce que cela implique et comment je m'en suis libéré."
+title: "L'angoisse du sommeil"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=504'
-permalink: /2021/08/17/langoisse-du-sommeil/
-image: /wp-content/uploads/2021/08/40ee013b9c617255e4af2c6ff1af54fe.jpg
-categories:
-    - 'Vie de freelance'
+category: 'blog'
+tags: artisanat personnel
+lang: french
+ref: langoisse-du-sommeil
+image: /resources/images/content/sleeping-cat.jpg
 ---
+
+Certaines personnes sont génétiquement des couche-tard. J'en fais partie et du lycée à ma démission l'an dernier, j'en ai beaucoup souffert. Dans ce témoignage, j'explique ce que cela implique et comment je m'en suis libéré.
 
 **Cet article est un témoignage. Il n’a aucune valeur scientifique. Il n’a pas à être utilisé pour une quelconque revendication. Cela paraît évident, mais à l’heure d’Internet il faut le rappeler.**
 
@@ -18,7 +16,9 @@ Je sais grâce à des tests génétiques grand public que j’ai de fortes chanc
 
 ## La vie dans une société matinale
 
-<div class="wp-block-image"><figure class="aligncenter size-full is-resized">![](https://blog.enzosandre.fr/wp-content/uploads/2021/08/unnamed.jpg)</figure></div>Mes années lycée furent les pires de ma vie.
+{% include helper_image.html src="https://blog.enzosandre.fr/wp-content/uploads/2021/08/unnamed.jpg" float="start" %}
+
+Mes années lycée furent les pires de ma vie.
 
 Biologiquement, je suis inapte au travail intellectuel avant 10h du matin et suis incapable de m’endormir avant 1h, mais bien reposé je peux travailler jusqu’à 23h.
 
@@ -34,7 +34,9 @@ Pour autant, je ne parvenais pas à m’endormir avant minuit, écoutant NRJ sur
 
 Les vacances scolaires étaient une planche de salut, un radeau de fortune vite englouti à nouveau par une mer démontée. Ce calvaire a duré 3 ans.
 
-<figure class="wp-block-image">![EPSI BORDEAUX](https://d7j7m3vbc0co5.cloudfront.net/default/0001/17/a75245c353c1535c7ded94928dbee1b51c0530c7.png)</figure>Puis je suis devenu étudiant en informatique à Bordeaux. J’avais 16 ans, un petit appartement proche de l’école. Ma condition s’est améliorée. J’ai repris goût au travail intellectuel et à la vie sociale. Les cours commençaient à 9h, ce qui est acceptable, avec 30 min de trajet matinal à pied pour me réveiller. Lever : 8h15. Une [chocolatine ](https://www.ledauphine.com/france-monde/2016/10/24/le-vrai-nom-c-est-pourtant-chocolatine)et un café sur le trajet à la boulangerie pour gratter la moindre minute de sommeil.
+{% include helper_image.html src="https://d7j7m3vbc0co5.cloudfront.net/default/0001/17/a75245c353c1535c7ded94928dbee1b51c0530c7.png" float="start" %}
+
+Puis je suis devenu étudiant en informatique à Bordeaux. J’avais 16 ans, un petit appartement proche de l’école. Ma condition s’est améliorée. J’ai repris goût au travail intellectuel et à la vie sociale. Les cours commençaient à 9h, ce qui est acceptable, avec 30 min de trajet matinal à pied pour me réveiller. Lever : 8h15. Une [chocolatine ](https://www.ledauphine.com/france-monde/2016/10/24/le-vrai-nom-c-est-pourtant-chocolatine)et un café sur le trajet à la boulangerie pour gratter la moindre minute de sommeil.
 
 Gratter la moindre minute de sommeil.
 
@@ -72,7 +74,9 @@ J’ai en revanche horreur des horaires imposés au-delà de quelques jours. J�
 
 ## Conclusion
 
-<figure class="wp-block-image">![Pink Floyd - The Marching Hammers - YouTube](https://i.ytimg.com/vi/JGVFoBRh3LQ/maxresdefault.jpg)</figure>Notre société a une norme concernant les horaires standards, calquée sur ceux de la majorité de la population, plutôt lève-tôt (et encore, je me demande si une étude à été faite, tant les articles de magazines féminins « [10 conseils pour se lever du premier coup](https://www.fourchette-et-bikini.fr/bien-etre/10-conseils-pour-arriver-a-se-lever-tot-le-matin.html)« , scientifiquement débiles, pullulent) et monophasique ([ce qui n’a pas toujours été la norme](https://www.youtube.com/watch?v=fz0-5JVeiVs)).
+{% include helper_image.html src="https://i.ytimg.com/vi/JGVFoBRh3LQ/maxresdefault.jpg" float="start" size=6 %}
+
+Notre société a une norme concernant les horaires standards, calquée sur ceux de la majorité de la population, plutôt lève-tôt (et encore, je me demande si une étude à été faite, tant les articles de magazines féminins « [10 conseils pour se lever du premier coup](https://www.fourchette-et-bikini.fr/bien-etre/10-conseils-pour-arriver-a-se-lever-tot-le-matin.html)« , scientifiquement débiles, pullulent) et monophasique ([ce qui n’a pas toujours été la norme](https://www.youtube.com/watch?v=fz0-5JVeiVs)).
 
 Loin de moi l’idée de contester une norme pour qu’elle s’adapte à une minorité. Ce n’est pas mon propos, une société fonctionnelle a besoin de normes et de codes sociaux. Mon témoignage a plutôt pour but :
 
@@ -92,5 +96,3 @@ Mon article ne se substitue pas à l’avis d’un médecin du sommeil.
 - Pour tout autre trouble (alcool, excitants, etc.)
 
 **CONSULTEZ !** (un médecin du sommeil, pas un chaman, un rebouteux ou un dealer).
-
-Enzo Sandré

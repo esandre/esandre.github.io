@@ -1,19 +1,11 @@
 ---
-id: 741
-title: 'Opposer artisanat et ingénierie est une idiotie'
-date: '2022-02-04T11:00:00+01:00'
-author: 'Enzo Sandré'
+title: "Opposer artisanat et ingénierie est une idiotie"
 layout: post
-guid: 'https://blog.enzosandre.fr/?p=741'
-permalink: /2022/02/04/opposer-artisanat-et-ingenierie-est-une-idiotie/
-image: /wp-content/uploads/2022/01/Armee_de_terre_cuite_fouille_du_tombeau_de_lempereur_Qin_Xian-1200x900.jpg
-categories:
-    - Travaux
-tags:
-    - Corporatisme
-    - Economie
-    - Informatique
-    - Technique
+category: 'blog'
+lang: french
+tags: artisanat technocritique
+ref: opposer-artisanat-et-ingenierie-est-une-idiotie
+image: /resources/images/content/Armee_de_terre_cuite_fouille_du_tombeau_de_lempereur_Qin_Xian.jpg
 ---
 
 <div class="wp-block-image"><figure class="alignleft is-resized">![Image dans Infobox.](https://upload.wikimedia.org/wikipedia/commons/4/46/Mumford_by_LGdL.JPG)<figcaption>Lewis Mumford (1895-1990)</figcaption></figure></div>L’idée que l’industrie est l’évolution nécessaire de tout artisanat est un lieu commun fortement ancré dans la mentalité contemporaine. Dans la seconde moitié du XXème siècle, une lame de fond trouvant son origine chez Lewis Mumford[\[i\]](#_edn1) parcourt la plupart des disciplines que l’on croyait acquises à l’industrie : architecture, mobilier et même agriculture. Elle se nomme vernacularisme [\[ii\]](#_edn2)et tente de réconcilier science et tradition, productivité et beauté.
@@ -81,8 +73,6 @@ C’est exactement cette conclusion que je vais appliquer au développement de l
 Nous continuons de bâtir des châteaux de vent, des édifices de pensée, de manière purement empirique. La matière que nous sculptons est tellement particulière qu’il serait légitime de se demander, finalement, si ça n’est pas l’ingénierie du logiciel qui manque de sens ? Il existe quelques métiers qui ne s’envisagent pas autrement que dans une logique industrielle. Peut-être tenons-nous avec le développement un cas de métier qui n’est qu’artisanal.
 
 Opposer artisanat et industrie à l’échelle d’une branche ou d’une nation est idiot. Cela n’exclut pas la possibilité de métiers pour lesquels l’une ou l’autre de ces formes est contre-productive. Je soutiens que le développement en fait partie, dans l’état actuel de nos connaissances.
-
-Enzo Sandré
 
 - - - - - -
 

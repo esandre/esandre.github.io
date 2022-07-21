@@ -5,13 +5,17 @@ category: 'blog'
 tags: ie portail-ie
 lang: french
 ref: eric-delbecque-ideologie-securitaire-et-societe-de-surveillance
+image: /resources/images/content/delbecque-ideo-secu.webp
+excerpt_separator: <!--separator-->
 ---
 
 Nous sommes tous Big Brother ! C’est l’audacieuse thèse d’Éric Delbecque développée dans son dernier essai : Idéologie sécuritaire et société de surveillance.
 
 Il n’y a pas selon l’auteur d’idéologie sécuritaire à proprement parler, portée par une poignée d’idéologues à la tête de l’État. Pour lui, le problème est plus profond : la mort de l’idée de Progrès, énergie vitale des sociétés occidentales depuis les Lumières, a plongé les Occidentaux dans un malaise profond. Sans futur, sans projet fédérateur, les Occidentaux se replient sur eux-mêmes et forment une société de défiance permanente.
 
-## **La peur dans la société du spectacle**
+<!--separator-->
+
+## La peur dans la société du spectacle
 
 L’auteur commence par un constat : le monde n’est pas plus violent aujourd’hui qu’hier, mais la violence a changé de forme. On peut dire sans risque que le niveau de violence des sociétés européennes a diminué depuis deux siècles. En revanche ça n’est pas le cas dans le reste de monde. De plus, des foyers d’ultra violence ont émergé, laissant croire à un ensauvagement généralisé.
 
@@ -21,7 +25,7 @@ Le plus grand changement du XXème siècle est la diminution des violences entre
 
 Sortir de cette boucle nécessite une stratégie que seul le politique est apte à proposer. Or le politique est lui aussi embourbé dans les conséquences de la mort du Progrès.
 
-## **La putréfaction sécuritaire du politique**
+## La putréfaction sécuritaire du politique
 
 Le clivage droite-gauche est devenu illisible, faute de clivage fort, nous dit l’auteur. Plus rien ne distingue la gauche de la droite : cette dernière s’est complètement ralliée à l’idée de Progrès, au système capitaliste, à la République et à la laïcité. Seuls les extrêmes tirent leur épingle du jeu, en gardant des bribes des clivages qui, autrefois, définissaient la gauche et la droite.
 
@@ -31,7 +35,7 @@ Bref, le politique en France est bien malade. Les maux qui l’accablent ont l�
 
 Il n’y a pas d’idéologie sécuritaire soutient Éric Delbecque. La société de surveillance n’est que le miroir de notre propre méfiance collective. Les mêmes causes à une époque technologiquement moins avancée avaient provoqué la chasse aux sorcières, folie collective où de petits juges laïcs brûlaient les malheureuses désignées comme boucs émissaires. Aujourd’hui la société a remplacé le bûcher ponctuel par des caméras omniprésentes. Tout le monde est suspect, tout le monde doit être surveillé.
 
-## **Retrouver du sens ?**
+## Retrouver du sens ?
 
 L’auteur appelle les sociétés occidentales, la France en particulier, à retrouver du sens grâce à un projet fédérateur. A la fin de cet essai fortement influencé par les non-conformistes des années 30 (Mounier, Maulnier, Aron), plus particulièrement par la Jeune Droite, l’auteur appelle la France au relèvement. Il ne souhaite pas plus le retour du progressisme béat, appelé par Michéa « Complexe d’Orphée », que celui d’un conservatisme poussiéreux comme le XIXème en eût le secret.
 

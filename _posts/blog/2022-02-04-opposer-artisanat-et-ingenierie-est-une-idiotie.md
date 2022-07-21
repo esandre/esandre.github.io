@@ -6,11 +6,14 @@ lang: french
 tags: artisanat technocritique
 ref: opposer-artisanat-et-ingenierie-est-une-idiotie
 image: /resources/images/content/Armee_de_terre_cuite_fouille_du_tombeau_de_lempereur_Qin_Xian.jpg
+excerpt_separator: <!--separator-->
 ---
 
 {% include helper_image.html src="/resources/images/content/lewis-mumford.jpg" size=2 float="end" caption="Lewis Mumford (1895-1990)" %}
 
 L’idée que l’industrie est l’évolution nécessaire de tout artisanat est un lieu commun fortement ancré dans la mentalité contemporaine. Dans la seconde moitié du XXème siècle, une lame de fond trouvant son origine chez Lewis Mumford[\[i\]](#_edn1) parcourt la plupart des disciplines que l’on croyait acquises à l’industrie : architecture, mobilier et même agriculture. Elle se nomme vernacularisme [\[ii\]](#_edn2)et tente de réconcilier science et tradition, productivité et beauté.
+
+<!--separator-->
 
 Mon métier, le développement de logiciels, n’était pas né lors de l’émergence du courant vernaculaire et son inclusion dans ce débat n’intervient que dans les années 2000, avec le mouvement de l’artisanat logiciel (Software Craftmanship). Le débat fut vif entre tenants d’une ingénierie logicielle « tayloriste » et ceux d’un artisanat logiciel[\[iii\]](#_edn3) qui n’allait pas tarder à se séparer du mouvement Agile. L’enjeu du débat est d’imposer sa grille de lecture à l’informatique des années 70 à 90. L’échec qualitatif historique du développement logiciel, qui fait les choux gras du Standish Group[\[iv\]](#_edn4), fut analysé par les deux camps, chacun ayant son explication.
 

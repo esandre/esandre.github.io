@@ -6,11 +6,14 @@ lang: french
 ref: laffaire-therac-25
 tags: histoire-informatique developpement failures
 image: /resources/images/content/therac-25.jpg
+excerpt_separator: <!--separator-->
 ---
 
 Entre juin 1985 et janvier 1987, 6 personnes sont mortes irradiées à cause d'un logiciel médical défectueux. Cest l'affaire Therac-25, en tout cas telle qu'elle est résumée sur Internet. Les développeurs ont-ils du sang sur les mains ? C'est un peu court, nous allons le voir.
 
 ☢️ Dans les années 70, un premier appareil de radiothérapie, le Therac-20 fut conçu par la Compagnie Générale Radiographique (CGR) française et l’Atomic Energy Commission Limited (AECL) canadienne. Il fut un succès : aucun accident et d’excellents résultats thérapeutiques. Malgré cela, CGR et AECL se séparèrent, la conception du Therac-25, successeur du Therac-20 fut donc exclusivement canadienne.
+
+<!--separator-->
 
 🗃️ Le Therac-25 consiste en un portage du logiciel du Therac-20, de conception française, donc sans l’aide de ses développeurs d’origine, sur un nouveau matériel. Il s’agit de code assembleur, bien moins portable que nos langages modernes.
 

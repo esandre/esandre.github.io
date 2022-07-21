@@ -1,24 +1,20 @@
 <head>
     <meta charset="UTF-8" />
-    <meta 
-        name="description"
 
-        {% if page.excerpt %}
-            content="{{ page.excerpt | strip_html | escape}}"
-        {% else %} 
-            content="L'Atelier Logiciel Sandré produit des logiciels de qualité, du bas-niveau à l'UI. Nous proposons également des formations et du coaching." 
-        {% endif %}
-    />
+    {% if page.excerpt %}
+        <meta name="description" content="{{ page.excerpt | strip_html | escape}}" />
+    {% else %}
+        <meta name="description" content="L'Atelier Logiciel Sandré produit des logiciels de qualité, du bas-niveau à l'UI. Nous proposons également des formations et du coaching." />
+    {% endif %}
+    
     <meta name="keywords" content="développement web csharp logiciel programme programmation code coaching formation agile" />
     <meta name="author" content="Enzo Sandré" />
 
-    <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %}
-            Atelier logiciel Sandré - Artisanat du développement
-        {% endif %}
-    </title>
+    {% if page.title %}
+        <title>{{ page.title }}</title>
+    {% else %}
+        <title>Atelier logiciel Sandré - Artisanat du développement</title>
+    {% endif %}
 
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
 

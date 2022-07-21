@@ -38,8 +38,9 @@ Cette seconde loi est tout aussi connue des développeurs. Elle est en revanche 
 
 {% include 
 helper_image.html 
-src="https://www.commitstrip.com/wp-content/uploads/2021/06/Strip-Refractoring-du-code-650-final.jpg" 
-float="start" 
+src="/resources/images/content/Strip-Refractoring-du-code-650-final.jpg" 
+float="start"
+caption="Crédits: Commitstrip" 
 size="5" %}
 
 Le drame est le lien entre complexité du logiciel et vélocité. Les équipes s’embourbent dans la gestion d’une complexité accidentelle évitable et ne parviennent plus à sortir de features. La pression du management s’accentue et la pire réponse est apportée presque à chaque fois : réduire le rythme du refactoring pour « gagner du temps ». Le schéma est ensuite toujours le même : surendettement, démotivation, turnover, retards, etc.
@@ -140,9 +141,7 @@ Dès leur sortie dans les années 1970, les lois de Lehman ont provoqué deux ty
 
 Les détracteurs de Lehman ont-ils réfuté les lois ? En 2013, 4 chercheurs ont réalisé une revue systématique à ce propos.
 
-<img src="https://h5p.org/sites/default/files/h5p/content/577351/images/image-5d56c8e206200.png" 
-    alt="Evidence Pyramid." 
-    class="figure-img img-fluid col-md-6 float-start"/>
+{% include helper_image.html src="/resources/images/content/evidence_pyramid.png" float="start" size=6 caption="Evidence Pyramid." %}
 
 **Le consensus actuel semble valider totalement les lois de Lehman pour les logiciels commerciaux. Cependant, la plupart des lois sont réfutées pour le développement Open-Source, qui semble suivre sa propre logique.**
 

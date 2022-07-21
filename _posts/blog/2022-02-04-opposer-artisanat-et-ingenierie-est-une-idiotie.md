@@ -113,6 +113,6 @@ Opposer artisanat et industrie à l’échelle d’une branche ou d’une nation
 
 [\[viii\]](#_ednref8) <https://fr.wikipedia.org/wiki/Sci-Hub>
 
-[\[ix\]](https://blog.enzosandre.fr/wp-admin/post.php?post=741&action=edit#_ednref9) Lussato Bruno, La Troisième Révolution
+[\[ix\]](#_ednref9) Lussato Bruno, La Troisième Révolution
 
-[\[x\]](https://blog.enzosandre.fr/wp-admin/post.php?post=741&action=edit#_ednref1) Il est tout à fait possible que cette explication elle-même, impossible à sourcer, soit une tradition. Elle existe parce qu’aucun chercheur n’est venu la vérifier, dans un sens ou l’autre. Encore une illustration du lien intime entre science et tradition.
+[\[x\]](#_ednref10) Il est tout à fait possible que cette explication elle-même, impossible à sourcer, soit une tradition. Elle existe parce qu’aucun chercheur n’est venu la vérifier, dans un sens ou l’autre. Encore une illustration du lien intime entre science et tradition.

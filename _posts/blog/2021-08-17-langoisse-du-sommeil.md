@@ -16,7 +16,7 @@ Je sais grâce à des tests génétiques grand public que j’ai de fortes chanc
 
 ## La vie dans une société matinale
 
-{% include helper_image.html src="https://blog.enzosandre.fr/wp-content/uploads/2021/08/unnamed.jpg" float="start" %}
+{% include helper_image.html src="/resources/images/content/lycee-audouin-dubreuil.jpg" float="start" %}
 
 Mes années lycée furent les pires de ma vie.
 
@@ -34,7 +34,7 @@ Pour autant, je ne parvenais pas à m’endormir avant minuit, écoutant NRJ sur
 
 Les vacances scolaires étaient une planche de salut, un radeau de fortune vite englouti à nouveau par une mer démontée. Ce calvaire a duré 3 ans.
 
-{% include helper_image.html src="https://d7j7m3vbc0co5.cloudfront.net/default/0001/17/a75245c353c1535c7ded94928dbee1b51c0530c7.png" float="start" %}
+{% include helper_image.html src="/resources/images/content/epsi.png" size=3 float="start" %}
 
 Puis je suis devenu étudiant en informatique à Bordeaux. J’avais 16 ans, un petit appartement proche de l’école. Ma condition s’est améliorée. J’ai repris goût au travail intellectuel et à la vie sociale. Les cours commençaient à 9h, ce qui est acceptable, avec 30 min de trajet matinal à pied pour me réveiller. Lever : 8h15. Une [chocolatine ](https://www.ledauphine.com/france-monde/2016/10/24/le-vrai-nom-c-est-pourtant-chocolatine)et un café sur le trajet à la boulangerie pour gratter la moindre minute de sommeil.
 
@@ -74,7 +74,7 @@ J’ai en revanche horreur des horaires imposés au-delà de quelques jours. J�
 
 ## Conclusion
 
-{% include helper_image.html src="https://i.ytimg.com/vi/JGVFoBRh3LQ/maxresdefault.jpg" float="start" size=6 %}
+{% include helper_image.html src="/resources/images/content/marching_hammers.jpg" float="start" size=6 %}
 
 Notre société a une norme concernant les horaires standards, calquée sur ceux de la majorité de la population, plutôt lève-tôt (et encore, je me demande si une étude à été faite, tant les articles de magazines féminins « [10 conseils pour se lever du premier coup](https://www.fourchette-et-bikini.fr/bien-etre/10-conseils-pour-arriver-a-se-lever-tot-le-matin.html)« , scientifiquement débiles, pullulent) et monophasique ([ce qui n’a pas toujours été la norme](https://www.youtube.com/watch?v=fz0-5JVeiVs)).
 

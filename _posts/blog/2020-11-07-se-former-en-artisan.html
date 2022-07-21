@@ -10,19 +10,13 @@ image: /resources/images/content/science-bitch.jpg
 
 <p>En entreprise, il est rare que l'on puisse choisir ses formations. L'anticipation des besoins par le management détermine souvent le calendrier. Chez l'indépendant et plus encore l'artisan, se former tient de l'exigence et de la discipline personnelle.</p>
 
-<figure class="figure float-start col-md-3">
-	<img 
-		src="https://blog.enzosandre.fr/wp-content/uploads/2020/11/IMG_20201031_163554.jpg" 
-		alt="Préparation de boutures, en vue de créer des haies. Une des premières choses à faire en s'installant c'est de délimiter les espaces." 
-		class="figure-img img-fluid"/>
-	<figcaption class="figure-caption">Préparation de boutures, en vue de créer des haies. Une des premières choses à faire en s'installant c'est de délimiter les espaces.</figcaption>
-</figure>
+{% include helper_image.html src="/resources/images/content/boutures.jpg" float="start" size=3 caption="Préparation de boutures, en vue de créer des haies. Une des premières choses à faire en s'installant c'est de délimiter les espaces." %}
 
 <p>Avoir arrêté le salariat puis la régie m'ont permis de reprendre le contrôle de mon temps. Ne plus avoir un client à temps plein, mais plusieurs en parallèle offre de nombreux temps morts, de quelques heures à plusieurs jours. Les plus longs sont employés à renforcer mon autonomie. Quelque soit la saison, les travaux ne manquent pas. Les plus courts offrent moins de liberté. Sortir puis ranger les outils prend du temps. De surcroît, le cerveau déteste les changements de contexte et perd du temps à s'y retrouver. Mieux vaut donc rester dans le même type d'activité. La formation continue est une bonne candidate pour occuper ces espaces libres de moyenne taille, entre une demi-journée et une heure. En deçà, une pause reste le meilleur investissement.</p>
 
 <p>Voilà réglée la question de "quand se former". Mais que faire ? Je vous livre ma recette personnelle, sans prétendre avoir une quelconque autorité.</p>
 
-<img src="/resources/images/content/diagram-training.png" class="img-fluid float-end col-md-4" />
+{% include helper_image.html src="/resources/images/content/diagram-training.png" float="end" size=4 %}
 
 <p>Je me forme en utilisant 3 familles de sources, chacun ayant sa propre temporalité. Ce diagramme résume grossièrement l'intérêt de chaque source. La science et les livres offrent un savoir solide, vérifié et souvent conçu pour durer. Ce n'est pas la priorité sur Internet, qui est plus volontiers un lieu de débats et d'essais. Ce schéma simplifie la réalité. Des blogs comme ceux de Mark Seemann ou de Martin Fowler n'ont rien d'éphémère et il n'est pas rare de voir un chercheur ou un éditeur publier sur le sujet à la mode. Comme tout modèle, ce diagramme est faux, mais utile.</p>
 
@@ -44,18 +38,11 @@ image: /resources/images/content/science-bitch.jpg
 
 <p>Chaque métier a ses auteurs de référence. Le nôtre n'y échappe pas. Martin Fowler, Uncle Bob Martin, Osherove, Hunt&amp;Thomas, etc. Je ne ferai pas la liste complète de ma bibliothèque pro, vous trouverez des listes de "Must have" à foison sur Internet. Un bon livre est une somme de savoir robuste, une brique de base dans la formation continue d'un développeur.</p>
 
-<img src="https://blog.enzosandre.fr/wp-content/uploads/2020/11/umadbro.png" 
-	class="img-fluid float-end col-md-4"/>
+{% include helper_image.html src="/resources/images/content/umadbro.png" float="end" size=4 %}
 
 <p>Le coût des ouvrages techniques est un premier frein à l'acquisition. 50€ n'est pas un prix exceptionnel pour ce genre d'ouvrages, gros et à faible tirage. Les plus demandés sont rarement disponibles d'occasion. Cet inconvénient est accentué pour les auto-entrepreneurs, qui ne peuvent pas acheter ces ouvrages net de TVA. Enfin, j'ai horreur d'annoter les livres, ce qui oblige à multiplier les post-it peu élégants.</p>
 
-<figure class="figure float-start col-md-4">
-	<img 
-		src="https://blog.enzosandre.fr/wp-content/uploads/2020/11/livres-1024x666.png" 
-		alt="Quelques classiques que je recommande." 
-		class="figure-img img-fluid"/>
-	<figcaption class="figure-caption">Quelques classiques que je recommande.</figcaption>
-</figure>
+{% include helper_image.html src="/resources/images/content/bibliotheque.png" float="start" size=4 caption="Quelques classiques que je recommande." %}
 
 <p>Avoir des livres est obligatoire pour un développeur, on ne peut pas faire sans et tout savoir supplémentaire s'appuiera sur ce socle. Si vos étagères sont vides, je recommande de commencer par là. Ce n'est qu'ensuite que vous pourrez explorer ce que les chercheurs et les praticiens ont produit de plus récent.</p>
 
@@ -90,18 +77,11 @@ image: /resources/images/content/science-bitch.jpg
 
 <p>Ces précautions signalées, je vais partager ma méthode. Cela fait 3 mois que je la raffine et l'emploie avec succès.</p>
 
-<img src="https://blog.enzosandre.fr/wp-content/uploads/2020/11/image.png" 
-	class="img-fluid float-end col-md-12"/>
+{% include helper_image.html src="/resources/images/content/veille.png" float="end" size=12 %}
 
 <ol><li>Tout commence avec une bête recherche <strong>Google Scholar</strong> sur des sujets très vagues. Plus ils sont vagues mieux c'est, nous verrons pourquoi ensuite.</li></ol>
 
-<figure class="figure float-end col-md-4">
-	<img 
-		src="https://blog.enzosandre.fr/wp-content/uploads/2020/11/classeur-science-1024x814.png" 
-		alt="Le classeur où je range les articles que je souhaite conserver." 
-		class="figure-img img-fluid"/>
-	<figcaption class="figure-caption">Le classeur où je range les articles que je souhaite conserver.</figcaption>
-</figure>
+{% include helper_image.html src="/resources/images/content/classeur-science.png" float="end" size=4 caption="Le classeur où je range les articles que je souhaite conserver." %}
 
 <ol start="2"><li>Les résultats arrivent par mail, j'effectue un premier <strong>tri selon le titre</strong>. Puis selon l'abstract. Je stocke les articles intéressants pour les imprimer par lots (je déteste lire sur écran des documents longs).</li><li>Vient le temps de la lecture. J'effectue une première <strong>lecture superficielle</strong> rapide. Elle me permet de constituer 2 piles. La première sera relue plus en détail ultérieurement. La seconde ne servira qu'à en extraire les références intéressantes (c'est notamment le cas des méta-études, pas toujours utiles aux non-chercheurs).</li><li>J'<strong>extrais les références</strong> de tous les papiers lus. Elles seront mêlées aux résultat de Google Scholar afin d'effectuer l'itération suivante. Les livres référencés sont notés dans un carnet. Le livre le plus cité a de fortes chances d'être commandé.</li><li>Je <strong>classe les papiers</strong> que je souhaite garder par grands thèmes, avec pour chacun un post-it résumant son intérêt et éventuellement des marque-page. Ils sont intensément surlignés.</li></ol>
 
@@ -132,13 +112,7 @@ image: /resources/images/content/science-bitch.jpg
 
 <ul><li><strong>Tenir une veille à jour est éreintant</strong>. Tout bouge très vite. Un bon outillage est nécessaire, mais il ne fait qu'atténuer légèrement la pénibilité du travail de sourçage.</li><li><strong>La communauté produit beaucoup de bruit et de drama</strong>. Beaucoup d'éminents professionnels ont du mal à séparer leur expertise de leurs opinions tranchées, surtout lors des grands évènements politiques. Quand les canaux "opinions" et "expertise" ne sont pas distincts, même le meilleur outil de veille est englué dans le bruit.</li><li><strong>Je trouve tout simplement mon bonheur dans les deux sources précédentes.</strong> La solidité des grands auteurs mâtinée des dernières découvertes des chercheurs est un mélange efficace.</li></ul>
 
-<figure class="figure float-end col-md-4">
-	<img 
-		src="https://blog.enzosandre.fr/wp-content/uploads/2020/11/veille-delaissee.png" 
-		alt="Une veille qui a été délaissée 2 ans n'est pas belle à voir." 
-		class="figure-img img-fluid"/>
-	<figcaption class="figure-caption">Une veille qui a été délaissée 2 ans n'est pas belle à voir.</figcaption>
-</figure>
+{% include helper_image.html src="/resources/images/content/veille-delaissee.png" float="end" size=4 caption="Une veille qui a été délaissée 2 ans n'est pas belle à voir." %}
 
 <p>Cela se ressent fortement sur ma veille, complètement délaissée et rongée par les placements de produit. C'est pourquoi je ne donnerai aucun conseil  dans cet article. J'ai pour projet de remettre ma veille technique sur les rails, en capitalisant les connaissances acquises à l'École de Guerre Économique. Encore un article promis qui ne sera pas écrit avant des mois.</p>
 

@@ -56,18 +56,6 @@ b {
     font-weight: 500;
 }
 
-blockquote::after {
-    content: "”";
-    font-size: 1.68em;
-    color: #5A5051;
-}
-
-blockquote::before {
-    content: "“";
-    font-size: 1.68em;
-    color: #5A5051;
-}
-
 p + p, ul + p, ol + p, blockquote {
     text-indent: 1em;
 }

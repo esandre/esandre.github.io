@@ -57,7 +57,7 @@ L’opportunité ou non de règlementer une profession ne peut qu’être le fru
 
 ## Conclusion : Exclure avec justice, pour un plus grand bien
 
-{% include helper_image.html src="/resources/images/content/armoiries-developpeurs.png" size=4 float="start" caption="Tentative de symboliser la profession de développeur par Pauline Bergé-Bourbon" %}
+{% include helper_image.html src="/resources/images/content/armoiries-developpeurs.jpg" size=4 float="start" caption="Tentative de symboliser la profession de développeur par Pauline Bergé-Bourbon" %}
 
 Je m’assume complètement comme « gatekeeper de la tech ». Je ne cache pas ma position en faveur d’un Ordre des Développeurs, car je pense que le développement de logiciels est une activité suffisamment risquée pour nécessiter une accréditation. Je pense aussi que les conditions de cette accréditation doivent être fixées par tous les praticiens, non par quelques influenceurs autoproclamés « maîtres-artisans ». D’où ma position en faveur d’un incorporation obligatoire de la profession.
 

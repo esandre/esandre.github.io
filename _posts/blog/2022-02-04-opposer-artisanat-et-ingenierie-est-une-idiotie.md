@@ -30,7 +30,7 @@ Au XIVème siècle, Étienne Marcel, alors prévôt des marchands de Paris, tena
 
 {% include helper_image.html src="/resources/images/content/daniel-bernouilli.png" size=4 float="start" caption="Daniel Bernouilli (1700-1782); Médecin, physicien, mathématicien et astronome. Un savant polymathe typique de son époque." %}
 
-Quelle chute lorsque les corps de métiers sont rayés d’un simple trait de plume le 14 juin 1791 par la Loi Le Chapelier[\[vii\]](https://blog.enzosandre.fr/wp-admin/post.php?post=741&action=edit#_ednref7) ! Or c’est également à la fin du XVIIIème que la méthode scientifique moderne a déployé ses ailes, refermant peu à peu la période des grands savants de l’Époque Moderne. Les grands génies polymathes cèdent la place à des armées de spécialistes, physiciens, biologistes, archéologues, etc.
+Quelle chute lorsque les corps de métiers sont rayés d’un simple trait de plume le 14 juin 1791 par la Loi Le Chapelier[\[vii\]](#_ednref7) ! Or c’est également à la fin du XVIIIème que la méthode scientifique moderne a déployé ses ailes, refermant peu à peu la période des grands savants de l’Époque Moderne. Les grands génies polymathes cèdent la place à des armées de spécialistes, physiciens, biologistes, archéologues, etc.
 
 A cause de cette corrélation temporelle, l’imaginaire populaire associe en un tout indissociable « l’Ancien Régime », période allant du Haut Moyen-Âge à l’Époque Moderne, avec ses artisans réunis en guildes, ses mousquetaires, ses carrosses et ses perruques. La culture fantasy et médiévaliste n’a pas aidé en liant définitivement l’artisan à cette « époque ».
 

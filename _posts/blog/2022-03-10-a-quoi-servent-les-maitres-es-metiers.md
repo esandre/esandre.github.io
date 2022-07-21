@@ -5,7 +5,7 @@ category: 'blog'
 lang: french
 ref: a-quoi-servent-les-maitres-es-metiers
 tags: corporatisme artisanat
-image: /resources/images/content/endymion-master-magician.png
+image: /resources/images/content/endymion-master-magician.jpg
 ---
 
 La maîtrise n’est pas un gros mot, mais un mécanisme social contre [<del>l’effet Dunning-Kruger</del>]({% link _posts/blog/2022-03-31-cessons-lappel-a-dunning-kruger.md %}) et ses ravages. Le plus dangereux dans un métier n’est pas le novice, hésitant et humble, mais le débutant, qui ne sait pas encore qu’il ne sait rien, mais sait suffisamment pour croire savoir. Il est sur la montagne de la stupidité et ne doit pas être laissé en autonomie.

@@ -63,7 +63,8 @@ All the current industries that are recent creations emerged from a formerly art
 
 Craftsmanship is as old as the tool and will never disappear totally in favor of industry. Its main advantage, which guarantees its survival in lean times, is resilience. Whereas engineers are process specialists, craftsmen are specialists of a raw material. They do not produce a specific good, but have extensive knowledge of a material and the tools needed to shape it. To put it in one word, they can adapt.
 
-{% include helper_image.html src="/resources/images/content/monoculture.png" size=4 float="start" caption="Monoculture means mono-outlet." %}
+{% include helper_image.html src="/resources/images/content/monoculture.png" size=4 float="start" caption="Monoculture means mono-outlet. 
+<br/>Translation: <i>450 tons of unsold potatoes due to the lockdown. Villiers-Herbisse, Aube. Agriculture: a commercial potastrophe.</i>" %}
 
 The Covid crisis confirmed this theory: the artisans were at the forefront of mask production, long before the industrialists managed to reorient their production, when their machines enabled them to do so. And the most diversified and least industrialized farmers were the ones who best weathered the crisis (without wasting public money, I mean).
 
@@ -73,7 +74,17 @@ Craftsmanship is not a profession, but a mode of production, which has existed a
 
 I will go further: no strategic sector can afford to be completely industrial or completely artisanal. To oppose the two is silly, especially in a country like France, which has a true hybrid culture. On the global stage, an economy always loses by choosing one or the other.
 
-{% include helper_image.html src="/resources/images/content/2014_produits_la_france_exportation_treemap.png" size=12 caption="French exports in 2014. A mix of crafts and industry.. Source : Wikipedia." %}
+{% include helper_image.html src="/resources/images/content/2014_produits_la_france_exportation_treemap.png" size=12 caption="French exports in 2014. A mix of crafts and industry. Source : Wikipedia. <br/>Translation: <i><ul>
+	<li>Aircraft, spacecraft and launch vehicles</li>
+	<li>Cars</li>
+	<li>Motor vehicle parts and accessories</li>
+	<li>Turbojets, turboprops and other gas turbine engines</li>
+	<li>Packaged drugs</li>
+	<li>Petroleum oil, refined</li>
+	<li>Wheat and meslin</li>
+	<li>Fresh grape wines</li>
+	<li>Metal jewelry</li>
+	<li>Trunks or cases of any kind.</li></ul></i>" %}
 
 ## Conclusion
 

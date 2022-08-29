@@ -81,6 +81,16 @@ footer {
     height: 100%;
 }
 
+@media print {
+    p {
+        text-align: justify;
+    }
+
+    body, article {
+        max-width: none !important;
+    }
+}
+
 [value="All"]:checked ~ .posts [data-category] {
     display: block;
 }

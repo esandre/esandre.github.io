@@ -37,7 +37,7 @@ ref: faq
         {% for post in site.posts %}
             {% if post.categories contains "faq" and post.tags contains categorie.tag %}
             <article>
-                <h3 id="{{post.ref}}">{{post.title}}</h3>
+                <h3 id="{{post.ref}}">{{post.title}}<a class="fs-4" href="{{ post.url }}">🔗</a></h3>
                 {{ post.content }}
             </article>
             {% endif %}

@@ -18,6 +18,7 @@ ref: portfolio
     {% for post in site.posts %}
         {% if post.categories contains "portfolio" and post.completed == false %}
         <article>
+            <a class="fs-4" href="{{ post.url }}">🔗</a>
             {{ post.content }}
         </article>
         {% endif %}
@@ -28,6 +29,7 @@ ref: portfolio
     {% for post in site.posts %}
         {% if post.categories contains "portfolio" and post.completed == true %}
         <article>
+            <a class="fs-4" href="{{ post.url }}">🔗</a>
             {{ post.content }}
         </article>
         {% endif %}

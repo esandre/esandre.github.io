@@ -226,6 +226,11 @@ aside a {
     font-weight: lighter;
 }
 
+#portfolio article>a {
+    float: left;
+    line-height: 2.35em;
+}
+
 summary {
     cursor: text;
 }

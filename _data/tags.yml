@@ -329,3 +329,13 @@
   hint: 
     french: "Source traitant de pédagogie ou d'enseignement de l'informatique"
     english: ""
+
+- pedagogie:
+  tag: "expert"
+  emoji: "👔 "
+  name: 
+    french: "Avis d'expert"
+    english: ""
+  hint: 
+    french: "La source n'est qu'un avis d'expert et non un papier scientifique revu par les pairs."
+    english: ""

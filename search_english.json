@@ -5,7 +5,7 @@
   {% for post in posts %}
     {
 
-      "title"    : "{{ post.title | escape }}",
+      "title"    : "{{ post.title | escape | slugify: 'latin' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",

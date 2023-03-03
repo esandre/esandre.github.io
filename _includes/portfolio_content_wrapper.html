@@ -1,22 +1,27 @@
+{% if post %}
+    {% assign target = post %}
+{% else %}
+    {% assign target = page %}
+{% endif %}
+
 <article>
     <div class="title_block">
-        {% if post.logos or post.logo %}
-            {% assign logos = post.logos | append: " " | append: post.logo | split: " "  %}
+        {% if target.logos or target.logo %}
+            {% assign logos = target.logos | append: " " | append: target.logo | split: " "  %}
             {% for logo in logos %}
-                <img class="logo" src="resources/images/portfolio/{{logo}}" alt="{{post.title}}" />
+                <img class="logo" src="/resources/images/portfolio/{{logo}}" alt="{{target.title}}" />
             {% endfor %}
         {% endif %}
 
-        <h2 id="{{post.ref}}" {% if post.logo_repeats_title %} class="info_displayed_in_logo" {% endif %}>
-            <b>{{post.title}}</b> 
-            {{post.subtitle}}
+        <h2 id="{{target.ref}}" {% if target.logo_repeats_title %} class="info_displayed_in_logo" {% endif %}>
+            <b>{{target.title}}</b> 
+            {{target.subtitle}}
         </h2>
 
-        <a class="fs-4" href="{{ post.url }}">🔗</a>
+        <a class="fs-4" href="{{ target.url }}">🔗</a>
     </div>
 
-    
-    <details {% if post.has_details %}class="with-details"{% endif %}>
-        {{ post.content }}
+    <details {% if target.has_details %}class="with-details"{% endif %}>
+        {{ target.content }}
     </details>
-</article>  
+</article>

@@ -4,14 +4,22 @@
     {% assign target = page %}
 {% endif %}
 
-{% if target.doi or target.dois %}
+{% if target.doi or target.dois or target.link %}
 {% assign dois = target.dois | append: " " | append: target.doi | split: " "  %}
 <hr />
 <span class="dois text-nowrap">
-    DOIs:
-    {% for doi in dois %}
-        <a href="https://doi.org/{{doi}}">{{ doi }}</a>
-        {% unless forloop.last %} · {% endunless %}
-    {% endfor %}
+    {% if target.link %}
+        <a href="{{target.link}}">📄 Lien public</a>
+    {% endif %}
+
+    {% if target.doi or target.dois %}
+        <span>DOIs:
+        {% for doi in dois %}
+            <a href="https://doi.org/{{doi}}">{{ doi }}</a>
+            {% unless forloop.last %} · {% endunless %}
+        {% endfor %}
+        </span>
+    {% endif %}
 </span>
 {% endif %}
+

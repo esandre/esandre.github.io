@@ -5,7 +5,7 @@ category: 'veille'
 tags: codesmithing
 lang: french
 ref: purposes-concepts-misfits-and-a-redesign-of-git
-doi: 10.1145/2983990.2984018
+dois: 10.1145/2983990.2984018
 link: https://spderosso.github.io/oopsla16.pdf
 ---
 

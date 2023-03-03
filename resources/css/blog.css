@@ -69,7 +69,10 @@ footer {
 }
 
 .dois {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .dois ~ ul li, .dois ~ ul {

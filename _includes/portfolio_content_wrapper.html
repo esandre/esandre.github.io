@@ -1,0 +1,22 @@
+<article>
+    <div class="title_block">
+        {% if post.logos or post.logo %}
+            {% assign logos = post.logos | append: " " | append: post.logo | split: " "  %}
+            {% for logo in logos %}
+                <img class="logo" src="resources/images/portfolio/{{logo}}" alt="{{post.title}}" />
+            {% endfor %}
+        {% endif %}
+
+        <h2 id="{{post.ref}}" {% if post.logo_repeats_title %} class="info_displayed_in_logo" {% endif %}>
+            <b>{{post.title}}</b> 
+            {{post.subtitle}}
+        </h2>
+
+        <a class="fs-4" href="{{ post.url }}">🔗</a>
+    </div>
+
+    
+    <details {% if post.has_details %}class="with-details"{% endif %}>
+        {{ post.content }}
+    </details>
+</article>  

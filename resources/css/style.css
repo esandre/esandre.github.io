@@ -231,6 +231,28 @@ aside a {
     line-height: 2.35em;
 }
 
+#portfolio h2.info_displayed_in_logo b {
+    display: none;
+}
+
+#portfolio h2.info_displayed_in_logo::before {
+    content: " - ";
+    font-weight: lighter;
+}
+
+.title_block {
+    height: 3.4em;
+    display: flex;
+}
+
+img.logo{
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-left: 0px;
+}
+
 summary {
     cursor: text;
 }
@@ -239,14 +261,14 @@ summary::marker{
     display: none;
 }
 
-details:not(.nodetails) summary::after {
+details.with-details summary::after {
     font-size: 2.5 rem;
     content: " ► L'histoire complète";
     color: #8C2323;
     cursor: pointer;
 }
 
-details:not(.nodetails)[open] summary:not(.nodetails):after {
+details.with-details[open] summary:not(.nodetails):after {
     font-size: 2.5 rem;
     content: " ▼ Voir moins";
     color: #5A5051;
@@ -255,7 +277,6 @@ details:not(.nodetails)[open] summary:not(.nodetails):after {
 details>summary {
     list-style: none;
 }
-
 
 /*---------------------------------------
    Search

@@ -1,38 +1,38 @@
 ---
 layout: post
-title:  "Pont SEPA-Chargebee : L'externalisation réussie de vos développements"
+title:  "Pont SEPA-Chargebee"
+subtitle: "L'externalisation réussie de vos développements"
 category: portfolio
 completed: True
 lang: french
-ref: snal-sepa-chargebee
+ref: albus
 logos: albus.svg cbc.png
+logo_repeats_title: True
+has_details: True
 ---
 
-<details>
-    <summary>
-        <h2 id="albus"><b>Pont SEPA-Chargebee</b> L'externalisation réussie de vos développements.</h2>
-        <span>SNAL/CBC Consult - Janvier 2021 - Mai 2021 - Région de Mulhouse</span>
-        <aside>.NET5 · Castle Windsor (IoC) · TDD · Architecture hexagonale · Couches anticorruption · API</aside>
-        <p>
-            Développement au forfait d’un automate de traitement des débits et rejets entre le logiciel de facturation Chargebee et le format XML SEPA DirectDebit.
-        </p>
-    </summary>
+<summary>
+    <span>SNAL/CBC Consult - Janvier 2021 - Mai 2021 - Région de Mulhouse</span>
+    <aside>.NET5 · Castle Windsor (IoC) · TDD · Architecture hexagonale · Couches anticorruption · API</aside>
+    <p>
+        Développement au forfait d’un automate de traitement des débits et rejets entre le logiciel de facturation Chargebee et le format XML SEPA DirectDebit.
+    </p>
+</summary>
 
-    <p>
-        L'intérêt de ce projet, somme toute assez routinier, est d'être une démonstration achevée des bonnes pratiques que nous prêchons. Le besoin ne présente aucune difficulté particulière&nbsp;: il s'agit d'un pont très classique entre un logiciel de facturation (Chargebee) et le format d'échange interbancaire SEPA. Le pont fonctionne dans les deux sens&nbsp: émission des ordres de débit et lecture des rejets.
+<p>
+    L'intérêt de ce projet, somme toute assez routinier, est d'être une démonstration achevée des bonnes pratiques que nous prêchons. Le besoin ne présente aucune difficulté particulière&nbsp;: il s'agit d'un pont très classique entre un logiciel de facturation (Chargebee) et le format d'échange interbancaire SEPA. Le pont fonctionne dans les deux sens&nbsp: émission des ordres de débit et lecture des rejets.
+</p>
+<p>
+    Quelques détails sont inconnus au début du projet, certaines dépendances obligatoires sont intestables ou peu sûres, des <b>couches anticorruption</b> ont du être mises en place afin de rendre l'intestable plus prédictible et le peu sûr facilement remplaçable. Les détails d'implémentation dépendent du métier et non l'inverse (<b><abbr title="Dependency Injection">DI</abbr></b>) et chaque composant, en plus d'être testé individuellement (<b>tests fonctionnels</b>), est mis en mouvement dans un tout plus grand (<b>tests système</b>), avant d'être relié au monde extérieur pour les tests les plus aboutis (<b>tests d'intégration</b>).
+</p>
+<div class="row">
+    <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
+        <img src="/resources/images/PontSEPAChargebee.png" class="img-fluid rounded" />
     </p>
-    <p>
-        Quelques détails sont inconnus au début du projet, certaines dépendances obligatoires sont intestables ou peu sûres, des <b>couches anticorruption</b> ont du être mises en place afin de rendre l'intestable plus prédictible et le peu sûr facilement remplaçable. Les détails d'implémentation dépendent du métier et non l'inverse (<b><abbr title="Dependency Injection">DI</abbr></b>) et chaque composant, en plus d'être testé individuellement (<b>tests fonctionnels</b>), est mis en mouvement dans un tout plus grand (<b>tests système</b>), avant d'être relié au monde extérieur pour les tests les plus aboutis (<b>tests d'intégration</b>).
+    <p class=" col-md-6 col-xs-12 col-sm-12 gx-5">
+        Le projet est réalisé en C# avec une <b>architecture hexagonale</b>, tout juste maîtrisée par l'Atelier. Cette architecture offre une grande surface d'accroche à d'autres bonnes pratiques, comme <b><abbr title="Test Driven Design">TDD</abbr></b>, <b><abbr title="Domain Driven Design">DDD</abbr></b>, l'utilisation d'un framework d'<b><abbr title="Inversion of Control">IoC</abbr></b> ou l'usage de tests de recette pour les démonstrations. La conjonction de ces techniques représente le sommet de la qualité dont l'Atelier est capable à ce jour. Cela ne signifie pas que ces pratiques seront utilisées sur vos projets, chacune ayant un cadre d'usage précis, mais il s'agit aujourd'hui de notre état de l'art.
     </p>
-    <div class="row">
-        <p class="col-md-6 col-xs-12 col-sm-12 gx-5">
-            <img src="/resources/images/PontSEPAChargebee.png" class="img-fluid rounded" />
-        </p>
-        <p class=" col-md-6 col-xs-12 col-sm-12 gx-5">
-            Le projet est réalisé en C# avec une <b>architecture hexagonale</b>, tout juste maîtrisée par l'Atelier. Cette architecture offre une grande surface d'accroche à d'autres bonnes pratiques, comme <b><abbr title="Test Driven Design">TDD</abbr></b>, <b><abbr title="Domain Driven Design">DDD</abbr></b>, l'utilisation d'un framework d'<b><abbr title="Inversion of Control">IoC</abbr></b> ou l'usage de tests de recette pour les démonstrations. La conjonction de ces techniques représente le sommet de la qualité dont l'Atelier est capable à ce jour. Cela ne signifie pas que ces pratiques seront utilisées sur vos projets, chacune ayant un cadre d'usage précis, mais il s'agit aujourd'hui de notre état de l'art.
-        </p>
-    </div>
-    <p>
-        Nous nous attendons à ce que ce projet soit détrôné par un autre, nos connaissances progressant sans cesse.
-    </p>
-</details>
+</div>
+<p>
+    Nous nous attendons à ce que ce projet soit détrôné par un autre, nos connaissances progressant sans cesse.
+</p>

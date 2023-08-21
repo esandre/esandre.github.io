@@ -8,6 +8,7 @@ lang: french
 ref: ifp
 logo_repeats_title: True
 logo: ifp.png
+has_details: True
 ---
 
 <summary>
@@ -16,5 +17,14 @@ logo: ifp.png
     <p>
         Reprise d’une application PHP/Laravel obsolète et délaissée depuis plusieurs années, de gestion de campagnes de dons pour des associations. Duplication du projet, assainissement du code et correction à chaud de bugs bloquants. Stratégies de contournement des problèmes les plus coûteux à résoudre.
     </p>
-    <p><b>Actuellement :</b> Développement de nouvelles vues sur un projet propre, routage et Strangler Pattern.</p>
+    <p><b>Actuellement :</b> Développement de nouvelles fonctionnalités sur un projet propre, routage entre les deux composants et Strangler Pattern.</p>
 </summary>
+
+<h3>Un projet en deshérence</h3>
+
+<p>
+    Le projet est un outil de gestion de dons, fait sur-mesure pour coller au workflow très spécifique du client. Basé sur Laravel 5, celui-ci a été livré en 2015, puis maintenu un certain temps par son créateur. Celui-ci n'a pas écrit de tests sur ce projet, pourtant d'une complexité conséquente. La suite de l'histoire est hélas classique : sans tests, impossible de s'assurer de l'absence de régressions. Sans cette sécurité, la moindre mise à jour, la moindre évolution et même le moindre débug deviennent des tâches fastidieuses à l'issue incertaine.
+</p>
+<p>
+    Le développeur d'origine quitte le projet quelque part à la fin de la décennie 2010. Sans tests et sans son concepteur, le projet devient un Code Legacy : personne n'ose le mettre à jour de peur de le casser. Les défauts qui se révèlent ne sont corrigés qu'à minima par un développeur bénévole. Arrive l'année 2020, où l'IFP fait appel à l'Atelier Logiciel Sandré pour reprendre en main le projet. La priorité est la correction des bugs les plus urgents.
+</p>

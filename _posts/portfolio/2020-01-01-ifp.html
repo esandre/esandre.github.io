@@ -31,14 +31,21 @@ has_details: True
 
 <h3>Une longue convalescence</h3>
 
-<p>
-    Une fois les voies d'eau les plus urgentes colmatées, le projet est assaini et intégré à un pipeline d'Intégration Continue. D'abord réalisée en tant que bonne pratique, cette intégration s'avère rapidement utile afin de dupliquer le projet pour une autre association-soeur. Un rapport sur l'état du projet est produit, afin que le client réalise l'ampleur des travaux à effectuer pour remettre le projet sur les rails. Une stratégie de long-cours est choisie : l'existant restera en l'état, c'est-à-dire non testé et obsolète, mais les nouvelles fonctionnalités devront bénéficier des meilleures pratiques et d'un environnement technique récent.
-</p>
+<div class="row">
+    <p class="col-md-4 col-xs-12 col-sm-6">
+        <img src="/resources/images/portfolio/IFP-diagramme.png" class="rounded img-fluid" />
+    </p>
+    <div class="col-md-8 col-xs-12 col-sm-6 gx-5">
+        <p>
+            Une fois les voies d'eau les plus urgentes colmatées, le projet est assaini et intégré à un pipeline d'Intégration Continue. D'abord réalisée en tant que bonne pratique, cette intégration s'avère rapidement utile afin de dupliquer le projet pour une autre association-soeur. Un rapport sur l'état du projet est produit, afin que le client réalise l'ampleur des travaux à effectuer pour remettre le projet sur les rails. Une stratégie de long-cours est choisie : l'existant restera en l'état, c'est-à-dire non testé et obsolète, mais les nouvelles fonctionnalités devront bénéficier des meilleures pratiques et d'un environnement technique récent.
+        </p>
 
-<p>
-    Après 2 ans à maintenir le projet, un nouveau besoin apparaît. Celui-ci entraîne la création d'un nouveau projet Laravel, récent celui-ci. Le nouveau projet est réalisé selon les règles de l'art : test-first, intégration continue, one-button-deployment, etc. Une variante du Strangler Pattern utilisant Apache comme routeur est utilisée. Lorsqu'une URL existe sur le nouveau projet, celui-ci répond. Sinon la même URL est demandée à l'ancien code. Petit à petit, des fonctionnalités sont "volées" à l'ancien code et reproduites sur le nouveau.
-</p>
+        <p>
+            Après 2 ans à maintenir le projet, un nouveau besoin apparaît. Celui-ci entraîne la création d'un nouveau projet Laravel, récent celui-ci. Le nouveau projet est réalisé selon les règles de l'art : test-first, intégration continue, one-button-deployment, etc. Une variante du Strangler Pattern utilisant Apache comme routeur est utilisée. Lorsqu'une URL existe sur le nouveau projet, celui-ci répond. Sinon la même URL est demandée à l'ancien code. Petit à petit, des fonctionnalités sont "volées" à l'ancien code et reproduites sur le nouveau.
+        </p>
 
-<p>
-    La route est encore longue, mais la reprise du développement augure un bel avenir à un logiciel incapable d'évoluer avant sa reprise. D'autres fonctionnalités sont prévues. Elles nécessiteront le transfert d'autres morceaux de code vers le nouveau projet. Progressivement et par contagion, tout le code sera testé, donc testable, donc maintenable. Mon but est de pouvoir un jour tirer ma révérence.
-</p>
+        <p>
+            La route est encore longue, mais la reprise du développement augure un bel avenir à un logiciel incapable d'évoluer avant sa reprise. D'autres fonctionnalités sont prévues. Elles nécessiteront le transfert d'autres morceaux de code vers le nouveau projet. Progressivement et par contagion, tout le code sera testé, donc testable, donc maintenable. Mon but est de pouvoir un jour tirer ma révérence.
+        </p>
+    </div>
+</div>

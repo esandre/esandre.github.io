@@ -41,6 +41,15 @@ figure>img{
     margin: 0;
 }
 
+.footnotes li {
+    font-size: 0.9em;
+    color: grey;
+}
+
+.footnotes p, .footnotes p a {
+    color: grey;
+}
+
 p, li, dt, dd, img, blockquote {
     color: #363031;
     font-size: 1.2em;

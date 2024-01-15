@@ -31,3 +31,12 @@ ref: portfolio
 
     <p>Tous les logos appartiennent aux entreprises mentionnées.</p>
 </section>
+<script>
+window.addEventListener( 'beforeprint', () => {
+    [].forEach.call( document.querySelectorAll( 'details' ), el => el.setAttribute( 'open', '' ) )
+})
+
+window.addEventListener( 'afterprint', () => {
+    [].forEach.call( document.querySelectorAll( 'details' ), el => el.removeAttribute( 'open' ) )
+})
+</script>

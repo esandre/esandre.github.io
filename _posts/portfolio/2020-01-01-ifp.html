@@ -26,7 +26,7 @@ has_details: True
     Le projet est un outil de gestion de dons, fait sur-mesure pour coller au workflow très spécifique du client. Basé sur Laravel 5, celui-ci a été livré en 2015, puis maintenu un certain temps par son créateur. Celui-ci n'a pas écrit de tests sur ce projet, pourtant d'une complexité conséquente. La suite de l'histoire est hélas classique : sans tests, impossible de s'assurer de l'absence de régressions. Sans cette sécurité, la moindre mise à jour, la moindre évolution et même le moindre débug deviennent des tâches fastidieuses à l'issue incertaine.
 </p>
 <p>
-    Le développeur d'origine quitte le projet quelque part à la fin de la décennie 2010. Sans tests et sans son concepteur, le projet devient un Code Legacy : personne n'ose le mettre à jour de peur de le casser. Les défauts qui se révèlent ne sont corrigés qu'à minima par un développeur bénévole. Arrive l'année 2020, où l'IFP fait appel à l'Atelier Logiciel Sandré pour reprendre en main le projet. La priorité est la correction des bugs les plus urgents.
+    Le développeur d'origine quitte le projet quelque part à la fin de la décennie 2010. Sans tests et sans son concepteur, le projet devient un Code Legacy : personne n'ose le mettre à jour de peur de le casser. Les défauts qui se révèlent ne sont corrigés qu'à minima par un développeur bénévole. Arrive l'année 2020, où l'IFP fait appel à moi pour reprendre en main le projet. La priorité est la correction des bugs les plus urgents.
 </p>
 
 <h3>Une longue convalescence</h3>
@@ -41,7 +41,7 @@ has_details: True
         </p>
 
         <p>
-            Après 2 ans à maintenir le projet, un nouveau besoin apparaît. Celui-ci entraîne la création d'un nouveau projet Laravel, récent celui-ci. Le nouveau projet est réalisé selon les règles de l'art : test-first, intégration continue, one-button-deployment, etc. Une variante du Strangler Pattern utilisant Apache comme routeur est utilisée. Lorsqu'une URL existe sur le nouveau projet, celui-ci répond. Sinon la même URL est demandée à l'ancien code. Petit à petit, des fonctionnalités sont "volées" à l'ancien code et reproduites sur le nouveau.
+            Après 2 ans à maintenir le projet, un nouveau besoin apparaît. Celui-ci entraîne la création d'un nouveau projet Laravel, récent celui-ci. Le nouveau projet est réalisé selon les règles de l'art : test-first (TDD), intégration continue, one-button-deployment, etc. Une variante du Strangler Pattern utilisant Apache comme routeur est utilisée. Lorsqu'une URL existe sur le nouveau projet, celui-ci répond. Sinon la même URL est demandée à l'ancien code. Petit à petit, des fonctionnalités sont "volées" à l'ancien code et reproduites sur le nouveau.
         </p>
 
         <p>

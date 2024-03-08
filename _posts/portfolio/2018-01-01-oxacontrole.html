@@ -17,7 +17,8 @@ has_details: True
 
     <p>
         Reprise d’un projet de contrôle d’accès datant de 2013, réalisé avec Projects Partners en alternance. Maintenance des sites installés précédemment. Installation de nouveaux chantiers.<br/>
-        Changement d’échelle (x10), problématiques de sécurité, de performance, de maintenabilité, de qualité du code. Refonte applicative complète après auto-audit, notamment de l’UI WPF. Ajout de tests (unitaires, fonctionnels, d’intrusion, de performances, etc.). Refactoring et application des bonnes pratiques. Conversion à .NET 8.                    
+        Changement d'échelle en 2020 (x10) nécessitant la mise en place d'une architecture logicielle plus solide. Refactoring et conversion à .NET6, puis .NET8 aujourd'hui.<br/>
+        Ajout de nouvelles features en TDD sur demande de certains clients. Ajout de tests a posteriori sur le code historique pour le renforcer.
     </p>
     <p><b>Actuellement :</b> En production sur sites allant du petit bureau au grand centre aquatique. Étude de nouveaux chantiers.</p>
 </summary>
@@ -25,7 +26,7 @@ has_details: True
 <h3>Les origines</h3>
 
 <p>
-    L'histoire commence en 2013, en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
+    L'histoire commence en 2013, j'étais en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
 </p>
 
 <div class="row">
@@ -33,7 +34,7 @@ has_details: True
         <img src="resources/images/portfolio/projects_partners.jpg" class="rounded img-fluid" />
     </p>
     <p class="col-md-10 col-xs-12 col-sm-8 gx-5">
-        L'équipe de Projects Partners était réduite, votre serviteur comme développeur en alternance et M. Balu, à la direction. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
+        L'équipe de Projects Partners était réduite, j'étais développeur en alternance et M. Balu dirigeait la société. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
     </p>
 </div>
 
@@ -54,9 +55,7 @@ has_details: True
 <h3>La reprise par l'Atelier</h3>
 
 <p>
-    En 2019, Laurent Frapier nous contacte afin de proposer à l'Atelier la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à nous : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé bien avant d'avoir acquis l'expérience et les connaissances nécessaires pour produire la qualité dont nous sommes capables aujourd'hui.<br/>
-    Pour résumer, nous devions passer à une échelle inédite un code d'étudiant fortement endetté.<br/>
-    En partie par défi et en partie par orgueil, nous avons accepté.
+    En 2019, Laurent Frapier me contacte afin de me proposer la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à moi : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé quand j'étais encore étudiant.
 </p>
 <p>
     Une année d'études et de remaniement du code ont été nécessaires afin de retrouver une qualité suffisante pour avancer sereinement. Refactoring, refonte de certaines parties, introduction de tests, changement de technologie, nouvelle architecture matérielle. Presque tout à évolué pour fiabiliser le projet. Covid aidant, notre premier bureau s'est transformé en laboratoire d'électronique improvisé.
@@ -81,6 +80,8 @@ has_details: True
 
 <p>
     Une fois la solution au point vint le temps de l'installation sur site, terminée à l'heure où j'écris ces lignes. Le défi est achevé, désormais OxaControle peut s'adapter à toutes les tailles de bâtiment grâce à son architecture évolutive.<br/>
+    Le même code source peut être déployé dans plusieurs configuration : serveur central, contrôleur de bus, simple UI.<br/>
     Le projet, désormais repris doit maintenant être consolidé et assaini, afin de s'attaquer à d'autres sites. Il reste trop d'étapes manuelles lors de l'installation et de la maintenance et le poids du code legacy, bien que fortement réduit par des tests adaptés, reste fort dans le projet.<br/>
-    Désormais installé sur un site d'envergure (80 lecteurs, 200+ badges), OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 8 ans après.
+    De nouvelles fonctionnalités ont été développées sur demande d'un client. Tout le nouveau code est recueilli et développé par les tests (BDD&TDD)<br/>
+    Désormais installé sur un site d'envergure (80 lecteurs, 200+ badges), OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 10 ans après.
 </p>

@@ -20,26 +20,7 @@ ref: index
     <p>
         Please be informed that we don't accept any <!--<a href="faq.html#regie">-->full-time long-term contract<!--</a>-->.
     </p>
-    <!--<p class="no-indent">
-        Consultez notre <a href="faq.html">FAQ</a>, notre <a href="portfolio.html">portfolio</a> ou la <a href="presentation.html">présentation de nos activités</a> si vous n’êtes pas convaincu.
-    </p>-->
     <p class="no-indent">
         <a href="contact_english.html">Contact Us</a> if you seek for more.
     </p>
-
-    <h2 id="news">Latest news</h2>
-
-    <div>
-        {% for post in site.posts %}
-        {% if post.categories contains "actualites" and post.lang == 'english' %}
-        <article>
-            <h3 class="category-actualites"><a href="{{ post.url }}">{{ post.date | date: "%d/%m/%Y" }} : {{ post.title }}</a></h3>
-            {{ post.excerpt }}
-            <a href="{{ post.url }}">Read more</a>
-        </article>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-    <p>More news <a href="/#news">in French.</a></p>
 </section>

@@ -25,18 +25,4 @@ ref: index
     <p class="no-indent">
         <a href="contact.html">Contactez-nous</a> pour en savoir plus.
     </p>
-
-    <h2 id="news">Dernières actualités</h2>
-
-    <div>
-        {% for post in site.posts %}
-        {% if post.categories contains "actualites" and post.lang == 'french' %}
-        <article>
-            <h3 class="category-actualites"><a href="{{ post.url }}">{{ post.date | date: "%d/%m/%Y" }} : {{ post.title }}</a></h3>
-            {{ post.excerpt }}
-            <a href="{{ post.url }}">Lire la suite</a>
-        </article>
-        {% endif %}
-        {% endfor %}
-    </div>
 </section>

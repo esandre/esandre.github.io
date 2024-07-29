@@ -28,7 +28,8 @@
     {% endif %}
 
     <link rel="icon" type="image/png" href="/resources/images/logo.png">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" href="/feed_french.xml" hreflang="fr" />
+    <link rel="alternate" type="application/rss+xml" href="/feed_english.xml" hreflang="en" />
 
     {% assign posts=site.posts | where:"ref", page.ref %}
     {% for post in posts %}

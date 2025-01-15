@@ -1,7 +1,7 @@
 ---
 title: "Evolution of Software Testing Strategies and Trends: Semantic Content Analysis of Software Research Corpus of the Last 40 Years"
 layout: post
-category: 'testing'
+category: 'veille'
 tags: testing
 lang: french
 ref: evolution-of-software-testing-strategies-and-trends-semantic-content-analysis-of-software-research-corpus-of-the-last-40-years

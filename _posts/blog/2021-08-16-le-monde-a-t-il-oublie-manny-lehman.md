@@ -55,7 +55,7 @@ Cette loi est la plus barbare de la série et ses nombreux changements de nom et
 - 1980 : La loi fondamentale de l’évolution des grands programmes / *The Fundamental Law of Large-Program Evolution*
 - 1998 : Auto-régulation / *Self-Regulation*
 
-Cette loi décrit l’inertie des projets logiciels, inertie d’autant plus grande qu’ils impliquent un grand nombre d’acteurs. Pour Manny Lehman, plus un projet logiciel avance, moins les parties-prenantes ont de prise sur sur sa progression. Il exprime en 1980 la troisième loi sous cette forme :
+Cette loi décrit l’inertie des projets logiciels, inertie d’autant plus grande qu’ils impliquent un grand nombre d’acteurs. Pour Manny Lehman, plus un projet logiciel avance, moins les parties-prenantes ont de prise sur sa progression. Il exprime en 1980 la troisième loi sous cette forme :
 
 **L’avenir d’un projet logiciel dépend plus de son passé que des choix présents.**
 
@@ -89,9 +89,9 @@ Je prends un exemple : le management peut décider que le projet ne va pas assez
 
 Lehman décrit la Loi n°4 comme étant la plus contre-intuitive. Il énonce tout simplement que le management n’a aucune prise sur la vitesse d’évolution du logiciel ! Trop de boucles de rétroaction sont en jeu, macro (marché du travail, concurrence, etc.) et micro (Loi de Brooks, motivation, etc.) pour permettre le moindre changement à court ou moyen terme.
 
-Prenons un exemple : votre projet est en retard et vous souhaitez ajouter un développeur. Sa rémunération sera prise sur autre chose (refacto, endettement, réserves). De plus, la loi de Brooks vous annonce que toute l’équipe va être handicapée par l’arrivée du nouveau pendant un bon moment. Une nouvelle personne ajoute un risque humain (conflits, mésentente, etc.). Si d’aventure l’intégration se passe bien et que le nouveau ajoute suffisamment de vélocité à l’équipe pour éponger le retard originel, celui dû à son intégration et justifier sa rémunération, ça ne sera statistiquement pas le cas chez dans l’équipe voisine ou au recrutement suivant.
+Prenons un exemple : votre projet est en retard et vous souhaitez ajouter un développeur. Sa rémunération sera prise sur autre chose (refacto, endettement, réserves). De plus, la loi de Brooks vous annonce que toute l’équipe va être handicapée par l’arrivée du nouveau pendant un bon moment. Une nouvelle personne ajoute un risque humain (conflits, mésentente, etc.). Si d’aventure l’intégration se passe bien et que le nouveau ajoute suffisamment de vélocité à l’équipe pour éponger le retard originel, celui dû à son intégration et justifier sa rémunération, ça ne sera statistiquement pas le cas dans l’équipe voisine ou au recrutement suivant.
 
-Le **corollaire de la 4ème loi** est que le seul levier possible pour augmenter significativement la productivité d’une équipe est d’**adopter des pratiques plus efficaces**, donc d’éviter le plus de gâchis logiciel possible. Les extreme programmers ne sont pas des héros, juste des économes.
+Le **corollaire de la 4ème loi** est que le seul levier possible pour augmenter significativement la productivité d’une équipe est d’**adopter des pratiques plus efficaces**, donc d’éviter le plus de gâchis logiciel possible. Les *extreme programmers* ne sont pas des héros, juste des économes.
 
 ### V – Conservation de la familiarité
 

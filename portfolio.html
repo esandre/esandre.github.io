@@ -15,18 +15,8 @@ ref: portfolio
 
     <b>Pour des raisons de confidentialité, les missions courtes ne sont souvent mises en ligne qu'après leur achèvement.</b>
 
-    <h2>Projets en cours</h2>
-
     {% for post in site.posts %}
-        {% if post.categories contains "portfolio" and post.completed == false %}
-            {% include portfolio_content_wrapper.html %}
-        {% endif %}
-    {% endfor %}
-
-    <h2>Projets complétés</h2>
-
-    {% for post in site.posts %}
-        {% if post.categories contains "portfolio" and post.completed == true %}
+        {% if post.categories contains "portfolio" %}
             {% include portfolio_content_wrapper.html %}
         {% endif %}
     {% endfor %}

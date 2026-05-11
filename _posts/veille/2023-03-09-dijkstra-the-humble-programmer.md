@@ -5,6 +5,7 @@ category: 'veille'
 tags: codesmithing expert
 lang: french
 ref: dijkstra-the-humble-programmer
+doi: 10.1145/355604.361591
 link: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
 ---
 
@@ -18,4 +19,4 @@ link: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
 
 SOURCE
 
-Edsger W. Dijkstra, The Humble Programmer, ACM Turing Lecture 1972, EWD340
+Edsger W. Dijkstra, The Humble Programmer, ACM Turing Lecture 1972, EWD340, DOI:10.1145/355604.361591

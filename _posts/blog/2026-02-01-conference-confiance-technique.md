@@ -1,5 +1,5 @@
 ---
-title: "02/2026 - Conférence : Le rôle de la confiance dans la technique"
+title: "Conférence : Le rôle de la confiance dans la technique"
 layout: post
 category: 'blog'
 tags: technocritique

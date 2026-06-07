@@ -1,5 +1,5 @@
 ---
-title: "11/2025 - Conférence : A-t-on rigidifié notre appareil de production avec les machines ?"
+title: "Conférence : A-t-on rigidifié notre appareil de production avec les machines ?"
 layout: post
 category: 'blog'
 tags: technocritique

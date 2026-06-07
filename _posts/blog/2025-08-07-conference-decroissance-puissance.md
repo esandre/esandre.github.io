@@ -1,5 +1,5 @@
 ---
-title: "08/2025 - Conférence : Décroissance et puissance"
+title: "Conférence : Décroissance et puissance"
 layout: post
 category: 'blog'
 tags: technocritique

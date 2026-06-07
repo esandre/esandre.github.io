@@ -1,5 +1,5 @@
 ---
-title: "08/2025 - Conférence Décroissance et puissance"
+title: "08/2025 - Conférence : Décroissance et puissance"
 layout: post
 category: 'blog'
 tags: technocritique
@@ -8,7 +8,7 @@ ref: conference-decroissance-et-puissance
 image: /resources/images/content/decroissance_puissance.png
 ---
 
-*Je mets en ligne sur ce blog une série de conférences, en lien avec un livre que je prépare sur la société artisanale. Le livre ne sortira pas de suite, par manque de temps et ces conférences sont un moyen de tester des idées et de les affiner. Le ton est parfois oral, c'est tout à fait normal, ce n'est pas un texte destiné à une publication écrite à l'origine.*
+*Je mets en ligne sur ce blog une série de conférences, en lien avec un livre que je prépare sur la société artisanale. Le livre ne sortira pas tout de suite, par manque de temps. Ces conférences sont un moyen de tester des idées et de les affiner. Le ton est parfois oral, c'est tout à fait normal, ce n'est pas un texte destiné à une publication écrite à l'origine.*
 
 *Le livre vise à dépasser ce que l'on appelle couramment "la société industrielle", bien que je consteste ce terme, sans perte de puissance pour notre pays.*
 

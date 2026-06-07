@@ -8,13 +8,13 @@ ref: conference-sagesse-pre-moderne-adoption-technologies
 image: /resources/images/content/sagesse-pre-moderne-adoption-technologies.png
 ---
 
-*Je mets en ligne sur ce blog une série de conférences, en lien avec un livre que je prépare sur la société artisanale. Le livre ne sortira pas tout de suite, par manque de temps. Ces conférences sont un moyen de tester des idées et de les affiner. Le ton est parfois oral, c'est tout à fait normal, ce n'est pas un texte destiné à une publication écrite à l'origine.*
+*Je mets en ligne sur ce blog une série de conférences, en lien avec un livre que je prépare sur la société artisanale. Le livre ne sortira pas tout de suite, par manque de temps. Ces conférences sont un moyen de tester des idées et de les affiner. Le ton est parfois oral, c'est tout à fait normal, ce n'est pas un texte destiné à l'origine à une publication écrite.*
 
 *Le livre vise à dépasser ce que l'on appelle couramment "la société industrielle", bien que je consteste ce terme, sans perte de puissance pour notre pays.*
 
-# La sagesse pre-moderne en matière d'adoption des technologies ?
-
 Cette conférence a été donné en juin 2026 en Saintonge.
+
+# La sagesse pre-moderne en matière d'adoption des technologies ?
 
 On m'a demandé de vous parler de la sagesse pré-moderne en matière d'adoption des technologies. Pourquoi la machine à vapeur fut un jouet au temps d'Héron d'Alexandrie, mais plus au temps de Sadi Carnot ? Comment se fait-il que la charrue ait mis 5 siècles à être adoptée ? Même question pour le moulin à vent.
 

@@ -8,21 +8,207 @@ lang: french
 ref: madic-frank
 logo_repeats_title: True
 logos: madic.png frank.png
+has_details: True
 ---
 
 <summary>
     <span>Madic - Janvier 2025 - Juin 2025 - St André de Cubzac</span>
     <aside>Reprise de Legacy · Audit · Tests · Formation interne</aside>
     <p>
-        Le groupe Madic m'a confié l'internalisation d'un projet C# jusque là développé par une ESN. Il s'agit d'un jeu d'applications critique pour le groupe, puisqu'il gère la remontée d'alarmes dans les stations.
+        Réinternalisation d’un ensemble de plus de 5 millions de lignes de code .NET,
+        développé et maintenu pendant des années par une ESN. L’architecture était
+        massivement over-engineered et l’entreprise envisageait une réécriture complète
+        en Python.
     </p>
+
     <p>
-        Le projet a d'abord été audité, afin d'obtenir un état des lieux du code et de l'architecture. Un rapport destiné aux exécutifs a été rédigé. Une fois ceci fait, un vaste chantier de simplification a permis de diminuer une complexité logicielle hors de contrôle, sans perte de fonctionnalités. La protection contre les régressions a nécessité une réécriture des tests unitaires du projet, afin d'en faire des tests d'acceptation.
-    </p>
-    <p>
-        Les équipes internes sont formées à reprendre le projet, notamment les tests. Elles m'assistent petit à petit dans son assainissement. L'objectif est de les rendre totalement autonomes sur le projet, tant dans la maintenance que dans les évolutions.
-    </p>
-    <p>
-        En parallèle, un chantier de découpe d'un logiciel Legacy a été entrepris. L'existant en production n'a aucun test, mais doit évoluer dans les prochaines années. Le projet a été découpé par slicing afin d'obtenir des applications plus petites et maîtrisables. L'une d'entre elles, qui doit porter l'essentiel des changements, a été transférée sur une stack plus récente. Le reste sera progressivement décommissionné et remplacé par de nouveaux composants.
+        Audit du système et accompagnement de l’équipe interne. Démonstration que
+        le problème n’était pas la technologie mais une complexité largement
+        artificielle : 45 % du code d’une partie témoin pouvait être supprimé
+        à fonctionnalités équivalentes. Arrêt de la dépendance à l’ESN, amélioration
+        des performances et mise en place de pratiques de tests plus efficaces.
     </p>
 </summary>
+
+<h3>Réinternaliser un monstre</h3>
+
+<p>
+    Madic venait de reprendre en interne une application développée par une ESN
+    après une rupture devenue inévitable. Les coûts étaient devenus prohibitifs,
+    avec un sentiment croissant de dépendance et de vendor lock-in.
+</p>
+
+<p>
+    Le système représentait un actif logiciel considérable : plus de 5 millions
+    de lignes de code réparties sur plus de huit solutions .NET. Les versions
+    utilisées étaient récentes et le code pouvait donner, au premier regard,
+    l’impression d’un système moderne et propre.
+</p>
+
+<p>
+    L’entreprise envisageait pourtant de repartir de zéro, en Python. Lorsque je
+    demande pourquoi Python, la réponse est révélatrice : il n’existe pas de
+    justification technique particulière. Le projet est simplement associé à
+    l’image d’une technologie moderne.
+</p>
+
+<p>
+    Mon rôle initial est celui d’un expert .NET capable également d’intervenir
+    en Python. Je considère cependant dès le départ qu’une réécriture serait
+    prématurée : l’entreprise possède déjà un actif .NET important, le logiciel
+    fonctionne et rien ne démontre que le langage constitue le problème.
+</p>
+
+<h3>Deux semaines pour comprendre le problème</h3>
+
+<p>
+    Je réalise un audit de deux semaines portant sur le code, l’architecture,
+    les bases de données, les performances SQL et Entity Framework, les tests,
+    les dépendances, la chaîne de développement et les pratiques de l’équipe.
+</p>
+
+<p>
+    Le constat est plus sévère que prévu.
+</p>
+
+<p>
+    L’application souffre d’un over-engineering massif. Les mêmes mécanismes
+    d’abstraction sont répétés à grande échelle, parfois avec une abstraction
+    ne possédant qu’un seul type concret. Plusieurs pans du code donnent
+    l’impression d’avoir été reproduits depuis d’autres projets sans que leur
+    complexité soit justifiée par le besoin réel.
+</p>
+
+<p>
+    Le système possède par ailleurs plusieurs milliers de tests unitaires et
+    affiche environ 95&nbsp;% de couverture de code. Pourtant, aucun test
+    d’acceptation ou end-to-end ne protège le comportement global de l'application.
+</p>
+
+<p>
+    Un passage en mutation testing permet de mesurer la différence entre quantité
+    de tests et efficacité réelle : avec 95&nbsp;% de couverture, seuls environ
+    20&nbsp;% des mutants sont détectés.
+</p>
+
+<p>
+    La couverture est élevée, mais la capacité des tests à détecter une régression
+    est faible.
+</p>
+
+<h3>Le problème n'est pas .NET</h3>
+
+<p>
+    Je rédige un rapport d’audit d’environ 50 pages à destination du chef de projet
+    et de sa hiérarchie. Les problèmes sont classés selon leur gravité et leur
+    fréquence afin de distinguer les risques réels de la simple dette technique.
+</p>
+
+<p>
+    La conclusion est simple : <b>il n’est pas nécessaire de réécrire le logiciel.</b>
+</p>
+
+<p>
+    Le système fonctionne et sa dette provient principalement d’une complexité
+    excessive. Une réécriture aurait supprimé une partie de cette complexité,
+    mais au prix de la réimplémentation de millions de lignes et surtout de la
+    reconstruction de la connaissance métier accumulée dans l’existant.
+</p>
+
+<p>
+    La recommandation est donc de conserver le système, de réduire progressivement
+    sa complexité et de construire une équipe interne suffisamment compétente pour
+    en reprendre la maîtrise. Sans lead senior capable de comprendre le legacy,
+    remplacer une ESN par une autre n’aurait fait que déplacer le problème.
+</p>
+
+<h3>Mesurer la complexité plutôt que la subir</h3>
+
+<p>
+    Une partie représentative du projet est utilisée comme terrain d’expérimentation.
+    En conservant les mêmes fonctionnalités, environ <b>45&nbsp;% du code peut être
+    supprimé</b>.
+</p>
+
+<p>
+    Cette expérience permet de rendre concrète une dette qui était jusque-là
+    difficile à appréhender : une part importante de la complexité du système
+    n’apporte aucune valeur métier.
+</p>
+
+<p>
+    Le travail porte également sur les performances de la base de données et
+    d’Entity Framework, qui sont améliorées au cours de la mission.
+</p>
+
+<p>
+    Une culture de la simplicité est progressivement introduite dans l’équipe :
+    préférer le code simple à l’abstraction prématurée, remettre en question les
+    couches inutiles et appliquer le principe KISS lorsque le métier ne justifie
+    pas davantage de complexité.
+</p>
+
+<h3>Reprendre le contrôle du legacy</h3>
+
+<p>
+    L’équipe interne initiale compte trois personnes, puis deux après le départ
+    d’un prestataire non renouvelé. Le niveau technique est intermédiaire et les
+    moyens alloués restent limités au regard de la taille du système.
+</p>
+
+<p>
+    Je les accompagne pendant sept mois dans la reprise du projet, avec un objectif
+    qui dépasse la simple résolution de problèmes techniques : leur apprendre à
+    travailler avec un legacy et à tester efficacement ce qu’ils modifient.
+</p>
+
+<p>
+    Les tests des nouvelles fonctionnalités sont réécrits selon une approche
+    beaucoup plus exigeante. Leur score de mutation dépasse alors <b>80&nbsp;%</b>.
+    Le temps disponible ne permet cependant pas de reprendre l’ensemble de
+    l’historique du projet.
+</p>
+
+<p>
+    Le responsable de l’équipe apporte de son côté une connaissance métier
+    approfondie. Ce binôme entre connaissance fonctionnelle et expertise technique
+    permet de distinguer les contraintes réellement nécessaires des complexités
+    héritées du système.
+</p>
+
+<h3>L'ESN quitte le projet</h3>
+
+<p>
+    À l’issue des sept mois d’accompagnement, l’ESN historique a quitté le projet
+    et l’équipe interne a repris la responsabilité du logiciel.
+</p>
+
+<p>
+    Les moyens consacrés au développement restant limités, la poursuite de la
+    simplification et de la modernisation s’effectue progressivement, au rythme
+    des priorités du projet.
+</p>
+
+<p>
+    L’équipe dispose désormais des connaissances et des pratiques nécessaires pour
+    comprendre, tester et faire évoluer directement son application.
+</p>
+
+<h3>Ce que cette reprise a réellement changé</h3>
+
+<p>
+    Le projet n’avait finalement pas besoin d’un changement de langage. Il avait
+    besoin de moins de complexité, de meilleurs tests et d’une équipe capable de
+    comprendre ce qu’elle maintenait.
+</p>
+
+<p>
+    L’intervention a permis d’éviter une réécriture sans justification technique,
+    de mettre fin à la dépendance à l’ESN et de poser les bases d’un pôle de
+    développement interne.
+</p>
+
+<p>
+    <b>Un legacy n’est pas forcément un vieux logiciel. Parfois, c’est un logiciel
+    récent rendu inutilement compliqué par les années de développement.</b>
+</p>

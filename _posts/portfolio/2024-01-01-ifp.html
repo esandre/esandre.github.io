@@ -13,39 +13,204 @@ has_details: True
 
 <summary>
     <span>Institut de formation politique - Janvier 2020 - <b>Présent</b> - Paris</span>
-    <aside>PHP · Laravel · Dusk · Linux · MySQL · Recueil du besoin · Refactoring · Squelette</aside>
+    <aside>PHP · Laravel · Dusk · Linux · MySQL · Legacy · Refactoring · TDD · Strangler Fig</aside>
+
     <p>
-        Reprise d’une application PHP/Laravel obsolète et délaissée depuis plusieurs années, de gestion de campagnes de dons pour des associations. Duplication du projet, assainissement du code et correction à chaud de bugs bloquants. Stratégies de contournement des problèmes les plus coûteux à résoudre. Sécurisation du Legacy derrière un VPN.
+        Reprise d’une application PHP/Laravel critique d’environ 100 000 lignes de code,
+        sans aucun test et dont le développeur historique avait quitté le projet.
+        L’application reposait sur PHP 7 et Laravel 5, présentait des vulnérabilités
+        critiques, des traitements automatiques défaillants et de graves problèmes
+        de performances.
     </p>
-    <p>Le projet est actuellement en maintenance à long terme.</p>
+
+    <p>
+        Sécurisation et stabilisation de l’existant, puis mise en place d’une stratégie
+        de modernisation progressive plutôt qu’une réécriture risquée. Le projet est
+        toujours en production et fait aujourd’hui l’objet d’une maintenance ponctuelle.
+    </p>
 </summary>
 
-<h3>Un projet en deshérence</h3>
+<h3>Une application critique devenue intouchable</h3>
 
 <p>
-    Le projet est un outil de gestion de dons, fait sur-mesure pour coller au workflow très spécifique du client. Basé sur Laravel 5, celui-ci a été livré en 2015, puis maintenu un certain temps par son créateur. Celui-ci n'a pas écrit de tests sur ce projet, pourtant d'une complexité conséquente. La suite de l'histoire est hélas classique : sans tests, impossible de s'assurer de l'absence de régressions. Sans cette sécurité, la moindre mise à jour, la moindre évolution et même le moindre débug deviennent des tâches fastidieuses à l'issue incertaine.
-</p>
-<p>
-    Le développeur d'origine quitte le projet quelque part à la fin de la décennie 2010. Sans tests et sans son concepteur, le projet devient un Code Legacy : personne n'ose le mettre à jour de peur de le casser. Les défauts qui se révèlent ne sont corrigés qu'à minima par un développeur bénévole. Arrive l'année 2020, où l'IFP fait appel à moi pour reprendre en main le projet. La priorité est la correction des bugs les plus urgents.
+    L’IFP dispose d’une application métier développée sur mesure pour gérer ses
+    campagnes de dons. Livrée en 2015 avec Laravel 5, elle avait été maintenue
+    pendant plusieurs années par son développeur d’origine, avant que celui-ci
+    quitte le projet.
 </p>
 
-<h3>Une longue convalescence</h3>
+<p>
+    Le problème était alors classique : l’application faisait environ 100 000 lignes
+    de code, mais ne disposait d’aucun test automatisé. Sans son concepteur, il
+    n’existait plus véritablement d’« oracle » capable de dire si un comportement
+    particulier était volontaire, accidentel ou simplement devenu indispensable
+    avec le temps.
+</p>
+
+<p>
+    Au fil des années, les mises à jour et les évolutions avaient donc été réduites
+    au minimum. L’application reposait toujours sur PHP 7 et Laravel 5, et
+    accumulait les problèmes : vulnérabilités critiques exploitables, jobs Laravel
+    qui ne s’exécutaient plus, requêtes SQL provoquant des timeouts ou des
+    <code>OutOfMemory</code>, et plusieurs dizaines de bugs plus ou moins gênants.
+</p>
+
+<p>
+    La situation était particulièrement sensible : cette application constitue une des
+    principales sources de revenus de l’IFP. Une interruption prolongée du service
+    aurait donc pu mettre en danger la structure elle-même.
+</p>
+
+<h3>Reprendre un système que je ne connaissais pas</h3>
+
+<p>
+    Lorsque l’IFP fait appel à moi en janvier 2020, je possède une ancienne
+    expérience de PHP acquise lors de stages, une dizaine d’années auparavant,
+    mais aucune expérience de Laravel.
+</p>
+
+<p>
+    Le client me connaît cependant par l’intermédiaire d’un réseau
+    commun et sait que je commence alors à me spécialiser dans la reprise de
+    systèmes existants. Cette confiance permet de commencer directement par le
+    problème plutôt que par la technologie.
+</p>
+
+<p>
+    En une semaine, je deviens suffisamment opérationnel pour comprendre le
+    fonctionnement général de l’application et intervenir dessus. Le premier mois
+    est consacré à éteindre les incendies sans en provoquer de nouveaux.
+</p>
+
+<p>
+    Les bugs sont corrigés un par un, avec prudence, en tenant compte de l’absence
+    totale de tests. Les traitements automatiques défaillants sont remis en état,
+    notamment ceux liés aux prélèvements automatiques qui n’étaient plus
+    correctement comptabilisés.
+</p>
+
+<p>
+    La sécurité constitue également une priorité immédiate. L’application présente
+    plusieurs vulnérabilités critiques, dont certaines exploitables à distance.
+    Plutôt que de commencer par une longue opération de modernisation, la première
+    décision consiste à réduire immédiatement son exposition en la plaçant derrière
+    un VPN.
+</p>
+
+<p>
+    Cette première phase n’a pas pour objectif de rendre le logiciel moderne.
+    Elle vise simplement à faire en sorte que l’outil puisse continuer à faire son
+    travail sans mettre l’organisation en danger.
+</p>
+
+<h3>Ne pas réécrire pour le plaisir de réécrire</h3>
+
+<p>
+    Une fois les urgences maîtrisées, la question de la mise à niveau de
+    l’application se pose naturellement. Une réécriture complète est chiffrée à
+    environ 40 000 €.
+</p>
+
+<p>
+    Une mise à niveau directe du legacy aurait cependant nécessité de modifier un
+    système d’environ 100 000 lignes de code sans aucun filet de sécurité. Sans
+    tests et sans le développeur historique pour servir d’oracle fonctionnel,
+    une telle opération aurait transformé un problème de maintenabilité en risque
+    de régression généralisée.
+</p>
+
+<p>
+    La stratégie retenue est donc différente : conserver l’existant suffisamment
+    longtemps pour continuer à faire fonctionner le métier, tout en construisant
+    une voie de sortie progressive.
+</p>
+
+<p>
+    Le projet est assaini et intégré à un pipeline d’intégration continue. Cette
+    nouvelle capacité permet notamment de dupliquer proprement l’application pour
+    une association sœur.
+</p>
+
+<p>
+    Un rapport sur l’état du système est également produit afin de donner au client
+    une vision claire de la dette technique et du coût réel d’une remise à niveau.
+</p>
+
+<h3>Construire à côté plutôt que casser l'existant</h3>
 
 <div class="row">
     <p class="col-md-4 col-xs-12 col-sm-6">
-        <img src="/resources/images/portfolio/IFP-diagramme.png" class="rounded img-fluid" />
+        <img src="/resources/images/portfolio/IFP-diagramme.png" class="rounded img-fluid"
+             alt="Stratégie de migration progressive entre l'ancien et le nouveau système" />
     </p>
+
     <div class="col-md-8 col-xs-12 col-sm-6 gx-5">
         <p>
-            Une fois les voies d'eau les plus urgentes colmatées, le projet est assaini et intégré à un pipeline d'Intégration Continue. D'abord réalisée en tant que bonne pratique, cette intégration s'avère rapidement utile afin de dupliquer le projet pour une autre association-soeur. Un rapport sur l'état du projet est produit, afin que le client réalise l'ampleur des travaux à effectuer pour remettre le projet sur les rails. Une stratégie de long-cours est choisie : l'existant restera en l'état, c'est-à-dire non testé et obsolète, mais les nouvelles fonctionnalités devront bénéficier des meilleures pratiques et d'un environnement technique récent.
+            Lorsqu’un nouveau besoin apparaît après deux années de maintenance,
+            il fournit l’occasion de construire une nouvelle base technique plutôt
+            que d’ajouter une nouvelle couche de complexité à l’ancien système.
         </p>
 
         <p>
-            Après 2 ans à maintenir le projet, un nouveau besoin apparaît. Celui-ci entraîne la création d'un nouveau projet Laravel, récent celui-ci. Le nouveau projet est réalisé selon les règles de l'art : test-first (TDD), intégration continue, one-button-deployment, etc. Une variante du Strangler Pattern utilisant Apache comme routeur est utilisée. Lorsqu'une URL existe sur le nouveau projet, celui-ci répond. Sinon la même URL est demandée à l'ancien code. Petit à petit, des fonctionnalités sont "volées" à l'ancien code et reproduites sur le nouveau.
+            Un nouveau projet Laravel est créé avec une approche test-first (TDD),
+            une intégration continue et un déploiement automatisé. Une variante du
+            Strangler Fig Pattern est utilisée : Apache sert de routeur entre les
+            deux applications. Lorsqu’une fonctionnalité existe dans le nouveau
+            système, elle est servie par celui-ci ; sinon, la requête continue
+            d’être traitée par le legacy.
         </p>
 
         <p>
-            La route est encore longue, mais la reprise du développement augure un bel avenir à un logiciel incapable d'évoluer avant sa reprise. D'autres fonctionnalités sont prévues. Elles nécessiteront le transfert d'autres morceaux de code vers le nouveau projet. Progressivement et par contagion, tout le code sera testé, donc testable, donc maintenable. Mon but est de pouvoir un jour tirer ma révérence.
+            Cette approche permet de migrer une fonctionnalité à la fois, sans
+            imposer de réécriture globale ni interrompre le fonctionnement de
+            l’application historique.
+        </p>
+
+        <p>
+            Une première fonctionnalité est ainsi extraite du legacy et reconstruite
+            sur la nouvelle base.
         </p>
     </div>
 </div>
+
+<h3>Le risque est maîtrisé, la décision appartient au client</h3>
+
+<p>
+    La modernisation complète n’a finalement pas été engagée : une fois le danger
+    immédiat écarté, le client n’a pas souhaité consacrer le budget nécessaire à
+    la poursuite de la migration.
+</p>
+
+<p>
+    Ce choix est acceptable parce que l’objectif initial a été atteint : l’application
+    continue de fonctionner et peut être maintenue sans imposer immédiatement une
+    réécriture de 40 000 €.
+</p>
+
+<p>
+    La nouvelle architecture reste néanmoins une voie de sortie disponible si les
+    priorités ou le budget du client évoluent. La transformation n’est donc pas
+    devenue une fin en soi : elle peut reprendre lorsque le besoin métier le
+    justifiera.
+</p>
+
+<h3>Six ans plus tard</h3>
+
+<p>
+    L’application est toujours en production. Depuis 2020, j’interviens en moyenne
+    une douzaine de fois par an pour assurer sa maintenance et répondre aux besoins
+    du client.
+</p>
+
+<p>
+    La relation a donc évolué d’une reprise urgente d’un système critique vers une
+    maintenance ponctuelle et durable. Je reste disponible lorsque le client en a
+    besoin, sans chercher à imposer une modernisation ou un volume de prestation
+    qui ne correspond pas à ses priorités.
+</p>
+
+<p>
+    Le projet illustre finalement une approche assez simple du legacy :
+    <b>sécuriser d’abord, comprendre ensuite, puis transformer uniquement lorsque
+    le bénéfice justifie le risque et le coût.</b>
+</p>

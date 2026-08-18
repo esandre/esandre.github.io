@@ -13,23 +13,199 @@ logos: fifty.png
 <summary>
     <span>Fifty - Décembre 2025 - Avril 2026 - Paris & Distanciel</span>
     <aside>.NET · RTC · VAD · Intégration LLM</aside>
+
     <p>
-        Momentum est un coach IA pour managers, permettant autant des chats écrits que des conversations orales avec des agents IA jouant le rôle d'un collaborateur direct du manager. L'outil intègre plusieurs technologies IA dans un projet .NET : LLM, Text to Speech, Speech to Text, VAD, etc.
+        Industrialisation de Momentum, un coach IA pour managers développé comme une
+        excroissance de la codebase historique de Fifty. Séparation du nouveau produit
+        par slicing, création de ses environnements AWS et de sa chaîne CI/CD.
     </p>
+
     <p>
-        La mission a consisté en l'industrialisation d'un prototype préexistant.
-        Le produit a été développé comme une excroissance, au sein de la codebase historique de Fifty. Le première tâche fut de séparer le code, sans perte de fonctionnalités d'un côté ou de l'autre. Le projet fut copié, puis séparé par slicing, une méthode ancienne, peu connue, mais redoutable.
+        Intégration de LLM, Text to Speech, Speech to Text, Voice Activity Detection
+        et communication temps réel. Développement d'un VAD adapté au produit à partir
+        du réseau de neurones Silero et orchestration de plusieurs agents IA.
     </p>
+
     <p>
-        Une fois le projet migré sur un dépôt propre, puis allégé de tout le code ne lui appartenant pas, une pipeline de CI/CD et un environnement AWS ont été montés afin d'embarquer les premiers clients. A ce stade, le projet est extrêmement fragile, par son absence quasi-totale de tests automatisés côté back.
-    </p>
-    <p>
-        Une fois l'environnement mis en place, je suis intervenu avec le reste de l'équipe sur le développement d'un premier prototype. La qualité logicielle a été réduite au strict minimum, tant que la viabilité du produit n'était pas certaine. La cible, donc les fonctionnalités changeaient très régulièrement afin de coller aux attentes des bete-testeurs.
-    </p>
-    <p>
-        Une fois les premiers clients embarqués, j'ai eu à effectuer une <i>remontada</i> en matière de qualité logicielle : ajout des test fonctionnels, remaniement de l'architecture, ajustements sur le pipeline de CI, fiabilisation globale. Cette dernière phase a duré jusqu'à mon départ en congés paternité.
-    </p>
-    <p>
-        Cette mission est un condensé de ce qu'il m'est possible de faire en matièrede transformation logicielle : extraction par slicing, amélioration d'un code sous-testé, rattrapage des tests, industrialisation. Le tout au sein d'une équipe de 4 développeurs, back et front.
+        La mission a accompagné le produit de son prototype interne à une bêta
+        fonctionnelle utilisée par une soixantaine de bêta-testeurs, tout en conservant
+        la vélocité nécessaire à un produit encore en recherche de son marché.
     </p>
 </summary>
+
+<h3>Un produit caché dans un autre</h3>
+
+<p>
+    Momentum est un coach IA destiné aux managers. Il permet aussi bien des échanges
+    écrits que des conversations vocales avec des agents IA jouant le rôle d'un
+    collaborateur direct du manager.
+</p>
+
+<p>
+    Lorsque j'arrive sur le projet, Momentum existe sous la forme d'un prototype
+    interne développé au sein de la codebase historique de Fifty. Le fondateur
+    imagine que le nouveau produit pourra réutiliser une grande quantité de code
+    existant.
+</p>
+
+<p>
+    En pratique, les deux produits ont très peu de code réellement commun. Cette
+    situation commence à peser sur la vélocité de l'équipe : faire évoluer Momentum
+    implique de travailler dans une application qui n'a pas été conçue pour lui.
+</p>
+
+<h3>Découper sans tout casser</h3>
+
+<p>
+    La première étape consiste donc à sortir Momentum de cette codebase sans altérer
+    le produit historique.
+</p>
+
+<p>
+    Je pars d'une copie du repository, qui reste temporairement liée à l'original.
+    J'identifie ensuite les points d'entrée utilisés par le nouveau produit et
+    remonte les dépendances nécessaires à leur fonctionnement.
+</p>
+
+<p>
+    Le code qui n'est plus atteignable depuis ces points d'entrée peut alors être
+    progressivement supprimé. Cette technique de <i>slicing</i>, issue de travaux
+    de recherche des années 1990 mais rarement utilisée dans l'industrie, permet
+    de réduire le projet à ce qui lui appartient réellement.
+</p>
+
+<p>
+    Le résultat est particulièrement révélateur : <b>environ 90 % du code initial
+    n'appartient qu'à l'ancien produit.</b>
+</p>
+
+<p>
+    L'opération demande de la méthode et de la prudence. Une dépendance inattendue
+    peut rendre une suppression dangereuse et nécessiter un retour arrière.
+    Après environ un mois, Momentum dispose finalement de son propre dépôt,
+    débarrassé du code qui n'était pas nécessaire à son fonctionnement.
+</p>
+
+<h3>Industrialiser un prototype</h3>
+
+<p>
+    Le produit reste alors un prototype qui se cherche encore. Les fonctionnalités
+    évoluent rapidement au gré des retours des premiers utilisateurs. L'objectif
+    n'est donc pas de construire immédiatement une architecture figée et
+    surdimensionnée, mais de donner à l'équipe les moyens de livrer et d'expérimenter.
+</p>
+
+<p>
+    Je construis l'environnement de production et de préproduction sur AWS,
+    avec notamment EBS, Lambda, CloudFront, Aurora et le DNS. La chaîne CI/CD
+    est mise en place avec CircleCI.
+</p>
+
+<p>
+    Le principe est celui du <i>You build it, you run it</i> : le nouveau produit
+    dispose de son propre environnement et peut être déployé indépendamment
+    de l'application historique.
+</p>
+
+<p>
+    Dans cette phase, les tests automatisés et la documentation sont volontairement
+    limités. Le produit change encore trop rapidement pour que leur accumulation
+    soit un investissement pertinent. La priorité est de conserver la capacité
+    de l'équipe à apprendre, changer de direction et pivoter.
+</p>
+
+<h3>Faire fonctionner la voix en temps réel</h3>
+
+<p>
+    La partie la plus exigeante techniquement concerne la conversation vocale.
+    Momentum combine plusieurs technologies qui doivent fonctionner ensemble en
+    temps réel : Speech to Text, Text to Speech, Voice Activity Detection,
+    communication temps réel et modèles de langage.
+</p>
+
+<p>
+    J'ai intégré l'ensemble de cette chaîne au produit. Pour la détection d'activité
+    vocale, j'ai notamment développé un algorithme adapté au besoin à partir du
+    réseau de neurones Silero.
+</p>
+
+<p>
+    Le système ne se limite pas non plus à un appel isolé à un LLM. Plusieurs agents
+    sont orchestrés : certains surveillent d'autres agents, certains gèrent les
+    outils à leur disposition et d'autres interviennent pour reformuler ou traiter
+    les réponses.
+</p>
+
+<p>
+    La difficulté vient surtout de leur faire fonctionner ensemble. Latence,
+    interruptions, détection de la parole, génération et restitution audio doivent
+    s'enchaîner suffisamment rapidement pour que la conversation reste naturelle.
+</p>
+
+<p>
+    <b>Deux mois ont été consacrés à fiabiliser cette chaîne et à en améliorer
+    les performances.</b> C'est le principal défi technique de la mission.
+</p>
+
+<h3>La qualité au bon moment</h3>
+
+<p>
+    Une fois les premiers utilisateurs embarqués, le contexte évolue. Le produit
+    compte alors environ soixante bêta-testeurs et commence à se rapprocher d'une
+    véritable bêta fonctionnelle.
+</p>
+
+<p>
+    Il devient alors pertinent d'investir davantage dans la qualité. J'interviens
+    avec le reste de l'équipe sur l'ajout de tests fonctionnels, le remaniement
+    de l'architecture et la fiabilisation de la chaîne CI/CD.
+</p>
+
+<p>
+    L'objectif n'est pas de revenir sur les choix faits pendant la phase de
+    découverte du produit. Il s'agit de transformer progressivement un prototype
+    qui devait pouvoir changer rapidement en un logiciel capable de continuer
+    à évoluer sans perdre cette vélocité.
+</p>
+
+<p>
+    Cette approche permet de différer volontairement certains investissements
+    tant qu'ils ne créent pas de valeur, puis de les introduire lorsque le produit
+    commence à se stabiliser.
+</p>
+
+<h3>Du prototype à la bêta</h3>
+
+<p>
+    En cinq mois, Momentum passe d'un prototype interne enfoui dans la codebase
+    historique de Fifty à un produit indépendant, disposant de ses propres
+    environnements, de sa chaîne de déploiement et d'une soixantaine de
+    bêta-testeurs.
+</p>
+
+<p>
+    À mon départ, le produit est une bêta fonctionnelle. La remontée de la qualité
+    logicielle est en cours : les tests, l'architecture et les derniers points
+    techniques sont progressivement renforcés.
+</p>
+
+<h3>Préserver la vélocité</h3>
+
+<p>
+    Cette mission illustre une autre facette de mon travail. Toutes les situations
+    ne nécessitent pas immédiatement le même niveau de formalisme.
+</p>
+
+<p>
+    Sur un produit qui cherche encore son marché, la capacité à expérimenter et
+    pivoter peut être plus importante que l'accumulation de tests et de documentation.
+    Mais lorsque le produit commence à trouver ses utilisateurs, les exigences
+    changent : il faut alors transformer cette vitesse d'apprentissage en capacité
+    durable à évoluer.
+</p>
+
+<p>
+    <b>Mon objectif n'est pas de ralentir une équipe pour rendre son code parfait.
+    C'est de lui permettre de rester agile sans que la dette technique finisse par
+    lui retirer cette agilité.</b>
+</p>

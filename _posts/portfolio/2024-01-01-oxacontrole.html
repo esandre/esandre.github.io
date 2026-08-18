@@ -16,32 +16,46 @@ has_details: True
     <aside>.NET · Linux · C# · WPF · DevOps · Sécurité · Raspberry Pi · RS485 · ModBus</aside>
 
     <p>
-        Reprise d’un projet de contrôle d’accès datant de 2013, réalisé avec Projects Partners en alternance. Maintenance des sites installés précédemment. Installation de nouveaux chantiers.<br/>
-        Changement d'échelle en 2020 (x10) nécessitant la mise en place d'une architecture logicielle plus solide. Refactoring et conversion à .NET6, puis .NET8 aujourd'hui.<br/>
-        Ajout de nouvelles features en TDD sur demande de certains clients. Ajout de tests a posteriori sur le code historique pour le renforcer.
+        Reprise d’un projet de contrôle d’accès datant de 2013, réalisé avec Projects Partners en alternance.
+        Maintenance des sites installés précédemment et installation de nouveaux chantiers.
+        Changement d’échelle en 2020 avec un site de 83 portes, 95 lecteurs et plus de 400 badges,
+        nécessitant une refonte de l’architecture logicielle et matérielle.
     </p>
-    <p><b>Actuellement :</b> En production sur sites allant du petit bureau au grand centre aquatique. Étude de nouveaux chantiers.</p>
+    <p>
+        Migration de Mono vers .NET Core puis .NET 8, refactoring du code historique,
+        séparation du moteur de règles d’accès et des contrôleurs matériels, et renforcement
+        progressif des tests. Le projet est aujourd’hui en production sur des sites allant
+        du petit bâtiment au grand centre aquatique.
+    </p>
 </summary>
 
-<h3>Les origines</h3>
+<h3>Un projet d'alternance</h3>
 
 <p>
-    L'histoire commence en 2013, j'étais en alternance chez Projects Partners, dirigée par Thierry et Rémi Balu. L'entreprise produit des logiciels à destination du BTP : Convertisseurs, applications mobiles et développements plus particuliers. Ce qui allait ensuite s'appeler OxaControle est né d'une demande de l'électricien Laurent Frapier. Il venait de remporter un marché d'électricité et de contrôle d'accès par badge. La première partie est son métier, pas la seconde. Le projet a donc été confié à Projects Partners.
+    L’histoire commence en 2013, alors que je suis développeur en alternance chez Projects Partners.
+    Un électricien a besoin d’une solution de contrôle d’accès par badge afin de pouvoir répondre
+    à un important marché public. Le besoin est inhabituel pour son entreprise : il connaît
+    l’électricité, mais pas le développement logiciel.
+</p>
+
+<p>
+    Le projet est confié à Projects Partners. Je le développe seul, accompagné par mon responsable,
+    avec un objectif simple : proposer une solution fiable et peu coûteuse pour de petits bâtiments
+    comportant quelques portes, lecteurs et badges.
+</p>
+
+<p>
+    La solution repose alors sur des Raspberry Pi, .NET via Mono et des lecteurs communiquant en RS485.
+    Le Raspberry Pi offre suffisamment de puissance pour les petits sites tout en conservant un coût
+    matériel très faible.
 </p>
 
 <div class="row">
-    <p class="col-md-2 col-xs-12 col-sm-4">
-        <img src="resources/images/portfolio/projects_partners.jpg" class="rounded img-fluid" />
-    </p>
-    <p class="col-md-10 col-xs-12 col-sm-8 gx-5">
-        L'équipe de Projects Partners était réduite, j'étais développeur en alternance et M. Balu dirigeait la société. Le projet était d'envergure : proposer une solution de contrôle d'accès complète et peu coûteuse, allant de l'interface de paramétrage à l'interrogation en RS485 des lecteurs.
-    </p>
-</div>
-
-<div class="row">
     <p class="col-xs-12 col-sm-9">
-        La plateforme Raspberry Pi a été sélectionnée pour son faible coût et sa puissance suffisante pour diriger une poignée de lecteurs, autant de portes et une flotte de quelques badges. Le principal défi vint de la plateforme .NET, alors absente de Linux. .NET Core n'arrivera que quelques années plus tard. C'était alors Mono qui remplissait le rôle, avec un transpilage en Java très gourmand en ressources.<br/>
-        Le Raspberry est incapable de produire des signaux RS485 sans convertisseur adapté. Le tâtonnement a été long pour aboutir à une solution à base de convertisseurs TTL to RS485, branchés de manière exotique afin d'utiliser le bus en full-duplex. Ces deux éléments sont encore utilisés aujourd'hui sur le projet, garants de son faible coût.
+        Le principal défi était alors de faire fonctionner .NET sous Linux : .NET Core n’existait pas
+        encore et Mono constituait la solution disponible. Le Raspberry Pi ne produisant pas directement
+        de signaux RS485, il a également fallu expérimenter avec différents convertisseurs et une
+        configuration inhabituelle du bus afin d’obtenir le fonctionnement recherché.
     </p>
     <p class="col-xs-12 col-sm-3 gx-5">
         <img src="resources/images/RS_485.jpg" class="rounded img-fluid"/>
@@ -49,17 +63,12 @@ has_details: True
 </div>
 
 <p>
-    Le projet a été déployé sur plusieurs petits sites. Il y fonctionne depuis plusieurs années sans nécessiter d'autres interventions que celles d'un électricien pour remplacer certaines pièces d'usure. Je n'ai été amené à intervenir qu'une seule fois sur ces sites depuis leur installation.
+    Les choix matériels et logiciels sont alors dictés autant par les contraintes techniques que par
+    la nécessité de conserver une solution peu coûteuse. Après plusieurs essais, la solution est
+    déployée sur plusieurs petits sites où elle fonctionne pendant plusieurs années avec très peu
+    d’interventions.
 </p>
 
-<h3>La reprise par l'Atelier</h3>
-
-<p>
-    En 2019, Laurent Frapier me contacte afin de me proposer la reprise d'OxaControle et son développement. L'objectif est ambitieux&nbsp;: multiplier par 20 le nombre de portes, badges et lecteurs que l'application peut supporter. Deux défis se présentent à moi : la mise à l'échelle, dépassant de très loin les capacités des Raspberry Pi, et la reprise d'un code immature, réalisé quand j'étais encore étudiant.
-</p>
-<p>
-    Une année d'études et de remaniement du code ont été nécessaires afin de retrouver une qualité suffisante pour avancer sereinement. Refactoring, refonte de certaines parties, introduction de tests, changement de technologie, nouvelle architecture matérielle. Presque tout à évolué pour fiabiliser le projet. Covid aidant, notre premier bureau s'est transformé en laboratoire d'électronique improvisé.
-</p>
 <div class="row" style="margin-right: 5px;">
     <p class="col-xs-12 col-sm-6 col-md-3">
         <img src="resources/images/Lab_1.jpg" class="rounded img-fluid"/>
@@ -76,12 +85,129 @@ has_details: True
     <p class="gx-5"></p>
 </div>
 
-<h3>Aujourd'hui</h3>
+<h3>Cinq ans plus tard, le changement d’échelle</h3>
 
 <p>
-    Une fois la solution au point vint le temps de l'installation sur site, terminée à l'heure où j'écris ces lignes. Le défi est achevé, désormais OxaControle peut s'adapter à toutes les tailles de bâtiment grâce à son architecture évolutive.<br/>
-    Le même code source peut être déployé dans plusieurs configuration : serveur central, contrôleur de bus, simple UI.<br/>
-    Le projet, désormais repris doit maintenant être consolidé et assaini, afin de s'attaquer à d'autres sites. Il reste trop d'étapes manuelles lors de l'installation et de la maintenance et le poids du code legacy, bien que fortement réduit par des tests adaptés, reste fort dans le projet.<br/>
-    De nouvelles fonctionnalités ont été développées sur demande d'un client. Tout le nouveau code est recueilli et développé par les tests (BDD&TDD)<br/>
-    Désormais installé sur un site d'envergure (80 lecteurs, 200+ badges), OxaControle devrait susciter l'intérêt d'autres maîtres d'oeuvre, nous serons là pour le faire vivre et évoluer, 10 ans après.
+    Je quitte le projet en 2015 à la fin de mes études. Il continue ensuite à évoluer avec un autre
+    développeur.
+</p>
+
+<p>
+    En 2020, je reviens comme indépendant. Le client vient de décrocher un chantier d’une toute
+    autre dimension : <b>83 portes, 95 lecteurs et plus de 400 badges</b>. Une architecture conçue
+    pour quelques portes et quelques lecteurs doit désormais gérer un site d’une ampleur sans
+    commune mesure avec les premiers déploiements.
+</p>
+
+<p>
+    Le retour sur le projet est aussi un retour sur mon propre code. Entre-temps, quatre années
+    et demie d’expérience en ESN m’ont permis de voir suffisamment de systèmes complexes pour
+    mesurer les limites de mes choix d’étudiant.
+</p>
+
+<p>
+    Je retrouve un code dont la conception métier reste étonnamment familière : les portes,
+    les lecteurs, les règles d’accès et les différents états du système sont toujours organisés
+    selon la même logique. En revanche, certains choix techniques ont mal vieilli.
+</p>
+
+<h3>Refondre sans perdre le métier</h3>
+
+<p>
+    La couche d’accès aux données repose sur des antipatterns et un orienté-objet trop intégriste,
+    tandis que Mono est progressivement remplacé par .NET natif sous Linux. Je profite de cette
+    migration pour nettoyer le code, supprimer les abstractions devenues inutiles et revoir
+    en profondeur l’architecture.
+</p>
+
+<p>
+    L’évolution majeure consiste à séparer le <b>moteur des règles d’accès</b> de la gestion du matériel.
+    Les Raspberry Pi ne portent plus l’ensemble de la logique applicative : ils deviennent des
+    contrôleurs capables d’interroger une grappe de lecteurs et d’exécuter les décisions qui leur
+    sont transmises.
+</p>
+
+<p>
+    Le même logiciel peut néanmoins toujours être utilisé sur un petit bâtiment, avec un Raspberry Pi
+    capable de tout gérer seul. L’architecture évolue donc sans abandonner le cas d’usage initial.
+</p>
+
+<p>
+    La migration vers .NET Core, puis .NET 6 et aujourd’hui .NET 8, accompagne cette refonte sans
+    réécriture fonctionnelle massive. Le comportement métier est conservé autant que possible
+    pendant que le socle technique est profondément assaini.
+</p>
+
+<h3>Corriger aussi ses propres erreurs</h3>
+
+<p>
+    Le projet comporte environ 400 tests unitaires hérités de sa première version. Ils traduisent
+    une conviction que j’avais alors : les tests unitaires suffiraient à sécuriser le logiciel.
+</p>
+
+<p>
+    Avec le recul, je constate leurs limites. Ils ne couvrent pas l’ensemble de la chaîne et aucun
+    test end-to-end ou d’acceptation ne protège réellement le fonctionnement global du système.
+</p>
+
+<p>
+    La reprise permet donc d’introduire progressivement une autre approche. Le nouveau code est
+    développé avec les tests comme outil de conception et de validation, tandis que le code
+    historique est progressivement renforcé par des tests adaptés.
+</p>
+
+<p>
+    L’objectif n’est pas de réécrire le passé pour le rendre conforme aux pratiques actuelles,
+    mais de construire suffisamment de sécurité autour de l’existant pour pouvoir continuer
+    à le faire évoluer.
+</p>
+
+<h3>Un système qui finit par se faire oublier</h3>
+
+<p>
+    La première année d’exploitation du nouveau système est consacrée au déverminage. Chaque
+    défaillance donne lieu à une analyse des causes racines et à une remédiation, afin d’éviter
+    de simplement corriger le symptôme.
+</p>
+
+<p>
+    Cette démarche finit par porter ses fruits. Une fois le système stabilisé, les interventions
+    deviennent exceptionnelles. Cela fait désormais environ un an et demi que je n’ai pas eu
+    à intervenir pour relancer manuellement un site.
+</p>
+
+<p>
+    OxaControle est aujourd’hui utilisé sur des installations allant du petit bâtiment au grand
+    centre aquatique. Le même code source peut être déployé selon la taille du site, depuis un
+    Raspberry Pi autonome jusqu’à une architecture répartissant le traitement sur plusieurs
+    contrôleurs.
+</p>
+
+<p>
+    Le projet continue d’évoluer à la demande des clients, avec notamment de nouvelles fonctionnalités
+    développées selon les pratiques de test actuelles.
+</p>
+
+<h3>Dix ans plus tard</h3>
+
+<p>
+    OxaControle est probablement le projet qui m’a le plus appris sur le legacy.
+</p>
+
+<p>
+    J’ai pu revenir sur un logiciel que j’avais conçu étudiant, retrouver intacte la connaissance
+    du métier et constater directement quelles décisions avaient bien vieilli et lesquelles
+    méritaient d’être abandonnées.
+</p>
+
+<p>
+    Le code a changé, l’architecture a changé, les technologies ont changé. Mais le métier est resté.
+    C’est cette continuité qui permet de moderniser un système sans perdre ce qu’il a accumulé
+    au fil des années.
+</p>
+
+<p>
+    <b>Mon intérêt pour le legacy et la maintenance à long terme vient en grande partie de là :
+    un logiciel n’a pas besoin d’être remplacé simplement parce qu’il vieillit. Il faut parfois
+    plusieurs années pour apprendre comment le faire durer.</b>
 </p>

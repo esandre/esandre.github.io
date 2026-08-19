@@ -161,7 +161,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 123mm;
+    max-height: 123mm;
+    margin-bottom: 5mm;
   }
 
   .offer .case-kicker{
@@ -175,6 +176,14 @@
     font-size: 14pt;
     font-weight: 750;
     margin-bottom: 1.5mm;
+  }
+
+  .case-note {
+    margin-top: 1mm;
+    margin-bottom: 2mm;
+    color: var(--muted);
+    font-size: 7.8pt;
+    line-height: 1.4;
   }
 
   h2 {
@@ -539,8 +548,8 @@
       <div class="metrics">
         <div class="metric"><b>100 kLOC</b><span>application reprise</span></div>
         <div class="metric"><b>0</b><span>test à l'arrivée</span></div>
-        <div class="metric"><b>40 k€</b><span>mise à niveau estimée</span></div>
-        <div class="metric"><b>6+ ans</b><span>de maintenance</span></div>
+        <div class="metric"><b>40 k€</b><span>mise à niveau évitée</span></div>
+        <div class="metric"><b>6 ans</b><span>de suivi régulier</span></div>
       </div>
 
       <a class="link" href="https://enzosandre.fr/portfolio/2024/01/01/ifp.html">
@@ -553,31 +562,42 @@
       <h2 class="case-kicker">02 · Madic · Quand le problème n'est pas la technologie</h2>
 
       <div class="case-subtitle">
-        Plus de 5 MLOC de .NET : l'enjeu était de supprimer la complexité inutile, pas de changer de langage.
+        Plus de 5 MLOC de .NET : l'enjeu n'était pas de changer de technologie,
+        mais de reprendre la maîtrise d'un logiciel devenu inutilement complexe.
       </div>
 
       <p>
-        Madic réinternalise une application de <strong>5+ millions de lignes de code</strong>
-        et envisage une réécriture en Python. Deux semaines d'audit montrent que le problème
-        est ailleurs : architecture surdimensionnée, abstractions sans valeur et tests trompeurs.
+        Madic réinternalise une application de <strong>5+ millions de lignes de code</strong>,
+        développée et maintenue pendant des années par une ESN. Pour reprendre la maîtrise
+        du logiciel, l'entreprise envisage une réécriture complète en Python.
+        <strong>Deux semaines d'audit montrent que le problème n'est pas .NET.</strong>
       </p>
 
       <div class="highlight">
-        <strong>95 % de couverture, mais seulement 20 % de mutants tués.</strong>
-        La couverture seule ne garantit pas la protection contre les régressions.
+        <strong>Le problème était une grande complexité superflue.</strong>
+        Sur une partie représentative, <strong>45 % du code pouvait être supprimé</strong>
+        à fonctionnalités équivalentes : suffisamment pour démontrer qu'une réécriture
+        complète n'était pas nécessaire.
       </div>
 
       <p>
-        J'accompagne l'équipe pendant sept mois : simplification, performances, reprise de legacy
-        et stratégie de tests. Sur une partie témoin, <strong>45 % du code peut être supprimé</strong>
-        à fonctionnalités égales. Les nouvelles features dépassent ensuite <strong>80 % de score de mutation</strong>.
+        Les tests donnaient eux aussi une fausse impression de sécurité :
+        <strong>95 % de couverture, mais seulement 20 % des mutants détectés</strong>.
+        Je recommande de conserver le système et de réduire progressivement sa complexité.
+        Pendant sept mois, j'accompagne l'équipe sur la simplicité, les performances,
+        la reprise de legacy et une stratégie de tests réellement protectrice.
+        Les nouvelles fonctionnalités dépassent alors <strong>80 % de score de mutation</strong>.
       </p>
 
       <div class="metrics">
         <div class="metric"><b>5+ MLOC</b><span>code analysé</span></div>
-        <div class="metric"><b>95 → 20 %</b><span>coverage / mutants</span></div>
+        <div class="metric"><b>50 pages</b><span>rapport analyse<sup>*</sup></span></div>
         <div class="metric"><b>45 %</b><span>code supprimable</span></div>
-        <div class="metric"><b>7 mois</b><span>d'accompagnement</span></div>
+        <div class="metric"><b>7 mois</b><span>au sein de l'équipe</span></div>
+      </div>
+
+      <div class="case-note">
+        * Rapport anonymisé disponible sur demande.
       </div>
 
       <a class="link" href="https://enzosandre.fr/portfolio/2025/01/01/madic.html">

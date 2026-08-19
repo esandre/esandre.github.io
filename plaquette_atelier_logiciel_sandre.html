@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Logiciel Sandré — Quatre situations, une même approche</title>
+<style>
+  :root {
+    --red: #d33639;
+    --red-dark: #b82b2f;
+    --ink: #202124;
+    --muted: #62666b;
+    --paper: #ffffff;
+    --soft: #f6f6f4;
+    --line: #dedfdd;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #e9e9e7;
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.42;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    padding: 18px 0;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 18px;
+    padding: 18mm 19mm 16mm;
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,.10);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topline {
+    height: 4px;
+    background: var(--red);
+    margin: -18mm -19mm 12mm;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8mm;
+  }
+
+  .brand img {
+    width: 24mm;
+    height: 24mm;
+    object-fit: contain;
+  }
+
+  .brand-text {
+    line-height: 1.1;
+  }
+
+  .brand-name {
+    font-size: 17pt;
+    font-weight: 750;
+    letter-spacing: -.03em;
+  }
+
+  .brand-sub {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 9.5pt;
+  }
+
+  h1 {
+    font-size: 27pt;
+    line-height: 1.02;
+    letter-spacing: -.05em;
+    margin: 0 0 6mm;
+  }
+
+  .lead {
+    font-size: 14pt;
+    line-height: 1.45;
+    max-width: 160mm;
+    margin: 0 0 8mm;
+  }
+
+  .intro-rule {
+    width: 30mm;
+    height: 4px;
+    background: var(--red);
+    margin: 5mm 0 8mm;
+  }
+
+  .intro-copy {
+    max-width: 165mm;
+    color: #3d4145;
+    font-size: 11.2pt;
+  }
+
+  .intro-copy p { margin: 0 0 5mm; }
+
+  .principles {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5mm;
+    padding-top: 7mm;
+  }
+
+  .principle {
+    border-top: 2px solid var(--red);
+    padding-top: 3mm;
+  }
+
+  .principle strong {
+    display: block;
+    font-size: 11pt;
+    margin-bottom: 1.5mm;
+  }
+
+  .principle span {
+    color: var(--muted);
+    font-size: 9.2pt;
+  }
+
+  .case {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .case-kicker {
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: 8.5pt;
+    font-weight: 750;
+    margin-bottom: 2mm;
+  }
+
+  h2 {
+    font-size: 21pt;
+    line-height: 1.05;
+    letter-spacing: -.04em;
+    margin: 0 0 3mm;
+  }
+
+  .case-subtitle {
+    font-size: 13pt;
+    font-weight: 600;
+    line-height: 1.3;
+    max-width: 165mm;
+    margin-bottom: 5mm;
+  }
+
+  .case-intro {
+    font-size: 10.7pt;
+    color: #3e4246;
+    margin-bottom: 6mm;
+    max-width: 168mm;
+  }
+
+  .highlight {
+    border-left: 4px solid var(--red);
+    background: var(--soft);
+    padding: 4mm 5mm;
+    margin: 2mm 0 7mm;
+    font-size: 11pt;
+  }
+
+  .highlight strong { color: var(--red-dark); }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8mm;
+  }
+
+  .block h3 {
+    font-size: 10.5pt;
+    margin: 0 0 2mm;
+    color: var(--red-dark);
+  }
+
+  .block p {
+    font-size: 9.8pt;
+    margin: 0 0 4mm;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 5mm;
+  }
+
+  li {
+    font-size: 9.6pt;
+    margin: 0 0 1.5mm;
+  }
+
+  .metrics {
+    margin-top: auto;
+    padding-top: 7mm;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3mm;
+  }
+
+  .metric {
+    border-top: 1px solid var(--line);
+    padding-top: 3mm;
+  }
+
+  .metric b {
+    display: block;
+    color: var(--red);
+    font-size: 16pt;
+    line-height: 1;
+    margin-bottom: 1.5mm;
+  }
+
+  .metric span {
+    color: var(--muted);
+    font-size: 8.2pt;
+  }
+
+  .quote {
+    margin-top: 6mm;
+    padding: 4mm 0 0 5mm;
+    border-left: 2px solid var(--red);
+    font-size: 10.5pt;
+    font-style: italic;
+    max-width: 165mm;
+  }
+
+  .footer {
+    margin-top: 8mm;
+    padding-top: 3mm;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--muted);
+    font-size: 7.8pt;
+  }
+
+  .footer a, a {
+    color: var(--red-dark);
+    text-decoration: none;
+  }
+
+  .footer a:hover { text-decoration: underline; }
+
+  .closing {
+    margin-top: auto;
+    border-top: 4px solid var(--red);
+    padding-top: 7mm;
+  }
+
+  .closing h3 {
+    font-size: 17pt;
+    margin: 0 0 3mm;
+    letter-spacing: -.025em;
+  }
+
+  .closing p {
+    font-size: 10.5pt;
+    max-width: 165mm;
+    margin: 0 0 4mm;
+  }
+
+  .contact {
+    margin-top: 7mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .contact strong {
+    font-size: 12pt;
+  }
+
+  .contact small {
+    color: var(--muted);
+    font-size: 8.5pt;
+  }
+
+  @media print {
+    html, body { background: #fff; }
+    body { padding: 0; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      break-after: page;
+      page-break-after: always;
+    }
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    body { padding: 0; }
+    .page {
+      width: 100%;
+      height: auto;
+      min-height: 297mm;
+      margin: 0 0 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.10);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<section class="page">
+  <div class="topline"></div>
+
+  <div class="brand">
+    <img src="https://enzosandre.fr/resources/images/logo.png" alt="Atelier Logiciel Sandré">
+    <div class="brand-text">
+      <div class="brand-name">Atelier Logiciel Sandré</div>
+      <div class="brand-sub">Qualité logicielle · Legacy · Refactoring · Architecture</div>
+    </div>
+  </div>
+
+  <h1>Legacy n'est pas une question d'âge.<br/>
+    <span style="color:var(--red)">C'est une question de complexité.</span>
+  </h1>
+
+  <div class="intro-rule"></div>
+
+  <div class="lead">
+    J'interviens lorsque la complexité d'un logiciel dépasse la capacité de l'équipe à le faire évoluer : <em>delivery</em> qui ralentit, maintenance qui phagocyte la création de <em>features</em>, dette technique qui progresse et, <em>in fine</em>, turnover qui s'accélère.
+  </div>
+
+  <div class="intro-copy">
+    <h2>C'est quoi un projet legacy ?</h2>
+
+    <p>
+        Un projet devient <strong>legacy</strong> lorsque sa complexité accapare toute la capacité de l'équipe : maintenance dévorante, évolutions qui s'enlisent et features triviales qui prennent plusieurs jours. Quand il faut livrer vite, la dette technique s'accumule. Ce n'est pas une question d'âge : avec une IA utilisée sans prudence, un logiciel peut s'ankyloser en quelques semaines.
+    </p>
+
+    <p>
+      Le réflexe est souvent de recruter, mais la Loi de Brooks rappelle qu'ajouter des développeurs à une équipe sous pression aggrave le problème. Sans assainir le logiciel et changer les pratiques, la dette technique se comporte comme une dette financière : elle consomme une part croissante de la capacité de l'équipe jusqu'au défaut. Il faut d'abord <strong>réduire la complexité</strong>.
+    </p>
+
+    <h2>Audit Legacy : 5 jours pour y voir clair</h2>
+
+    <p>
+      J'audite votre logiciel et vos pratiques pour identifier ce qui freine le delivery et construire un <strong>plan d'action concret et priorisé</strong> : quoi corriger, quelles pratiques changer et où investir pour libérer de la capacité.
+    </p>
+
+    <p>
+      Le diagnostic posé, je peux ensuite, si besoin, intervenir sur les chantiers identifiés.
+    </p>
+  </div>
+
+  <div class="principles">
+    <div class="principle">
+      <strong>Comprendre</strong>
+      <span>Le code, le métier, les contraintes et ce qui ne doit surtout pas casser.</span>
+    </div>
+    <div class="principle">
+      <strong>Réduire le risque</strong>
+      <span>Stabiliser avant de moderniser et mesurer avant de réécrire.</span>
+    </div>
+    <div class="principle">
+      <strong>Rendre autonome</strong>
+      <span>Transmettre les pratiques et laisser derrière soi un logiciel maîtrisable.</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Portfolio — sélection de quatre projets</span>
+    <span>enzosandre.fr</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"></div>
+
+  <div class="case">
+    <div class="case-kicker">01 · IFP</div>
+    <h2>Reprendre une application que plus personne n'ose toucher</h2>
+    <div class="case-subtitle">
+      Un logiciel critique, sans tests ni développeur historique, qu'il fallait d'abord mettre à l'abri.
+    </div>
+
+    <div class="case-intro">
+      En 2020, l'IFP me confie une application métier d'environ <strong>100 000 lignes de code</strong>,
+      développée sur mesure pour gérer ses campagnes de dons. Elle repose sur PHP 7 / Laravel 5,
+      présente des vulnérabilités critiques, des traitements automatiques défaillants et de graves
+      problèmes de performances. Elle constitue une source de revenus essentielle pour l'organisation.
+    </div>
+
+    <div class="highlight">
+      <strong>Le piège aurait été de tout réécrire.</strong>
+      Sans tests et sans le développeur historique pour servir d'oracle fonctionnel,
+      une modernisation brutale aurait surtout créé un nouveau risque.
+    </div>
+
+    <div class="columns">
+      <div class="block">
+        <h3>Stabiliser avant de moderniser</h3>
+        <p>
+          Première priorité : réduire l'exposition et éteindre les incendies. Correction prudente
+          des bugs, remise en fonctionnement des traitements critiques, amélioration des requêtes
+          responsables de timeouts et d'OutOfMemory, puis sécurisation de l'application derrière un VPN.
+        </p>
+        <p>
+          Le projet est ensuite assaini et intégré à une chaîne d'intégration continue.
+        </p>
+      </div>
+
+      <div class="block">
+        <h3>Construire une voie de sortie</h3>
+        <p>
+          Une réécriture complète est estimée à environ 40 k€. Plutôt que de l'imposer,
+          je mets en place une nouvelle base Laravel avec TDD, CI/CD et déploiement automatisé.
+          Une variante du <em>Strangler Fig Pattern</em> permet de migrer progressivement les fonctionnalités.
+        </p>
+        <p>
+          Une première fonctionnalité est extraite. Le client choisit ensuite de ne pas poursuivre
+          la modernisation tant que le budget n'est plus prioritaire.
+        </p>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><b>100 kLOC</b><span>application reprise</span></div>
+      <div class="metric"><b>0</b><span>test automatisé à l'arrivée</span></div>
+      <div class="metric"><b>40 k€</b><span>réécriture complète estimée</span></div>
+      <div class="metric"><b>6+ ans</b><span>de maintenance depuis la reprise</span></div>
+    </div>
+
+    <div class="quote">
+      « Une reprise de legacy consiste d'abord à rendre le système à nouveau maîtrisable,
+      puis à choisir avec le client ce qui mérite réellement d'être transformé. »
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://enzosandre.fr/portfolio/2020/01/01/ifp.html">Lire l'étude de cas complète →</a>
+    <span>Atelier Logiciel Sandré</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"></div>
+
+  <div class="case">
+    <div class="case-kicker">02 · Madic</div>
+    <h2>Quand le problème n'est pas la technologie</h2>
+    <div class="case-subtitle">
+      Plus de 5 MLOC de .NET : l'enjeu était de supprimer la complexité inutile, pas de changer de langage.
+    </div>
+
+    <div class="case-intro">
+      Madic venait de réinternaliser une application de plus de <strong>5 millions de lignes de code</strong>,
+      développée et maintenue par une ESN. L'entreprise envisageait une réécriture en Python.
+      En deux semaines d'audit, le problème apparaît ailleurs : architecture massivement over-engineered,
+      abstractions sans valeur métier et tests trompeusement rassurants.
+    </div>
+
+    <div class="highlight">
+      <strong>95 % de couverture, mais seulement 20 % de mutants tués.</strong>
+      Une couverture élevée ne signifie pas qu'un test protège réellement contre une régression.
+    </div>
+
+    <div class="columns">
+      <div class="block">
+        <h3>Mesurer la complexité</h3>
+        <p>
+          J'audite code, architecture, base de données, performances SQL / Entity Framework,
+          tests et pratiques de développement. Un rapport d'environ 50 pages classe les problèmes
+          par gravité et fréquence.
+        </p>
+        <p>
+          Sur une partie témoin, <strong>45 % du code peut être supprimé</strong> à fonctionnalités égales.
+          Le logiciel fonctionne : le langage n'est pas le problème.
+        </p>
+      </div>
+
+      <div class="block">
+        <h3>Transférer la maîtrise</h3>
+        <p>
+          Pendant sept mois, j'accompagne l'équipe interne : simplicité et KISS, amélioration des performances,
+          méthodes de reprise de legacy et stratégie de tests réellement protectrice.
+        </p>
+        <p>
+          Les nouvelles fonctionnalités dépassent <strong>80 % de score de mutation</strong>.
+          L'ESN historique quitte finalement le projet et l'équipe interne reprend la responsabilité du logiciel.
+        </p>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><b>5+ MLOC</b><span>code analysé</span></div>
+      <div class="metric"><b>95 → 20 %</b><span>coverage / mutants tués</span></div>
+      <div class="metric"><b>45 %</b><span>code supprimable sur la partie témoin</span></div>
+      <div class="metric"><b>7 mois</b><span>d'accompagnement</span></div>
+    </div>
+
+    <div class="quote">
+      « Un legacy n'est pas forcément un vieux logiciel. Parfois, c'est un logiciel récent
+      rendu inutilement compliqué par les années de développement. »
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://enzosandre.fr/portfolio/2025/01/01/madic.html">Lire l'étude de cas complète →</a>
+    <span>Atelier Logiciel Sandré</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"></div>
+
+  <div class="case">
+    <div class="case-kicker">03 · OxaControle</div>
+    <h2>Faire durer un logiciel pendant plus de dix ans</h2>
+    <div class="case-subtitle">
+      Un logiciel de contrôle d'accès commencé étudiant, repris cinq ans plus tard pour un changement d'échelle majeur.
+    </div>
+
+    <div class="case-intro">
+      OxaControle est né en 2013, alors que je développais en alternance une solution de contrôle d'accès
+      par badge pour un électricien. Pensée pour quelques portes et quelques lecteurs, elle repose sur
+      Raspberry Pi, Mono/.NET et RS485. En 2020, le projet doit passer à <strong>83 portes, 95 lecteurs et plus de 400 badges</strong>.
+    </div>
+
+    <div class="highlight">
+      <strong>Le retour sur le projet est aussi un retour sur mon propre code.</strong>
+      Quatre années et demie d'ESN m'ont donné le recul nécessaire pour distinguer la connaissance métier
+      à préserver des choix techniques à abandonner.
+    </div>
+
+    <div class="columns">
+      <div class="block">
+        <h3>Refondre sans perdre le métier</h3>
+        <p>
+          La couche d'accès aux données et certaines abstractions ont mal vieilli. Mono est remplacé
+          par .NET moderne. Le moteur des règles d'accès est séparé de la gestion du matériel :
+          les Raspberry Pi deviennent des contrôleurs interrogeant une grappe de lecteurs.
+        </p>
+        <p>
+          Le même code reste capable de gérer un petit bâtiment avec un Raspberry Pi autonome.
+        </p>
+      </div>
+
+      <div class="block">
+        <h3>Apprendre de ses propres erreurs</h3>
+        <p>
+          Environ 400 tests unitaires historiques ne couvrent pas l'ensemble de la chaîne.
+          Aucun test d'acceptation ou end-to-end ne protège réellement le système.
+        </p>
+        <p>
+          Le nouveau code est développé avec les tests comme outil de conception et de validation.
+          Chaque incident de la première année fait l'objet d'une analyse des causes racines et d'une remédiation.
+        </p>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><b>83</b><span>portes sur le grand site</span></div>
+      <div class="metric"><b>95</b><span>lecteurs</span></div>
+      <div class="metric"><b>400+</b><span>badges</span></div>
+      <div class="metric"><b>10+ ans</b><span>de continuité du projet</span></div>
+    </div>
+
+    <div class="quote">
+      « Un logiciel n'a pas besoin d'être remplacé simplement parce qu'il vieillit.
+      Il faut parfois plusieurs années pour apprendre comment le faire durer. »
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://enzosandre.fr/portfolio/2018/12/01/oxacontrole.html">Lire l'étude de cas complète →</a>
+    <span>Atelier Logiciel Sandré</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"></div>
+
+  <div class="case">
+    <div class="case-kicker">04 · Fifty / Momentum</div>
+    <h2>Du prototype à l'industrialisation</h2>
+    <div class="case-subtitle">
+      Sortir un produit IA d'une codebase historique, puis lui donner les moyens de pivoter vite.
+    </div>
+
+    <div class="case-intro">
+      Momentum est un coach IA pour managers, né comme une excroissance du produit historique de Fifty.
+      L'hypothèse initiale était de réutiliser largement l'ancien code. En réalité, <strong>environ 90 % du code
+      initial n'appartenait qu'au produit historique</strong>.
+    </div>
+
+    <div class="highlight">
+      <strong>Un mois de slicing pour séparer le produit sans casser l'existant.</strong>
+      Puis cinq mois pour construire son environnement, fiabiliser la chaîne IA vocale et accompagner
+      le passage du prototype à la bêta.
+    </div>
+
+    <div class="columns">
+      <div class="block">
+        <h3>Découpler sans ralentir</h3>
+        <p>
+          Je pars d'une copie du repository, identifie les points d'entrée de Momentum et remonte
+          les dépendances nécessaires. Le code non atteignable peut alors être supprimé avec méthode.
+        </p>
+        <p>
+          Le nouveau produit dispose ensuite de son propre dépôt, de ses environnements AWS
+          (EBS, Lambda, CloudFront, Aurora, DNS) et d'une CI/CD sous CircleCI.
+        </p>
+      </div>
+
+      <div class="block">
+        <h3>Faire fonctionner la voix en temps réel</h3>
+        <p>
+          Intégration de LLM, Speech to Text, Text to Speech, VAD et communication temps réel.
+          Développement d'un VAD adapté au besoin à partir du réseau de neurones Silero.
+        </p>
+        <p>
+          Plusieurs agents IA sont orchestrés : supervision, tooling, reformulation. Deux mois sont
+          consacrés à fiabiliser et optimiser toute la chaîne.
+        </p>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><b>90 %</b><span>du code initial appartenait à l'ancien produit</span></div>
+      <div class="metric"><b>1 mois</b><span>pour le slicing et la séparation</span></div>
+      <div class="metric"><b>60+</b><span>bêta-testeurs</span></div>
+      <div class="metric"><b>5 mois</b><span>du prototype à la bêta fonctionnelle</span></div>
+    </div>
+
+    <div class="quote">
+      « La qualité logicielle doit servir la capacité de l'équipe à évoluer, pas la ralentir.
+      Quand le produit se cherche, préserver la vélocité est une exigence technique. »
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://enzosandre.fr/portfolio/2025/12/01/fifty.html">Lire l'étude de cas complète →</a>
+    <span>Atelier Logiciel Sandré</span>
+  </div>
+</section>
+
+<section class="page">
+  <div class="topline"></div>
+
+  <div class="closing">
+<p>
+      Ces quatre projets illustrent des situations très différentes : un logiciel critique
+      en deshérence, un monstre .NET à réinternaliser, un contrôle d'accès que j'ai repris
+      plusieurs années après l'avoir créé et un produit IA qu'il fallait sortir d'une
+      codebase historique handicapante.
+    </p>
+    <p>
+      Le fil conducteur n'est pas une technologie ou une méthode appliquée mécaniquement.
+      Il s'agit de <strong>comprendre le système avant de le transformer</strong>,
+      de réduire le risque, puis d'investir dans la qualité là où elle permet réellement
+      au logiciel de continuer à évoluer.
+    </p>
+
+      <h3>Une même ligne directrice</h3>
+      <p>
+        Legacy critique, monstre .NET, logiciel industriel ou produit IA : les situations changent,
+        mais l'objectif reste le même. <strong>Comprendre avant d'agir, réduire le risque,
+        simplifier ce qui peut l'être et transmettre la maîtrise.</strong>
+      </p>
+      <p>
+        Je n'interviens pas pour appliquer une méthode ou une technologie par principe.
+        J'interviens pour que le logiciel redevienne un actif que l'équipe peut comprendre,
+        faire évoluer et, si nécessaire, transmettre.
+      </p>
+
+      <div class="contact">
+        <div>
+          <strong>Atelier Logiciel Sandré</strong><br>
+          <small>Qualité logicielle · Legacy · Refactoring · Architecture</small>
+        </div>
+        <div style="text-align:right">
+          <small><a href="https://enzosandre.fr">enzosandre.fr</a></small>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://enzosandre.fr/">https://enzosandre.fr/</a>
+    <span>Atelier Logiciel Sandré</span>
+  </div>
+</section>
+
+</body>
+</html>

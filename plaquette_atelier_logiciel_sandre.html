@@ -134,7 +134,6 @@
   .intro-copy p { margin: 0 0 5mm; }
 
   .principles {
-    margin-top: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5mm;
@@ -144,6 +143,7 @@
   .principle {
     border-top: 2px solid var(--red);
     padding-top: 3mm;
+    margin-bottom: 3mm;
   }
 
   .principle strong {
@@ -161,16 +161,20 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 126mm;
+    height: 123mm;
+  }
+
+  .offer .case-kicker{
+    color: var(--ink);
   }
 
   .case-kicker {
     color: var(--red);
     text-transform: uppercase;
     letter-spacing: -.06em;
-    font-size: 15pt;
+    font-size: 14pt;
     font-weight: 750;
-    margin-bottom: 2mm;
+    margin-bottom: 1.5mm;
   }
 
   h2 {
@@ -181,19 +185,27 @@
   }
 
   .case-subtitle {
-    font-size: 13pt;
+    font-size: 12pt;
     font-weight: 600;
     line-height: 1.3;
     max-width: 165mm;
-    margin-bottom: 5mm;
+    margin-bottom: 1.5mm;
+  }
+
+  .cases {
+    font-size: 10.5pt;
+  }
+
+  .cases p {
+    margin: 1.5mm 0;
   }
 
   .highlight {
     border-left: 4px solid var(--red);
     background: var(--soft);
-    padding: 4mm 5mm;
-    margin: 5.5mm 0 2.5mm;
-    font-size: 11pt;
+    padding: 3mm 5mm;
+    margin: 1.5mm 0;
+    font-size: 10.5pt;
   }
 
   .highlight strong { color: var(--red-dark); }
@@ -221,10 +233,10 @@
 
   .metrics {
     margin-top: 0;
-    padding: 2.5mm 0;
+    padding: 1.5mm 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3mm;
+    gap: 5mm;
   }
 
   .metric {
@@ -236,18 +248,19 @@
   .metric b {
     display: block;
     color: var(--red);
-    font-size: 16pt;
-    line-height: 1;
+    font-size: 13pt;
+    line-height: .9;
     margin-bottom: 1.5mm;
+    font-weight: 800;
   }
 
   .metric span {
     color: var(--muted);
-    font-size: 8.2pt;
+    font-size: 8pt;
   }
 
   .footer {
-    margin: 8mm 0 0;
+    margin-top: auto;
     padding: 3mm 0;
     border-top: 1px solid var(--line);
     display: flex;
@@ -350,6 +363,7 @@
 
   .offer-notes {
     margin-top: auto;
+    margin-bottom: 0.8rem;
     padding-top: 0.8rem;
     border-top: 1px solid var(--line);
     color: var(--muted);
@@ -631,10 +645,6 @@
         <div class="metric"><b>10+ ans</b><span>de continuité</span></div>
       </div>
 
-      <div class="quote">
-        « Reprendre son propre legacy, c'est découvrir ce que l'expérience permet enfin de remettre en question. »
-      </div>
-
       <a class="link" href="https://enzosandre.fr/portfolio/2024/01/01/oxacontrole.html">
         Lire l'étude de cas complète →
       </a>
@@ -671,13 +681,9 @@
 
       <div class="metrics">
         <div class="metric"><b>90 %</b><span>code inutile au nouveau produit</span></div>
-        <div class="metric"><b>1 mois</b><span>pour sortir du legacy</span></div>
+        <div class="metric"><b>1 mois</b><span>pour séparer les codebases</span></div>
         <div class="metric"><b>60+</b><span>bêta-testeurs</span></div>
         <div class="metric"><b>5 mois</b><span>du prototype à la bêta</span></div>
-      </div>
-
-      <div class="quote">
-        « Un nouveau produit ne doit pas hériter de la complexité dont il cherche à s'affranchir. »
       </div>
 
       <a class="link" href="https://enzosandre.fr/portfolio/2025/12/01/fifty.html">

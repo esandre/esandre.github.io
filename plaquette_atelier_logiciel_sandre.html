@@ -187,9 +187,9 @@
   }
 
   h2 {
-    font-size: 21pt;
+    font-size: 20pt;
     line-height: 1.05;
-    letter-spacing: -.04em;
+    letter-spacing: -.06em;
     margin: 0 0 3mm;
   }
 
@@ -479,16 +479,17 @@
 
   <div class="principles">
     <div class="principle">
-      <strong>Comprendre</strong>
-      <span>Le code, le métier, les contraintes et ce qui ne doit surtout pas casser.</span>
+      <strong>Questionner</strong>
+      <span>Mettre les « best practices » à l'épreuve de la recherche académique et du terrain.</span>
     </div>
     <div class="principle">
       <strong>Réduire le risque</strong>
-      <span>Stabiliser avant de moderniser et mesurer avant de réécrire.</span>
+      <span>Stabiliser avant de moderniser, mesurer avant de réécrire et avancer par étapes maîtrisées.</span>
     </div>
+
     <div class="principle">
       <strong>Rendre autonome</strong>
-      <span>Transmettre les pratiques et laisser derrière soi un logiciel maîtrisable.</span>
+      <span>Transmettre les pratiques, documenter les décisions et laisser derrière soi un logiciel maîtrisable.</span>
     </div>
   </div>
 
@@ -519,30 +520,28 @@
       <h2 class="case-kicker">01 · IFP · Reprendre une application orpheline et vulnérable</h2>
 
       <div class="case-subtitle">
-        Sécuriser un système fragile sans rien casser, avant de le transformer.
+        Sécuriser un système fragile sans l'interrompre, avant de le transformer.
       </div>
 
       <p>
-        En 2020, l'IFP me confie une application métier de <strong>100 000 lignes de code</strong>,
-        sans tests, sans développeur historique et exposée à plusieurs vulnérabilités critiques.
-        Je n'ai alors <strong>aucune expérience de Laravel et peu de pratique de PHP</strong>.
-        Il faut pourtant intervenir immédiatement : l'application gère une activité essentielle
-        aux revenus de l'organisation.
+        En 2020, l'IFP me confie une application métier sans tests, sans développeur
+        et exposée à plusieurs vulnérabilités critiques. Il faut intervenir immédiatement :
+        l'application gère une activité essentielle aux revenus de l'organisation. Mon expérience
+        en PHP date de plusieurs années et <strong>Laravel m'est inconnu</strong>.
       </p>
 
       <div class="highlight">
         <strong>Plutôt que mettre à niveau l'ancien système, je construis à côté.</strong>
         Trop endetté pour être modernisé à coût raisonnable, le legacy est progressivement
-        remplacé par une application Laravel récente. La première fonctionnalité migrée est
-        celle qui doit évoluer ; le reste reste en place, faute de besoins d'évolution.
+        suppléé par une application Laravel récente qui prend en charge les fonctionnalités
+        appelées à évoluer ; les autres restent en place puisqu'elles répondent toujours aux besoins.
       </div>
 
       <p>
-        Cette première fonctionnalité est donc reconstruite sur la nouvelle stack, avec une
-        migration progressive et sans interruption du service. Le reste de l'application
-        continue de tourner en production : hormis quelques corrections ponctuelles, aucune
-        évolution n'est prévue. L'IFP choisit ainsi de limiter son investissement au strict
-        nécessaire.
+        La nouvelle base permet ainsi d'amorcer la migration sans interrompre le service.
+        Le legacy reste néanmoins en production, maintenu et sécurisé au niveau nécessaire.
+        Six ans plus tard, l'application continue de fonctionner et je l'accompagne encore
+        ponctuellement, au rythme des besoins du client.
       </p>
 
       <div class="metrics">
@@ -570,11 +569,11 @@
         Madic réinternalise une application de <strong>5+ millions de lignes de code</strong>,
         développée et maintenue pendant des années par une ESN. Pour reprendre la maîtrise
         du logiciel, l'entreprise envisage une réécriture complète en Python.
-        <strong>Deux semaines d'audit montrent que le problème n'est pas .NET.</strong>
+        <strong>Deux semaines d'audit montrent que .NET n'est pas en cause.</strong>
       </p>
-
+      
       <div class="highlight">
-        <strong>Le problème était une grande complexité superflue.</strong>
+        <strong>La complexité était largement superflue.</strong>
         Sur une partie représentative, <strong>45 % du code pouvait être supprimé</strong>
         à fonctionnalités équivalentes : suffisamment pour démontrer qu'une réécriture
         complète n'était pas nécessaire.
@@ -591,7 +590,7 @@
 
       <div class="metrics">
         <div class="metric"><b>5+ MLOC</b><span>code analysé</span></div>
-        <div class="metric"><b>50 pages</b><span>rapport analyse<sup>*</sup></span></div>
+        <div class="metric"><b>50 pages</b><span>rapport d'analyse<sup>*</sup></span></div>
         <div class="metric"><b>45 %</b><span>code supprimable</span></div>
         <div class="metric"><b>7 mois</b><span>au sein de l'équipe</span></div>
       </div>
@@ -631,37 +630,39 @@
 
     <!-- OxaControle -->
     <article class="case-half">
-      <h2 class="case-kicker">03 · OxaControle · Faire durer un logiciel pendant plus de dix ans</h2>
+      <h2 class="case-kicker">03 · OxaControle · Médecin, goûte à ton remède</h2>
 
       <div class="case-subtitle">
-        Reprendre son propre code cinq ans plus tard, pour faire changer d'échelle un système critique.
+        Cinq ans plus tard, reprendre mon projet d'alternance devenu système critique.
       </div>
 
       <p>
-        Né en 2013 pour quelques portes et lecteurs, OxaControle doit gérer en 2020
-        <strong>83 portes, 95 lecteurs et plus de 400 badges</strong>. Entre-temps,
-        quatre années et demie d'ESN m'ont donné le recul nécessaire pour revenir sur
-        mes propres choix techniques.
+        Je développe, sous la supervision de mon ancien patron, une solution de contrôle d'accès
+        par badge pour de petits bâtiments avec Raspberry Pi, Mono et RS485. Le projet
+        continue de vivre sans moi. Je suis rappelé lorsqu'une nouvelle installation doit piloter
+        <strong>83 portes, 95 lecteurs et plus de 400 badges</strong>.
       </p>
 
       <div class="highlight">
-        <strong>Conserver le métier, refondre ce qui ne tient plus.</strong>
-        Le code historique est repris, testé et simplifié. Mono/.NET est modernisé,
-        et la logique métier est séparée de la gestion du matériel pour permettre
-        au système de changer d'échelle sans perdre sa simplicité d'origine.
+        <strong>Le métier avait bien vieilli. Mes choix techniques, beaucoup moins.</strong>
+        Mon passage en ESN m'avait appris, parfois à mes dépens, que les « bonnes pratiques »
+        peuvent aussi fabriquer de la complexité. Sans la légitimité pour les challenger, j'ai
+        cherché un moyen plus solide de les mettre à l'épreuve : la
+        <a href="https://enzosandre.fr/veille">recherche académique</a>.
       </div>
 
       <p>
-        Les incidents de la première année servent ensuite de matière première :
-        analyse des causes racines, correction et ajout des protections nécessaires.
-        Le système conserve même sa capacité à fonctionner sur un petit site avec
-        un seul Raspberry Pi.
+        Avec ce nouveau regard, je refonds l'architecture, modernise le socle technique et sépare
+        la logique fonctionnelle de la gestion du matériel, sans changer ce que le système sait faire.
+        L'objectif n'est pas de tout réécrire, mais de faire évoluer ce qui doit l'être : le même code
+        s'adapte aujourd'hui à des sites de tailles très différentes. Résultat :
+        <strong>aucun incident en production depuis plus d'un an et demi</strong>.
       </p>
 
       <div class="metrics">
-        <div class="metric"><b>83</b><span>portes</span></div>
-        <div class="metric"><b>95</b><span>lecteurs</span></div>
-        <div class="metric"><b>400+</b><span>badges</span></div>
+        <div class="metric"><b>5 ans</b><span>après la V1</span></div>
+        <div class="metric"><b>×10+</b><span>changement d'échelle</span></div>
+        <div class="metric"><b>9</b><span>contrôleurs pour un seul site</span></div>
         <div class="metric"><b>10+ ans</b><span>de continuité</span></div>
       </div>
 
@@ -670,40 +671,41 @@
       </a>
     </article>
 
-
     <!-- Fifty / Momentum -->
     <article class="case-half">
-      <h2 class="case-kicker">04 · Fifty / Momentum · Sortir un produit IA d'une codebase historique</h2>
+      <h2 class="case-kicker">04 · Fifty · Désincarcérer un produit IA d'une codebase historique</h2>
 
       <div class="case-subtitle">
-        Séparer un nouveau produit de son legacy pour pouvoir pivoter vite.
+        Découpler l'architecture pour pouvoir pivoter vite.
       </div>
 
       <p>
-        Momentum naît comme une excroissance du produit historique de Fifty.
-        L'idée initiale est d'en réutiliser largement le code. L'analyse montre pourtant
-        que <strong>90 % du code initial appartient exclusivement à l'ancien produit</strong>.
+        Le coach IA Momentum naît comme une excroissance du produit historique de Fifty, avec l'idée d'en
+        réutiliser largement le code. Au sein d'une équipe de développeurs seniors, j'identifie
+        un problème : l'architecture couple inutilement les deux produits.
+        Je propose alors de les découper par slicing, sans jeter le travail déjà réalisé.
       </p>
 
       <div class="highlight">
-        <strong>Plutôt que traîner le legacy, je sépare le nouveau produit.</strong>
-        En un mois, je distingue les dépendances réellement nécessaires et construis
-        un dépôt autonome. Momentum dispose alors de ses propres environnements,
-        déploiements et chaîne de développement.
+        <strong>Le nouveau produit doit pouvoir évoluer à sa propre vitesse.</strong>
+        En un mois, nous isolons les dépendances réellement nécessaires et lui donnons ses propres
+        environnements, déploiements et chaîne de développement.
       </div>
 
       <p>
-        Il reste ensuite à industrialiser le produit : chaîne vocale temps réel,
-        LLM, Speech to Text, Text to Speech, détection de voix et orchestration de
-        plusieurs agents IA. En cinq mois, le prototype devient une bêta fonctionnelle
-        testée par <strong>60+ utilisateurs</strong>.
+        La séparation libère la capacité à confronter les hypothèses aux utilisateurs et à pivoter
+        rapidement. Le chat écrit ne mettait pas suffisamment les utilisateurs en situation ; nous
+        basculons vers une simulation de conversation managériale en audio. Chaîne vocale temps réel, LLM,
+        Speech to Text, Text to Speech et orchestration de plusieurs agents IA évoluent au fil des
+        itérations. <strong>Cette agilité aurait été bien plus difficile à préserver en traînant la
+        complexité de l'ancien produit.</strong>
       </p>
 
       <div class="metrics">
         <div class="metric"><b>90 %</b><span>code inutile au nouveau produit</span></div>
-        <div class="metric"><b>1 mois</b><span>pour séparer les codebases</span></div>
-        <div class="metric"><b>60+</b><span>bêta-testeurs</span></div>
-        <div class="metric"><b>5 mois</b><span>du prototype à la bêta</span></div>
+        <div class="metric"><b>1 mois</b><span>pour isoler le produit</span></div>
+        <div class="metric"><b>4 mois</b><span>de l'isolement à la bêta</span></div>
+        <div class="metric"><b>60+</b><span>bêta-utilisateurs</span></div>
       </div>
 
       <a class="link" href="https://enzosandre.fr/portfolio/2025/12/01/fifty.html">
@@ -749,29 +751,30 @@
     <div class="intro-rule"></div>
 
     <div class="case-intro">
-      L'équipe coûte toujours aussi cher, mais une part croissante de son temps est absorbée par la maintenance et la dette technique plutôt que par la création de valeur.</div>
+      L'équipe coûte toujours aussi cher, mais une part croissante de son temps est absorbée par la maintenance et la dette technique plutôt que par la création de valeur.
+    </div>
 
     <div class="highlight">
-      En cinq jours, j'identifie <strong>ce qui accapare l'équipe</strong> au quotidien.
+      En cinq jours, j'identifie <strong>ce qui accapare réellement la capacité de l'équipe</strong>.
       J'analyse l'architecture, le code, la documentation et les pratiques, puis vous remets un
-      <strong>diagnostic et un plan d'action concret et priorisé</strong> : quoi corriger,
-      quelles pratiques changer et où investir.
+      <strong>diagnostic étayé et un plan d'action priorisé</strong> : quoi corriger,
+      quoi laisser en l'état et où investir.
     </div>
 
     <div class="offer-columns">
       <div>
         <strong>Dans le logiciel</strong>
-        <span>Complexité, architecture, dette technique, risques et points de blocage.</span>
+        <span>Complexité, architecture, dette technique, tests, risques et points de blocage.</span>
       </div>
 
       <div>
         <strong>Dans l'équipe</strong>
-        <span>Pratiques, processus et modes de fonctionnement qui freinent le delivery.</span>
+        <span>Pratiques et processus qui consomment la capacité de delivery.</span>
       </div>
 
       <div>
         <strong>Pour décider</strong>
-        <span>Les priorités et les investissements qui se justifient réellement.</span>
+        <span>Les investissements qui réduisent réellement la complexité et libèrent du delivery.</span>
       </div>
     </div>
 

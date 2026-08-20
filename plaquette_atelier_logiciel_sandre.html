@@ -62,18 +62,18 @@
     align-items: center;
     gap: 4px;
     margin-bottom: 6mm;
+  }
 
-    .brand-name {
-      font-size: 9pt;
-      font-weight: 650;
-      letter-spacing: -.1em;
-    }
+  .brand-small .brand-name {
+    font-size: 9pt;
+    font-weight: 650;
+    letter-spacing: -.1em;
+  }
 
-    .brand-sub {
-      margin-top: 1px;
-      color: var(--muted);
-      font-size: 6.5pt;
-    }
+  .brand-small .brand-sub {
+    margin-top: 1px;
+    color: var(--muted);
+    font-size: 6.5pt;
   }
 
   .brand-small img {
@@ -165,10 +165,6 @@
     margin-bottom: 5mm;
   }
 
-  .offer .case-kicker{
-    color: var(--ink);
-  }
-
   .case-kicker {
     color: var(--red);
     text-transform: uppercase;
@@ -219,27 +215,6 @@
 
   .highlight strong { color: var(--red-dark); }
 
-  .block h3 {
-    font-size: 10.5pt;
-    margin: 0 0 2mm;
-    color: var(--red-dark);
-  }
-
-  .block p {
-    font-size: 9.8pt;
-    margin: 0 0 4mm;
-  }
-
-  ul {
-    margin: 0;
-    padding-left: 5mm;
-  }
-
-  li {
-    font-size: 9.6pt;
-    margin: 0 0 1.5mm;
-  }
-
   .metrics {
     margin-top: 0;
     padding: 1.5mm 0;
@@ -289,27 +264,6 @@
   }
 
   a:hover { text-decoration: underline; }
-
-  .closing h3 {
-    font-size: 17pt;
-    margin: 0 0 3mm;
-    letter-spacing: -.025em;
-  }
-
-  .closing p {
-    font-size: 10.5pt;
-    max-width: 165mm;
-    margin: 0 0 4mm;
-  }
-
-  .contact strong {
-    font-size: 12pt;
-  }
-
-  .contact small {
-    color: var(--muted);
-    font-size: 8.5pt;
-  }
 
   @media print {
     html, body { background: #fff; }
@@ -735,7 +689,7 @@
     </div>
   </div>
 
-  <div class="case offer">
+  <div class="offer">
     <div class="case-kicker">Proposition de valeur</div>
 
     <h1>Audit Legacy · 5 jours</h1>
@@ -750,9 +704,9 @@
 
     <div class="intro-rule"></div>
 
-    <div class="case-intro">
+    <p>
       L'équipe coûte toujours aussi cher, mais une part croissante de son temps est absorbée par la maintenance et la dette technique plutôt que par la création de valeur.
-    </div>
+    </p>
 
     <div class="highlight">
       En cinq jours, j'identifie <strong>ce qui accapare réellement la capacité de l'équipe</strong>.
@@ -787,7 +741,7 @@
     </div>
 
     <div class="offer-notes">
-      <span>*</span> Audit de cinq jours ouvrés.
+      * Audit de cinq jours ouvrés.
       Frais de déplacement, d'hébergement et temps d'onboarding non inclus.
       Un devis incluant ces frais est disponible sur demande.
       Les travaux de mise en œuvre du plan d'action font l'objet d'une prestation distincte.

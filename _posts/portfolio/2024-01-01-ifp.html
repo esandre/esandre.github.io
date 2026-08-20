@@ -32,34 +32,13 @@ has_details: True
 
 <h3>Une application critique devenue intouchable</h3>
 
-<p>
-    L’IFP dispose d’une application métier développée sur mesure pour gérer ses
-    campagnes de dons. Livrée en 2015 avec Laravel 5, elle avait été maintenue
-    pendant plusieurs années par son développeur d’origine, avant que celui-ci
-    quitte le projet.
-</p>
+<p> L’IFP dispose d’une application métier développée sur mesure pour gérer ses campagnes de dons. Livrée en 2015 avec Laravel 5, elle avait été maintenue pendant plusieurs années avant de devenir progressivement difficile à faire évoluer. </p>
 
-<p>
-    Le problème était alors classique : l’application faisait environ 100 000 lignes
-    de code, mais ne disposait d’aucun test automatisé. Sans son concepteur, il
-    n’existait plus véritablement d’« oracle » capable de dire si un comportement
-    particulier était volontaire, accidentel ou simplement devenu indispensable
-    avec le temps.
-</p>
+<p> Le problème est alors classique : l’application fait environ 100 000 lignes de code, mais ne dispose d’aucun test automatisé. Après plusieurs années d’évolution, il est devenu difficile de distinguer les comportements intentionnels des effets de bord ou des contraintes métier accumulées au fil du temps. </p>
 
-<p>
-    Au fil des années, les mises à jour et les évolutions avaient donc été réduites
-    au minimum. L’application reposait toujours sur PHP 7 et Laravel 5, et
-    accumulait les problèmes : vulnérabilités critiques exploitables, jobs Laravel
-    qui ne s’exécutaient plus, requêtes SQL provoquant des timeouts ou des
-    <code>OutOfMemory</code>, et plusieurs dizaines de bugs plus ou moins gênants.
-</p>
+<p> Au fil des années, les mises à jour et les évolutions ont donc été réduites au minimum. L’application repose toujours sur PHP 7 et Laravel 5 et accumule les problèmes : traitements automatiques défaillants, problèmes de performances et plusieurs dizaines de bugs plus ou moins gênants. </p>
 
-<p>
-    La situation était particulièrement sensible : cette application constitue une des
-    principales sources de revenus de l’IFP. Une interruption prolongée du service
-    aurait donc pu mettre en danger la structure elle-même.
-</p>
+<p> La situation était particulièrement sensible : cette application joue un rôle important dans le fonctionnement de l’IFP. Sa disponibilité constituait donc un enjeu important pour l’organisation. </p>
 
 <h3>Reprendre un système que je ne connaissais pas</h3>
 
@@ -82,20 +61,9 @@ has_details: True
     est consacré à éteindre les incendies sans en provoquer de nouveaux.
 </p>
 
-<p>
-    Les bugs sont corrigés un par un, avec prudence, en tenant compte de l’absence
-    totale de tests. Les traitements automatiques défaillants sont remis en état,
-    notamment ceux liés aux prélèvements automatiques qui n’étaient plus
-    correctement comptabilisés.
-</p>
+<p> Les bugs sont corrigés un par un, avec prudence, en tenant compte de l’absence totale de tests. Les traitements automatiques défaillants sont remis en état, notamment ceux qui intervenaient dans les processus financiers de l’organisation. </p>
 
-<p>
-    La sécurité constitue également une priorité immédiate. L’application présente
-    plusieurs vulnérabilités critiques, dont certaines exploitables à distance.
-    Plutôt que de commencer par une longue opération de modernisation, la première
-    décision consiste à réduire immédiatement son exposition en la plaçant derrière
-    un VPN.
-</p>
+<p> La sécurité constitue également une priorité immédiate. L’application présente plusieurs vulnérabilités nécessitant une intervention rapide. Avant d’engager une opération de modernisation, la priorité est donc de réduire son exposition et de renforcer sa sécurité. </p>
 
 <p>
     Cette première phase n’a pas pour objectif de rendre le logiciel moderne.
@@ -105,31 +73,13 @@ has_details: True
 
 <h3>Ne pas réécrire pour le plaisir de réécrire</h3>
 
-<p>
-    Une fois les urgences maîtrisées, la question de la mise à niveau de
-    l’application se pose naturellement. Une réécriture complète est chiffrée à
-    environ 40 000 €.
-</p>
+<p> Une fois les urgences maîtrisées, la question de la mise à niveau de l’application se pose naturellement. Une réécriture complète est alors chiffrée à plusieurs dizaines de milliers d’euros, mais son coût et son niveau de risque rendent cette approche difficile à justifier dans l’immédiat. </p>
 
-<p>
-    Une mise à niveau directe du legacy aurait cependant nécessité de modifier un
-    système d’environ 100 000 lignes de code sans aucun filet de sécurité. Sans
-    tests et sans le développeur historique pour servir d’oracle fonctionnel,
-    une telle opération aurait transformé un problème de maintenabilité en risque
-    de régression généralisée.
-</p>
+<p> Une mise à niveau directe du legacy aurait cependant nécessité de modifier un système d’environ 100 000 lignes de code sans aucun filet de sécurité. Sans tests et avec une connaissance incomplète des comportements historiques de l’application, une telle opération aurait transformé un problème de maintenabilité en risque de régression généralisée. </p>
 
-<p>
-    La stratégie retenue est donc différente : conserver l’existant suffisamment
-    longtemps pour continuer à faire fonctionner le métier, tout en construisant
-    une voie de sortie progressive.
-</p>
+<p> La stratégie retenue est donc différente : conserver l’existant suffisamment longtemps pour continuer à faire fonctionner le métier, tout en construisant une voie de sortie progressive. </p> 
 
-<p>
-    Le projet est assaini et intégré à un pipeline d’intégration continue. Cette
-    nouvelle capacité permet notamment de dupliquer proprement l’application pour
-    une association sœur.
-</p>
+<p> Le projet est assaini et intégré à un pipeline d’intégration continue. Cette nouvelle capacité permet notamment de réutiliser proprement l’application pour un autre projet. </p>
 
 <p>
     Un rapport sur l’état du système est également produit afin de donner au client
@@ -175,39 +125,17 @@ has_details: True
 
 <h3>Le risque est maîtrisé, la décision appartient au client</h3>
 
-<p>
-    La modernisation complète n’a finalement pas été engagée : une fois le danger
-    immédiat écarté, le client n’a pas souhaité consacrer le budget nécessaire à
-    la poursuite de la migration.
-</p>
+<p> La modernisation complète n’a finalement pas été engagée : une fois le danger immédiat écarté, le client a choisi de conserver l’existant et de limiter la migration aux évolutions présentant un bénéfice suffisant. </p>
 
-<p>
-    Ce choix est acceptable parce que l’objectif initial a été atteint : l’application
-    continue de fonctionner et peut être maintenue sans imposer immédiatement une
-    réécriture de 40 000 €.
-</p>
+<p> Ce choix est cohérent avec l’objectif initial : l’application continue de fonctionner et peut être maintenue sans imposer immédiatement une réécriture représentant plusieurs dizaines de milliers d’euros. </p>
 
-<p>
-    La nouvelle architecture reste néanmoins une voie de sortie disponible si les
-    priorités ou le budget du client évoluent. La transformation n’est donc pas
-    devenue une fin en soi : elle peut reprendre lorsque le besoin métier le
-    justifiera.
-</p>
+<p> La nouvelle architecture reste néanmoins une voie de sortie disponible si les priorités du client évoluent. La transformation n’est donc pas devenue une fin en soi : elle pourra reprendre lorsque le besoin métier le justifiera. </p>
 
 <h3>Six ans plus tard</h3>
 
-<p>
-    L’application est toujours en production. Depuis 2020, j’interviens en moyenne
-    une douzaine de fois par an pour assurer sa maintenance et répondre aux besoins
-    du client.
-</p>
+<p> L’application est toujours utilisée par l’organisation. Depuis 2020, j’interviens ponctuellement pour assurer sa maintenance et répondre aux besoins du client. </p>
 
-<p>
-    La relation a donc évolué d’une reprise urgente d’un système critique vers une
-    maintenance ponctuelle et durable. Je reste disponible lorsque le client en a
-    besoin, sans chercher à imposer une modernisation ou un volume de prestation
-    qui ne correspond pas à ses priorités.
-</p>
+<p> La relation a donc évolué d’une reprise urgente d’un système complexe vers une maintenance ponctuelle et durable. Je reste disponible lorsque le client en a besoin, sans chercher à imposer une modernisation ou un volume de prestation qui ne correspond pas à ses priorités. </p>
 
 <p>
     Le projet illustre finalement une approche assez simple du legacy :

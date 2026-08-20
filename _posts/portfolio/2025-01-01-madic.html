@@ -14,43 +14,18 @@ has_details: True
 <summary>
     <span>Madic - Janvier 2025 - Juin 2025 - St André de Cubzac</span>
     <aside>Reprise de Legacy · Audit · Tests · Formation interne</aside>
-    <p>
-        Réinternalisation d’un ensemble de plus de 5 millions de lignes de code .NET,
-        développé et maintenu pendant des années par une ESN. L’architecture était
-        massivement over-engineered et l’entreprise envisageait une réécriture complète
-        en Python.
-    </p>
+    <p> Réinternalisation d’un ensemble de plus de 5 millions de lignes de code .NET, développé et maintenu pendant des années par une ESN. L’architecture présentait une complexité largement supérieure aux besoins identifiés et l’entreprise envisageait une réécriture complète en Python. </p> 
 
-    <p>
-        Audit du système et accompagnement de l’équipe interne. Démonstration que
-        le problème n’était pas la technologie mais une complexité largement
-        artificielle : 45 % du code d’une partie témoin pouvait être supprimé
-        à fonctionnalités équivalentes. Arrêt de la dépendance à l’ESN, amélioration
-        des performances et mise en place de pratiques de tests plus efficaces.
-    </p>
+    <p> Audit du système et accompagnement de l’équipe interne. Démonstration que le problème n’était pas la technologie mais une complexité largement disproportionnée par rapport aux besoins : 45 % du code d’une partie témoin pouvait être supprimé à fonctionnalités équivalentes. Reprise progressive de la maîtrise technique, amélioration des performances et mise en place de pratiques de tests plus efficaces. </p>
 </summary>
 
 <h3>Réinternaliser un monstre</h3>
 
-<p>
-    Madic venait de reprendre en interne une application développée par une ESN
-    après une rupture devenue inévitable. Les coûts étaient devenus prohibitifs,
-    avec un sentiment croissant de dépendance et de vendor lock-in.
-</p>
+<p> Madic venait de reprendre en interne une application développée par une ESN pendant plusieurs années. L’objectif était de permettre à l’équipe interne de retrouver progressivement la maîtrise technique du système et de pouvoir en assurer directement l’évolution. </p>
 
-<p>
-    Le système représentait un actif logiciel considérable : plus de 5 millions
-    de lignes de code réparties sur plus de huit solutions .NET. Les versions
-    utilisées étaient récentes et le code pouvait donner, au premier regard,
-    l’impression d’un système moderne et propre.
-</p>
+<p> Le système représentait un actif logiciel considérable : plus de 5 millions de lignes de code réparties sur plus de huit solutions .NET. Les versions utilisées étaient récentes et l’ensemble pouvait, au premier regard, donner l’impression d’un système moderne et maîtrisé. </p>
 
-<p>
-    L’entreprise envisageait pourtant de repartir de zéro, en Python. Lorsque je
-    demande pourquoi Python, la réponse est révélatrice : il n’existe pas de
-    justification technique particulière. Le projet est simplement associé à
-    l’image d’une technologie moderne.
-</p>
+<p> L’entreprise envisageait pourtant de repartir de zéro, en Python. Lorsque je cherche à comprendre les motivations de ce choix, aucune contrainte technique précise ne justifie alors le changement de technologie. Le projet semble surtout motivé par la volonté de repartir sur une base perçue comme plus moderne. </p>
 
 <p>
     Mon rôle initial est celui d’un expert .NET capable également d’intervenir
@@ -71,19 +46,9 @@ has_details: True
     Le constat est plus sévère que prévu.
 </p>
 
-<p>
-    L’application souffre d’un over-engineering massif. Les mêmes mécanismes
-    d’abstraction sont répétés à grande échelle, parfois avec une abstraction
-    ne possédant qu’un seul type concret. Plusieurs pans du code donnent
-    l’impression d’avoir été reproduits depuis d’autres projets sans que leur
-    complexité soit justifiée par le besoin réel.
-</p>
+<p> L’application présente un niveau d’abstraction particulièrement élevé. Les mêmes mécanismes sont répétés à grande échelle, parfois avec une abstraction ne possédant qu’un seul type concret. Plusieurs pans du code présentent ainsi une complexité qui ne semble pas justifiée par les besoins fonctionnels identifiés. </p>
 
-<p>
-    Le système possède par ailleurs plusieurs milliers de tests unitaires et
-    affiche environ 95&nbsp;% de couverture de code. Pourtant, aucun test
-    d’acceptation ou end-to-end ne protège le comportement global de l'application.
-</p>
+<p> Le système possède par ailleurs plusieurs milliers de tests unitaires et affiche environ 95&nbsp;% de couverture de code. Pourtant, aucun test d’acceptation ou end-to-end ne protège le comportement global de l’application. </p>
 
 <p>
     Un passage en mutation testing permet de mesurer la différence entre quantité
@@ -108,19 +73,9 @@ has_details: True
     La conclusion est simple : <b>il n’est pas nécessaire de réécrire le logiciel.</b>
 </p>
 
-<p>
-    Le système fonctionne et sa dette provient principalement d’une complexité
-    excessive. Une réécriture aurait supprimé une partie de cette complexité,
-    mais au prix de la réimplémentation de millions de lignes et surtout de la
-    reconstruction de la connaissance métier accumulée dans l’existant.
-</p>
+<p> Le système fonctionne et sa dette provient principalement d’une complexité excessive. Une réécriture aurait supprimé une partie de cette complexité, mais au prix de la réimplémentation de millions de lignes et surtout de la reconstruction de la connaissance métier accumulée dans l’existant. </p>
 
-<p>
-    La recommandation est donc de conserver le système, de réduire progressivement
-    sa complexité et de construire une équipe interne suffisamment compétente pour
-    en reprendre la maîtrise. Sans lead senior capable de comprendre le legacy,
-    remplacer une ESN par une autre n’aurait fait que déplacer le problème.
-</p>
+<p> La recommandation est donc de conserver le système, de réduire progressivement sa complexité et de renforcer l’équipe interne afin qu’elle puisse en reprendre la maîtrise technique. Un accompagnement ponctuel peut compléter cette montée en compétence, mais la connaissance du legacy doit progressivement rester au sein de l’organisation. </p>
 
 <h3>Mesurer la complexité plutôt que la subir</h3>
 
@@ -150,17 +105,9 @@ has_details: True
 
 <h3>Reprendre le contrôle du legacy</h3>
 
-<p>
-    L’équipe interne initiale compte trois personnes, puis deux après le départ
-    d’un prestataire non renouvelé. Le niveau technique est intermédiaire et les
-    moyens alloués restent limités au regard de la taille du système.
-</p>
+<p> L’équipe interne est de taille réduite au regard de la complexité et de la taille du système. L’accompagnement doit donc permettre de renforcer progressivement son autonomie technique. </p>
 
-<p>
-    Je les accompagne pendant sept mois dans la reprise du projet, avec un objectif
-    qui dépasse la simple résolution de problèmes techniques : leur apprendre à
-    travailler avec un legacy et à tester efficacement ce qu’ils modifient.
-</p>
+<p> Je les accompagne pendant sept mois dans la reprise du projet, avec un objectif qui dépasse la simple résolution de problèmes techniques : transmettre les pratiques nécessaires pour travailler efficacement avec un legacy et tester les évolutions apportées au système. </p>
 
 <p>
     Les tests des nouvelles fonctionnalités sont réécrits selon une approche
@@ -176,18 +123,11 @@ has_details: True
     héritées du système.
 </p>
 
-<h3>L'ESN quitte le projet</h3>
+<h3>L'équipe interne reprend le projet</h3>
 
-<p>
-    À l’issue des sept mois d’accompagnement, l’ESN historique a quitté le projet
-    et l’équipe interne a repris la responsabilité du logiciel.
-</p>
+<p> À l’issue des sept mois d’accompagnement, l’équipe interne a repris progressivement la responsabilité du logiciel. </p>
 
-<p>
-    Les moyens consacrés au développement restant limités, la poursuite de la
-    simplification et de la modernisation s’effectue progressivement, au rythme
-    des priorités du projet.
-</p>
+<p> La poursuite de la simplification et de la modernisation s’effectue progressivement, au rythme des priorités du projet. </p>
 
 <p>
     L’équipe dispose désormais des connaissances et des pratiques nécessaires pour
@@ -202,11 +142,7 @@ has_details: True
     comprendre ce qu’elle maintenait.
 </p>
 
-<p>
-    L’intervention a permis d’éviter une réécriture sans justification technique,
-    de mettre fin à la dépendance à l’ESN et de poser les bases d’un pôle de
-    développement interne.
-</p>
+<p> L’intervention a permis d’éviter une réécriture sans justification technique, de permettre à l’équipe interne de reprendre la maîtrise du logiciel et de poser les bases d’un pôle de développement interne. </p>
 
 <p>
     <b>Un legacy n’est pas forcément un vieux logiciel. Parfois, c’est un logiciel

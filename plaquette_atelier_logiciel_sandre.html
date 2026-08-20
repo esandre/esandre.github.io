@@ -13,6 +13,13 @@
     --paper: #ffffff;
     --soft: #f6f6f4;
     --line: #dedfdd;
+
+    --page-x: 19mm;
+    --page-top: 17mm;
+    --page-bottom: 15mm;
+
+    --body-size: 10.2pt;
+    --body-leading: 1.46;
   }
 
   @page {
@@ -20,15 +27,26 @@
     margin: 0;
   }
 
-  * { box-sizing: border-box; }
+  * {
+    box-sizing: border-box;
+  }
 
-  html, body {
+  html,
+  body {
     margin: 0;
     padding: 0;
     background: #e9e9e7;
     color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.42;
+    font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif;
+    font-size: var(--body-size);
+    line-height: var(--body-leading);
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -37,43 +55,71 @@
     padding: 18px 0;
   }
 
+
+  /* ==================================================
+     PAGE
+  ================================================== */
+
   .page {
     width: 210mm;
     height: 297mm;
     margin: 0 auto 18px;
-    padding: 18mm 19mm 16mm;
-    background: var(--paper);
+    padding: var(--page-top) var(--page-x) var(--page-bottom);
+
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0,0,0,.10);
+
+    background: var(--paper);
+
     display: flex;
     flex-direction: column;
+
+    box-shadow: none;
   }
+
+
+  /* ==================================================
+     BRAND
+  ================================================== */
 
   .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 8mm;
+    gap: 11px;
+    margin-bottom: 9mm;
   }
+
+  .brand img {
+    width: 23mm;
+    height: 23mm;
+    object-fit: contain;
+  }
+
+  .brand-text {
+    line-height: 1.08;
+  }
+
+  .brand-name {
+    font-size: 16pt;
+    font-weight: 750;
+    letter-spacing: -.035em;
+  }
+
+  .brand-sub {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 8.8pt;
+    letter-spacing: .005em;
+  }
+
+
+  /* Small brand used on case pages */
 
   .brand-small {
     display: flex;
     align-items: center;
-    gap: 4px;
-    margin-bottom: 6mm;
-  }
-
-  .brand-small .brand-name {
-    font-size: 9pt;
-    font-weight: 650;
-    letter-spacing: -.1em;
-  }
-
-  .brand-small .brand-sub {
-    margin-top: 1px;
-    color: var(--muted);
-    font-size: 6.5pt;
+    gap: 5px;
+    margin-bottom: 6.5mm;
   }
 
   .brand-small img {
@@ -82,180 +128,272 @@
     object-fit: contain;
   }
 
-  .brand img {
-    width: 24mm;
-    height: 24mm;
-    object-fit: contain;
+  .brand-small .brand-name {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: -.025em;
   }
 
-  .brand-text {
-    line-height: 1.1;
+  .brand-small .brand-sub {
+    margin-top: 1px;
+    font-size: 6.4pt;
   }
 
-  .brand-name {
-    font-size: 17pt;
-    font-weight: 750;
-    letter-spacing: -.03em;
-  }
 
-  .brand-sub {
-    margin-top: 3px;
-    color: var(--muted);
-    font-size: 9.5pt;
+  /* ==================================================
+     GENERAL TYPOGRAPHY
+  ================================================== */
+
+  h1,
+  h2,
+  p {
+    margin-top: 0;
   }
 
   h1 {
-    font-size: 27pt;
-    line-height: 1.02;
-    letter-spacing: -.05em;
-    margin: 0 0 6mm;
+    font-size: 28pt;
+    line-height: .99;
+    letter-spacing: -.055em;
+    font-weight: 750;
+    margin-bottom: 5.5mm;
   }
 
+  h2 {
+    font-size: 19pt;
+    line-height: 1.04;
+    letter-spacing: -.045em;
+    font-weight: 750;
+    margin-bottom: 3mm;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  p,
+  .highlight,
+  .case-subtitle {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1,
+  h2,
+  .case-kicker,
+  .case-subtitle,
+  .highlight {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+
+  /* ==================================================
+     INTRO PAGE
+  ================================================== */
+
   .lead {
-    font-size: 14pt;
-    line-height: 1.45;
-    max-width: 160mm;
-    margin: 0 0 8mm;
+    max-width: 162mm;
+    margin-bottom: 7mm;
+
+    font-size: 13.4pt;
+    line-height: 1.42;
+    letter-spacing: normal;
   }
 
   .intro-rule {
-    width: 30mm;
-    height: 4px;
+    width: 28mm;
+    height: 3px;
+
     background: var(--red);
-    margin: 5mm 0 8mm;
+
+    margin: 4.5mm 0 7mm;
   }
 
   .intro-copy {
-    max-width: 165mm;
+    max-width: 166mm;
+
     color: #3d4145;
-    font-size: 11.2pt;
+
+    font-size: 10.9pt;
+    line-height: 1.48;
   }
 
-  .intro-copy p { margin: 0 0 5mm; }
+  .intro-copy p {
+    margin-bottom: 4.5mm;
+  }
+
+  .intro-copy h2 {
+    margin-top: 6mm;
+    margin-bottom: 2.5mm;
+  }
+
+  .intro-copy h2:first-child {
+    margin-top: 0;
+  }
+
+
+  /* ==================================================
+     PRINCIPLES
+  ================================================== */
 
   .principles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5mm;
+    gap: 7mm;
+
+    margin-top: auto;
     padding-top: 7mm;
   }
 
   .principle {
     border-top: 2px solid var(--red);
-    padding-top: 3mm;
-    margin-bottom: 3mm;
+    padding-top: 2.8mm;
   }
 
   .principle strong {
     display: block;
-    font-size: 11pt;
+
+    font-size: 10.5pt;
+    line-height: 1.2;
+
     margin-bottom: 1.5mm;
   }
 
   .principle span {
+    display: block;
+
     color: var(--muted);
-    font-size: 9.2pt;
+
+    font-size: 8.8pt;
+    line-height: 1.42;
+  }
+
+
+  /* ==================================================
+     CASES
+  ================================================== */
+
+  .cases {
+    font-size: var(--body-size);
+    line-height: var(--body-leading);
   }
 
   .case-half {
     flex: 1;
+
     display: flex;
     flex-direction: column;
+
     max-height: 123mm;
+
     margin-bottom: 5mm;
   }
 
   .case-kicker {
     color: var(--red);
+
     text-transform: uppercase;
-    letter-spacing: -.06em;
-    font-size: 14pt;
+
+    font-size: 12.5pt;
+    line-height: 1.12;
     font-weight: 750;
-    margin-bottom: 1.5mm;
-  }
 
-  .case-note {
-    margin-top: 1mm;
-    margin-bottom: 2mm;
-    color: var(--muted);
-    font-size: 7.8pt;
-    line-height: 1.4;
-  }
+    letter-spacing: -.015em;
 
-  h2 {
-    font-size: 20pt;
-    line-height: 1.05;
-    letter-spacing: -.06em;
-    margin: 0 0 3mm;
+    margin: 0 0 2.2mm;
   }
 
   .case-subtitle {
-    font-size: 12pt;
-    font-weight: 600;
-    line-height: 1.3;
-    max-width: 165mm;
-    margin-bottom: 1.5mm;
-  }
+    max-width: 166mm;
 
-  .cases {
-    font-size: 10.5pt;
+    font-size: 11.4pt;
+    line-height: 1.32;
+    font-weight: 600;
+
+    letter-spacing: normal;
+
+    margin-bottom: 2.2mm;
   }
 
   .cases p {
-    margin: 1.5mm 0;
+    margin: 1.8mm 0;
   }
+
+
+  /* ==================================================
+     HIGHLIGHT
+  ================================================== */
 
   .highlight {
-    border-left: 4px solid var(--red);
+    margin: 2.5mm 0;
+
+    padding: 3.2mm 4.5mm;
+
+    border-left: 3px solid var(--red);
+
     background: var(--soft);
-    padding: 3mm 5mm;
-    margin: 1.5mm 0;
-    font-size: 10.5pt;
+
+    font-size: 10.1pt;
+    line-height: 1.45;
   }
 
-  .highlight strong { color: var(--red-dark); }
+  .highlight strong {
+    color: var(--red-dark);
+  }
+
+  /* ==================================================
+     METRICS
+  ================================================== */
 
   .metrics {
     margin-top: 0;
     padding: 1.5mm 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5mm;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4mm;
   }
 
   .metric {
+    min-width: 0;
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
-    padding: 1.5mm 0;
+    padding: 1.8mm 0 1.6mm;
   }
 
   .metric b {
     display: block;
     color: var(--red);
     font-size: 13pt;
-    line-height: .9;
+    line-height: .95;
     margin-bottom: 1.5mm;
     font-weight: 800;
   }
 
   .metric span {
+    display: block;
     color: var(--muted);
-    font-size: 8pt;
+    font-size: 7.6pt;
+    line-height: 1.15;
+    white-space: nowrap;
   }
 
-  .footer {
-    margin-top: auto;
-    padding: 3mm 0;
-    border-top: 1px solid var(--line);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--muted);
-    font-size: 7.8pt;
-  }
 
-  a.link {
-    font-size: 7.8pt;
+  /* ==================================================
+     CASE NOTE + LINK
+  ================================================== */
+
+  .case-note {
+    margin-top: 1mm;
+    margin-bottom: 1.5mm;
+
+    color: var(--muted);
+
+    font-size: 7.5pt;
+    line-height: 1.35;
   }
 
   a {
@@ -263,41 +401,62 @@
     text-decoration: none;
   }
 
-  a:hover { text-decoration: underline; }
-
-  @media print {
-    html, body { background: #fff; }
-    body { padding: 0; }
-    .page {
-      margin: 0;
-      box-shadow: none;
-      break-after: page;
-      page-break-after: always;
-    }
-    .page:last-child {
-      break-after: auto;
-      page-break-after: auto;
-    }
+  a:hover {
+    text-decoration: underline;
   }
 
-  @media screen and (max-width: 900px) {
-    body { padding: 0; }
-    .page {
-      width: 100%;
-      height: auto;
-      min-height: 297mm;
-      margin: 0 0 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,.10);
-    }
+  a.link {
+    display: block;
+
+    margin-top: 2mm;
+
+    font-size: 7.6pt;
+    font-weight: 600;
   }
+
+
+  /* ==================================================
+     FOOTER
+  ================================================== */
+
+  .footer {
+    margin-top: auto;
+
+    padding: 2.5mm 0 0;
+
+    border-top: 1px solid #e5e5e3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--muted);
+
+    font-size: 7pt;
+    line-height: 1.3;
+  }
+
+  .footer strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .footer small {
+    font-size: inherit;
+  }
+
+
+  /* =========================
+     OFFER — dernière page
+     ========================= */
 
   .offer {
-    max-width: 900px;
+    max-width: none;
+    width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 100%;
   }
 
   .offer h1 {
@@ -324,41 +483,51 @@
     margin-left: 0.08em;
   }
 
-  .offer-notes {
-    margin-top: auto;
-    margin-bottom: 0.8rem;
-    padding-top: 0.8rem;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.72rem;
-    line-height: 1.45;
+  .offer .case-subtitle {
+    margin-top: 2mm;
+    margin-bottom: 6mm;
+  }
+
+  .offer .intro-rule {
+    margin-top: 5mm;
+    margin-bottom: 8mm;
+  }
+
+  .offer .highlight {
+    margin: 2mm 0 8mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
   }
 
   .offer-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 1rem 0;
-    padding: 1.5rem 0;
+    gap: 8mm;
+    margin: 5mm 0 10mm;
+    padding: 6mm 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
   }
 
   .offer-columns > div {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 2mm;
   }
 
   .offer-columns strong {
-    font-size: 1rem;
+    font-size: 11pt;
+    line-height: 1.2;
   }
 
   .offer-columns span {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 9.5pt;
+    line-height: 1.45;
   }
 
   .offer-cta {
-    padding: 1.5rem 0;
+    margin-top: 4mm;
+    padding: 7mm 0;
     border-top: 2px solid var(--red);
     display: flex;
     justify-content: space-between;
@@ -367,22 +536,51 @@
   }
 
   .offer-cta strong {
-    font-size: 1.1rem;
+    font-size: 13pt;
+    line-height: 1.25;
   }
 
   .offer-cta span {
+    font-size: 10.5pt;
     font-weight: 600;
   }
 
-  @media (max-width: 700px) {
-    .offer-columns {
-      grid-template-columns: 1fr;
-      gap: 1.2rem;
+  .offer-notes {
+    margin-top: auto;
+    margin-bottom: 0.8rem;
+    padding-top: 4mm;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  /* ==================================================
+     PRINT
+  ================================================== */
+
+  @media print {
+    html,
+    body {
+      background: #fff;
     }
 
-    .offer-cta {
-      flex-direction: column;
-      align-items: flex-start;
+    body {
+      padding: 0;
+    }
+
+    .page {
+      margin: 0;
+
+      box-shadow: none;
+
+      break-after: page;
+      page-break-after: always;
+    }
+
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
     }
   }
 </style>
@@ -601,8 +799,7 @@
         <strong>Le métier avait bien vieilli. Mes choix techniques, beaucoup moins.</strong>
         Mon passage en ESN m'avait appris, parfois à mes dépens, que les « bonnes pratiques »
         peuvent aussi fabriquer de la complexité. Sans la légitimité pour les challenger, j'ai
-        cherché un moyen plus solide de les mettre à l'épreuve : la
-        <a href="https://enzosandre.fr/veille">recherche académique</a>.
+        cherché un moyen plus solide de les mettre à l'épreuve : la recherche académique.
       </div>
 
       <p>
@@ -704,7 +901,7 @@
 
     <div class="intro-rule"></div>
 
-    <p>
+    <p class="case-intro">
       L'équipe coûte toujours aussi cher, mais une part croissante de son temps est absorbée par la maintenance et la dette technique plutôt que par la création de valeur.
     </p>
 

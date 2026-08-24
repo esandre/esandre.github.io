@@ -160,7 +160,9 @@ article {
 }
 
 article + article {
-    border-top: 1px solid #ddd9d9;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #8C2323;
 }
 
 /*---------------------------------------

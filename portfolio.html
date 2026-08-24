@@ -13,7 +13,7 @@ ref: portfolio
     <p>Pour illustrer notre activité, nous avons choisi <a href="#oxacontrole">OxaControle</a> notre plus vieux projet encore maintenu et installé, préexistant même à l'Atelier, la reprise de <a href="#madic-frank">Magview pour le groupe Madic</a>, celle du logiciel de <a href="#ifp">gestion de dons pour l'IFP</a> et le refactoring stratégique de <a href="#fifty">Momentum pour Fifty</a>, afin de représenter notre savoir-faire.</p>
     <p>Cette liste va évoluer, elle est notre vitrine et sera mise à jour lorsque nous aurons achevé de nouveaux projets.</p>
 
-    <b>Pour des raisons de confidentialité, les missions courtes ne sont souvent mises en ligne qu'après leur achèvement.</b>
+    <b>Pour des raisons de confidentialité, les missions ne sont souvent mises en ligne qu'après leur achèvement.</b>
 
     {% for post in site.posts %}
         {% if post.categories contains "portfolio" %}
@@ -21,7 +21,6 @@ ref: portfolio
         {% endif %}
     {% endfor %}
 
-    <p>Tous les logos appartiennent aux entreprises mentionnées. Les missions sont réalisées dans le respect de la confidentialité des informations auxquelles j'ai accès. Les références publiées font l'objet d'un accord avec les clients concernés.</p>
 </section>
 <script>
 window.addEventListener( 'beforeprint', () => {

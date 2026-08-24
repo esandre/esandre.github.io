@@ -169,10 +169,25 @@ article + article {
 
 nav {
     margin-top: 50px;
+    overflow-x: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+}
+
+nav li {
+    flex: 0 0 auto;
 }
 
 nav li a {
-    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    width: max-content;
+    white-space: nowrap;
+
+    transition: color 120ms ease, text-decoration-color 120ms ease;
     font-size: 16px;
     letter-spacing: 1px;
     padding-right: 22px;

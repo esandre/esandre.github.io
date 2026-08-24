@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Comment testez-vous ?"
+title: "Comment testez-vous ?"
 category: faq
 tag: qualite
 lang: french
@@ -8,8 +8,20 @@ ref: tests
 ---
 
 <h4>Sur les projets neufs</h4>
+
 <p>
-    Pour tous les projets neufs, je pratique <abbr title="Test Driven Design">TDD</abbr>, qui n'est pas un élément négociable (sauf <a href="#dette-technique">rares cas</a>). Plus précisément, je pratique Outside-In Diamond TDD, qui offre une plus grande souplesse que la traditionnelle pyramide de tests, qui doit être désapprise par la profession.
+    Sur les projets neufs, je pratique 
+    <abbr title="Test Driven Development">TDD</abbr>. C’est pour moi une condition de la qualité du logiciel, et donc un principe auquel je ne
+    déroge que dans de rares cas, notamment lorsqu’il s’agit de dette technique
+    assumée.
+</p>
+
+<p>
+    Plus précisément, je pratique un <i>Outside-In Diamond TDD</i> mâtiné de <abbr title="Behavior Driven Development">BDD</abbr>. Je pars du comportement attendu du logiciel pour descendre progressivement vers les
+    détails d’implémentation. Cette approche donne davantage de place aux
+    tests fonctionnels et d’acceptation que la traditionnelle pyramide de
+    tests, dont l’usage systématique a parfois conduit la profession à tester
+    davantage le code que le logiciel.
 </p>
 
 <div class="row">
@@ -17,22 +29,69 @@ ref: tests
         {% include helper_image.html src="/resources/images/test_diamond.jpg" size=12 %}
     </div>
     <p class="col">
-        Notre pain quotidien, c'est le test d'acceptation isolé ou test fonctionnel. Il détaille les clauses du contrat que nous avons passé ensemble en de multiples affirmations que je reprendrai périodiquement avec vous afin de m'assurer d'avoir bien cerné votre besoin.<br/>
-        Les tests contractuels ou d'intégration, décrivent le comportement que nous avons fixé ensemble au début d'une itération. Je leur donne une valeur juridique, ces tests valident la conformité des travaux à votre demande initiale.<br/>
-        Les tests de plus haut niveau (smoke tests, end-to-end tests) viennent démontrer le bon fonctionnement de la solution en interaction avec le monde extérieur. Ils me servent également de démonstration, lorsque je vous livre une itération.<br/>
-        Je ne suis pas contre l'utilisation de tests plus fins, comme les tests unitaires. Ils ont hélas été trop utilisés par une partie de la profession, provoquant la rigidification du code et dégoûtant une partie des développeurs de l'écriture de tests. Aussi, je les utilise que sur des parties critiques du code, où la manière de procéder importe autant que le résultat obtenu (performances, algorithme précis, cryptographie, etc.).
+        Les tests d’acceptation sont mon pain quotidien. Ils décrivent, dans un
+        langage compréhensible par les deux parties, les comportements attendus
+        du logiciel. Je les construis avec vous et les reprends régulièrement
+        afin de vérifier que j’ai bien compris votre besoin.
+        <br/><br/>
+        Les tests contractuels et d’intégration vérifient ensuite les
+        interactions entre les différentes parties du logiciel et avec ses
+        dépendances. Ils constituent les clauses techniques de notre contrat :
+        ils permettent de vérifier que ce qui a été livré correspond bien à ce
+        qui avait été convenu.
+        <br/><br/>
+        Les tests de plus haut niveau, comme les tests de fumée ou
+        <i>end-to-end</i>, vérifient que le logiciel fonctionne réellement
+        lorsqu’il rencontre le monde extérieur. Ils peuvent également servir
+        de démonstration lors de la livraison d’une itération.
+        <br/><br/>
+        Je ne suis évidemment pas opposé aux tests unitaires. Ils sont
+        simplement utilisés avec discernement. Trop nombreux ou trop liés à
+        l’implémentation, ils peuvent rigidifier le code et rendre les
+        évolutions pénibles. Je les réserve notamment aux parties où la manière
+        de procéder compte autant que le résultat : algorithmes, performances,
+        cryptographie, calculs complexes, etc.
     </p>
 </div>
 
-<h4>Sur les projets legacy</h4>
+<h4>Sur les logiciels legacy</h4>
+
 <p>
-    J'adopte la définition de Michael Feathers. Le <i>Code Legacy</i> est tout code non-testé qui m'est confié sans pouvoir partir rapidement à la poubelle. Dans les cas où j'accepte de reprendre un tel code, il est exclu, sauf si votre budget est colossal, de l'assainir complètement d'un coup. Le code ajouté ou modifié sera testé comme du code neuf. Le code préexistant sera sécurisé à l'aide de tests plus grossiers (smoke test) selon vos besoins, le niveau de confiance que vous souhaitez et votre budget.
+    Je reprends ici la définition de Michael Feathers : le
+    <i>code legacy</i>, c’est du code non testé que l’on ne peut pas simplement
+    jeter. Lorsqu’on me confie un tel logiciel, je ne promets pas de le rendre
+    propre du jour au lendemain. Sauf budget colossal, ce serait une promesse
+    peu crédible.
 </p>
+
 <p>
-    Une fois repris et étayé, votre code devra être progressivement assaini. Un budget mensuel devra être établi à ce titre, il ne servira qu'à réduire l'endettement de votre application, donc à faciliter les développements futurs. Un bon budget de maintenance représente une charge non-négligeable sans pour autant gréver votre rentabilité. Il n'est pas de l'argent investi à perte, mais bien la garantie que le logiciel dans lequel vous avez investi tant d'efforts ne décède pas un beau matin, trop endetté pour pouvoir évoluer au rythme de vos besoins.
+    Tout code nouveau ou modifié est en revanche testé comme du code neuf. Pour
+    le code existant, je commence par construire un filet de sécurité adapté :
+    des tests plus grossiers, notamment des tests de fumée, qui permettent de
+    réduire progressivement le risque. Leur niveau dépend de vos besoins, du
+    niveau de confiance recherché et du budget disponible.
+</p>
+
+<p>
+    Une fois le logiciel sécurisé, son assainissement peut se faire
+    progressivement. Un budget de maintenance peut être consacré à cette
+    réduction de la dette technique. Ce n’est pas de l’argent dépensé pour
+    faire joli : c’est le prix à payer pour que le logiciel continue à évoluer
+    lorsque votre métier, lui, ne cesse de changer.
 </p>
 
 <h4>En cas de défaut</h4>
+
 <p>
-    Je garantis qu'<b>aucun bug ne reviendra</b> après sa résolution. Pour cela j'utilise les tests de défaut. Pour chaque bug constaté, un test est écrit afin de le reproduire. Puis le code est modifié afin de faire passer ce test. Ainsi le bug corrigé ne peut pas revenir sous cette forme sans que je n'en sois informé.
+    Lorsqu’un bug est découvert, je cherche à faire en sorte qu’il ne puisse
+    pas revenir. J’écris d’abord un test qui reproduit le défaut, puis je
+    modifie le code pour faire passer ce test. Le test reste ensuite dans la
+    suite de non-régression.
+</p>
+
+<p>
+    Je peux ainsi garantir quelque chose de précis :
+    <b>un bug corrigé ne reviendra pas sous la même forme sans que les tests
+    ne le détectent</b>. C’est beaucoup plus utile qu’une promesse vague de
+    logiciel « sans bugs ».
 </p>

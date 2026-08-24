@@ -131,6 +131,14 @@ ul, ol {
     text-indent: 0;
 }
 
+.sommaire {
+    padding: 1.25rem 0;
+    margin: 2rem 0;
+    border-top: 1px solid #e8e5e5;
+    border-bottom: 1px solid #e8e5e5;
+    background: none;
+}
+
 .sommaire ol {
     list-style-position: inside;
 }
@@ -145,10 +153,10 @@ ul, ol {
     font-size: 1.68em;
 }
 
-article, .sommaire {
-    padding: 10px 25px;
-    background-color: rgba(177, 201, 232, 0.09);
-    margin: 15px 0;
+article {
+    padding: 1.5rem 0;
+    margin: 2rem 0;
+    background: none;
 }
 
 /*---------------------------------------

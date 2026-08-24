@@ -128,7 +128,7 @@ li {
     padding-left: 0.25rem;
 }
 
-li + li {
+li + li:not(.nav-item) {
     margin-top: 0.35rem;
 }
 

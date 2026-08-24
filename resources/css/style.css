@@ -370,16 +370,20 @@ summary::-webkit-details-marker {
     display: none;
 }
 
+details.with-details summary {
+    cursor: pointer;
+}
+
 details.with-details summary::after {
-    content: " →";
+    content: " — Voir l'histoire complète →";
     color: #8C2323;
-    font-size: 1em;
-    margin-left: 0.25em;
-    transition: transform 120ms ease;
+    font-size: 0.9em;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 details.with-details[open] summary::after {
-    content: " ↓";
+    content: " — Voir moins ↑";
     color: #5A5051;
 }
 

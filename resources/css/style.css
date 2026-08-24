@@ -1,6 +1,7 @@
 body {
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
+    font-weight: 400;
 }
 
 .bandeau {
@@ -11,9 +12,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-    line-height: 1.4;
-    font-kerning: normal;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 h1 {
@@ -50,19 +50,18 @@ figure>img{
     color: grey;
 }
 
-p, li, dt, dd, img, blockquote {
+p, li, dt, dd, blockquote {
     color: #363031;
     font-size: 1.2em;
-    text-rendering: optimizeLegibility;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: -0.01em;
-    font-kerning: none;
+    font-weight: 400;
 }
 
-b {
+b, strong {
     color: #121010;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 p + p, ul + p, ol + p, blockquote {

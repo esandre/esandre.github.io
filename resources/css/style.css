@@ -303,12 +303,13 @@ aside a {
 
 .title_block {
     display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
+    flex-wrap: nowrap;
+    align-items: baseline;
 }
 
 .title_block h2 {
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 @media (max-width: 768px) {

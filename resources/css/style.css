@@ -97,14 +97,25 @@ section {
 a {
     color: #8C2323;
     font-weight: 400;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
+    text-decoration-color: transparent;
+    transition:
+        color 120ms ease,
+        text-decoration-color 120ms ease;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active {
     color: #CD3838;
-    outline: none;
+    text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+    color: #CD3838;
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 
 ul, ol {

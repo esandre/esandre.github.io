@@ -186,11 +186,14 @@ nav {
 nav ul {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     width: max-content;
 }
 
 nav li {
     flex: 0 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 nav li a {

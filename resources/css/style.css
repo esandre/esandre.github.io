@@ -299,6 +299,16 @@ aside a {
     flex-flow: row wrap;
 }
 
+.title_block h2 {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .title_block h2 {
+        white-space: normal;
+    }
+}
+
 img.logo{
     max-width:  100%;
     height: 100%;

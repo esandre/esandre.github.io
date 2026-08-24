@@ -118,9 +118,18 @@ a:focus-visible {
     outline-offset: 3px;
 }
 
-ul, ol {
-  padding-left: 0;
-  list-style-position: outside;
+ul,
+ol {
+    padding-left: 1.5rem;
+    list-style-position: outside;
+}
+
+li {
+    padding-left: 0.25rem;
+}
+
+li + li {
+    margin-top: 0.35rem;
 }
 
 *, *:before, *:after {

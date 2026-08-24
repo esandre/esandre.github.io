@@ -185,20 +185,20 @@ nav li {
 }
 
 nav li a {
-    display: inline-block;
-    width: max-content;
-    white-space: nowrap;
+    color: #363031;
+}
 
-    transition: color 120ms ease, text-decoration-color 120ms ease;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding-right: 22px;
-    padding-left: 22px;
+nav li > a:hover,
+nav li > a:focus {
+    color: #8C2323;
+    background-color: transparent;
 }
 
 nav li.active > a,
 nav li.active > a:hover,
 nav li.active > a:focus {
+    color: #8C2323;
+    background-color: transparent;
     cursor: default;
 }
 

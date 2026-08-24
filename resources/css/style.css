@@ -359,27 +359,32 @@ img.logo{
 }
 
 summary {
-    cursor: text;
+    cursor: pointer;
+    list-style: none;
 }
 
-summary::marker{
+summary::-webkit-details-marker {
     display: none;
 }
 
 details.with-details summary::after {
-    font-size: 2.5 rem;
-    content: " ► L'histoire complète";
+    content: " →";
     color: #8C2323;
-    cursor: pointer;
+    font-size: 1em;
+    margin-left: 0.25em;
+    transition: transform 120ms ease;
 }
 
-details.with-details[open] summary:not(.nodetails):after {
-    font-size: 2.5 rem;
-    content: " ▼ Voir moins";
+details.with-details[open] summary::after {
+    content: " ↓";
     color: #5A5051;
 }
 
-details>summary {
+details.with-details summary:hover::after {
+    color: #CD3838;
+}
+
+details > summary {
     list-style: none;
 }
 

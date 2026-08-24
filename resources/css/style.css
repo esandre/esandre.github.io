@@ -1,6 +1,12 @@
 body {
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 .bandeau {
@@ -10,35 +16,63 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-    line-height: 1.4;
-    font-kerning: normal;
+p {
+    max-width: 75ch;
+    margin-bottom: 1.5rem;
 }
 
+.container > p,
+.container > ul,
+.container > ol {
+    max-width: 75ch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
 h1 {
-    font-size: 3.29em;
     text-align: center;
-    letter-spacing: -0.06em;
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-size: 2.35em;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     letter-spacing: -0.05em;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
-    font-size: 1.68em;
+    font-size: 1.3rem;
     color: #121010;
     letter-spacing: -0.03em;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
-img, figure {
-    margin: 10px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-figure>img{
+figure {
+    margin: 2.5rem 0;
+}
+
+figure > img {
     margin: 0;
+}
+
+figcaption {
+    margin-top: .5rem;
+    color: #666;
+    font-size: .9rem;
+    line-height: 1.4;
 }
 
 .footnotes li {
@@ -50,14 +84,11 @@ figure>img{
     color: grey;
 }
 
-p, li, dt, dd, img, blockquote {
+p, li, dt, dd, blockquote {
     color: #363031;
     font-size: 1.2em;
-    text-rendering: optimizeLegibility;
     font-weight: 300;
     line-height: 1.5;
-    letter-spacing: -0.01em;
-    font-kerning: none;
 }
 
 b {
@@ -81,26 +112,32 @@ section {
     max-width: 80ch;
 }
 
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
 a {
     color: #8C2323;
     font-weight: 400;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+    transition: color 120ms ease, text-decoration-color 120ms ease;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active {
     color: #CD3838;
-    outline: none;
+}
+
+a:focus-visible {
+    color: #CD3838;
+    outline: 2px solid #CD3838;
+    outline-offset: 3px;
 }
 
 ul, ol {
   padding-left: 0;
   list-style-position: outside;
-}
-
-*, *:before, *:after {
-    box-sizing: border-box;
 }
 
 .no-indent {
@@ -136,7 +173,7 @@ nav {
 }
 
 nav li a {
-    transition: all 0.4s ease-in-out;
+    transition: color 120ms ease, text-decoration-color 120ms ease;
     font-size: 16px;
     letter-spacing: 1px;
     padding-right: 22px;
@@ -271,7 +308,6 @@ aside a {
 
 .title_block {
     display: flex;
-    flex-direction: row;
     flex-flow: row wrap;
 }
 
@@ -294,14 +330,14 @@ summary::marker{
 }
 
 details.with-details summary::after {
-    font-size: 2.5 rem;
+    font-size: 2.5rem;
     content: " ► L'histoire complète";
     color: #8C2323;
     cursor: pointer;
 }
 
 details.with-details[open] summary:not(.nodetails):after {
-    font-size: 2.5 rem;
+    font-size: 2.5rem;
     content: " ▼ Voir moins";
     color: #5A5051;
 }
@@ -344,4 +380,40 @@ details>summary {
 
 .category-faq::before {
     content: '❓ ';
+}
+
+/**** Blockquotes ****/
+
+blockquote {
+    margin: 2.5rem 0;
+    padding: 0 0 0 1.5rem;
+    border-left: 3px solid currentColor;
+}
+
+blockquote p {
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+/*** Responsive ***/
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin-top: 3rem;
+    }
+
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
 }

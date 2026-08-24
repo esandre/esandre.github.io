@@ -24,18 +24,28 @@ h1 {
     letter-spacing: -0.035em;
     line-height: 1;
     text-align: center;
+    margin-bottom: 3.5rem;
 }
 
 h2 {
     font-size: clamp(1.7rem, 2.8vw, 2.2rem);
     font-weight: 600;
     letter-spacing: -0.025em;
+    margin-top: 4.5rem;
+    margin-bottom: 1.75rem;
 }
 
 h3 {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: -0.015em;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+}
+
+h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 img, figure {
@@ -58,7 +68,6 @@ figure>img{
 p, li, dt, dd, blockquote {
     color: #363031;
     font-size: 1.2em;
-    font-weight: 300;
     line-height: 1.5;
     letter-spacing: -0.01em;
     font-weight: 400;
@@ -78,8 +87,8 @@ article>p + p {
 }
 
 section {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 80ch;

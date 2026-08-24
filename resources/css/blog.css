@@ -14,8 +14,9 @@ nav li a, footer a, footer p, .nav-link {
     color: #fdf6f7;
 }
 
+nav li > a:hover,
+nav li > a:focus,
 nav li a:hover,
-nav li a:focus-visible,
 nav li.active > a {
     text-decoration: underline;
     color: white;
@@ -31,7 +32,7 @@ nav li.active > a {
 
 .meta {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.4em;
     margin-bottom: 50px;
 }
 
@@ -69,6 +70,7 @@ footer {
 
 .dois {
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
 }

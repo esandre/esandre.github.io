@@ -7,18 +7,22 @@ nav li a {
     color: #363031;
 }
 
-nav li a:hover,
-nav li a:focus-visible {
-    color: #CD3838;
+nav li > a:hover,
+nav li > a:focus {
+    color: #8C2323;
     background-color: transparent;
+}
+
+nav li a:hover,
+nav li.active > a {
+    color: #CD3838;
 }
 
 nav li.active > a,
 nav li.active > a:hover,
-nav li.active > a:focus-visible {
+nav li.active > a:focus {
     color: #8C2323;
     background-color: transparent;
-    cursor: default;
 }
 
 footer {

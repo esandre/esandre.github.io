@@ -67,7 +67,7 @@ figure>img{
 
 p, li, dt, dd, blockquote {
     color: #363031;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
     letter-spacing: -0.01em;
     font-weight: 400;
@@ -172,6 +172,31 @@ article + article {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 2px solid #8C2323;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    p, li, dt, dd, blockquote {
+        font-size: 1.05em;
+        line-height: 1.55;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin-top: 3rem;
+    }
+
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
 }
 
 /*---------------------------------------

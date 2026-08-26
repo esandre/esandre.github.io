@@ -105,8 +105,8 @@ blockquote::after {
     display: block;
     color: inherit;
     font-family: Georgia, serif;
-    font-size: 3rem;
-    line-height: 0.5;
+    font-size: 4rem;
+    line-height: 1;
     text-align: right;
     font-style: normal;
     font-weight: 600;

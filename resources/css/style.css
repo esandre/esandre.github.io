@@ -78,6 +78,41 @@ p, li, dt, dd, blockquote {
     font-weight: 400;
 }
 
+blockquote {
+    position: relative;
+    margin: 2rem 0;
+    padding: 1.5rem 2.5rem;
+    color: #5A5051;
+    font-style: italic;
+    border-left: 3px solid #8C2323;
+}
+
+blockquote::before {
+    content: "“";
+    position: absolute;
+    left: 0.35rem;
+    top: -0.15rem;
+    color: inherit;
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 600;
+}
+
+blockquote::after {
+    content: "”";
+    display: block;
+    color: inherit;
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    line-height: 0.5;
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
 b, strong {
     color: #121010;
     font-weight: 600;

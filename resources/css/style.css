@@ -81,7 +81,7 @@ p, li, dt, dd, blockquote {
 blockquote {
     position: relative;
     margin: 2rem 0;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 2.5rem .2rem;
     color: #5A5051;
     font-style: italic;
     border-left: 3px solid #8C2323;
@@ -106,7 +106,7 @@ blockquote::after {
     color: inherit;
     font-family: Georgia, serif;
     font-size: 4rem;
-    line-height: 1;
+    line-height: 0;
     text-align: right;
     font-style: normal;
     font-weight: 600;

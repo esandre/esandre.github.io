@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Logiciel Sandré — Une expertise spécialisée à intégrer directement à votre catalogue.</title>
+<style>
+  :root {
+    --red: #d33639;
+    --red-dark: #b82b2f;
+    --ink: #202124;
+    --muted: #62666b;
+    --paper: #ffffff;
+    --soft: #f6f6f4;
+    --line: #dedfdd;
+
+    --page-x: 19mm;
+    --page-top: 17mm;
+    --page-bottom: 15mm;
+
+    --body-size: 10.2pt;
+    --body-leading: 1.46;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #e9e9e7;
+    color: var(--ink);
+    font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif;
+    font-size: var(--body-size);
+    line-height: var(--body-leading);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    padding: 18px 0;
+  }
+
+
+  /* ==================================================
+     PAGE
+  ================================================== */
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 18px;
+    padding: var(--page-top) var(--page-x) var(--page-bottom);
+
+    position: relative;
+    overflow: hidden;
+
+    background: var(--paper);
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: none;
+  }
+
+
+  /* ==================================================
+     BRAND
+  ================================================== */
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 9mm;
+  }
+
+  .brand img {
+    width: 23mm;
+    height: 23mm;
+    object-fit: contain;
+  }
+
+  .brand-text {
+    line-height: 1.08;
+  }
+
+  .brand-name {
+    font-size: 16pt;
+    font-weight: 750;
+    letter-spacing: -.035em;
+  }
+
+  .brand-sub {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 8.8pt;
+    letter-spacing: .005em;
+  }
+
+
+  /* Small brand used on case pages */
+
+  .brand-small {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 6.5mm;
+  }
+
+  .brand-small img {
+    width: 9mm;
+    height: 9mm;
+    object-fit: contain;
+  }
+
+  .brand-small .brand-name {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: -.025em;
+  }
+
+  .brand-small .brand-sub {
+    margin-top: 1px;
+    font-size: 6.4pt;
+  }
+
+
+  /* ==================================================
+     GENERAL TYPOGRAPHY
+  ================================================== */
+
+  h1,
+  h2,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 28pt;
+    line-height: .99;
+    letter-spacing: -.055em;
+    font-weight: 750;
+    margin-bottom: 5.5mm;
+  }
+
+  h2 {
+    font-size: 19pt;
+    line-height: 1.04;
+    letter-spacing: -.045em;
+    font-weight: 750;
+    margin-bottom: 3mm;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  p,
+  .highlight,
+  .case-subtitle {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1,
+  h2,
+  .case-kicker,
+  .case-subtitle,
+  .highlight {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+
+  /* ==================================================
+     INTRO PAGE
+  ================================================== */
+
+  .lead {
+    max-width: 162mm;
+    margin-bottom: 7mm;
+
+    font-size: 13.4pt;
+    line-height: 1.42;
+    letter-spacing: normal;
+  }
+
+  .intro-rule {
+    width: 28mm;
+    height: 3px;
+
+    background: var(--red);
+
+    margin: 4.5mm 0 7mm;
+  }
+
+  .intro-copy {
+    max-width: 166mm;
+
+    color: #3d4145;
+
+    font-size: 10.9pt;
+    line-height: 1.48;
+  }
+
+  .intro-copy p {
+    margin-bottom: 4.5mm;
+  }
+
+  .intro-copy h2 {
+    margin-top: 6mm;
+    margin-bottom: 2.5mm;
+  }
+
+  .intro-copy h2:first-child {
+    margin-top: 0;
+  }
+
+  /* ==================================================
+     CASES
+  ================================================== */
+
+  .cases {
+    font-size: var(--body-size);
+    line-height: var(--body-leading);
+  }
+
+  .case-half {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 123mm;
+
+    margin-bottom: 5mm;
+  }
+
+  .case-kicker {
+    color: var(--red);
+
+    text-transform: uppercase;
+
+    font-size: 12.5pt;
+    line-height: 1.12;
+    font-weight: 750;
+
+    letter-spacing: -.015em;
+
+    margin: 0 0 2.2mm;
+  }
+
+  .case-subtitle {
+    max-width: 166mm;
+
+    font-size: 11.4pt;
+    line-height: 1.32;
+    font-weight: 600;
+
+    letter-spacing: normal;
+
+    margin-bottom: 2.2mm;
+  }
+
+  .cases p {
+    margin: 1.8mm 0;
+  }
+
+
+  /* ==================================================
+     HIGHLIGHT
+  ================================================== */
+
+  .highlight {
+    margin: 2.5mm 0;
+
+    padding: 3.2mm 4.5mm;
+
+    border-left: 3px solid var(--red);
+
+    background: var(--soft);
+
+    font-size: 10.1pt;
+    line-height: 1.45;
+  }
+
+  .highlight strong {
+    color: var(--red-dark);
+  }
+
+  /* ==================================================
+     METRICS
+  ================================================== */
+
+  .metrics {
+    margin-top: 0;
+    padding: 1.5mm 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4mm;
+  }
+
+  .metric {
+    min-width: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 1.8mm 0 1.6mm;
+  }
+
+  .metric b {
+    display: block;
+    color: var(--red);
+    font-size: 13pt;
+    line-height: .95;
+    margin-bottom: 1.5mm;
+    font-weight: 800;
+  }
+
+  .metric span {
+    display: block;
+    color: var(--muted);
+    font-size: 7.6pt;
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+
+  /* ==================================================
+     CASE NOTE + LINK
+  ================================================== */
+
+  .case-note {
+    margin-top: 1mm;
+    margin-bottom: 1.5mm;
+
+    color: var(--muted);
+
+    font-size: 7.5pt;
+    line-height: 1.35;
+  }
+
+  a {
+    color: var(--red-dark);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a.link {
+    display: block;
+
+    margin-top: 2mm;
+
+    font-size: 7.6pt;
+    font-weight: 600;
+  }
+
+
+  /* ==================================================
+     FOOTER
+  ================================================== */
+
+  .footer {
+    margin-top: auto;
+
+    padding: 2.5mm 0 0;
+
+    border-top: 1px solid #e5e5e3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--muted);
+
+    font-size: 7pt;
+    line-height: 1.3;
+  }
+
+  .footer strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .footer small {
+    font-size: inherit;
+  }
+
+
+  /* =========================
+     OFFER — dernière page
+     ========================= */
+
+  .offer {
+    max-width: none;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .offer h1 {
+    margin-bottom: 0.15em;
+  }
+
+  .offer-price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0.15em 0 0.4em;
+    color: var(--red);
+  }
+
+  .offer-price span {
+    font-size: 0.45em;
+    font-weight: 600;
+    color: inherit;
+  }
+
+  .offer-price sup {
+    font-size: 0.4em;
+    vertical-align: super;
+    margin-left: 0.08em;
+  }
+
+  .offer .case-subtitle {
+    margin-top: 2mm;
+    margin-bottom: 6mm;
+  }
+
+  .offer .intro-rule {
+    margin-top: 5mm;
+    margin-bottom: 8mm;
+  }
+
+  .offer .highlight {
+    margin: 2mm 0 8mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+  }
+
+  .offer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8mm;
+    margin: 5mm 0 10mm;
+    padding: 6mm 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .offer-columns > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
+  }
+
+  .offer-columns strong {
+    font-size: 11pt;
+    line-height: 1.2;
+  }
+
+  .offer-columns span {
+    font-size: 9.5pt;
+    line-height: 1.45;
+  }
+
+  .offer-cta {
+    margin-top: 4mm;
+    padding: 7mm 0;
+    border-top: 2px solid var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .offer-cta strong {
+    font-size: 13pt;
+    line-height: 1.25;
+  }
+
+  .offer-cta span {
+    font-size: 10.5pt;
+    font-weight: 600;
+  }
+
+  .offer-notes {
+    margin-top: auto;
+    margin-bottom: 0.8rem;
+    padding-top: 4mm;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  /* ==================================================
+     PRINT
+  ================================================== */
+
+  @media print {
+    html,
+    body {
+      background: #fff;
+    }
+
+    body {
+      padding: 0;
+    }
+
+    .page {
+      margin: 0;
+
+      box-shadow: none;
+
+      break-after: page;
+      page-break-after: always;
+    }
+
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ==================================================
+     PAGE 1 — POSITIONNEMENT + PARTENARIAT
+================================================== -->
+
+<section class="page">
+
+  <div class="brand">
+    <img src="https://enzosandre.fr/resources/images/logo.png" alt="Atelier Logiciel Sandré">
+    <div class="brand-text">
+      <div class="brand-name">Atelier Logiciel Sandré</div>
+      <div class="brand-sub">Ingénierie logicielle · Architecture · Qualité · Tests</div>
+    </div>
+  </div>
+
+  <h1>
+    Des formations nourries<br/>
+    <span style="color:var(--red)">par la recherche et le terrain.</span>
+  </h1>
+
+  <div class="intro-rule"></div>
+
+  <div class="lead">
+    Depuis <strong>12 ans</strong>, j'applique les enseignements de la recherche
+    à des problèmes réels de développement logiciel, jusqu'à remettre des systèmes
+    legacy sur les rails. Je transmets aujourd'hui cette expérience sous forme de
+    <strong>formations spécialisées</strong>.
+  </div>
+
+  <div class="intro-copy">
+
+    <h2>Deux façons de travailler ensemble.</h2>
+
+    <div class="highlight">
+      <strong>Une formation existe déjà.</strong>
+      Je peux la dispenser telle quelle ou l'adapter à votre public,
+      votre durée, votre environnement technique et vos objectifs.
+    </div>
+
+    <div class="highlight">
+      <strong>Vous avez un besoin spécifique.</strong>
+      Je conçois la formation de zéro : programme, progression,
+      supports, exercices et évaluation.
+    </div>
+
+    <p>
+      Les contenus sont expérimentés, améliorés à partir des retours
+      des participants et <strong>réactualisés chaque année</strong>.
+      Les formations conçues dans l'enseignement supérieur peuvent
+      également être transposées au contexte professionnel.
+    </p>
+
+  </div>
+
+  <div class="metrics">
+
+    <div class="metric">
+      <b>6 ans</b>
+      <span>de formation, dont 4 ans auprès de pros</span>
+    </div>
+
+    <div class="metric">
+      <b>70 %</b>
+      <span>de mon activité sur de vrais projets</span>
+    </div>
+
+    <div class="metric">
+      <b>4,2 / 5</b>
+      <span>de moyenne en formation pro Qualiopi</span>
+    </div>
+
+  </div>
+
+  <div class="offer-cta">
+
+    <strong>
+      Une expertise à ajouter<br/>
+      à votre catalogue ?
+    </strong>
+
+    <span>
+      Parlons-en →<br/>
+      <a href="mailto:atelier@enzosandre.fr?subject=Formations%20ing%C3%A9nierie%20logicielle">
+        atelier@enzosandre.fr
+      </a>
+    </span>
+
+  </div>
+
+  <div class="footer">
+    <div>
+      <strong>Atelier Logiciel Sandré</strong><br>
+      <small>Ingénierie logicielle · Architecture · Qualité · Tests</small>
+    </div>
+    <div style="text-align:right">
+      <small>
+        <a href="https://enzosandre.fr">https://enzosandre.fr</a>
+      </small>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ==================================================
+     PAGE 2 — FORMATIONS + RÉFÉRENCES
+================================================== -->
+
+<section class="page">
+
+  <div class="brand-small">
+    <img src="https://enzosandre.fr/resources/images/logo.png" alt="Atelier Logiciel Sandré">
+    <div class="brand-text">
+      <div class="brand-name">Atelier Logiciel Sandré</div>
+      <div class="brand-sub">Ingénierie logicielle · Architecture · Qualité · Tests</div>
+    </div>
+  </div>
+
+  <div class="cases">
+
+    <!-- ARCHITECTURE -->
+    <article class="case-half">
+
+      <h2 class="case-kicker">
+        Architecture logicielle
+      </h2>
+
+      <div class="case-subtitle">
+        Concevoir des logiciels capables d'évoluer.
+      </div>
+
+      <p>
+        Formation conçue pour <strong>Sparks</strong>, puis actualisée chaque année.
+        Couplage, cohésion, modularité, dépendances, responsabilités, architecture
+        hexagonale et Clean Architecture sont abordés à partir de problèmes concrets.
+      </p>
+
+    </article>
+
+
+    <!-- DDD -->
+    <article class="case-half">
+
+      <h2 class="case-kicker">
+        Domain-Driven Design
+      </h2>
+
+      <div class="case-subtitle">
+        Maîtriser la complexité du domaine métier.
+      </div>
+
+      <p>
+        Formation développée pour <strong>Sparks</strong> en français et en anglais.
+        Domaines, sous-domaines, langage ubiquitaire, bounded contexts,
+        agrégats, événements et context mapping.
+      </p>
+
+    </article>
+
+
+    <!-- CLEAN CODE -->
+    <article class="case-half">
+
+      <h2 class="case-kicker">
+        Clean Code & Software Craftsmanship
+      </h2>
+
+      <div class="case-subtitle">
+        Réduire la complexité du code au quotidien.
+      </div>
+
+      <p>
+        Formation dispensée pour <strong>Sparks</strong> autour du nommage,
+        des responsabilités, de la duplication, du couplage, de la cohésion,
+        de SOLID et du refactoring.
+      </p>
+
+    </article>
+
+
+    <!-- LEGACY -->
+    <article class="case-half">
+
+      <h2 class="case-kicker">
+        Legacy Code & Refactoring
+      </h2>
+
+      <div class="case-subtitle">
+        Faire évoluer l'existant sans réécrire par réflexe.
+      </div>
+
+      <p>
+        Formation développée pour <strong>Sparks</strong> autour de la
+        caractérisation, des tests sur legacy, du refactoring et des stratégies
+        de réduction progressive de la complexité.
+      </p>
+
+    </article>
+
+
+    <!-- TDD -->
+    <article class="case-half">
+
+      <h2 class="case-kicker">
+        TDD
+      </h2>
+
+      <div class="case-subtitle">
+        Utiliser les tests comme feedback de conception.
+      </div>
+
+      <p>
+        Formation dispensée pour <strong>CAPTRONIC</strong>.
+        Cycle Red → Green → Refactor, tests unitaires, isolation,
+        design émergent, refactoring et limites du TDD.
+      </p>
+
+    </article>
+
+
+    <!-- TESTS -->
+    <article class="case-half">
+
+      <h2 class="case-kicker">
+        Tests logiciels & intégration continue
+      </h2>
+
+      <div class="case-subtitle">
+        Construire un système de feedback réellement protecteur.
+      </div>
+
+      <p>
+        Contenus expérimentés avec <strong>YNOV</strong> et <strong>EPSI</strong>,
+        puis destinés à être transposés au contexte professionnel :
+        tests unitaires, intégration, automatisation, CI, couverture et mutation testing.
+      </p>
+
+    </article>
+
+  </div>
+
+
+  <div class="highlight" style="margin-top: auto;">
+
+    <strong>Et si votre besoin n'est pas dans cette liste ?</strong>
+
+    Ces formations constituent des contenus déjà éprouvés.
+    Je peux également partir d'un nouveau sujet et construire une formation
+    adaptée à votre public et à votre catalogue.
+
+  </div>
+
+
+  <div class="footer">
+
+    <div>
+      <strong>Atelier Logiciel Sandré</strong><br>
+      <small>Ingénierie logicielle · Architecture · Qualité · Tests</small>
+    </div>
+
+    <div style="text-align:right">
+      <small>
+        <a href="https://enzosandre.fr">https://enzosandre.fr</a>
+      </small>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

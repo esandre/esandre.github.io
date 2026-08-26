@@ -23,7 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/resources/css/style.css" />
+
+    {% if include.style %}
     <link rel="stylesheet" href="/resources/css/{{ include.style }}" />
+    {% endif %}
 
     {% if page.lang == "english" %}
         <link rel="stylesheet" href="/resources/css/english.css" />

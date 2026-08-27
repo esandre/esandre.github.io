@@ -386,7 +386,6 @@
   }
 
   .offer-cta {
-    margin-top: auto;
     padding: 7mm 0 0;
     border-top: 2px solid var(--red);
     display: flex;
@@ -403,10 +402,6 @@
   .offer-cta span {
     font-size: 10.5pt;
     font-weight: 600;
-  }
-
-  .page:first-of-type .footer {
-    margin-top: 0;
   }
 
   .footer strong {
@@ -490,6 +485,56 @@
     font-size: 10.5pt;
     font-weight: 600;
   }
+
+  /* ==================================================
+   PRINT
+================================================== */
+
+  @media print {
+    html,
+    body {
+      background: #fff;
+    }
+
+    body {
+      padding: 0;
+    }
+
+    .page {
+      margin: 0;
+
+      box-shadow: none;
+
+      break-after: page;
+      page-break-after: always;
+    }
+
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+
+  /* ==================================================
+   COMPACT — contenu page 2 uniquement
+================================================== */
+
+  .page:nth-of-type(2) .case-half {
+    margin-bottom: 3mm;
+    margin-top: 4mm;
+  }
+
+  .page:nth-of-type(2) .case-kicker {
+    margin-bottom: 1.8mm;
+  }
+
+  .page:nth-of-type(2) .case-subtitle {
+    margin-bottom: 1.8mm;
+  }
+
+  .page:nth-of-type(2) .cases p {
+    margin: 1.4mm 0;
+  }
 </style>
 </head>
 
@@ -540,9 +585,11 @@
     </div>
 
     <p>
-      J'expérimente d'abord les formations auprès d'étudiants, puis les améliore
-      à partir des retours avant de les proposer aux professionnels.
-      Les contenus sont ensuite <strong>réactualisés chaque année</strong>.
+      J'expérimente d'abord les formations auprès d'étudiants, puis les
+      améliore à partir des retours avant de les proposer aux professionnels.
+      <strong>La pratique est au cœur de ma pédagogie</strong> : les contenus
+      sont conçus pour être mis en œuvre, expérimentés et discutés. Ils sont
+      ensuite <strong>réactualisés chaque année</strong>.
     </p>
   </div>
 
@@ -645,6 +692,11 @@
         une architecture adaptée permet de s'affranchir des solutions préétablies.
       </p>
 
+      <p>
+        <strong style="color:var(--red)">Objectif</strong> ·
+        Savoir concevoir une architecture à partir d'un besoin plutôt que d'un pattern
+      </p>
+
     </article>
 
 
@@ -666,6 +718,11 @@
         quoi laisser de côté et comment itérer pour affiner le modèle.
       </p>
 
+      <p>
+        <strong style="color:var(--red)">Objectif</strong> ·
+        Savoir décider quoi modéliser, quoi laisser de côté et où tracer les frontières.
+      </p>
+
     </article>
 
 
@@ -677,7 +734,7 @@
       </h2>
 
       <div class="case-subtitle">
-        Un code à la mesure de notre esprit.
+        Encapsuler la complexité pour garder l'esprit libre.
       </div>
 
       <p>
@@ -685,6 +742,11 @@
         sur le logiciel. La formation explore comment <strong>encapsuler la complexité</strong>
         pour préserver cette prise, garder le code compréhensible et le rendre capable
         d'évoluer avec le besoin.
+      </p>
+
+      <p>
+        <strong style="color:var(--red)">Objectif</strong> ·
+        Savoir refactorer pour réduire la complexité et retrouver sa vélocité.
       </p>
 
     </article>
@@ -702,11 +764,15 @@
       </div>
 
       <p>
-        Cette formation s'appuie sur ma pratique du legacy et transmet des techniques
+        La formation s'appuie sur ma pratique du legacy et transmet des techniques
         souvent peu enseignées, parfois redécouvertes : slicing, tests de caractérisation,
-        Strangler Fig pattern… Elle développe surtout un <strong>flair du legacy</strong> :
-        savoir où intervenir, comment réduire la complexité progressivement et,
-        surtout, quand il vaut mieux ne pas toucher.
+        Strangler Fig pattern… Elle développe un <strong>flair du legacy</strong> :
+        savoir où intervenir, comment réduire la complexité et quand il vaut mieux ne pas toucher.
+      </p>
+
+      <p>
+        <strong style="color:var(--red)">Objectif</strong> · Savoir désendetter
+        progressivement sur un legacy sans casser ce qui fonctionne.
       </p>
 
     </article>
@@ -716,7 +782,7 @@
     <article class="case-half">
 
       <h2 class="case-kicker">
-        Recueil du besoin et tests logiciels
+        Tests logiciels : du besoin au code — TDD & BDD
       </h2>
 
       <div class="case-subtitle">
@@ -730,21 +796,14 @@
         jusqu'à retrouver le plaisir de construire juste ce qu'il faut.
       </p>
 
+      <p>
+        <strong style="color:var(--red)">Objectif</strong> ·
+        Savoir utiliser TDD et BDD pour faire émerger et vérifier le comportement attendu.
+      </p>
+
     </article>
 
   </div>
-
-
-  <div class="highlight" style="margin-top: auto;">
-
-    <strong>Et si votre besoin n'est pas dans cette liste ?</strong>
-
-    Ces formations constituent des contenus déjà éprouvés.
-    Je peux également partir d'un nouveau sujet et construire une formation
-    adaptée à votre public et à votre catalogue.
-
-  </div>
-
 
   <div class="footer">
 

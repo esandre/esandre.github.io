@@ -228,7 +228,11 @@
 
   .intro-copy h2 {
     margin-top: 6mm;
-    margin-bottom: 2.5mm;
+    margin-bottom: 4.5mm;
+  }
+
+  .intro-copy .highlight + .highlight {
+    margin-top: 4.5mm;
   }
 
   .intro-copy h2:first-child {
@@ -313,6 +317,7 @@
 
   .metrics {
     margin-top: 0;
+    margin-bottom: 5mm;
     padding: 1.5mm 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -378,6 +383,30 @@
 
     font-size: 7pt;
     line-height: 1.3;
+  }
+
+  .offer-cta {
+    margin-top: auto;
+    padding: 7mm 0 0;
+    border-top: 2px solid var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .offer-cta strong {
+    font-size: 13pt;
+    line-height: 1.25;
+  }
+
+  .offer-cta span {
+    font-size: 10.5pt;
+    font-weight: 600;
+  }
+
+  .page:first-of-type .footer {
+    margin-top: 0;
   }
 
   .footer strong {
@@ -496,7 +525,7 @@
 
   <div class="intro-copy">
 
-    <h2>Deux façons de travailler ensemble.</h2>
+    <h2>Des contenus prêts à intégrer à votre catalogue.</h2>
 
     <div class="highlight">
       <strong>Une formation existe déjà.</strong>
@@ -505,16 +534,15 @@
     </div>
 
     <div class="highlight">
-      <strong>Vous avez un besoin spécifique.</strong>
-      Je conçois la formation de zéro : programme, progression,
+      <strong>Un sujet manque à votre catalogue.</strong>
+      Je peux concevoir la formation de zéro : programme, progression,
       supports, exercices et évaluation.
     </div>
 
     <p>
-      Les contenus sont expérimentés, améliorés à partir des retours
-      des participants et <strong>réactualisés chaque année</strong>.
-      Les formations conçues dans l'enseignement supérieur peuvent
-      également être transposées au contexte professionnel.
+      J'expérimente d'abord les formations auprès d'étudiants, puis les améliore
+      à partir des retours avant de les proposer aux professionnels.
+      Les contenus sont ensuite <strong>réactualisés chaque année</strong>.
     </p>
   </div>
 
@@ -527,7 +555,7 @@
 
     <div class="metric">
       <b>70 %</b>
-      <span>de mon activité sur de vrais projets</span>
+      <span>de mon activité consacrée à la pratique</span>
     </div>
 
     <div class="metric">

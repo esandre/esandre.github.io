@@ -344,19 +344,10 @@
   }
 
 
+
   /* ==================================================
      CASE NOTE + LINK
   ================================================== */
-
-  .case-note {
-    margin-top: 1mm;
-    margin-bottom: 1.5mm;
-
-    color: var(--muted);
-
-    font-size: 7.5pt;
-    line-height: 1.35;
-  }
 
   a {
     color: var(--red-dark);
@@ -365,15 +356,6 @@
 
   a:hover {
     text-decoration: underline;
-  }
-
-  a.link {
-    display: block;
-
-    margin-top: 2mm;
-
-    font-size: 7.6pt;
-    font-weight: 600;
   }
 
 
@@ -412,25 +394,8 @@
      OFFER — dernière page
      ========================= */
 
-  .offer {
-    max-width: none;
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
   .offer h1 {
     margin-bottom: 0.15em;
-  }
-
-  .offer-price {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 1;
-    margin: 0.15em 0 0.4em;
-    color: var(--red);
   }
 
   .offer-price span {
@@ -459,16 +424,6 @@
     margin: 2mm 0 8mm;
     padding-top: 5mm;
     padding-bottom: 5mm;
-  }
-
-  .offer-columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8mm;
-    margin: 5mm 0 10mm;
-    padding: 6mm 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
   }
 
   .offer-columns > div {
@@ -505,45 +460,6 @@
   .offer-cta span {
     font-size: 10.5pt;
     font-weight: 600;
-  }
-
-  .offer-notes {
-    margin-top: auto;
-    margin-bottom: 0.8rem;
-    padding-top: 4mm;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.72rem;
-    line-height: 1.45;
-  }
-
-  /* ==================================================
-     PRINT
-  ================================================== */
-
-  @media print {
-    html,
-    body {
-      background: #fff;
-    }
-
-    body {
-      padding: 0;
-    }
-
-    .page {
-      margin: 0;
-
-      box-shadow: none;
-
-      break-after: page;
-      page-break-after: always;
-    }
-
-    .page:last-child {
-      break-after: auto;
-      page-break-after: auto;
-    }
   }
 </style>
 </head>
@@ -600,7 +516,6 @@
       Les formations conçues dans l'enseignement supérieur peuvent
       également être transposées au contexte professionnel.
     </p>
-
   </div>
 
   <div class="metrics">
@@ -621,6 +536,19 @@
     </div>
 
   </div>
+
+  <p>
+    <small>
+      <strong>Format</strong> · 2 à 3 jours · supports prêts à l'emploi ·
+      pour des profils techniques · formations intra ou inter jusqu'à 10 développeurs
+    </small>
+  </p>
+
+  <p>
+    <small>
+      <strong>Références</strong> · SPARKS · CAPTRONIC · YNOV · EPSI
+    </small>
+  </p>
 
   <div class="offer-cta">
 
@@ -654,7 +582,7 @@
 
 
 <!-- ==================================================
-     PAGE 2 — FORMATIONS + RÉFÉRENCES
+     PAGE 2 — FORMATIONS
 ================================================== -->
 
 <section class="page">
@@ -667,6 +595,8 @@
     </div>
   </div>
 
+  <h2>Des formations déjà prêtes à intégrer</h2>
+
   <div class="cases">
 
     <!-- ARCHITECTURE -->
@@ -677,13 +607,14 @@
       </h2>
 
       <div class="case-subtitle">
-        Concevoir des logiciels capables d'évoluer.
+        Microservices, hexagonale, Clean Architecture : et si on partait du besoin ?
       </div>
 
       <p>
-        Formation conçue pour <strong>Sparks</strong>, puis actualisée chaque année.
-        Couplage, cohésion, modularité, dépendances, responsabilités, architecture
-        hexagonale et Clean Architecture sont abordés à partir de problèmes concrets.
+        La formation s'appuie sur les écrits originaux des théoriciens de
+        l'architecture logicielle et revient aux fondements de la discipline.
+        <strong>Partir du besoin</strong>, analyser les exigences et construire
+        une architecture adaptée permet de s'affranchir des solutions préétablies.
       </p>
 
     </article>
@@ -697,13 +628,14 @@
       </h2>
 
       <div class="case-subtitle">
-        Maîtriser la complexité du domaine métier.
+        Modéliser le métier sans laisser la technique décider à sa place.
       </div>
 
       <p>
-        Formation développée pour <strong>Sparks</strong> en français et en anglais.
-        Domaines, sous-domaines, langage ubiquitaire, bounded contexts,
-        agrégats, événements et context mapping.
+        La formation s'appuie sur la philosophie de la connaissance et la psychologie cognitive
+        pour apprendre à <strong>construire une représentation utile d'un domaine complexe</strong>.
+        Les concepts du DDD deviennent alors des outils concrets pour décider quoi modéliser,
+        quoi laisser de côté et comment itérer pour affiner le modèle.
       </p>
 
     </article>
@@ -717,13 +649,14 @@
       </h2>
 
       <div class="case-subtitle">
-        Réduire la complexité du code au quotidien.
+        Un code à la mesure de notre esprit.
       </div>
 
       <p>
-        Formation dispensée pour <strong>Sparks</strong> autour du nommage,
-        des responsabilités, de la duplication, du couplage, de la cohésion,
-        de SOLID et du refactoring.
+        Le code est une prothèse que notre cerveau se construit pour garder prise
+        sur le logiciel. La formation explore comment <strong>encapsuler la complexité</strong>
+        pour préserver cette prise, garder le code compréhensible et le rendre capable
+        d'évoluer avec le besoin.
       </p>
 
     </article>
@@ -737,53 +670,36 @@
       </h2>
 
       <div class="case-subtitle">
-        Faire évoluer l'existant sans réécrire par réflexe.
+        Savoir quoi changer — et quoi laisser tranquille.
       </div>
 
       <p>
-        Formation développée pour <strong>Sparks</strong> autour de la
-        caractérisation, des tests sur legacy, du refactoring et des stratégies
-        de réduction progressive de la complexité.
+        Cette formation s'appuie sur ma pratique du legacy et transmet des techniques
+        souvent peu enseignées, parfois redécouvertes : slicing, tests de caractérisation,
+        Strangler Fig pattern… Elle développe surtout un <strong>flair du legacy</strong> :
+        savoir où intervenir, comment réduire la complexité progressivement et,
+        surtout, quand il vaut mieux ne pas toucher.
       </p>
 
     </article>
 
 
-    <!-- TDD -->
+    <!-- TESTS & TDD -->
     <article class="case-half">
 
       <h2 class="case-kicker">
-        TDD
+        Recueil du besoin et tests logiciels
       </h2>
 
       <div class="case-subtitle">
-        Utiliser les tests comme feedback de conception.
+        Désapprendre les tests pour retrouver leur utilité.
       </div>
 
       <p>
-        Formation dispensée pour <strong>CAPTRONIC</strong>.
-        Cycle Red → Green → Refactor, tests unitaires, isolation,
-        design émergent, refactoring et limites du TDD.
-      </p>
-
-    </article>
-
-
-    <!-- TESTS -->
-    <article class="case-half">
-
-      <h2 class="case-kicker">
-        Tests logiciels & intégration continue
-      </h2>
-
-      <div class="case-subtitle">
-        Construire un système de feedback réellement protecteur.
-      </div>
-
-      <p>
-        Contenus expérimentés avec <strong>YNOV</strong> et <strong>EPSI</strong>,
-        puis destinés à être transposés au contexte professionnel :
-        tests unitaires, intégration, automatisation, CI, couverture et mutation testing.
+        Et si le but n'était pas d'écrire toujours plus de tests ? La formation
+        apprend à utiliser le test comme <strong>outil de dialogue</strong>,
+        de conception et de recueil du besoin avec les parties prenantes,
+        jusqu'à retrouver le plaisir de construire juste ce qu'il faut.
       </p>
 
     </article>

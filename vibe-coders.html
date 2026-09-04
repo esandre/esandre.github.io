@@ -1,405 +1,624 @@
 ---
 layout: none
 title: "Vibe Coders & Artisanat Logiciel | Atelier Logiciel Sandré"
-description: "Du Vibe Coding au logiciel de production : auditez, sécurisez et pérennisez vos applications générées par IA avec l'Atelier Logiciel Sandré."
+description: >-
+Du Vibe Coding au logiciel de production : auditez, sécurisez et pérennisez
+vos applications générées par IA avec l'Atelier Logiciel Sandré.
 ---
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Coders & Artisanat Logiciel | Atelier Logiciel Sandré</title>
-    <meta name="description" content="Du Vibe Coding au logiciel de production. Auditez, consolidez et pérennisez vos applications générées avec l'IA grâce à l'expertise d'un artisan logiciel.">
-    <meta name="keywords" content="vibe coding, ia, développement logiciel, artisanat logiciel, refactoring, audit code ia, cursor, claude, chatgpt, llm, tdd, architecture">
-    <meta name="author" content="Enzo Sandré - Atelier Logiciel Sandré">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Vibe Copilot Engineering | Atelier Logiciel Sandré</title>
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Vibe Coders & Artisanat Logiciel | Atelier Logiciel Sandré">
-    <meta property="og:description" content="Transformez vos prototypes et applications conçus avec l'IA en logiciels pérennes, maintenables et prêts pour la production.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://enzosandre.fr/vibe-coders.html">
-    <meta property="og:image" content="https://enzosandre.fr/resources/images/logo.png">
+    <meta name="description"
+          content="Vous avez développé votre application avec l'IA ? Je vous aide à la sécuriser, la refactorer et la faire évoluer sans tout reconstruire.">
+    <meta content="vibe coding, ia, développement logiciel, artisanat logiciel,
+          refactoring, audit code ia, cursor, claude, chatgpt, llm, tdd, architecture"
+          name="keywords">
+    <meta content="Enzo Sandré - Atelier Logiciel Sandré" name="author">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <meta content="Vibe Coders & Artisanat Logiciel | Atelier Logiciel Sandré" property="og:title">
+    <meta content="Transformez vos prototypes et applications conçus avec l'IA
+          en logiciels pérennes, maintenables et prêts pour la production."
+          property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://enzosandre.fr/vibe-coders.html" property="og:url">
+    <meta content="https://enzosandre.fr/resources/images/logo.png" property="og:image">
 
-    <!-- Dedicated Stylesheet (No Main CSS dependency) -->
-    <link rel="stylesheet" href="/resources/css/vibe-coders.css">
-    <link rel="icon" type="image/png" href="/resources/images/logo.png">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+          rel="stylesheet">
 
-    <!-- Google Analytics -->
+    <link href="/resources/css/vibe-coders.css" rel="stylesheet">
+    <link href="/resources/images/logo.png" rel="icon" type="image/png">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBGD63ZRND"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YBGD63ZRND');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-YBGD63ZRND');
     </script>
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header class="vc-header">
-        <div class="vc-container vc-nav">
-            <a href="/" class="vc-brand">
-                <img src="/resources/images/logo.png" alt="Logo Atelier Logiciel Sandré">
-                <div class="vc-brand-text">
-                    <span>Atelier Logiciel Sandré</span>
-                    <span class="vc-brand-sub">Vibe Copilot Engineering</span>
-                </div>
+<header class="vc-header">
+    <div class="vc-container vc-nav">
+        <a class="vc-brand" href="/">
+            <img alt="Logo Atelier Logiciel Sandré" src="/resources/images/logo.png">
+            <div class="vc-brand-text">
+                <span class="vc-brand-title">Atelier Logiciel Sandré</span>
+                <span class="vc-brand-sub">Vibe Copilot Engineering</span>
+            </div>
+        </a>
+
+        <ul class="vc-nav-links" id="vc-nav-links">
+            <li><a href="#probleme">Problème</a></li>
+            <li><a href="#approche">Approche</a></li>
+            <li><a href="#pourquoi-moi">Expérience</a></li>
+            <li><a href="#accompagnement">Offre</a></li>
+            <li><a href="/" style="opacity: 0.8;">← Site principal</a></li>
+            <li class="vc-nav-mobile-cta">
+                <a class="vc-btn vc-btn-primary vc-btn-sm"
+                   href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" rel="noopener"
+                   target="_blank">
+                    Appel gratuit (30&nbsp;min)
+                </a>
+            </li>
+        </ul>
+
+        <div class="vc-nav-actions">
+            <a class="vc-btn vc-btn-primary vc-btn-sm vc-header-cta"
+               href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" rel="noopener"
+               target="_blank">
+                Appel gratuit (30&nbsp;min)
             </a>
 
-            <ul class="vc-nav-links">
-                <li><a href="#accompagnement">Offre</a></li>
-                <li><a href="#defis">Enjeux</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="/" style="opacity: 0.8;">← Site principal</a></li>
-            </ul>
-
-            <a href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" target="_blank" rel="noopener" class="vc-btn vc-btn-primary vc-btn-sm">Appel 30min offert</a>
+            <button class="vc-nav-toggle" aria-label="Menu de navigation" aria-expanded="false" aria-controls="vc-nav-links">
+                <span class="vc-nav-toggle-bar"></span>
+                <span class="vc-nav-toggle-bar"></span>
+                <span class="vc-nav-toggle-bar"></span>
+            </button>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Main Content -->
-    <main>
+<main>
+    <section class="vc-hero">
+        <div class="vc-container">
+            <div class="vc-hero-content">
+                <h1> Du <span class="gradient-text">Vibe Coding</span> au Logiciel de
+                Production </h1>
 
-        <!-- Hero Section -->
-        <section class="vc-hero">
-            <div class="vc-container">
-                <div class="vc-hero-content">
-                    <h1>
-                        Du <span class="gradient-text">Vibe Coding</span> au Logiciel de Production
-                    </h1>
-
-                    <!-- 1. Accroche -->
-                    <p class="lead">
-                        Le vibe coding permet de rapidement prototyper, mais sans guidelines clairs le produit sera vite bloqué dans son évolution au moment le plus critique : lorsqu'il faudra pivoter pour s'adapter aux premiers clients.
-                    </p>
-
-                    <!-- 2. Image / Mème en premier -->
-                    <div class="vc-meme-wrapper">
-                        <figure class="vc-meme-figure">
-                            <img src="/resources/images/its-dangerous-to-go-alone.jpg" 
-                                 alt="It's Dangerous to Go Alone! Take This." 
-                                 class="vc-meme-img"
-                                 loading="eager">
-                            <figcaption class="vc-meme-caption">
-                                Garder les logiciels prêts à accepter le changement est un métier : celui de développeur.
-                            </figcaption>
-                        </figure>
-                    </div>
+                <p class="lead">
+                    Le vibe coding permet de développer rapidement un prototype. Mais lorsqu'il rencontre son public,
+                    les enjeux changent&nbsp;: il faut pouvoir faire évoluer le logiciel, préserver son comportement
+                    et maîtriser sa complexité. C'est alors un vrai produit sur lequel les utilisateurs ont des attentes.
+                </p>
+                <div class="vc-meme-wrapper">
+                    <figure class="vc-meme-figure"><img alt="It's Dangerous to Go Alone! Take This." class="vc-meme-img"
+                                                        loading="eager"
+                                                        src="/resources/images/its-dangerous-to-go-alone.jpg">
+                        <figcaption class="vc-meme-caption"> Garder les logiciels prêts à accepter le changement est un
+                            métier&nbsp;: <strong>celui de développeur</strong>.
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Progression / Accompagnement Section (3, 4, 5) -->
-        <section id="accompagnement" class="vc-section vc-section-alt">
-            <div class="vc-container">
-                <div class="vc-section-header">
-                    <h2>Notre Accompagnement : <span class="gradient-text">3 Étapes Clés</span></h2>
-                    <p>
-                        Une progression claire et pragmatique pour accompagner chaque palier de maturité de votre application.
-                    </p>
+    <section class="vc-section" id="probleme">
+        <div class="vc-container">
+            <div class="vc-section-header"><span class="vc-eyebrow">Le point de rupture</span>
+                <h2> Au début, tout va très vite. <span
+                        class="gradient-text">Puis votre logiciel devient trop complexe.</span></h2>
+                <p> Tant que le projet reste simple, l'IA est redoutablement efficace. Mais à partir d'un certain niveau
+                    de complexité, elle ne peut plus improviser indéfiniment sans méthode pour comprendre et faire
+                    évoluer l'ensemble du logiciel. </p></div>
+            <div class="vc-pain-list">
+                <article class="vc-pain-card vc-pain-cascade">
+                    <div class="vc-pain-card-header"><span class="vc-pain-badge danger"> <span
+                            class="vc-pulse-dot"></span> ALERTE 01 · EFFETS DE BORD </span> <span
+                            class="vc-pain-code-ref">ERR_RELAPSE_BUG</span></div>
+                    <div class="vc-pain-body">
+                        <div class="vc-pain-content"><h3> Vous corrigez un problème. <span class="gradient-text">Vous en créez un autre.</span>
+                        </h3>
+                            <p> Ajouter une fonctionnalité casse quelque chose ailleurs.<br/> Vous demandez à l'IA de
+                                corriger le bug.<br/> Elle le corrige… et saccage autre chose. </p>
+                            <p> Vous devez tout vérifier à la main. Le neuf comme l'ancien. <br/> Vous n'avez aucune
+                                confiance dans le travail de l'IA.<br/> La charge devient écrasante et aspire votre
+                                motivation. </p>
+                            <p class="vc-pain-highlight"><strong> Plus le logiciel grandit, plus chaque modification
+                                risque d'avoir des conséquences imprévues. </strong></p></div>
+                        <div class="vc-pain-visual">
+                            <div class="vc-widget-terminal">
+                                <div class="vc-widget-header">
+                                    <div class="vc-widget-dots"><span class="dot red"></span> <span
+                                            class="dot yellow"></span> <span class="dot green"></span></div>
+                                    <span class="vc-widget-title">cascade-debug --live</span> <span
+                                        class="vc-widget-pill danger">0 TEST ACTIF</span></div>
+                                <div class="vc-widget-body">
+                                    <div class="vc-cascade-flow">
+                                        <div class="vc-cascade-node resolved">
+                                            <div class="vc-node-header"><span class="node-badge fix">FIX</span> <span
+                                                    class="node-title">Authentification utilisateur</span> <span
+                                                    class="node-status ok">RÉSOLU ✔</span></div>
+                                        </div>
+                                        <div class="vc-cascade-link"><span class="link-arrow">▼</span> <span
+                                                class="link-label">effet de bord non détecté</span></div>
+                                        <div class="vc-cascade-node broken">
+                                            <div class="vc-node-header"><span class="node-badge fail">BUG #1</span>
+                                                <span class="node-title">Validation du panier d'achat</span> <span
+                                                        class="node-status fail">CASSÉ ✘</span></div>
+                                        </div>
+                                        <div class="vc-cascade-link"><span class="link-arrow">▼</span> <span
+                                                class="link-label">nouveau prompt de correction</span></div>
+                                        <div class="vc-cascade-node critical">
+                                            <div class="vc-node-header"><span class="node-badge critical">BUG #2</span>
+                                                <span class="node-title">Corruption des sessions DB</span> <span
+                                                        class="node-status fail">CRITIQUE 💥</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc-widget-footer danger"><span class="vc-widget-warning-icon">⚠️</span>
+                                    <span> Boucle sans fin&nbsp;: Chaque prompt répare une ligne et en fragilise dix. </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <details class="vc-faq-item">
+                        <summary>
+                            <span class="vc-faq-toggle-label">
+                                <span class="vc-faq-toggle-prefix" aria-hidden="true">[ + ]</span>
+                                <span class="vc-faq-toggle-prefix-open" aria-hidden="true">[ − ]</span>
+                                <span class="vc-faq-toggle-text">Dérouler l'analyse technique</span>
+                                <span class="vc-faq-toggle-text-open">Masquer l'analyse technique</span>
+                            </span>
+                        </summary>
+                        <div class="vc-faq-content"><p> La progression n'est pas sécurisée à chaque étape par des tests,
+                            dont le rôle est de vérifier que la fonctionnalité ajoutée hier fonctionne encore demain,
+                            même après plusieurs couches de modifications. </p>
+                            <p> Ce qui n'est pas testé de manière automatisée doit être vérifié à la main, encore et
+                                encore. Cela crée un <strong>effet boule de neige</strong> où de plus en plus de travail
+                                de validation est nécessaire à chaque itération. </p>
+                            <p> L'IA n'aide pas&nbsp;: elle sait générer des tests unitaires, insuffisants pour assurer
+                                une véritable protection contre les régressions. Elle ne sait pas générer de véritables
+                                tests d'acceptation, capables de <strong>tester ce que vous vendez</strong>. </p>
+                            <p> C'est une maladie encore très fréquente en entreprise, nous n'avons pas attendu l'IA
+                                pour apprendre à la traiter. Il faut résorber la <strong>dette de test</strong> en
+                                transformant vos attentes en véritable <strong>plan de test</strong>. </p>
+                            <p> Sur les projets les plus complexes, c'est plus simple à dire qu'à faire. Le code n'a
+                                simplement pas été prévu pour être testé. Il faut <strong>remanier</strong> le code pour
+                                rendre les tests possibles, sans tests et donc sans garantie de ne rien casser. Cela
+                                requiert une grande expertise, une main sûre et des techniques particulières. </p></div>
+                    </details>
+                </article>
+                <article class="vc-pain-card vc-pain-drift">
+                    <div class="vc-pain-card-header"><span class="vc-pain-badge warning"> <span
+                            class="vc-pulse-dot"></span> ALERTE 02 · DÉRIVE CONTEXTUELLE </span> <span
+                            class="vc-pain-code-ref">ERR_CONTEXT_DRIFT</span></div>
+                    <div class="vc-pain-body">
+                        <div class="vc-pain-content"><h3> Vous demandez une chose. <span class="gradient-text">L'IA comprend autre chose.</span>
+                        </h3>
+                            <p> Au fur et à mesure que le projet grossit, il devient de plus en plus difficile de donner
+                                à l'IA tout le contexte dont elle a besoin. </p>
+                            <p> Elle modifie le comportement à un endroit, mais pas ailleurs.<br/> Elle contredit déjà
+                                la règle que vous aviez fixée 3 minutes plus tôt.<br/> Elle ne comprend ni vos attentes,
+                                ni votre métier. </p>
+                            <p> Elle ne questionne jamais&nbsp;: elle hallucine une solution hyper-complexe, sans jamais
+                                douter. </p>
+                            <p class="vc-pain-highlight"><strong> Vous avez l'impression de vous adresser à un stagiaire
+                                cuistre, amnésique et négligent. Ce n'est pas l'aide que vous espériez. </strong></p>
+                        </div>
+                        <div class="vc-pain-visual">
+                            <div class="vc-widget-terminal">
+                                <div class="vc-widget-header">
+                                    <div class="vc-widget-dots"><span class="dot red"></span> <span
+                                            class="dot yellow"></span> <span class="dot green"></span></div>
+                                    <span class="vc-widget-title">prompt-inspector --diff</span> <span
+                                        class="vc-widget-pill warning">DÉRIVE: 85%</span></div>
+                                <div class="vc-widget-body">
+                                    <div class="vc-diff-comparison">
+                                        <div class="vc-diff-box prompt-box">
+                                            <div class="vc-diff-box-title"><span>💬 VOTRE PROMPT INITIAL</span></div>
+                                            <p class="vc-diff-prompt-text"> « Ajoute simplement un bouton pour filtrer
+                                                la liste par date. » </p></div>
+                                        <div class="vc-diff-box result-box">
+                                            <div class="vc-diff-box-title">
+                                                <span>🤖 MODIFICATIONS APPLIQUÉES PAR L'IA</span></div>
+                                            <ul class="vc-diff-lines">
+                                                <li class="diff-line del">― Refonte arbitraire du routeur global</li>
+                                                <li class="diff-line add">+ Dépendance externe lourde &amp; vulnérable
+                                                </li>
+                                                <li class="diff-line warn">! 18 fichiers modifiés pour 1 simple bouton
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc-widget-footer warning"><span class="vc-widget-warning-icon">⚡</span>
+                                    <span>L'IA empile les rustines sans comprendre votre métier en profondeur.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <details class="vc-faq-item">
+                        <summary>
+                            <span class="vc-faq-toggle-label">
+                                <span class="vc-faq-toggle-prefix" aria-hidden="true">[ + ]</span>
+                                <span class="vc-faq-toggle-prefix-open" aria-hidden="true">[ − ]</span>
+                                <span class="vc-faq-toggle-text">Dérouler l'analyse technique</span>
+                                <span class="vc-faq-toggle-text-open">Masquer l'analyse technique</span>
+                            </span>
+                        </summary>
+                        <div class="vc-faq-content"><p> Comme nous, une IA possède une <strong>mémoire limitée</strong>.
+                            Elle doit y faire rentrer le code, mais aussi vos prompts successifs.<br/> Lorsque tout n'y
+                            rentre plus, l'IA comprime l'information. Elle perd en précision et oublie des éléments.
+                        </p>
+                            <p> Prendre une IA plus performante est une fuite en avant qui ne règle rien et coûte cher.
+                                Il faut découper le projet en unités plus petites, ayant chacune un rôle précis&nbsp;:
+                                l'interface graphique, la base de données, les règles métier, etc. C'est le travail de
+                                <strong>l'architecte logiciel</strong>. </p>
+                            <p> Dans un projet bien architecturé, l'IA sait appliquer les changements au bon endroit,
+                                sans déborder ailleurs. Elle ne charge que le contexte nécessaire à sa tâche, qui rentre
+                                mieux dans sa mémoire. </p>
+                            <p> Ce découpage permet aussi de répartir les rôles&nbsp;: l'IA est excellente pour
+                                certaines tâches, mais déçoit ailleurs. Certaines parties du projet requièrent un
+                                développeur professionnel, tandis que l'IA vous permet de <strong>vibe-coder sereinement
+                                    le reste</strong>. </p></div>
+                    </details>
+                </article>
+                <article class="vc-pain-card vc-pain-velocity">
+                    <div class="vc-pain-card-header"><span class="vc-pain-badge alert"> <span
+                            class="vc-pulse-dot"></span> ALERTE 03 · EFFONDREMENT DE VÉLOCITÉ </span> <span
+                            class="vc-pain-code-ref">METRIC_VELOCITY_CRASH</span></div>
+                    <div class="vc-pain-body">
+                        <div class="vc-pain-content"><h3> La vitesse du début<br/> <span class="gradient-text">a disparu.</span>
+                        </h3>
+                            <p> Au début, une idée devient une fonctionnalité en quelques prompts. Quelques semaines ou
+                                quelques mois plus tard, chaque changement demande de plus en plus de contexte. </p>
+                            <p> Les prompts s'allongent. Les allers-retours se multiplient. Vous devez vérifier ce qui a
+                                été modifié, tester que rien n'a cassé et recommencer. </p>
+                            <p class="vc-pain-highlight"><strong> La génération de code est toujours rapide. Mais faire
+                                évoluer le produit ne l'est plus. </strong></p></div>
+                        <div class="vc-pain-visual">
+                            <div class="vc-widget-terminal">
+                                <div class="vc-widget-header">
+                                    <div class="vc-widget-dots"><span class="dot red"></span> <span
+                                            class="dot yellow"></span> <span class="dot green"></span></div>
+                                    <span class="vc-widget-title">telemetry --velocity-timeline</span> <span
+                                        class="vc-widget-pill alert">STATUT: BLOQUÉ</span></div>
+                                <div class="vc-widget-body">
+                                    <div class="vc-telemetry-meters">
+                                        <div class="vc-meter-row">
+                                            <div class="vc-meter-header"><span class="vc-meter-label">🚀 Jour 1 (Prototype)</span>
+                                                <span class="vc-meter-stat ok"> 100% Vitesse · 1 prompt = 1 feature </span>
+                                            </div>
+                                            <div class="vc-meter-bar">
+                                                <div class="vc-meter-fill ok" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vc-meter-row">
+                                            <div class="vc-meter-header"><span class="vc-meter-label">⏳ Jour 30 (Croissance)</span>
+                                                <span class="vc-meter-stat mid"> 35% Vitesse · 1 prompt = 5 correctifs </span>
+                                            </div>
+                                            <div class="vc-meter-bar">
+                                                <div class="vc-meter-fill mid" style="width: 35%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="vc-meter-row">
+                                            <div class="vc-meter-header"><span class="vc-meter-label">🛑 Jour 90+ (Plafond de verre)</span>
+                                                <span class="vc-meter-stat low"> 5% Vitesse · Prompts de 3 pages &amp; doutes </span>
+                                            </div>
+                                            <div class="vc-meter-bar">
+                                                <div class="vc-meter-fill low" style="width: 8%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc-widget-footer alert"><span class="vc-widget-warning-icon">📉</span> <span> Temps passé à itérer&nbsp;: 10% · Temps passé à vérifier et réparer&nbsp;: 90% </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <details class="vc-faq-item">
+                        <summary>
+                            <span class="vc-faq-toggle-label">
+                                <span class="vc-faq-toggle-prefix" aria-hidden="true">[ + ]</span>
+                                <span class="vc-faq-toggle-prefix-open" aria-hidden="true">[ − ]</span>
+                                <span class="vc-faq-toggle-text">Dérouler l'analyse technique</span>
+                                <span class="vc-faq-toggle-text-open">Masquer l'analyse technique</span>
+                            </span>
+                        </summary>
+                        <div class="vc-faq-content">
+                            <p> Sans instructions précises, l'IA ne nettoie jamais le code&nbsp;:
+                            elle produit de nouveaux embranchements à chaque demande. La complexité du projet monte en
+                            flèche, sans jamais diminuer.<br/>Plus la complexité augmente, plus chaque modification
+                            demande d'effort pour être comprise, vérifiée et sécurisée.<br/> Cela vaut autant pour les
+                            humains que pour les IA. </p>
+
+                            <p> Il faut nettoyer le code, l'organiser, le structurer&nbsp;: c'est le
+                                <strong>refactoring</strong>. Correctement guidée, l'IA peut faire une partie du
+                                travail, mais l'expertise humaine reste nécessaire car ultimement le code est fait pour
+                                que l'humain puisse valider le fonctionnement du logiciel. Une IA n'est pas responsable
+                                devant un client ou un tribunal. <strong>Vous, oui.</strong></p>
+                            <p> Maîtriser la complexité permet de conserver la <strong>capacité à changer
+                                rapidement</strong>. Le marché va bouger, <strong>le produit doit changer avec
+                                lui</strong>, en est-il capable ? </p></div>
+                    </details>
+                </article>
+            </div>
+            <div class="vc-pain-conclusion">
+                <div class="vc-pain-conclusion-header">
+                    <div aria-hidden="true" class="vc-pain-conclusion-mark">!</div>
+                    <span class="vc-eyebrow">Le résultat</span>
                 </div>
-
-                <div class="vc-grid-3">
-                    <!-- 3. Early stage -->
-                    <div class="vc-card">
-                        <div class="vc-card-tier-img-wrapper">
-                            <img src="/resources/images/vibe-coder-evolution-1.png" alt="Évolution Vibe Coder - Niveau 1 Early Stage" class="vc-card-tier-img">
-                        </div>
-                        <div style="margin-bottom: 0.75rem;">
-                            <span class="vc-card-tag" style="color: var(--accent-gold); border-color: var(--accent-gold);">Niveau 1 · Gratuit</span>
-                        </div>
-                        <h3>Early stage</h3>
-                        <p>
-                            Un appel de 30min <strong>gratuit</strong> avec un expert en gestion de la complexité logicielle.
-                        </p>
-                        <p style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.95rem;">
-                            <strong style="color: var(--text-main);">Objectif :</strong> Éviter les erreurs bêtes qui coûteront cher à changer.
-                        </p>
-                        <div class="vc-card-footer">
-                            <a href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" target="_blank" rel="noopener" class="vc-btn vc-btn-primary vc-btn-sm">
-                                Réserver mon appel (30 min)
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 4. Product-Market Fit -->
-                    <div class="vc-card">
-                        <div class="vc-card-tier-img-wrapper">
-                            <img src="/resources/images/vibe-coder-evolution-2.png" alt="Évolution Vibe Coder - Niveau 2 Product-Market Fit" class="vc-card-tier-img">
-                        </div>
-                        <div style="margin-bottom: 0.75rem;">
-                            <span class="vc-card-tag" style="color: var(--primary-bright); border-color: var(--primary-bright);">Niveau 2 · Sur devis</span>
-                        </div>
-                        <h3>Product-Market Fit</h3>
-                        <p>
-                            <strong>Ré-architecturation sur devis.</strong> Ne pas tout refaire, mais définir quels modules restent vibe-codés et quels modules doivent être développés par un spécialiste.
-                        </p>
-                        <p style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.95rem;">
-                            <strong style="color: var(--text-main);">Objectif :</strong> Sécuriser la valeur métier, isoler les briques critiques et pérenniser votre capacité d'itération rapide.
-                        </p>
-                        <div class="vc-card-footer">
-                            <a href="mailto:atelier@enzosandre.fr?subject=Product-Market%20Fit%20-%20R%C3%A9-architecturation" class="vc-btn vc-btn-secondary vc-btn-sm">
-                                Demander un devis
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 5. Scale -->
-                    <div class="vc-card">
-                        <div class="vc-card-tier-img-wrapper">
-                            <img src="/resources/images/vibe-coder-evolution-3.png" alt="Évolution Vibe Coder - Niveau 3 Scale" class="vc-card-tier-img">
-                        </div>
-                        <div style="margin-bottom: 0.75rem;">
-                            <span class="vc-card-tag" style="color: var(--accent-blue); border-color: var(--accent-blue);">Niveau 3 · Conseil</span>
-                        </div>
-                        <h3>Scale</h3>
-                        <p>
-                            Conseils en architecture, aide pour faire passer les entretiens techniques d'une première équipe, éventuellement accompagnement comme fractional-CTO.
-                        </p>
-                        <p style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.95rem;">
-                            <strong style="color: var(--text-main);">Objectif :</strong> Structurer l'organisation technique, instaurer les bonnes pratiques et grandir en toute sérénité.
-                        </p>
-                        <div class="vc-card-footer">
-                            <a href="mailto:atelier@enzosandre.fr?subject=Scale%20-%20Conseil%20Architecture%20%26%20CTO" class="vc-btn vc-btn-secondary vc-btn-sm">
-                                Échanger sur votre scale
-                            </a>
-                        </div>
-                    </div>
+                <div class="vc-pain-conclusion-content">
+                    <h2> Vous n'avez plus peur de coder. <span class="gradient-text">Vous avez peur de changer.</span>
+                    </h2>
+                    <p> Vous savez que votre application fonctionne. </p>
+                    <p> Vous ne savez pas si ça sera toujours le cas après un autre prompt. </p>
+                    <p> Et c'est précisément à ce moment-là que l'avantage initial du vibe coding commence à
+                        disparaître. </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Diagnostic & Pitfalls Section -->
-        <section id="defis" class="vc-section">
-            <div class="vc-container">
-                <div class="vc-section-header">
-                    <h2>Comprendre les <span class="gradient-text">Enjeux Techniques</span></h2>
-                    <p>
-                        Pourquoi le code généré sans ingénierie logicielle finit par gripper le développement.
-                    </p>
-                </div>
-
-                <!-- Code / Terminal Visual -->
-                <div class="vc-terminal" style="margin-bottom: 3rem;">
-                    <div class="vc-terminal-header">
-                        <div class="vc-terminal-dots">
-                            <div class="vc-terminal-dot red"></div>
-                            <div class="vc-terminal-dot yellow"></div>
-                            <div class="vc-terminal-dot green"></div>
-                        </div>
-                        <span class="vc-terminal-title">vibe-check --target=production</span>
-                    </div>
-                    <div class="vc-terminal-body">
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-prompt">❯</span>
-                            <span>diagnostic --check-all</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-comment"># Analyse de la base de code générée par IA...</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-prompt">!</span>
-                            <span style="color: #fca5a5;">Alerte : Code dupliqué, 0 test de régression, modules interdépendants.</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-prompt">❯</span>
-                            <span class="vc-terminal-highlight">als-craft --apply-solid-engineering</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-success">✔ Tests de caractérisation & harnais de sécurité déployés.</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-success">✔ Refactoring modulaire, architecture clarifiée, modules isolés.</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-prompt">❯</span>
-                            <span class="vc-terminal-highlight">status --summary</span>
-                        </div>
-                        <div class="vc-terminal-line">
-                            <span class="vc-terminal-success">★ Résultat : Logiciel évolutif, prêt à accepter le changement et pivoter.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vc-grid-2">
-                    <div class="vc-problem-box">
-                        <h3><span>⚠️</span> Ce qui se passe sans garde-fous</h3>
-                        <ul class="vc-list">
-                            <li class="vc-list-item">
-                                <span class="icon">❌</span>
-                                <span><strong>Dette technique invisible :</strong> Duplications massives, hallucinations architecturales et bibliothèques obsolètes ou superflues.</span>
-                            </li>
-                            <li class="vc-list-item">
-                                <span class="icon">❌</span>
-                                <span><strong>L'effet château de cartes :</strong> Corriger un bug par un nouveau prompt en fait apparaître trois autres ailleurs dans le système.</span>
-                            </li>
-                            <li class="vc-list-item">
-                                <span class="icon">❌</span>
-                                <span><strong>Absence de tests de sécurité :</strong> Vulnérabilités critiques ignorées, fuites de données et gestion d'erreurs inexistante.</span>
-                            </li>
-                            <li class="vc-list-item">
-                                <span class="icon">❌</span>
-                                <span><strong>Blocage au pivot :</strong> Impossibilité d'adapter le logiciel aux demandes des premiers clients sans tout casser.</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="vc-solution-box">
-                        <h3><span>✨</span> L'approche de l'Artisan Logiciel</h3>
-                        <ul class="vc-list">
-                            <li class="vc-list-item">
-                                <span class="icon">✅</span>
-                                <span><strong>Harnais de tests automatisés :</strong> Création d'une suite de tests solide pour sécuriser chaque itération future.</span>
-                            </li>
-                            <li class="vc-list-item">
-                                <span class="icon">✅</span>
-                                <span><strong>Découpage modulaire chirurgical :</strong> Séparer ce qui reste vibe-codé de ce qui nécessite une implémentation sur-mesure.</span>
-                            </li>
-                            <li class="vc-list-item">
-                                <span class="icon">✅</span>
-                                <span><strong>Sécurisation & Mise en production :</strong> Déploiement robuste, configuration d'environnements étanches et monitoring fiable.</span>
-                            </li>
-                            <li class="vc-list-item">
-                                <span class="icon">✅</span>
-                                <span><strong>Transmission du savoir :</strong> Vous comprenez votre produit et conservez le contrôle total sur son évolution.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <section class="vc-section vc-section-alt" id="approche">
+        <div class="vc-container">
+            <div class="vc-section-header"><span class="vc-eyebrow"
+                                                 style="color: var(--primary-bright); border-color: var(--primary-bright); background: rgba(56, 239, 125, 0.12);"> Mon Approche </span>
+                <h2> Le problème n'est pas le Vibe Coding.<br/> <span
+                        class="gradient-text">C'est l'absence de méthode.</span></h2>
+                <p> Vous n'avez pas besoin d'arrêter de coder avec l'IA.<br/> Vous avez besoin que votre logiciel puisse
+                    continuer à en profiter à mesure qu'il grandit. </p></div>
+            <div class="vc-grid-3">
+                <article class="vc-card vc-approach-card">
+                    <div class="vc-approach-header"><span class="vc-pain-badge warning"> <span
+                            class="vc-pulse-dot"></span> PILIER 01 · COHABITATION </span></div>
+                    <h3>Ne pas opposer Vibe Coding &amp; Dev</h3>
+                    <p> L'IA excelle pour prototyper rapidement, l'ingénierie logicielle pour garantir la
+                        robustesse. </p>
+                    <p class="vc-approach-highlight"><strong>Vibe-coder là où c'est pertinent</strong> : vous gardez l'IA sur les tâches
+                        où elle est efficace, pendant que je consolide les briques qui demandent davantage de maîtrise. </p></article>
+                <article class="vc-card vc-approach-card">
+                    <div class="vc-approach-header"><span class="vc-pain-badge"
+                                                          style="color: #93c5fd; background: rgba(59, 130, 246, 0.2); border-color: var(--accent-blue);"> <span
+                            class="vc-pulse-dot"></span> PILIER 02 · ANTICIPATION </span></div>
+                    <h3>Prévenir plutôt que guérir</h3>
+                    <p> Attendre le mur technique coûte cher en refontes. La maintenabilité s'anticipe à chaque étape de
+                        croissance. </p>
+                    <p class="vc-approach-highlight"><strong>Faciliter la reprise&nbsp;:</strong> Je pose les bonnes
+                        pratiques (modularité, découpage du projet, documentation) pour garder un code propre et facilement
+                        transmissible. </p></article>
+                <article class="vc-card vc-approach-card">
+                    <div class="vc-approach-header"><span class="vc-pain-badge"
+                                                          style="color: #86efac; background: rgba(34, 197, 94, 0.2); border-color: var(--primary-bright);"> <span
+                            class="vc-pulse-dot"></span> PILIER 03 · PRAGMATISME </span></div>
+                    <h3>Ne pas tout recoder, cibler l'essentiel</h3>
+                    <p> Inutile de tout jeter. Votre prototype a de la valeur. Je renforce progressivement ce qui
+                        devient critique à mesure que votre produit grandit. </p>
+                    <p class="vc-approach-highlight"><strong>Intervention ciblée&nbsp;:</strong> Je sécurise les
+                        flux critiques avec des tests et ne refactorise que les briques sensibles (sécurité,
+                        robustesse). </p></article>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <section class="vc-section vc-proof" id="pourquoi-moi">
+        <div class="vc-container">
+            <div class="vc-proof-content">
+                <span class="vc-eyebrow">Pourquoi moi&nbsp;?</span>
 
+                <h2>
+                    12 ans à travailler sur des logiciels
+                    <span class="gradient-text">difficiles à faire évoluer.</span>
+                </h2>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="vc-section">
-            <div class="vc-container">
-                <div class="vc-section-header">
-                    <h2>Foire aux <span class="gradient-text">Questions</span></h2>
-                    <p>Tout ce que vous devez savoir avant de démarrer.</p>
-                </div>
+                <p>
+                    Mon métier consiste à intervenir quand un logiciel est devenu hors de contrôle.
+                </p>
 
-                <div class="vc-faq-list">
-                    <details class="vc-faq-item">
-                        <summary>Qu'est-ce que le « Vibe Coding » ?</summary>
-                        <div class="vc-faq-content">
-                            <p>
-                                Le terme désigne la pratique consistant à déléguer l'écriture de code à des modèles d'intelligence artificielle (LLMs comme Claude, ChatGPT, Cursor, GitHub Copilot) en décrivant ce que l'on veut en langage naturel, sans nécessairement inspecter chaque ligne de syntaxe. C'est idéal pour prototyper, mais risqué lorsqu'il s'agit de passer en production sans garde-fous d'ingénierie.
-                            </p>
-                        </div>
-                    </details>
+                <p>
+                    Applications sans tests, code abscons, fonctionnalités qui se chevauchent,
+                    architecture à reprendre&nbsp;: une bonne partie de mon activité consiste à
+                    reprendre l'existant, le sécuriser et le simplifier <strong>sans tout casser ni arrêter la production</strong>.
+                </p>
 
-                    <details class="vc-faq-item">
-                        <summary>Mon projet a été entièrement généré par IA, est-il récupérable ?</summary>
-                        <div class="vc-faq-content">
-                            <p>
-                                Absolument. Dans la très grande majorité des cas, il n'est pas nécessaire de tout jeter ni de tout réécrire de zéro. Nous analysons les modules fonctionnels, posons des tests de caractérisation pour verrouiller le comportement attendu, puis nous refactorisons de manière chirurgicale.
-                            </p>
-                        </div>
-                    </details>
+                <p>
+                    J'interviens notamment sur des audits, des refactorings et des évolutions architecturales
+                    de logiciels complexes.
+                </p>
 
-                    <details class="vc-faq-item">
-                        <summary>Pourquoi faire appel à un artisan logiciel plutôt que de persister avec l'IA ?</summary>
-                        <div class="vc-faq-content">
-                            <p>
-                                L'IA excelle dans la génération de fragments de code, mais elle manque de vision globale, d'expérience sur la durée de vie des logiciels et de sens des responsabilités. Un artisan logiciel apporte le recul architectural, la rigueur des tests et une garantie de pérennité qu'aucun modèle statistique ne peut fournir seul.
-                            </p>
-                        </div>
-                    </details>
+                <p>
+                    Aujourd'hui, je mets cette expérience au service de la prévention&nbsp;:
+                    <strong>agir avant que le Vibe Coding ne transforme votre application en logiciel legacy.</strong>
+                </p>
 
-                    <details class="vc-faq-item">
-                        <summary>Quelles sont les technologies et piles techniques prises en charge ?</summary>
-                        <div class="vc-faq-content">
-                            <p>
-                                Nous intervenons sur une large variété d'écosystèmes : TypeScript/JavaScript (Node, React, Next, Vue), Python (FastAPI, Django), C# / .NET, PHP, bases de données SQL/NoSQL, architectures d'APIs et environnements cloud (Docker, VPS, serveurs dédiés).
-                            </p>
-                        </div>
-                    </details>
+                <p>
+                    J'interviens notamment sur les applications développées avec
+                    <strong>Lovable, Cursor, Claude Code, ChatGPT et autres outils de développement assisté par IA</strong>,
+                    lorsqu'elles commencent à rencontrer les contraintes de la production.
+                </p>
 
-                    <details class="vc-faq-item">
-                        <summary>Comment se déroule la première étape (Early stage) ?</summary>
-                        <div class="vc-faq-content">
-                            <p>
-                                Nous commençons par un appel de 30 minutes <strong>totalement gratuit</strong>. Vous pouvez <a href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" target="_blank" rel="noopener">réserver un créneau directement en ligne</a>. Nous échangeons sur votre produit, votre architecture actuelle et vos objectifs. Le but immédiat est d'identifier les pièges et erreurs bêtes qui coûteraient très cher à modifier plus tard.
-                            </p>
-                        </div>
-                    </details>
-                    <details class="vc-faq-item">
-                        <summary>Doit-on réécrire toute l'application lors du Product-Market Fit ?</summary>
-                        <div class="vc-faq-content">
-                            <p>
-                                Non, surtout pas ! L'objectif d'une ré-architecturation n'est pas de tout jeter. Nous définissons ensemble quels modules restent vibe-codés (pour conserver votre réactivité) et quelles briques critiques doivent être développées par un spécialiste pour garantir la stabilité et la modularité.
-                            </p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA & Contact Section -->
-        <section id="contact" class="vc-section">
-            <div class="vc-container">
-                <div class="vc-cta-banner">
-                    <h2>Donnez à votre code l'assise qu'il <span class="gradient-text">mérite</span></h2>
-                    <p>
-                        Ne laissez pas la dette technique fragiliser votre projet. Parlons de votre application et définissons ensemble les actions prioritaires pour la sécuriser.
-                    </p>
-
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" target="_blank" rel="noopener" class="vc-btn vc-btn-primary" style="font-size: 1.05rem; padding: 0.95rem 1.8rem;">
-                            <span>📅 Réserver mon appel gratuit (30 min)</span>
-                        </a>
-                        <a href="mailto:atelier@enzosandre.fr?subject=Accompagnement%20Vibe%20Coding" class="vc-btn vc-btn-secondary" style="font-size: 1.05rem; padding: 0.95rem 1.8rem;">
-                            <span>✉️ Contacter par e-mail</span>
-                        </a>
-                    </div>
-
-                    <div class="vc-contact-details">
-                        <div class="vc-contact-item">
-                            <span>📅 Agenda :</span>
-                            <a href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0=" target="_blank" rel="noopener">Prendre rendez-vous (30 min)</a>
-                        </div>
-                        <div class="vc-contact-item">
-                            <span>📧 E-mail :</span>
-                            <a href="mailto:atelier@enzosandre.fr">atelier@enzosandre.fr</a>
-                        </div>
-                        <div class="vc-contact-item">
-                            <span>💼 LinkedIn :</span>
-                            <a href="https://www.linkedin.com/in/enzosandre/" target="_blank" rel="noopener">Enzo Sandré</a>
-                        </div>
-                        <div class="vc-contact-item">
-                            <span>📍 Localisation :</span>
-                            <span>Charente (17), France</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="vc-footer">
-        <div class="vc-container vc-footer-content">
-            <div>
-                <p style="margin-bottom: 0; color: var(--text-dim);">
-                    © 2026 <strong>Atelier Logiciel Sandré</strong> — Artisanat du développement & Excellence logicielle.
+                <p>
+                    <a href="/portfolio">
+                        Voir des exemples de projets et d'interventions&nbsp;→
+                    </a>
                 </p>
             </div>
-            <ul class="vc-footer-links">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/presentation.html">Présentation</a></li>
-                <li><a href="/mentions_legales.html">Mentions légales</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
         </div>
-    </footer>
+    </section>
+
+    <section class="vc-section vc-section-alt" id="accompagnement">
+        <div class="vc-container">
+            <div class="vc-section-header">
+                <h2> Votre application fonctionne aujourd'hui. <br/>
+                    <span class="gradient-text"> Assurons-nous qu'elle puisse encore évoluer demain. </span>
+                </h2>
+
+                <p>Une intervention adaptée à chaque palier de maturité de votre application.</p>
+            </div>
+
+            <div class="vc-grid-3">
+                <div class="vc-card">
+                    <div class="vc-card-tier-img-wrapper"><img alt="Évolution Vibe Coder - Niveau 1 Early Stage"
+                                                               class="vc-card-tier-img"
+                                                               src="/resources/images/vibe-coder-evolution-1.png"></div>
+                    <div style="margin-bottom: 0.75rem;">
+                        <span class="vc-card-tag" style="color: var(--accent-gold); border-color: var(--accent-gold);">
+                            Niveau 1 · Early stage
+                        </span>
+                    </div>
+
+                    <h3>Vibe coder avec méthode</h3>
+
+                    <p>
+                        Un échange de 30 min pour parler de votre projet, de vos choix techniques
+                        et de votre façon de travailler avec l'IA.
+                        Je vous aide à savoir <strong>quoi laisser à l'IA, quoi surveiller
+                        et quand faire intervenir un développeur.</strong>
+                    </p>
+
+                    <p style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.95rem;">
+                        <strong style="color: var(--text-main);">Objectif&nbsp;:</strong>
+                        avancer vite aujourd'hui sans créer les problèmes qui vous ralentiront demain.
+                    </p>
+                </div>
+
+                <div class="vc-card">
+                    <div class="vc-card-tier-img-wrapper"><img alt="Évolution Vibe Coder - Niveau 2 Product-Market Fit"
+                                                               class="vc-card-tier-img"
+                                                               src="/resources/images/vibe-coder-evolution-2.png"></div>
+                    <div style="margin-bottom: 0.75rem;">
+                        <span class="vc-card-tag" style="color: var(--primary-bright); border-color: var(--primary-bright);">
+                            Niveau 2 · Product-Market Fit
+                        </span>
+                    </div>
+
+                    <h3>Refactorer sans tout refaire</h3>
+
+                    <p>
+                        Votre application rencontre son public mais le code devient difficile
+                        à faire évoluer. J'identifie les quelques briques qui méritent d'être
+                        reprises et <strong>interviens là où le refactoring apporte le plus
+                        de valeur</strong>, sans toucher au reste.
+                    </p>
+
+                    <p style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.95rem;">
+                        <strong style="color: var(--text-main);">Objectif&nbsp;:</strong>
+                        sécuriser ce qui devient critique, <strong style="color: var(--text-main);">
+                        sans investir dans une refonte complète</strong> alors que votre produit est encore
+                        en phase de validation.
+                    </p>
+                </div>
+                <div class="vc-card">
+                    <div class="vc-card-tier-img-wrapper"><img alt="Évolution Vibe Coder - Niveau 3 Scale"
+                                                               class="vc-card-tier-img"
+                                                               src="/resources/images/vibe-coder-evolution-3.png"></div>
+                    <div style="margin-bottom: 0.75rem;">
+                        <span class="vc-card-tag" style="color: var(--accent-blue); border-color: var(--accent-blue);">
+                            Niveau 3 · Scale
+                        </span>
+                    </div>
+
+                    <h3>Un copilote technique</h3>
+
+                    <p>
+                        Votre produit grandit et les décisions techniques demandent de l'expérience.
+                        J'interviens comme <strong>référent technique à la demande</strong> :
+                        architecture, choix techniques, recrutement ou évolutions structurantes.
+                    </p>
+
+                    <p style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.95rem;">
+                        <strong style="color: var(--text-main);">Objectif&nbsp;:</strong>
+                        disposer d'une expertise technique senior quand vous en avez besoin,
+                        <strong style="color: var(--text-main);">sans avoir à intégrer un CTO à votre équipe.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem;"><a
+                    class="vc-btn vc-btn-primary"
+                    href="https://calendar.proton.me/u/0/bookings#_YgVgZFZVzgt-lIakAj8VHFE-XuHfQ3j-m2WI2LYhO0="
+                    rel="noopener"
+                    style="font-size: 1.05rem; padding: 0.95rem 1.8rem;"
+                    target="_blank">
+                <span>📅 Réserver mon appel gratuit (30&nbsp;min)</span> </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="vc-footer">
+    <div class="vc-container vc-footer-content">
+        <div>
+            <p style="margin-bottom: 0; color: var(--text-dim);">
+                © 2026 <strong>Atelier Logiciel Sandré</strong> — Artisanat du développement.
+            </p>
+        </div>
+        <ul class="vc-footer-links">
+            <li><a href="/mentions_legales.html">⚖️ Mentions légales</a></li>
+            <li><a href="/contact.html">📧 Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.vc-nav-toggle');
+        const navLinks = document.querySelector('.vc-nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', String(!isExpanded));
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Close when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+
+            // Close on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        }
+    });
+</script>
 
 </body>
 </html>
